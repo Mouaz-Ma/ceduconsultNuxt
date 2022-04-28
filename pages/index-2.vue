@@ -8,7 +8,6 @@
     <TeamOne />
     <Pricing />
     <Meeting />
-    <CallToActionTwo />
     <BlogHome />
     <Footer />
   </div>
@@ -23,12 +22,10 @@
   import TeamOne from "../components/TeamOne";
   import Pricing from "../components/Pricing";
   import Meeting from "../components/Meeting";
-  import CallToActionTwo from "../components/CallToActionTwo";
   import BlogHome from "../components/BlogHome";
   export default {
     components: {
       BlogHome,
-      CallToActionTwo,
       Meeting,
       Pricing,
       TeamOne,

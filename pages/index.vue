@@ -1,6 +1,6 @@
 <template>
   <div>
-     <CallToActionTwo />
+     <CallToActionTwo :link1="'index-3'" :link2="'index-2'" />
   </div>
 </template>
 
