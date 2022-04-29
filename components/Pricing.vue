@@ -61,6 +61,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "Pricing"
     }
 </script>

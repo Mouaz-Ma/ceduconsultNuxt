@@ -93,6 +93,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "TeamOne"
     }
 </script>

@@ -12,6 +12,7 @@
   import Footer from "../components/Footer";
   import CourseDetails from "../components/CourseDetails";
   export default {
+    auth: false,
     components: {CourseDetails, Footer, NavOne, PageHeader},
     head(){
       return {

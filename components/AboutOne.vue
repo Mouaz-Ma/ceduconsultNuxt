@@ -39,6 +39,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "AboutOne"
     }
 </script>

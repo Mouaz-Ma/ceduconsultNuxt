@@ -1,11 +1,15 @@
-
+require('dotenv').config()
+import redirectSSL from 'redirect-ssl';
 export default {
-  mode: 'universal',
+  ssr: true,
   /*
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Cedu',
+    htmlAttrs: {
+      lang: 'en'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -65,21 +69,93 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
+  components: true,
   buildModules: [
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-i18n',
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
+    '@nuxtjs/auth',
+    '@nuxtjs/moment',
   ],
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  }
+  moment: {
+    timezone: true
+  },
+  serverMiddleware: [redirectSSL.create({enabled: process.env.NODE_ENV === 'production'})],
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        iso: 'en-US',
+        file: 'en.js',
+        dir: 'ltr'
+      },
+      // {
+      //   code: 'ar',
+      //   name: 'العربية',
+      //   iso: 'ae-AE',
+      //   file: 'ar.js',
+      //   dir: 'rtl'
+      // },
+    ],
+    langDir: "static/lang",
+    lazy: true,
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    silentTranslationWarn: process.env.NODE_ENV === 'production',
+    silentFallbackWarn: process.env.NODE_ENV === 'production',
+  },
+  axios: {
+    proxy: true,
+    BaseURL: process.env.API_URL,
+    // proxyHeaders: false,
+    // credentials: false
+  },
+  proxy: {
+    "/api": { target: process.env.API_URL }
+  },
+  router: {
+    middleware: ['auth']
+  },
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: {
+            url: '/api/users/login',
+            method: 'post',
+            propertyName: "token"
+          },
+          logout: {
+            url: '/api/users/logout',
+            method: 'post',
+          },
+          user: {
+            url: '/api/users/user',
+            method: 'get',
+          }
+        }
+        },
+        facebook: {
+          client_id: '332127222262076',
+          userinfo_endpoint: 'https://graph.facebook.com/me?fields=about,name,picture.typr(large){url},email,birthday',
+          scope: ['public_profile', 'email', 'user_birthday']
+        },
+        google: {
+          client_id: '160001613518-8qdslgbi9iq1h2f01p31utp6mpd2scd5.apps.googleusercontent.com'
+        }
+      },
+
+      redirect: {
+        login: '/users/login',
+        logout: '/',
+        callback: '/users/login',
+        home: '/'
+      },
+  },
 }

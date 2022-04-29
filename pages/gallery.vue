@@ -12,6 +12,7 @@
   import NavOne from "../components/NavOne";
   import Footer from "../components/Footer";
   export default {
+    auth: false,
     components: {Footer, NavOne, PageHeader, Gallery},
     head(){
       return {

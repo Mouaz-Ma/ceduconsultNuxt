@@ -87,6 +87,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "Faq"
     }
 </script>

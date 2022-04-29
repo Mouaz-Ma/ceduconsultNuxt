@@ -14,6 +14,7 @@
   import CallToAction from "../components/CallToAction";
   import Footer from "../components/Footer";
   export default {
+    auth: false,
     components: {Footer, CallToAction, PricingPage, NavOne, PageHeader},
     head(){
       return {

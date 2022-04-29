@@ -105,6 +105,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "CourseCategory"
     }
 </script>

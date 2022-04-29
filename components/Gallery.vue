@@ -63,6 +63,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "Gallery"
     }
 </script>

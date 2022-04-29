@@ -61,6 +61,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "CourseCatThree"
     }
 </script>

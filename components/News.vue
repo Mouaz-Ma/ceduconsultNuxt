@@ -80,7 +80,7 @@
                               <a data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="No Comments"><i class="fa fa-comments"></i></a>
                               <a data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Posted By Admin"><i class="fa fa-user"></i></a>
                           </div><!-- /.blog-one__meta -->
-                          <h2 class="blog-one__title"><nuxt-link to=/news-details">English lectures in french language
+                          <h2 class="blog-one__title"><nuxt-link to='/news-details' >English lectures in french language
                                   courses</nuxt-link>
                           </h2><!-- /.blog-one__title -->
                           <p class="blog-one__text">Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit
@@ -148,6 +148,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "News"
     }
 </script>

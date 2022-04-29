@@ -12,6 +12,7 @@
   import Footer from "../components/Footer";
   import Faq from "../components/Faq";
   export default {
+    auth: false,
     components: {Faq, Footer, NavOne, PageHeader},
     head(){
       return {

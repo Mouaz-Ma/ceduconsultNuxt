@@ -147,6 +147,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "CourseCatTwo"
     }
 </script>

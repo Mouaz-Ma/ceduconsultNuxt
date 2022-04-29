@@ -42,6 +42,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "ClientsLogoTwo"
     }
 </script>

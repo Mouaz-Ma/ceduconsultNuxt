@@ -15,6 +15,7 @@
   import BecomeTeacher from "../components/BecomeTeacher";
   import TeamOne from "../components/TeamOne";
   export default {
+    auth: false,
     components: {TeamOne, BecomeTeacher, Footer, NavOne, PageHeader},
     head(){
       return {

@@ -12,6 +12,7 @@
   import Footer from "../components/Footer";
   import News from "../components/News";
   export default {
+    auth: false,
     components: {Footer, NavOne, PageHeader, News},
     head(){
       return {

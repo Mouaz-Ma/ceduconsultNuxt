@@ -96,6 +96,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "Footer"
     }
 </script>

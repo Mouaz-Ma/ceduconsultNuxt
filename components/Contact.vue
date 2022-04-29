@@ -65,6 +65,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "Contact"
     }
 </script>

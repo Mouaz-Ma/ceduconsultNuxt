@@ -12,6 +12,7 @@
   import Footer from "../components/Footer";
   import Contact from "../components/Contact";
   export default {
+    auth: false,
     components: {Contact, Footer, NavOne, PageHeader},
     head(){
       return {

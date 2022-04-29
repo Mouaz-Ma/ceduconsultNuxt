@@ -51,6 +51,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "AboutTwo"
     }
 </script>

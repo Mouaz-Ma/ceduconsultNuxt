@@ -36,6 +36,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "CallToActionTwo",
         props: {link1: String, link2: String}
     }

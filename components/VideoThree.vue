@@ -45,6 +45,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "VideoThree"
     }
 </script>

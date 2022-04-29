@@ -7,8 +7,8 @@
                   <a href="#">444 888 0000</a>
               </div><!-- /.topbar-one__left -->
               <div class="topbar-one__right">
-                  <a href="#">Login</a>
-                  <a href="#">Register</a>
+                  <nuxt-link to="/users/logIn">Login</nuxt-link>
+                  <nuxt-link to="/users/register">Register</nuxt-link>
               </div><!-- /.topbar-one__right -->
           </div><!-- /.container -->
       </div><!-- /.topbar-one -->
@@ -110,6 +110,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "NavOne",
         mounted() {
           if ($(".main-navigation .navigation-box").length) {

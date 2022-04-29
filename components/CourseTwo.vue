@@ -328,6 +328,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "CourseTwo"
     }
 </script>

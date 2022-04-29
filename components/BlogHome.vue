@@ -79,6 +79,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "BlogHome"
     }
 </script>

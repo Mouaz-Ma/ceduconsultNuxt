@@ -166,6 +166,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "BlogCarousel"
     }
 </script>

@@ -27,6 +27,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "Subscribe"
     }
 </script>

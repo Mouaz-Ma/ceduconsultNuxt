@@ -1,5 +1,18 @@
 <template>
+
   <header class="site-header site-header__header-two ">
+            <div class="topbar-one">
+          <div class="container">
+              <div class="topbar-one__left">
+                  <a href="#">needhelp@kipso.com</a>
+                  <a href="#">444 888 0000</a>
+              </div><!-- /.topbar-one__left -->
+              <div class="topbar-one__right">
+                  <nuxt-link to="/users/logIn">Login</nuxt-link>
+                  <nuxt-link to="/users/register">Register</nuxt-link>
+              </div><!-- /.topbar-one__right -->
+          </div><!-- /.container -->
+      </div><!-- /.topbar-one -->
       <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
           <div class="container clearfix">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -99,6 +112,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "NavTwo"
     }
 </script>

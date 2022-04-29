@@ -28,6 +28,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "BannerThree"
     }
 </script>

@@ -29,6 +29,7 @@
   import CallToActionFive from "../components/CallToActionFive";
 
   export default {
+    auth: false,
     components: {
       Footer,
       NavThree,

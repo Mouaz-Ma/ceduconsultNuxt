@@ -24,6 +24,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "VideoTwo"
     }
 </script>

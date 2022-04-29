@@ -415,6 +415,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "CourseDetails"
     }
 </script>

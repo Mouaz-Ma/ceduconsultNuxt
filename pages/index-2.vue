@@ -24,6 +24,7 @@
   import Meeting from "../components/Meeting";
   import BlogHome from "../components/BlogHome";
   export default {
+    auth: false,
     components: {
       BlogHome,
       Meeting,

@@ -58,6 +58,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "BannerOne"
     }
 </script>

@@ -197,6 +197,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "TeacherDetails"
     }
 </script>

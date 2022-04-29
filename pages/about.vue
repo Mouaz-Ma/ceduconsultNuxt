@@ -24,6 +24,7 @@
   import Testimonial from "../components/Testimonial";
   import CallToActionOne from "../components/CallToActionOne";
   export default {
+    auth: false,
     components: {
       CallToActionOne,
       Testimonial,

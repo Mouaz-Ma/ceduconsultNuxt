@@ -41,6 +41,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "CallToActionThree"
     }
 </script>

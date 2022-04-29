@@ -198,6 +198,7 @@
 
 <script>
     export default {
+    auth: false,
         name: "NewsDetails"
     }
 </script>
