@@ -1,19 +1,19 @@
 <template>
   <div>
-    <PageHeader title="Sing In" />
-    <logIn />
+    <PageHeader title="Forgot Password" />
+    <forgot />
   </div>
 </template>
 <script>
   import PageHeader from "@/components/PageHeader";
-  import logIn from "@/components/login";
+  import forgot from "@/components/forgot";
   export default {
     auth: false,
       auth: false,
-    components: {logIn, PageHeader},
+    components: {forgot, PageHeader},
     head(){
       return {
-        title: "Login"
+        title: "Forgot Password"
       }
     }
   }

@@ -1,19 +1,19 @@
 <template>
   <div>
-    <PageHeader title="Sing In" />
-    <logIn />
+    <PageHeader title="Verified" />
+    <emailVerify />
   </div>
 </template>
 <script>
   import PageHeader from "@/components/PageHeader";
-  import logIn from "@/components/login";
+  import emailVerify from "@/components/emailVerify";
   export default {
     auth: false,
       auth: false,
-    components: {logIn, PageHeader},
+    components: {emailVerify, PageHeader},
     head(){
       return {
-        title: "Login"
+        title: "Email Verify"
       }
     }
   }

@@ -13,7 +13,7 @@
     },
     head(){
       return {
-        title: "Cedu"
+        title: "CEDU"
       }
     },
     mounted () {

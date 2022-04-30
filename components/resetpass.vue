@@ -9,22 +9,19 @@
             <div v-if="alertMassge">
             <alerts :message=alertMassge :success=success />
             </div>
-              <form @submit.prevent="signIn" class="contact-one__form contact-form-validated">
+              <form @submit.prevent="passReset" class="contact-one__form contact-form-validated">
                   <div class="row low-gutters">
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <input type="text" placeholder="Email Address" v-model="email" required>
+                          <input type="password" v-model="password" placeholder="type your password please"  required>
                       </div><!-- /.col-lg-6 -->
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <input type="password" v-model="password" placeholder="********" required>
+                          <input type="password" v-model="confirmPassword" placeholder="Confirm your password here" required>
                       </div><!-- /.col-lg-6 -->
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="text-center">
-                              <button type="submit" class="contact-one__btn thm-btn">Log In</button>
+                              <button type="submit" class="contact-one__btn thm-btn">confirm</button>
                           </div><!-- /.text-center -->
                       </div><!-- /.col-lg-12 -->
-                      <nuxt-link class="blackLinks" to="/users/forgot">forgot your password?</nuxt-link>
-                      <hr>
-                      <nuxt-link class="blackLinks " to="/users/register">New Account?</nuxt-link>
                   </div><!-- /.row -->
               </form><!-- /.contact-one__form -->
               <div class="result text-center"></div><!-- /.result -->
@@ -41,32 +38,39 @@ export default {
     alerts
   },
   auth: false,
-  name: "Sign In",
+  name: "PasswordReset",
   data() {
     return {
-      alertMassge: '',
-      success: false,
-      email: '',
-      password: '',
+    alertMassge: '',
+    success: false,
+    confirmPassword: '',
+    password: '',
     }
   },
   methods: {
-    async signIn() {
+    async passReset() {
       try {
-        let response = await this.$auth.loginWith('local', {
-          data: {
-            email: this.email,
-            password: this.password,
-          }
-        })
-        if (response.data.success == true) {
-          this.success = true
-          this.alertMassge = response.data.message
-          this.$router.go(-1)
-        } else {
-          this.success = false
-          this.alertMassge = response.data.message
-        }
+            if(this.password === this.confirmPassword && this.password != null){
+                console.log(this.$route.params)
+            let response = await this.$axios.post('/api/users/passReset/'+this.$route.params.rest , {password: this.password});
+                if (response.data.success == true) {
+                    this.$auth.loginWith('local', {
+                        data: {
+                        email: response.data.email,
+                        password: this.password,
+                        }
+                    })
+                this.success = true
+                this.alertMassge = response.data.message
+                setTimeout(() => { this.$router.push('/') }, 3000);
+                } else {
+                this.success = false
+                this.alertMassge = response.data.message
+                }
+            } else {
+                this.success = false
+                this.alertMassge = "the password didn't match"
+            }
       } catch (err) {
         this.success = false
         this.alertMassge = "somthing went wrong"

@@ -15,16 +15,10 @@
                           <input type="text" placeholder="Email Address" v-model="email" required>
                       </div><!-- /.col-lg-6 -->
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <input type="password" v-model="password" placeholder="********" required>
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="text-center">
-                              <button type="submit" class="contact-one__btn thm-btn">Log In</button>
+                              <button type="submit" class="contact-one__btn thm-btn">Send mail</button>
                           </div><!-- /.text-center -->
                       </div><!-- /.col-lg-12 -->
-                      <nuxt-link class="blackLinks" to="/users/forgot">forgot your password?</nuxt-link>
-                      <hr>
-                      <nuxt-link class="blackLinks " to="/users/register">New Account?</nuxt-link>
                   </div><!-- /.row -->
               </form><!-- /.contact-one__form -->
               <div class="result text-center"></div><!-- /.result -->
@@ -41,28 +35,21 @@ export default {
     alerts
   },
   auth: false,
-  name: "Sign In",
+  name: "forgot",
   data() {
     return {
       alertMassge: '',
       success: false,
       email: '',
-      password: '',
     }
   },
   methods: {
     async signIn() {
       try {
-        let response = await this.$auth.loginWith('local', {
-          data: {
-            email: this.email,
-            password: this.password,
-          }
-        })
+        let response = await this.$axios.post('/api/users/requestReset', {email: this.email});
         if (response.data.success == true) {
           this.success = true
           this.alertMassge = response.data.message
-          this.$router.go(-1)
         } else {
           this.success = false
           this.alertMassge = response.data.message
@@ -78,11 +65,5 @@ export default {
 </script>
 
 <style scoped>
-a{
-    text-decoration: none;
-}
 
-.blackLinks{
-    color: #2DA297;
-}
 </style>

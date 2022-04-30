@@ -8,6 +8,7 @@
   import CallToActionTwo from "../components/CallToActionTwo";
 
   export default {
+    name: 'index',
     auth: false,
     components: {
     CallToActionTwo

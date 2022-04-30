@@ -6,7 +6,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Cedu',
+    title: 'CEDU',
     htmlAttrs: {
       lang: 'en'
     },

@@ -1,17 +1,6 @@
 <template>
     <div>
-      <div class="topbar-one">
-          <div class="container">
-              <div class="topbar-one__left">
-                  <a href="#">needhelp@kipso.com</a>
-                  <a href="#">444 888 0000</a>
-              </div><!-- /.topbar-one__left -->
-              <div class="topbar-one__right">
-                  <nuxt-link to="/users/logIn">Login</nuxt-link>
-                  <nuxt-link to="/users/register">Register</nuxt-link>
-              </div><!-- /.topbar-one__right -->
-          </div><!-- /.container -->
-      </div><!-- /.topbar-one -->
+<top-bar />
 <header class="site-header site-header__header-one ">
           <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
               <div class="container clearfix">
@@ -109,36 +98,41 @@
 </template>
 
 <script>
-    export default {
-    auth: false,
-        name: "NavOne",
-        mounted() {
-          if ($(".main-navigation .navigation-box").length) {
-            var subMenu = $(".main-navigation .sub-menu");
-            subMenu
-              .parent("li")
-              .children("a")
-              .append(function () {
-                return '<button class="sub-nav-toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
-              });
-            var mainNavToggler = $(".header-navigation .menu-toggler");
-            var subNavToggler = $(".main-navigation .sub-nav-toggler");
-            mainNavToggler.on("click", function () {
-              //alert()
-              var Self = $(this);
-              var menu = Self.data("target");
-              $(menu).slideToggle();
-              $(menu).toggleClass("showen");
-              return false;
-            });
-            subNavToggler.on("click", function () {
-              var Self = $(this);
-              Self.parent().parent().children(".sub-menu").slideToggle();
-              return false;
-            });
-          }
-        },
+import topBar from "@/components/topBar.vue";
+
+export default {
+  auth: false,
+  components: {
+    topBar
+  },
+  name: "NavOne",
+  mounted() {
+    if ($(".main-navigation .navigation-box").length) {
+      var subMenu = $(".main-navigation .sub-menu");
+      subMenu
+        .parent("li")
+        .children("a")
+        .append(function () {
+          return '<button class="sub-nav-toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
+        });
+      var mainNavToggler = $(".header-navigation .menu-toggler");
+      var subNavToggler = $(".main-navigation .sub-nav-toggler");
+      mainNavToggler.on("click", function () {
+        //alert()
+        var Self = $(this);
+        var menu = Self.data("target");
+        $(menu).slideToggle();
+        $(menu).toggleClass("showen");
+        return false;
+      });
+      subNavToggler.on("click", function () {
+        var Self = $(this);
+        Self.parent().parent().children(".sub-menu").slideToggle();
+        return false;
+      });
     }
+  },
+}
 </script>
 
 <style scoped>

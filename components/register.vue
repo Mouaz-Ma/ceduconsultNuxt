@@ -10,19 +10,19 @@
             <alerts :message=alertMassge :success=success />
             </div>
 
-              <form @submit.prevent="register" class="contact-one__form contact-form-validated" novalidate="novalidate">
+              <form @submit.prevent="register" class="contact-one__form contact-form-validated">
                   <div class="row low-gutters">
                       <!-- userName -->
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <input type="text" placeholder="User Name" v-model="username">
+                          <input type="text" placeholder="User Name" v-model="username" required>
                       </div>
                       <!-- /.col-lg-6 -->
                       <!-- email -->
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <input type="text" placeholder="Email Address" v-model="email">
+                          <input type="text" placeholder="Email Address" v-model="email" required>
                       </div><!-- /.col-lg-6 -->
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <input type="password" v-model="password" placeholder="********">
+                          <input type="password" v-model="password" placeholder="********" required>
                       </div><!-- /.col-lg-6 -->
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="text-center">
@@ -78,13 +78,8 @@ export default {
               password: this.password,
             }
           }).then(() => {
-            // this.$router.push({
-            //   name: 'users-verifyEmail',
-            //   params: {
-            //     email: this.email
-            //   }
-            // });
-            this.$router.push('/');
+            setTimeout(() => { this.$router.go(-1) }, 4000);
+
           }).catch((err) => {
             console.log(err)
           });
