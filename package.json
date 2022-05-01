@@ -1,8 +1,8 @@
 {
-  "name": "kipso",
-  "version": "2.0.0",
-  "description": "Kipso - Vue Nuxt Online Education Learning & LMS Template",
-  "author": "Layerdrops",
+  "name": "cedu",
+  "version": "1.0.0",
+  "description": "CEDU webapp",
+  "author": "mo3az",
   "private": true,
   "scripts": {
     "dev": "nuxt",

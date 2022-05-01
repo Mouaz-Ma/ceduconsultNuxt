@@ -117,7 +117,7 @@ export default {
     // credentials: false
   },
   proxy: {
-    "/api": { target: process.env.API_URL }
+    "/api": process.env.API_URL 
   },
   router: {
     middleware: ['auth']

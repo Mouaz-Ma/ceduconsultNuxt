@@ -41,7 +41,7 @@ export default {
     alerts
   },
   auth: false,
-  name: "Sign In",
+  name: "logIn",
   data() {
     return {
       alertMassge: '',
