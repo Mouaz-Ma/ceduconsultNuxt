@@ -8,9 +8,8 @@
                           <span><i class="kipso-icon-professor"></i><!-- /.kipso-icon-professor --></span>
                       </div><!-- /.cta-two__icon -->
                       <div class="cta-two__content">
-                          <h2 class="cta-two__title">Find Your University</h2><!-- /.cta-two__title -->
-                          <p class="cta-two__text">There are many variations of passages of lore available but <br> the
-                              majority have suffered alteration in some form.</p><!-- /.cta-two__text -->
+                          <h2 class="cta-two__title">{{title1}}</h2><!-- /.cta-two__title -->
+                          <p class="cta-two__text">{{intro1}}</p><!-- /.cta-two__text -->
                               <nuxt-link :to=link1 class="thm-btn cta-two__btn">Start Your Journey</nuxt-link><!-- /.thm-btn cta-two__btn -->
                       </div><!-- /.cta-two__content -->
                   </div><!-- /.cta-two__single -->
@@ -21,9 +20,8 @@
                           <span><i class="kipso-icon-knowledge"></i><!-- /.kipso-icon-knowledge --></span>
                       </div><!-- /.cta-two__icon -->
                       <div class="cta-two__content">
-                          <h2 class="cta-two__title">E-learning Portal</h2><!-- /.cta-two__title -->
-                          <p class="cta-two__text">There are many variations of passages of lore available but <br> the
-                              majority have suffered alteration in some form.</p><!-- /.cta-two__text -->
+                          <h2 class="cta-two__title">{{title2}}</h2><!-- /.cta-two__title -->
+                          <p class="cta-two__text">{{intro2}}</p><!-- /.cta-two__text -->
 
                           <nuxt-link :to=link2 class="thm-btn cta-two__btn">Start Learning</nuxt-link><!-- /.thm-btn cta-two__btn -->
                       </div><!-- /.cta-two__content -->
@@ -38,7 +36,7 @@
     export default {
     auth: false,
         name: "CallToActionTwo",
-        props: {link1: String, link2: String}
+        props: {link1: String, link2: String, title1: String, title2: String, intro1: String, intro2: String}
     }
 </script>
 

@@ -491,6 +491,7 @@ a:visited {
 }
 .header-navigation ul.navigation-box > li > ul > li {
   /* no more nested showen */
+  display: block;
 }
 .header-navigation ul.navigation-box > li > ul > li > .sub-menu {
   position: absolute;
@@ -2046,6 +2047,8 @@ a:visited {
   color: #fff;
   margin-top: -10px;
   margin-bottom: -5px;
+  padding: 20px;
+  white-space: break-spaces;
 }
 .cta-two__btn {
   font-size: 16px;
