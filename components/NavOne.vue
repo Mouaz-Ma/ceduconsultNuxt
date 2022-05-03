@@ -2,12 +2,12 @@
     <div>
 <top-bar />
 <header class="site-header site-header__header-one ">
-          <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+          <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky navHeight">
               <div class="container clearfix">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="logo-box clearfix">
                       <a class="navbar-brand" href="/">
-                          <img src="/assets/images/logo-dark.png" class="main-logo" width="128" alt="Awesome Image" />
+                          <img src="/assets/images/logo-dark.png" class="main-logo" width="95" alt="Awesome Image" />
                       </a>
                       <div class="header__social">
                           <a href="#"><i class="fab fa-twitter"></i></a>
@@ -136,5 +136,7 @@ export default {
 </script>
 
 <style scoped>
-
+.navHeight{
+    height: 100px;
+}
 </style>

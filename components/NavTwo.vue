@@ -2,12 +2,12 @@
 
   <header class="site-header site-header__header-two ">
 <top-bar />
-      <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+      <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky navHeight">
           <div class="container clearfix">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="logo-box clearfix">
                   <a class="navbar-brand" href="/">
-                      <img src="/assets/images/logo-dark.png" class="main-logo" width="128" alt="Awesome Image" />
+                      <img src="/assets/images/logo-dark.png" class="main-logo" width="100" alt="Awesome Image" />
                   </a>
                   <button class="menu-toggler" data-target=".main-navigation">
                       <span class="kipso-icon-menu"></span>
@@ -111,5 +111,7 @@ export default {
 </script>
 
 <style scoped>
-
+.navHeight{
+    height: 100px;
+}
 </style>
