@@ -24,8 +24,8 @@
                               <div class="progress-one__single">
                                   <div class="progress-one__top">
                                       <h3 class="progress-one__title">English</h3><!-- /.progress-one__title -->
-                                      <h3 class="progress-one__percent"><span class="counter">98</span><!-- /.counter -->%
-                                      </h3><!-- /.progress-one__percent -->
+                                      <div class="progress-one__percent"><span class="counter">98</span><!-- /.counter -->%
+                                      </div><!-- /.progress-one__percent -->
                                   </div><!-- /.progress-one__top -->
                                   <div class="progress-one__bar">
                                       <span style="width: 98%;" class="wow slideInLeft"></span>
@@ -34,8 +34,8 @@
                               <div class="progress-one__single">
                                   <div class="progress-one__top">
                                       <h3 class="progress-one__title">French</h3><!-- /.progress-one__title -->
-                                      <h3 class="progress-one__percent"><span class="counter">64</span><!-- /.counter -->%
-                                      </h3><!-- /.progress-one__percent -->
+                                      <div class="progress-one__percent"><span class="counter">64</span><!-- /.counter -->%
+                                      </div><!-- /.progress-one__percent -->
                                   </div><!-- /.progress-one__top -->
                                   <div class="progress-one__bar">
                                       <span style="width: 64%;" class="wow slideInLeft"></span>
@@ -44,7 +44,7 @@
                               <div class="progress-one__single">
                                   <div class="progress-one__top">
                                       <h3 class="progress-one__title">Spanish</h3><!-- /.progress-one__title -->
-                                      <h3 class="progress-one__percent"><span class="counter">34</span></h3><!-- /.progress-one__percent -->
+                                      <div class="progress-one__percent"><span class="counter">34</span></div><!-- /.progress-one__percent -->
                                   </div><!-- /.progress-one__top -->
                                   <div class="progress-one__bar">
                                       <span style="width: 34%;" class="wow slideInLeft"></span>

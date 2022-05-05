@@ -1,13 +1,12 @@
 <template>
-
   <header class="site-header site-header__header-two ">
-<top-bar />
-      <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky navHeight">
+      <top-bar />
+      <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
           <div class="container clearfix">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="logo-box clearfix">
                   <a class="navbar-brand" href="/">
-                      <img src="/assets/images/logo-dark.png" class="main-logo" width="100" alt="Awesome Image" />
+                      <img src="/assets/images/logo-dark.png" class="main-logo" width="128" alt="Awesome Image" />
                   </a>
                   <button class="menu-toggler" data-target=".main-navigation">
                       <span class="kipso-icon-menu"></span>
@@ -99,6 +98,7 @@
   </header>
 </template>
 
+
 <script>
 import topBar from "@/components/topBar.vue";
 export default {
@@ -106,7 +106,33 @@ export default {
     topBar
   },
   auth: false,
-  name: "NavTwo"
+  name: "NavTwo",
+    mounted() {
+    if ($(".main-navigation .navigation-box").length) {
+      var subMenu = $(".main-navigation .sub-menu");
+      subMenu
+        .parent("li")
+        .children("a")
+        .append(function () {
+          return '<button class="sub-nav-toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
+        });
+      var mainNavToggler = $(".header-navigation .menu-toggler");
+      var subNavToggler = $(".main-navigation .sub-nav-toggler");
+      mainNavToggler.on("click", function () {
+        //alert()
+        var Self = $(this);
+        var menu = Self.data("target");
+        $(menu).slideToggle();
+        $(menu).toggleClass("showen");
+        return false;
+      });
+      subNavToggler.on("click", function () {
+        var Self = $(this);
+        Self.parent().parent().children(".sub-menu").slideToggle();
+        return false;
+      });
+    }
+  },
 }
 </script>
 

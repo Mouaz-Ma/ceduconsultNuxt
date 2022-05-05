@@ -1,5 +1,4 @@
 <template>
-<v-app>
     <div>
       <footer class="site-footer">
                     <div id="whatsAppBtn">
@@ -97,7 +96,6 @@
               </div><!-- /.search-popup__inner -->
           </div>
     </div>
-    </v-app>
 </template>
 
 <script>

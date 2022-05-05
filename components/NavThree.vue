@@ -87,7 +87,33 @@ export default {
     topBar
   },
   auth: false,
-  name: "NavThree"
+  name: "NavThree",
+    mounted() {
+    if ($(".main-navigation .navigation-box").length) {
+      var subMenu = $(".main-navigation .sub-menu");
+      subMenu
+        .parent("li")
+        .children("a")
+        .append(function () {
+          return '<button class="sub-nav-toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
+        });
+      var mainNavToggler = $(".header-navigation .menu-toggler");
+      var subNavToggler = $(".main-navigation .sub-nav-toggler");
+      mainNavToggler.on("click", function () {
+        //alert()
+        var Self = $(this);
+        var menu = Self.data("target");
+        $(menu).slideToggle();
+        $(menu).toggleClass("showen");
+        return false;
+      });
+      subNavToggler.on("click", function () {
+        var Self = $(this);
+        Self.parent().parent().children(".sub-menu").slideToggle();
+        return false;
+      });
+    }
+  },
 }
 </script>
 
