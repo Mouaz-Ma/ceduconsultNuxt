@@ -1,6 +1,12 @@
 <template>
+<v-app>
     <div>
       <footer class="site-footer">
+                    <div id="whatsAppBtn">
+    <a href="https://wa.me/443301335324?text=I%20just%20visited%20your%20website%2C%20and%20I%20will%20would%20like%20to%20get%20more%20information" class="btn whatsApp"><img id="whatsAppImage"
+        src="https://global-uploads.webflow.com/601befbd3e6c39d9b373aa94/606aecfac9846644d0c6d979_whatsapp.svg"
+        alt=""></a>
+  </div>
                   <div class="site-footer__upper">
                       <div class="container">
                           <div class="row">
@@ -70,10 +76,9 @@
                           <p class="site-footer__copy">&copy; Copyright 2020 by <a href="#">Layerdrops.com</a></p>
                           <div class="site-footer__social">
                               <a href="#" data-target="html" class="scroll-to-target site-footer__scroll-top"><i class="kipso-icon-top-arrow"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                              <a href="#"><i class="fab fa-facebook-square"></i></a>
-                              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                              <a href="#"><i class="fab fa-instagram"></i></a>
+                              <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                              <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                              <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                           </div><!-- /.site-footer__social -->
                           <!-- /.site-footer__copy -->
                       </div><!-- /.container -->
@@ -92,6 +97,7 @@
               </div><!-- /.search-popup__inner -->
           </div>
     </div>
+    </v-app>
 </template>
 
 <script>
@@ -102,5 +108,15 @@
 </script>
 
 <style scoped>
+#whatsAppBtn {
+  position: fixed;
+  bottom: 60px;
+  right: 20px; 
+  z-index: 1000;
+}
 
+#whatsAppImage{
+  max-width: 100%;
+  height: 75px;
+}
 </style>

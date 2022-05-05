@@ -23,8 +23,8 @@
                           </div><!-- /.text-center -->
                       </div><!-- /.col-lg-12 -->
                       <nuxt-link class="blackLinks" to="/users/forgot">forgot your password?</nuxt-link>
-                      <hr>
-                      <nuxt-link class="blackLinks " to="/users/register">New Account?</nuxt-link>
+                      
+                      <!-- <nuxt-link class="blackLinks " to="/users/register">New Account?</nuxt-link> -->
                   </div><!-- /.row -->
               </form><!-- /.contact-one__form -->
               <div class="result text-center"></div><!-- /.result -->

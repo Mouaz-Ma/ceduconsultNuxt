@@ -12,7 +12,7 @@
               </div>
               <div class="topbar-one__right" v-else>
                   <nuxt-link to="/users/logIn">Login</nuxt-link>
-                  <nuxt-link to="/users/register">Register</nuxt-link>
+                  <!-- <nuxt-link to="/users/register">Register</nuxt-link> -->
               </div>
               <!-- /.topbar-one__right -->
           </div><!-- /.container -->
