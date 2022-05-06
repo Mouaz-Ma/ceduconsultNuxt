@@ -62,7 +62,7 @@ export default {
                     })
                 this.success = true
                 this.alertMassge = response.data.message
-                setTimeout(() => { this.$router.push('/') }, 3000);
+                setTimeout(() => { this.$router.push( {path : '/'}) }, 3000);
                 } else {
                 this.success = false
                 this.alertMassge = response.data.message

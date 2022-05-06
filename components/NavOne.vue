@@ -10,10 +10,9 @@
                           <img src="/assets/images/logo-dark.png" class="main-logo" width="95" alt="Awesome Image" />
                       </a>
                       <div class="header__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.header__social -->
                       <button class="menu-toggler" data-target=".main-navigation">
                           <span class="kipso-icon-menu"></span>
@@ -40,7 +39,7 @@
                           <li>
                               <a href="#">Pages</a>
                               <ul class="sub-menu">
-                                  <li><nuxt-link to="/about">About Page</nuxt-link></li>
+                                  <li><a href="/about">About Page</a></li>
                                   <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
                                   <li><nuxt-link to="/pricing">Pricing Plans</nuxt-link></li>
                                   <li><nuxt-link to="/faq">FAQ'S</nuxt-link></li>

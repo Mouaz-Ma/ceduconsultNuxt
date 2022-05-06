@@ -2331,6 +2331,7 @@ a:visited {
   margin-bottom: -103px;
 }
 .team-one__image img {
+  object-fit: contain;
   border-radius: 50%;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
@@ -2340,6 +2341,7 @@ a:visited {
           transform: scale(1);
 }
 .team-one__content {
+  height: 450px;
   text-align: center;
   border: 2px solid #f1f1f1;
   padding-bottom: 30px;
@@ -4504,7 +4506,7 @@ a:visited {
   display: block;
 }
 .footer-widget__gallery-list li a img {
-  width: 100%;
+  width: 80%;
 }
 .footer-widget__btn-block {
   margin-top: 30px;
@@ -5990,6 +5992,9 @@ a:visited {
 }
 .testimonials-one__carousel .owl-item img {
   width: auto;
+  display: inline-block;
+}
+.partners-one__carousel .owl-item img {
   display: inline-block;
 }
 .testimonials-one__carousel .owl-stage-outer {

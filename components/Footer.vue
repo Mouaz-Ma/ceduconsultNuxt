@@ -11,7 +11,7 @@
                           <div class="row">
                               <div class="col-xl-3 col-lg-6 col-sm-12">
                                   <div class="footer-widget footer-widget__contact">
-                                      <h2 class="footer-widget__title">Courses</h2><!-- /.footer-widget__title -->
+                                      <h2 class="footer-widget__title">Courses</h2>
                                       <ul class="list-unstyled footer-widget__course-list">
                                           <li>
                                               <h2><a href="course-details.html">Introduction Web Design</a></h2>
@@ -21,9 +21,9 @@
                                               <h2><a href="course-details.html"> Learning MBA Management </a></h2>
                                               <p>Jessica Brown</p>
                                           </li>
-                                      </ul><!-- /.footer-widget__course-list -->
-                                  </div><!-- /.footer-widget -->
-                              </div><!-- /.col-lg-3 -->
+                                      </ul>
+                                  </div>
+                              </div>
                               <div class="col-xl-3 col-lg-6 col-sm-12">
                                   <div class="footer-widget footer-widget__link">
                                       <h2 class="footer-widget__title">Explore</h2><!-- /.footer-widget__title -->
@@ -45,14 +45,14 @@
                               </div><!-- /.col-lg-3 -->
                               <div class="col-xl-3 col-lg-6 col-sm-12">
                                   <div class="footer-widget footer-widget__gallery">
-                                      <h2 class="footer-widget__title">Gallery</h2><!-- /.footer-widget__title -->
+                                      <h2 class="footer-widget__title">Certified by</h2><!-- /.footer-widget__title -->
                                       <ul class="list-unstyled footer-widget__gallery-list">
-                                          <li><a href="#"><img src="/assets/images/footer-1-1.png" alt=""></a></li>
-                                          <li><a href="#"><img src="/assets/images/footer-1-2.png" alt=""></a></li>
-                                          <li><a href="#"><img src="/assets/images/footer-1-3.png" alt=""></a></li>
+                                          <li><a data-pm-no-track href="https://connect.pierapps.com/agencies/48167"><img src='https://dtbhzdanf36fd.cloudfront.net/postmark_templates/pier-admin-payments-verified_agency_pier_network/verified-agency-s.png' /></a></li>
+                                          <li><a href="https://connect.pierapps.com/qualification_types/icef-trained-agent-counsellor/00296529/1816"><img  src="/assets/images/20354_badge20220314-28454-yegzwq.png" alt=""></a></li>
+                                          <!-- <li><a href="#"><img src="/assets/images/footer-1-3.png" alt=""></a></li>
                                           <li><a href="#"><img src="/assets/images/footer-1-4.png" alt=""></a></li>
                                           <li><a href="#"><img src="/assets/images/footer-1-5.png" alt=""></a></li>
-                                          <li><a href="#"><img src="/assets/images/footer-1-6.png" alt=""></a></li>
+                                          <li><a href="#"><img src="/assets/images/footer-1-6.png" alt=""></a></li> -->
                                       </ul><!-- /.footer-widget__gallery -->
                                   </div><!-- /.footer-widget -->
                               </div><!-- /.col-lg-3 -->
@@ -78,6 +78,7 @@
                               <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
                               <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
                               <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
+                              <a class="notVisible" href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                           </div><!-- /.site-footer__social -->
                           <!-- /.site-footer__copy -->
                       </div><!-- /.container -->
@@ -116,5 +117,9 @@
 #whatsAppImage{
   max-width: 100%;
   height: 75px;
+}
+
+.notVisible{
+    visibility: hidden;
 }
 </style>

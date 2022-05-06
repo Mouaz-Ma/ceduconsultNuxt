@@ -40,10 +40,9 @@
                         <p>Tags: <a href="#">Business,</a> <a href="#">Agency,</a> <a href="#">Technology</a></p>
                     </div><!-- /.left-block -->
                     <div class="social-block">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                     </div><!-- /.social-block -->
                 </div><!-- /.share-block -->
                 <div class="blog-details__author">

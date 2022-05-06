@@ -58,7 +58,7 @@ export default {
             email: this.email,
             password: this.password,
           }
-        })
+        }).then(() => { this.$router.push( {path : '/users/profile'}) }, 3000);
         if (response.data.success == true) {
           this.success = true
           this.alertMassge = response.data.message

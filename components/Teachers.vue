@@ -15,10 +15,9 @@
                           <!-- /.team-one__text -->
                       </div><!-- /.team-one__content -->
                       <div class="team-one__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
@@ -35,10 +34,9 @@
                           <!-- /.team-one__text -->
                       </div><!-- /.team-one__content -->
                       <div class="team-one__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
@@ -55,10 +53,9 @@
                           <!-- /.team-one__text -->
                       </div><!-- /.team-one__content -->
                       <div class="team-one__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
@@ -75,10 +72,9 @@
                           <!-- /.team-one__text -->
                       </div><!-- /.team-one__content -->
                       <div class="team-one__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
@@ -95,10 +91,9 @@
                           <!-- /.team-one__text -->
                       </div><!-- /.team-one__content -->
                       <div class="team-one__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
@@ -115,10 +110,9 @@
                           <!-- /.team-one__text -->
                       </div><!-- /.team-one__content -->
                       <div class="team-one__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
@@ -135,10 +129,9 @@
                           <!-- /.team-one__text -->
                       </div><!-- /.team-one__content -->
                       <div class="team-one__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
@@ -155,10 +148,9 @@
                           <!-- /.team-one__text -->
                       </div><!-- /.team-one__content -->
                       <div class="team-one__social">
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fab fa-facebook-square"></i></a>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
