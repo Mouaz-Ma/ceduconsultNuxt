@@ -10,7 +10,7 @@
                       <div class="cta-two__content">
                           <h2 class="cta-two__title">{{title1}}</h2><!-- /.cta-two__title -->
                           <p class="cta-two__text">{{intro1}}</p><!-- /.cta-two__text -->
-                              <nuxt-link :to=link1 class="thm-btn cta-two__btn">Start Your Journey</nuxt-link><!-- /.thm-btn cta-two__btn -->
+                              <a :href=link1 class="thm-btn cta-two__btn">Start Your Journey</a><!-- /.thm-btn cta-two__btn -->
                       </div><!-- /.cta-two__content -->
                   </div><!-- /.cta-two__single -->
               </div><!-- /.col-lg-6 -->
@@ -23,7 +23,7 @@
                           <h2 class="cta-two__title">{{title2}}</h2><!-- /.cta-two__title -->
                           <p class="cta-two__text">{{intro2}}</p><!-- /.cta-two__text -->
 
-                          <nuxt-link :to=link2 class="thm-btn cta-two__btn">Start Learning</nuxt-link><!-- /.thm-btn cta-two__btn -->
+                          <a :href=link2 class="thm-btn cta-two__btn">Start Learning</a><!-- /.thm-btn cta-two__btn -->
                       </div><!-- /.cta-two__content -->
                   </div><!-- /.cta-two__single -->
               </div><!-- /.col-lg-6 -->
