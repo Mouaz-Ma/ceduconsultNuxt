@@ -52,12 +52,13 @@
                                               <li>
                                                   <nuxt-link to="/services">For Applicants</nuxt-link>
                                               </li>
+                                                                                            <li>
+                                                  <nuxt-link to="/news">News</nuxt-link>
+                                              </li>
                                               <li>
                                                   <nuxt-link to="/blogs">blogs</nuxt-link>
                                               </li>
-                                              <li>
-                                                  <nuxt-link to="/news">News</nuxt-link>
-                                              </li>
+
                                               <li>
                                                   <nuxt-link to="/contact">Contact</nuxt-link>
                                               </li>
