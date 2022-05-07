@@ -1,20 +1,20 @@
 <template>
   <div>
-    <NavOne />
+    <NavThree />
     <PageHeader title="About" />
     <AboutOne />
-    <TeamOne />
     <VideoOne />
-    <ClientsLogoOne />
+    <TeamOne />
+    <!-- <ClientsLogoOne /> -->
     <div class="border-bottom"></div>
-    <Testimonial />
+    <!-- <Testimonial /> -->
     <CallToActionOne />
     <Footer />
   </div>
 
 </template>
 <script>
-  import NavOne from "../components/NavOne";
+  import NavThree from "../components/NavThree";
   import PageHeader from "../components/PageHeader";
   import Footer from "../components/Footer";
   import AboutOne from "../components/AboutOne";
@@ -34,11 +34,11 @@
       AboutOne,
       Footer,
       PageHeader,
-      NavOne
+      NavThree
     },
     head(){
       return {
-        title: "Kipso | About Us"
+        title: "CEDU | About Us"
       }
     }
   }

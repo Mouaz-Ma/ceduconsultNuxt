@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavOne />
+    <NavThree />
     <PageHeader title="News" />
     <News />
     <Footer />
@@ -8,12 +8,12 @@
 </template>
 <script>
   import PageHeader from "../components/PageHeader";
-  import NavOne from "../components/NavOne";
+  import NavThree from "../components/NavThree";
   import Footer from "../components/Footer";
   import News from "../components/News";
   export default {
     auth: false,
-    components: {Footer, NavOne, PageHeader, News},
+    components: {Footer, NavThree, PageHeader, News},
     head(){
       return {
         title: "Kipso | News"

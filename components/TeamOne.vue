@@ -178,8 +178,28 @@
                       </div><!-- /.team-one__social -->
                   </div><!-- /.team-one__single -->
               </div><!-- /.col-lg-3 -->
+                           <div class="item">
+                  <div class="team-one__single">
+                      <div class="team-one__image">
+                          <img class="temOneImage" src="/assets/images/GEglobal.jpeg" alt="">
+                      </div><!-- /.team-one__image -->
+                      <div class="team-one__content">
+                          <h2 class="team-one__name"><a href="#">GE Global</a></h2>
+                          <!-- /.team-one__name -->
+                          <p class="team-one__designation">United Kingdom</p><!-- /.team-one__designation -->
+                          <p class="team-one__text">GE Global Consultants are committed to providing an ultimate solution of services for International students in the categories of Foundation, Undergraduate, and postgraduate sectors.</p>
+                          <!-- /.team-one__text -->
+                      </div><!-- /.team-one__content -->
+                      <div class="team-one__social">
+                        <!-- <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a> -->
+                      </div><!-- /.team-one__social -->
+                  </div><!-- /.team-one__single -->
+              </div><!-- /.col-lg-3 -->
 
                 </div>
+
           </div><!-- /.row -->
       </div><!-- /.container -->
   </section>

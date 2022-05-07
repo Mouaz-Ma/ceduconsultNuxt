@@ -7,9 +7,9 @@
     <TeamTab />
     <CourseThree />
     <CallToActionSix />
-    <Testimonial />
+    <!-- <Testimonial /> -->
     <VideoThree />
-    <ClientsLogoOne />
+    <!-- <ClientsLogoOne /> -->
     <CallToActionFive />
     <Footer />
   </div>

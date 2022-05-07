@@ -33,7 +33,7 @@
                           we help our <br>
                           students</h2><!-- /.video-three__title -->
                       <div class="video-three__btn-box">
-                          <a href="#" class="video-three__popup"><i class="fas fa-play"></i><!-- /.fas fa-play --></a>
+                          <a href="/contact" class="video-three__popup"><i class="fas fa-arrow-right"></i><!-- /.fas fa-play --></a>
                       </div><!-- /.video-three__btn-box -->
                       <!-- /.video-three__btn -->
                   </div><!-- /.video-three__box -->

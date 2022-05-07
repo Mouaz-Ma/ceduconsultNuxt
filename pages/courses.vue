@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavOne />
+    <NavThree />
     <PageHeader title="Courses" />
     <Course />
     <Footer />
@@ -8,15 +8,15 @@
 </template>
 <script>
   import PageHeader from "../components/PageHeader";
-  import NavOne from "../components/NavOne";
+  import NavThree from "../components/NavThree";
   import Footer from "../components/Footer";
   import Course from "../components/Course";
   export default {
     auth: false,
-    components: {Course, Footer, NavOne, PageHeader},
+    components: {Course, Footer, NavThree, PageHeader},
     head(){
       return {
-        title: "Kipso | Course"
+        title: "CEDU | Course"
       }
     }
   }

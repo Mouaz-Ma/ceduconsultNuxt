@@ -1,8 +1,9 @@
 <template>
   <div>
     <NavThree />
-    <PageHeader title="Contact" />
-    <Contact />
+    <PageHeader title="Our Services" />
+    <Services />
+        <CallToAction />
     <Footer />
   </div>
 </template>
@@ -10,13 +11,14 @@
   import PageHeader from "../components/PageHeader";
   import NavThree from "../components/NavThree";
   import Footer from "../components/Footer";
-  import Contact from "../components/Contact";
+  import Services from "../components/Services";
+  import CallToAction from "../components/CallToAction";
   export default {
     auth: false,
-    components: {Contact, Footer, NavThree, PageHeader},
+    components: {Footer, NavThree, PageHeader, Services, CallToAction},
     head(){
       return {
-        title: "Kipso | Contact"
+        title: "CEDU | Services"
       }
     }
   }
