@@ -4,7 +4,7 @@
       <div class="container text-center">
           <div class="block-title text-center">
               <h2 class="block-title__title">Who are we? <br>
-                  about us</h2><!-- /.block-title__title -->
+</h2><!-- /.block-title__title -->
           </div><!-- /.block-title -->
           <div class="about-one__img">
               <div class="row">
