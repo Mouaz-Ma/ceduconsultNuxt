@@ -4,7 +4,7 @@
     <BannerThree />
     <CourseCatThree />
     <CallToActionOne />
-    <TeamTab />
+    <!-- <TeamTab /> -->
     <CourseThree />
     <CallToActionSix />
     <!-- <Testimonial /> -->
