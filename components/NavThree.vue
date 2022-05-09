@@ -1,16 +1,16 @@
 <template>
   <header class="site-header site-header__home-three ">
 <topBar />
-      <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky navHeight">
+      <b-navbar class="navbar navbar-expand-lg navbar-light header-navigation stricky navHeight">
           <div class="container clearfix">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="logo-box clearfix">
-                  <a class="navbar-brand" href="/">
-                      <img src="/assets/images/logo-light.png" class="main-logo" width="90" alt="Awesome Image" />
-                  </a>
-                  <button class="menu-toggler" data-target=".main-navigation">
+                  <b-navbar-brand href="/">
+                      <img src="/assets/images/logo-light.png"  width="90" alt="Awesome Image" />
+                  </b-navbar-brand>
+                  <b-navbar-toggle class="menu-toggler" target=".main-navigation">
                       <span class="kipso-icon-menu"></span>
-                  </button>
+                  </b-navbar-toggle>
               </div><!-- /.logo-box -->
               <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="main-navigation">
@@ -73,7 +73,7 @@
               </div><!-- /.right-side-box -->
           </div>
           <!-- /.container -->
-      </nav>
+      </b-navbar>
   </header>
 </template>
 

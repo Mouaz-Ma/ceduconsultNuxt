@@ -81,6 +81,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/auth',
     '@nuxtjs/moment',
+    'bootstrap-vue/nuxt',
   ],
   moment: {
     timezone: true
