@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="margin-top: -20px">
     <NavThree />
     <BannerThree />
     <CourseCatThree />
@@ -47,7 +47,7 @@
     },
     head(){
       return{
-        title: "Kipso | Home 3"
+        title: "Cedu | Home Uni"
       }
     }
   }

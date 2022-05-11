@@ -192,7 +192,7 @@
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 15px;
+    right: 0px;
     /*margin-top: 8px;*/
     margin-right: 0px;
     display: block;
@@ -214,7 +214,7 @@
 
   .header-navigation .container .right-side-box {
     top: 20px;
-    right: 15px;
+    right: 0px;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -707,7 +707,7 @@
 }
 @media (max-width: 480px) {
   .site-header__header-two .header-navigation .container .right-side-box {
-    right: 15px;
+    right: 0px;
   }
 
   .header-navigation .container .menu-toggler {

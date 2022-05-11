@@ -86,6 +86,10 @@ export default {
   moment: {
     timezone: true
   },
+  bootstrapVue: {
+    // Install the `IconsPlugin` plugin (in addition to `BootstrapVue` plugin)
+    icons: true
+  },
   serverMiddleware: [redirectSSL.create({enabled: process.env.NODE_ENV === 'production'})],
   i18n: {
     locales: [

@@ -1,19 +1,19 @@
 <template>
   <header class="site-header site-header__home-three ">
 <topBar />
-      <b-navbar class="navbar navbar-expand-lg navbar-light header-navigation stricky navHeight">
-          <div class="container clearfix">
+      <b-navbar-nav toggleable="lg" variant="light" class="header-navigation stricky navHeight">
+          <div class="container clearfix justify-content-bottom">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="logo-box clearfix">
                   <b-navbar-brand href="/">
                       <img src="/assets/images/logo-light.png"  width="90" alt="Awesome Image" />
                   </b-navbar-brand>
-                  <b-navbar-toggle class="menu-toggler" target=".main-navigation">
+                  <b-navbar-toggle class="menu-toggler" target="main-navigation">
                       <span class="kipso-icon-menu"></span>
                   </b-navbar-toggle>
               </div><!-- /.logo-box -->
               <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="main-navigation">
+            <b-collapse class="main-navigation" is-nav>
                                           <ul class=" navigation-box">
                                               <li class="current">
                                                   <a href="/">Home</a>
@@ -63,7 +63,7 @@
                                                   <nuxt-link to="/contact">Contact</nuxt-link>
                                               </li>
                                           </ul>
-                                      </div><!-- /.navbar-collapse -->
+            </b-collapse><!-- /.navbar-collapse -->
               <div class="right-side-box">
                   <div class="header__social">
                         <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
@@ -73,7 +73,7 @@
               </div><!-- /.right-side-box -->
           </div>
           <!-- /.container -->
-      </b-navbar>
+      </b-navbar-nav>
   </header>
 </template>
 
@@ -115,7 +115,21 @@ export default {
 </script>
 
 <style scoped>
-.navHeight{
+.header-navigation{
+    font-family: "Poppins";
+    color: #81868a;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
     height: 100px;
+}
+
+a:hover{
+      text-decoration: none;
+}
+
+.stricky-fixed{
+  padding: 10px;
 }
 </style>
