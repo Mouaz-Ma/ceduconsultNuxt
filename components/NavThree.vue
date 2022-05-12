@@ -13,7 +13,7 @@
                   </b-navbar-toggle>
               </div><!-- /.logo-box -->
               <!-- Collect the nav links, forms, and other content for toggling -->
-            <b-collapse class="main-navigation" is-nav>
+            <b-collapse id="main-navigation" class="main-navigation" is-nav>
                                           <ul class=" navigation-box">
                                               <li class="current">
                                                   <a href="/">Home</a>

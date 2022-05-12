@@ -65,6 +65,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    "~/plugins/TiptapVuetify",
   ],
   /*
   ** Nuxt.js dev-modules
@@ -81,6 +82,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/auth',
     '@nuxtjs/moment',
+    "@nuxtjs/vuetify", 
     'bootstrap-vue/nuxt',
   ],
   moment: {
@@ -123,6 +125,9 @@ export default {
   },
   proxy: {
     "/api": process.env.API_URL 
+  },
+  build: {
+    transpile: ['vuetify/lib', "tiptap-vuetify"]
   },
   router: {
     middleware: ['auth']

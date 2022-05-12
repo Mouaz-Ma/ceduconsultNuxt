@@ -64,7 +64,7 @@
     background: #f16101;
   }
 
-  .navbar-expand-lg .navbar-collapse {
+  /* .navbar-expand-lg .navbar-collapse {
     padding-bottom: 0;
     overflow: auto !important;
     width: 100%;
@@ -82,11 +82,11 @@
     height: 0;
   }
 
-  .navbar-expand-lg .navbar-collapse.showen {
+  .navbar-expand-lg .navbar-collapse.show {
     display: block !important;
     height: auto;
     max-height: 70vh;
-  }
+  } */
 
   .navbar-collapse.show {
     overflow-y: auto;
@@ -272,7 +272,7 @@
   .header-navigation .main-navigation {
     float: none;
     width: 100%;
-    display: none;
+    /* display: none; */
     text-align: left;
     background: #18212E;
     max-height: 70vh;
@@ -861,6 +861,7 @@
   .video-three__title {
     font-size: 30px;
     line-height: 1.2em;
+    color: whitesmoke;
   }
 
   .video-three__btn-box {
