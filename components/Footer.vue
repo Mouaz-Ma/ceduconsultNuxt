@@ -9,7 +9,7 @@
                   <div class="site-footer__upper">
                       <div class="container">
                           <div class="row">
-                              <div class="col-xl-3 col-lg-6 col-sm-12">
+                              <div class="col-xl-3 col-lg-3 col-sm-12">
                                   <div class="footer-widget footer-widget__contact">
                                       <h2 class="footer-widget__title">Courses</h2>
                                       <ul class="list-unstyled footer-widget__course-list">
@@ -24,7 +24,7 @@
                                       </ul>
                                   </div>
                               </div>
-                              <div class="col-xl-3 col-lg-6 col-sm-12">
+                              <div class="col-xl-3 col-lg-3 col-sm-12">
                                   <div class="footer-widget footer-widget__link">
                                       <h2 class="footer-widget__title">Explore</h2><!-- /.footer-widget__title -->
                                       <div class="footer-widget__link-wrap">
@@ -43,7 +43,7 @@
                                       </div><!-- /.footer-widget__link-wrap -->
                                   </div><!-- /.footer-widget -->
                               </div><!-- /.col-lg-3 -->
-                              <div class="col-xl-3 col-lg-6 col-sm-12">
+                              <div class="col-xl-3 col-lg-3 col-sm-12">
                                   <div class="footer-widget footer-widget__gallery">
                                       <h2 class="footer-widget__title">Certified by</h2><!-- /.footer-widget__title -->
                                       <ul class="list-unstyled footer-widget__gallery-list">
@@ -56,7 +56,7 @@
                                       </ul><!-- /.footer-widget__gallery -->
                                   </div><!-- /.footer-widget -->
                               </div><!-- /.col-lg-3 -->
-                              <div class="col-xl-3 col-lg-6 col-sm-12">
+                              <div class="col-xl-3 col-lg-3 col-sm-12">
                                   <div class="footer-widget footer-widget__about">
                                       <h2 class="footer-widget__title">About</h2><!-- /.footer-widget__title -->
                                       <p class="footer-widget__text">Lorem ipsum dolor sit ametcon, sectetur adipiscing elit.

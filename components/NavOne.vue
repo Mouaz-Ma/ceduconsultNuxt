@@ -135,7 +135,4 @@ export default {
 </script>
 
 <style scoped>
-.navHeight{
-    height: 100px;
-}
 </style>

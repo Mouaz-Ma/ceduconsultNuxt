@@ -101,7 +101,7 @@ export default {
         if (this.logo && !this.images) {
             console.log(this.logo.type)
           if (this.logo.type === "image/jpeg") {
-            let response = await this.$axios.post('/api/university/new', data,{headers: {'Content-Type': 'multipart/form-data'}});
+            let response = await this.$axios.post('/api/university/new', data);
             console.log(response.data)
             if (response.data.success === true) {
               this.success = true;
@@ -137,18 +137,19 @@ export default {
           }
 
         } else if (this.logo && this.images) {
-          for (let i = 0; i <= this.images.length; i++) {
-            if (this.images[i].type != "image/jpeg") {
-              this.success = false;
-              this.alertMassge = this.images[i].name + ' file extension is not supported';
-              return this.alertMassge;
-            }
+            this.images.forEach(element => {
+                if (element.type != "image/jpeg") {
+                this.success = false;
+                this.alertMassge = element.name + ' file extension is not supported';
+                return this.alertMassge;
+                }
+            });
             if (this.logo.type != "image/jpeg") {
               this.success = false;
               this.alertMassge = 'logo file extension is not supported';
               return this.alertMassge;
             }
-            let response = await this.$axios.post('/api/university/new', data);
+                      let response = await this.$axios.post('/api/university/new', data);
             if (response.data.success === true) {
               this.success = true;
               this.$router.push({
@@ -158,7 +159,6 @@ export default {
               this.success = false;
               this.alertMassge = 'somthing went wrong';
             }
-          }
         } else if (!this.logo && !this.images) {
             this.success = false;
             this.alertMassge = 'Please Upload Logo';

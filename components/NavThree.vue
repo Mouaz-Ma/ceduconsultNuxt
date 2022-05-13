@@ -28,7 +28,7 @@
                                                   </ul> -->
                                               </li>
                                               <li>
-                                                <a href="/Universities">Universities</a>
+                                                <a href="/university">Universities</a>
                                                   <!-- <ul class="sub-menu">
                                                       <li><nuxt-link to="/courses">Courses</nuxt-link></li>
                                                       <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>
@@ -122,7 +122,6 @@ export default {
     line-height: 34px;
     letter-spacing: -0.02em;
     text-decoration: none;
-    height: 100px;
 }
 
 a:hover{
