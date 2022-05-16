@@ -9,7 +9,7 @@
           <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="course-category-three__single">
-                      <img src="/assets/images/course-category-1-4.png" alt="">
+                      <img src="/assets/images/course-category-1-4.png" class="coursesImage" alt="">
                       <div class="course-category-three__content">
                           <h3 class="course-category-three__title"><a href="/courses">Preparatory courses </a></h3>
                           <!-- /.course-category-three__title -->
@@ -20,7 +20,7 @@
               </div><!-- /.col-lg-3 col-md-6 col-sm-12 -->
               <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="course-category-three__single">
-                      <img src="/assets/images/course-category-1-2.png" alt="">
+                      <img src="/assets/images/course-category-1-2.png" class="coursesImage" alt="">
                       <div class="course-category-three__content">
                           <h3 class="course-category-three__title"><a href="/courses">Bachelor programme </a></h3>
                           <!-- /.course-category-three__title -->
@@ -31,7 +31,7 @@
               </div><!-- /.col-lg-3 col-md-6 col-sm-12 -->
               <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="course-category-three__single">
-                      <img src="/assets/images/course-category-1-3.png" alt="">
+                      <img src="/assets/images/course-category-1-3.png" class="coursesImage" alt="">
                       <div class="course-category-three__content">
                           <h3 class="course-category-three__title"><a href="/courses">Master programme</a></h3>
                           <!-- /.course-category-three__title -->
@@ -55,7 +55,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-3 col-md-6 col-sm-12">
                   <div class="course-category-three__single">
-                      <img src="/assets/images/course-category-1-1.png" alt="">
+                      <img src="/assets/images/course-category-1-1.png" class="coursesImage" alt="">
                       <div class="course-category-three__content">
                           <h3 class="course-category-three__title"><a href="/courses">MBA</a></h3>
                           <!-- /.course-category-three__title -->

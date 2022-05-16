@@ -434,7 +434,6 @@ tr:nth-child(even) {
 
 .imageService{
     height: 350px;
-    width: 375px;
     object-fit: cover;
 }
 </style>

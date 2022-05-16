@@ -105,9 +105,7 @@ export default {
             console.log(response.data)
             if (response.data.success === true) {
               this.success = true;
-              this.$router.push({
-                name: '/unversity'
-              })
+              this.$router.push('/university')
             } else {
               this.success = false;
               this.alertMassge = 'Somthing Went Wrong!';
@@ -128,10 +126,8 @@ export default {
           let response = await this.$axios.post('/api/university/new', data);
           if (response.data.success === true) {
             this.success = true;
-            this.$router.push({
-              name: '/unversity'
-            })
-          } else {
+            this.$router.push('/university')   
+            } else {
             this.success = false;
             this.alertMassge = 'somthing went Wrong';
           }
@@ -152,9 +148,7 @@ export default {
                       let response = await this.$axios.post('/api/university/new', data);
             if (response.data.success === true) {
               this.success = true;
-              this.$router.push({
-                name: '/unversity'
-              })
+              this.$router.push('/university')
             } else {
               this.success = false;
               this.alertMassge = 'somthing went wrong';
