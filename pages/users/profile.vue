@@ -143,10 +143,10 @@
                     <a class="btn btn-secondary w-50" href="/university/upload">University</a>
                     <br>
                     <div class="mt-3"></div>
-                    <a class="btn btn-secondary w-50" href="/course/uploadCourse">Course</a>
+                    <a class="btn btn-secondary w-50" href="/course/upload">Course</a>
                   </div>
                     <div class="mt-3"></div>
-                    <a class="btn btn-secondary w-50" href="/class/uploadClass">Class</a>
+                    <a class="btn btn-secondary w-50" href="/class/upload">Class</a>
                   </div>
                 </div>
               </div>

@@ -8,8 +8,6 @@
   import PageHeader from "@/components/PageHeader";
 import EditUniversityForm from '../../../components/editUniversityForm.vue';
   export default {
-    auth: false,
-      auth: false,
     components: {PageHeader, EditUniversityForm},
     head(){
       return {

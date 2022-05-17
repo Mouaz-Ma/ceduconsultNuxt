@@ -7,13 +7,13 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="course-details__content">
-                    <p class="course-details__author">
-                        <img :src=uniData.logo.url alt="">
-                    </p><!-- /.course-details__author -->
+                    <!-- <p class="course-details__author">
+                        <img :src=courseData.image.url alt="">
+                    </p>/.course-details__author -->
 
                     <div class="course-details__top">
                         <div class="course-details__top-left">
-                            <h2 class="course-details__title">{{uniData.title}}</h2>
+                            <h2 class="course-details__title">{{courseData.title}}</h2>
                             <!-- /.course-details__title -->
                             <div class="course-one__stars">
                                 <span class="course-one__stars-wrap">
@@ -29,32 +29,15 @@
                         </div><!-- /.course-details__top-left -->
                         <div v-if="$auth.$state.user">
                         <div class="course-details__top-right" v-if="$auth.$state.user.userType === 'Administrator'">
-                            <a href="#" @click="deleteUni()" class="course-two__category">Delete</a><!-- /.course-one__category -->
+                            <a href="#" @click="deleteCourse()" class="course-two__category">Delete</a><!-- /.course-one__category -->
                             <a :href="'/university/update/'+$route.params.id" class="course-three__category">Update</a><!-- /.course-one__category -->
                         </div><!-- /.course-details__top-right -->
                         </div>
                     </div><!-- /.course-details__top -->
                     <div class="course-one__image">
                           <div>
-    <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      controls
-      indicators
-      background="#ababab"
-      img-width="1024"
-      img-height="480"
-      style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-    >
-
-      <!-- Slides with image only -->
-    <b-carousel-slide class="sliderImage" v-for="image in uniData.images" :key="image.filename" :img-src=image.url></b-carousel-slide>
-    </b-carousel>
-
-  </div>
+                              <img :src=courseData.image.url alt="">
+                          </div>
                     </div><!-- /.course-one__image -->
 
                     <ul class="course-details__tab-navs list-unstyled nav nav-tabs" role="tablist">
@@ -66,7 +49,7 @@
                         </li> -->
                     </ul><!-- /.course-details__tab-navs list-unstyled -->
                     <div class="tab-content course-details__tab-content ">
-                        <div class="tab-pane show active  animated fadeInUp" role="tabpanel" id="overview" v-html="uniData.description">
+                        <div class="tab-pane show active  animated fadeInUp" role="tabpanel" id="overview" v-html="courseData.description">
                         </div><!-- /.course-details__tab-content -->
 
                     </div><!-- /.tab-content -->
@@ -184,19 +167,18 @@
   import NavThree from "@/components/NavThree";
   import Footer from "@/components/Footer";
     export default {
-    auth: false,
         components: {Footer, NavThree, PageHeader},
         name: "UniDetails",
             async asyncData({
       $axios, route
     }) {
       try {
-        const uniCall = $axios.get('/api/university/'+route.params.id)
-        const uniPromise = await Promise.resolve(uniCall)
-        const uniData = uniPromise.data.university
-        console.log(uniData)
+        const courseCall = $axios.get('/api/course/'+route.params.id)
+        const coursePromise = await Promise.resolve(courseCall)
+        const courseData = coursePromise.data.course
+        console.log(courseData)
         return {
-          uniData
+          courseData
         }
       } catch (err) {
         console.log(err)
@@ -204,23 +186,16 @@
     },
         data() {
       return {
-        uniData: '',
+        courseData: '',
         slide: 0,
         sliding: null,
       }
     },
-    methods:{
-    onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      },
-     deleteUni: async function () {
+     deleteCourse: async function () {
           try {
-            let deleteResponse = await this.$axios.delete('/api/university/' + this.$route.params.id);
+            let deleteResponse = await this.$axios.delete('/api/course/' + this.$route.params.id);
             if (deleteResponse.data.success) {
-                this.$router.push('/university')
+                this.$router.push('/course')
             } else {
               console.log("you are not supposed to be here buddy!!");
             }
@@ -228,7 +203,6 @@
             console.log(err)
           }
         }
-    }
     }
 </script>
 

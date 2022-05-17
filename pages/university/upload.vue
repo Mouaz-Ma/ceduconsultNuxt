@@ -8,8 +8,6 @@
   import PageHeader from "@/components/PageHeader";
 import UploadUniversityForm from '@/components/uploadUniversityForm.vue';
   export default {
-    auth: false,
-      auth: false,
     components: {PageHeader, UploadUniversityForm},
     head(){
       return {
