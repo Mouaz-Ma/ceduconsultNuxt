@@ -36,7 +36,7 @@
                     </div><!-- /.course-details__top -->
                     <div class="course-one__image">
                           <div>
-                              <img :src=courseData.image.url alt="">
+                              <img class="sliderImage" :src=courseData.image.url alt="">
                           </div>
                     </div><!-- /.course-one__image -->
 
@@ -209,6 +209,6 @@
 <style scoped>
 .sliderImage{
     object-fit: cover;
-        height: 500px;
+        height: 420px;
 }
 </style>
