@@ -51,7 +51,6 @@ export default {
     async passReset() {
       try {
             if(this.password === this.confirmPassword && this.password != null){
-                console.log(this.$route.params)
             let response = await this.$axios.post('/api/users/passReset/'+this.$route.params.rest , {password: this.password});
                 if (response.data.success == true) {
                     this.$auth.loginWith('local', {

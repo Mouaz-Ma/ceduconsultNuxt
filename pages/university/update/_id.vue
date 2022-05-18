@@ -21,7 +21,6 @@ import EditUniversityForm from '../../../components/editUniversityForm.vue';
         const uniCall = $axios.get('/api/university/'+route.params.id)
         const uniPromise = await Promise.resolve(uniCall)
         const uniData = uniPromise.data.university
-        console.log(uniData)
         return {
           uniData
         }

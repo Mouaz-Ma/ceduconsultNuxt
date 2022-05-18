@@ -59,7 +59,6 @@
         const allCourses = $axios.get('/api/course')
         const allCoursePromise = await Promise.resolve(allCourses)
         const allCourseData = allCoursePromise.data.courses
-        console.log(allCourseData)
         return {
           allCourseData
         }

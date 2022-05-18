@@ -68,7 +68,6 @@ export default {
           strategy: "local",
         };
         let response = await this.$axios.post('/api/users/register', data);
-        console.log(response.data)
         if (response.data.success == true) {
           this.success =true
           this.alertMassge = response.data.message

@@ -86,8 +86,6 @@ export default {
   methods: {
     uploadUniversity: async function() {
       try {
-          console.log(Array.isArray(this.images))
-          console.log(this.images)
         let tags = this.tags.split(' ');
         let data = new FormData();
         data.append("title", this.title);
@@ -99,10 +97,8 @@ export default {
             data.append("images", image);
         });
         if (this.logo && !this.images) {
-            console.log(this.logo.type)
           if (this.logo.type === "image/jpeg") {
             let response = await this.$axios.post('/api/university/new', data);
-            console.log(response.data)
             if (response.data.success === true) {
               this.success = true;
               this.$router.push('/university')

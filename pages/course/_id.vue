@@ -176,7 +176,6 @@
         const courseCall = $axios.get('/api/course/'+route.params.id)
         const coursePromise = await Promise.resolve(courseCall)
         const courseData = coursePromise.data.course
-        console.log(courseData)
         return {
           courseData
         }

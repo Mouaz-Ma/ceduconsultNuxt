@@ -29,7 +29,6 @@
         const allUniversities = await $axios.get('/api/university')
         const allUniPromise = await Promise.resolve(allUniversities)
         const allUniData = allUniPromise.data.universities
-        console.log(allUniData)
         return {
           allUniData
         }
