@@ -2332,7 +2332,6 @@ a:visited {
 }
 .team-one__image img {
   object-fit: contain;
-  border-radius: 50%;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
   transition: transform .4s ease;
