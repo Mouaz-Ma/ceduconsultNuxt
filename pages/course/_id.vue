@@ -1,7 +1,7 @@
 <template>
 <div>
     <NavThree />
-    <PageHeader title="Uni Details" />
+    <PageHeader title="Course Details" />
   <section class="course-details">
     <div class="container">
         <div class="row">
@@ -30,7 +30,7 @@
                         <div v-if="$auth.$state.user">
                         <div class="course-details__top-right" v-if="$auth.$state.user.userType === 'Administrator'">
                             <a href="#" @click="deleteCourse()" class="course-two__category">Delete</a><!-- /.course-one__category -->
-                            <a :href="'/university/update/'+$route.params.id" class="course-three__category">Update</a><!-- /.course-one__category -->
+                            <a :href="'/course/update/'+$route.params.id" class="course-three__category">Update</a><!-- /.course-one__category -->
                         </div><!-- /.course-details__top-right -->
                         </div>
                     </div><!-- /.course-details__top -->
@@ -57,9 +57,9 @@
             </div><!-- /.col-lg-8 -->
             <div class="col-lg-4">
                 <div class="course-details__price">
-                    <p class="course-details__price-text">Course price </p><!-- /.course-details__price-text -->
-                    <p class="course-details__price-amount">$18.00</p><!-- /.course-details__price-amount -->
-                    <a href="#" class="thm-btn course-details__price-btn">Buy This Course</a><!-- /.thm-btn -->
+                    <p class="course-details__price-text">Starting Date </p><!-- /.course-details__price-text -->
+                    <p class="course-details__price-amount">{{ $moment(courseData.starting).format('MM/DD/YYYY')}}</p><!-- /.course-details__price-amount -->
+                    <a href="/contact" class="thm-btn course-details__price-btn">Book a Consultation</a><!-- /.thm-btn -->
                 </div><!-- /.course-details__price -->
 
                 <div class="course-details__meta">
@@ -190,18 +190,20 @@
         sliding: null,
       }
     },
-     deleteCourse: async function () {
-          try {
-            let deleteResponse = await this.$axios.delete('/api/course/' + this.$route.params.id);
-            if (deleteResponse.data.success) {
-                this.$router.push('/course')
-            } else {
-              console.log("you are not supposed to be here buddy!!");
-            }
-          } catch (err) {
-            console.log(err)
-          }
-        }
+    methods: {
+        deleteCourse: async function () {
+             try {
+               let deleteResponse = await this.$axios.delete('/api/course/' + this.$route.params.id);
+               if (deleteResponse.data.success) {
+                   this.$router.push('/course')
+               } else {
+                 console.log("you are not supposed to be here buddy!!");
+               }
+             } catch (err) {
+               console.log(err)
+             }
+           }
+    }
     }
 </script>
 
