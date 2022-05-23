@@ -52,11 +52,8 @@
                                               <li>
                                                   <nuxt-link to="/services">For Applicants</nuxt-link>
                                               </li>
-                                                                                            <li>
-                                                  <nuxt-link to="/news">News</nuxt-link>
-                                              </li>
                                               <li>
-                                                  <nuxt-link to="/blogs">blogs</nuxt-link>
+                                                  <nuxt-link to="/blogs">blogs and news</nuxt-link>
                                               </li>
 
                                               <li>
