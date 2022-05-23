@@ -137,7 +137,7 @@
                 <div class="card-body">
                   <div class="app-link">
                     <h5>What would you like to upload</h5>
-                    <a class="btn btn-secondary w-50" href="/blogs/uploadBlog">Blog</a>
+                    <a class="btn btn-secondary w-50" href="/blogs/upload">Blog</a>
                     <br>
                     <div class="mt-3"></div>
                     <a class="btn btn-secondary w-50" href="/university/upload">University</a>
