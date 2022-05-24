@@ -3,7 +3,6 @@
 <section class="contact-one">
           <div class="container">
               <h3 class="contact-one__title text-center"><img src="/assets/images/CEC2_120211.png"  class="h-25 w-25"/><br>Update Blog Form </h3><!-- /.contact-one__title -->
-
                                <!-- alerts -->
             <div v-if="alertMassge">
             <alerts :message=alertMassge :success=success />
@@ -30,8 +29,8 @@
                                 :state="Boolean(image)"
                                 accept="image/jpeg"
                                 ></b-form-file>
-                                <img :src=imageUrl class="imageDisplay">
-                                <div class="mt-1">Selected logo: {{ image ? image.name : '' }}</div>
+                                <div v-if="image" class="mt-1">Selected logo: {{ image ? image.name : '' }}</div>
+                                <img v-else :src=imageUrl class="imageDisplay">
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border">
                             <tiptap-vuetify  v-model="description" :extensions="extensions" @input="$emit('input', arguments[0])" />
@@ -138,12 +137,12 @@ export default {
         data.append("title", this.title);
         data.append("tags", tags);
         data.append("description", this.description);
-        data.append("userID", this.$auth.$state.user._id);
+        data.append("deletedImage", this.deletetedImage);
         data.append("image", this.image);
         data.append("section", this.sectionSelected);
         if (this.image) {
           if (this.image.type === "image/jpeg") {
-            let response = await this.$axios.post('/api/blogs/new', data);
+            let response = await this.$axios.put('/api/blogs/'+this.$route.params.id, data);
             if (response.data.success === true) {
               this.success = true;
               this.$router.push('/blogs')
@@ -154,10 +153,16 @@ export default {
             } else {
               this.success = false;
               this.alertMassge = 'banner file extension is not supported';
+              if (response.data.success === true) {
+              this.success = true;
+              this.$router.push('/blogs')
+            } else {
+              this.success = false;
+              this.alertMassge = 'Somthing Went Wrong!';
+            }
             }
         } else if (!this.image) {
-            this.success = false;
-            this.alertMassge = 'Please Upload Banner';
+                      let response = await this.$axios.put('/api/blogs/'+this.$route.params.id, data);
         }
       } catch (err) {
         this.success = false;
