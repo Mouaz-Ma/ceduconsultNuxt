@@ -146,7 +146,7 @@
                     <a class="btn btn-secondary w-50" href="/course/upload">Course</a>
                   </div>
                     <div class="mt-3"></div>
-                    <a class="btn btn-secondary w-50" href="/class/upload">Class</a>
+                    <a class="btn btn-secondary w-50" href="/classRoom/upload">Class</a>
                   </div>
                 </div>
               </div>

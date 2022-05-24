@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader title="Upload Course" />
-    <upload-course-form  :uniData= allUniData />
+    <upload-course-form  :uniData="allUniData" />
   </div>
 </template>
 <script>
