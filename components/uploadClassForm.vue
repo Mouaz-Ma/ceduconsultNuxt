@@ -17,11 +17,9 @@
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <input type="text" v-model="tags" placeholder="tags">
                       </div><!-- /.col-lg-6 -->
-                      <!-- section e-learning or uni -->
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <b-form-select v-model="sectionSelected" :options="sectionOptions" required></b-form-select>
-                            <div class="mt-3">Selected: <strong>{{ sectionSelected }}</strong></div>
-                        </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <input type="text" v-model="zoomLink" placeholder="zoomLink">
+                      </div><!-- /.col-lg-6 -->
                       <!-- image upload -->
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <b-form-file
@@ -85,7 +83,7 @@ export default {
         data.append("description", this.description);
         data.append("userID", this.$auth.$state.user._id);
         data.append("image", this.image);
-        data.append("section", this.sectionSelected);
+        data.append("zoomLink", this.zoomLink);
         if (this.image) {
           if (this.image.type === "image/jpeg") {
             let response = await this.$axios.post('/api/classRoom/new', data);
