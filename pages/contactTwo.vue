@@ -1,22 +1,22 @@
 <template>
   <div>
-    <NavOne />
-    <PageHeader title="Teachers" />
-    <Teachers />
+    <NavTwo />
+    <PageHeader title="Contact" />
+    <Contact />
     <Footer />
   </div>
 </template>
 <script>
   import PageHeader from "../components/PageHeader";
-  import NavOne from "../components/NavOne";
+  import NavTwo from "../components/NavTwo";
   import Footer from "../components/Footer";
-  import Teachers from "../components/Teachers";
+  import Contact from "../components/Contact";
   export default {
     auth: false,
-    components: {Teachers, Footer, NavOne, PageHeader},
+    components: {Contact, Footer, NavTwo, PageHeader},
     head(){
       return {
-        title: "CEDU | Teachers"
+        title: "CEDU | Contact"
       }
     }
   }

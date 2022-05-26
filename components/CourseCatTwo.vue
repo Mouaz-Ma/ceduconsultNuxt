@@ -9,133 +9,34 @@
                                   <div class="course-category-two__icon">
                                       <i class="kipso-icon-desktop"></i><!-- /.kipso-icon-camera -->
                                   </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">IT & Software</a></h3>
+                                  <h3 class="course-category-two__title"><a href="#">Flexibale schedule</a></h3>
                                   <!-- /.course-category-two__title -->
                               </div><!-- /.course-category-two__single -->
                           </div><!-- /.item -->
                           <div class="item">
                               <div class="course-category-two__single color-2">
                                   <div class="course-category-two__icon">
-                                      <i class="kipso-icon-web-programming"></i><!-- /.kipso-icon-camera -->
+                                      <i class="kipso-icon-training"></i><!-- /.kipso-icon-camera -->
                                   </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Development</a></h3>
+                                  <h3 class="course-category-two__title"><a href="#">Customizable Lessons</a></h3>
                                   <!-- /.course-category-two__title -->
                               </div><!-- /.course-category-two__single -->
                           </div><!-- /.item -->
                           <div class="item">
                               <div class="course-category-two__single color-3">
                                   <div class="course-category-two__icon">
-                                      <i class="kipso-icon-music-player"></i><!-- /.kipso-icon-camera -->
+                                      <i class="kipso-icon-strategy"></i><!-- /.kipso-icon-camera -->
                                   </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Music</a></h3>
+                                  <h3 class="course-category-two__title"><a href="#">Quicker Progression</a></h3>
                                   <!-- /.course-category-two__title -->
                               </div><!-- /.course-category-two__single -->
                           </div><!-- /.item -->
                           <div class="item">
                               <div class="course-category-two__single color-4">
                                   <div class="course-category-two__icon">
-                                      <i class="kipso-icon-camera"></i><!-- /.kipso-icon-camera -->
+                                      <i class="kipso-icon-knowledge"></i><!-- /.kipso-icon-camera -->
                                   </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Photography</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-5">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-targeting"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Marketing</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-6">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-health"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Health & Fitness</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-1">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-desktop"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">IT & Software</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-2">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-web-programming"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Development</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-3">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-music-player"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Music</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-4">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-camera"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Photography</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-1">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-desktop"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">IT & Software</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-2">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-web-programming"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Development</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-3">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-music-player"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Music</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-4">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-camera"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Photography</a></h3>
-                                  <!-- /.course-category-two__title -->
-                              </div><!-- /.course-category-two__single -->
-                          </div><!-- /.item -->
-                          <div class="item">
-                              <div class="course-category-two__single color-5">
-                                  <div class="course-category-two__icon">
-                                      <i class="kipso-icon-targeting"></i><!-- /.kipso-icon-camera -->
-                                  </div><!-- /.course-category-two__icon -->
-                                  <h3 class="course-category-two__title"><a href="#">Marketing</a></h3>
+                                  <h3 class="course-category-two__title"><a href="#">All Levels</a></h3>
                                   <!-- /.course-category-two__title -->
                               </div><!-- /.course-category-two__single -->
                           </div><!-- /.item -->

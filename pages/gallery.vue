@@ -16,7 +16,7 @@
     components: {Footer, NavOne, PageHeader, Gallery},
     head(){
       return {
-        title: "Kipso | Gallery"
+        title: "CEDU | Gallery"
       }
     }
   }

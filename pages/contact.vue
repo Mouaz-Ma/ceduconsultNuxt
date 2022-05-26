@@ -16,7 +16,7 @@
     components: {Contact, Footer, NavThree, PageHeader},
     head(){
       return {
-        title: "Kipso | Contact"
+        title: "CEDU | Contact"
       }
     }
   }

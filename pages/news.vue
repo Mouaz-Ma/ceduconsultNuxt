@@ -16,7 +16,7 @@
     components: {Footer, NavThree, PageHeader, News},
     head(){
       return {
-        title: "Kipso | News"
+        title: "CEDU | News"
       }
     }
   }

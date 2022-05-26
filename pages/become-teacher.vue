@@ -19,7 +19,7 @@
     components: {TeamOne, BecomeTeacher, Footer, NavOne, PageHeader},
     head(){
       return {
-        title: "Kipso | Become Teacher"
+        title: "CEDU | Become Teacher"
       }
     }
   }

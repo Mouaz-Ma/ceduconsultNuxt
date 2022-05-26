@@ -11,7 +11,7 @@
   </section>
     <div class="container">
         <div class="row">
-            <div v-for="blog in allBlogsData" :key="blog.id" class="col-lg-4">
+            <div v-for="blog in onlyUniBlogs" :key="blog.id" class="col-lg-4">
                 <div class="item">
                     <div class="course-one__single color-1">
                         <div class="course-one__image">
@@ -57,9 +57,14 @@
       try {
         const allBlogs = $axios.get('/api/blogs')
         const allBlogsPromise = await Promise.resolve(allBlogs)
-        const allBlogsData = allBlogsPromise.data.blogs
+        const allBlogsData = allBlogsPromise.data.blogs;
+        const onlyUniBlogs = []
+        allBlogsData.forEach(blog => {
+          if(blog.section === "uni")
+          onlyUniBlogs.push(blog)
+        });
         return {
-          allBlogsData
+          onlyUniBlogs
         }
       } catch (err) {
         console.log(err)
@@ -68,6 +73,7 @@
     data() {
       return {
         allBlogsData: [],
+        onlyUniBlogs: []
       }
     },
   }

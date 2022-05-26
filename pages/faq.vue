@@ -16,7 +16,7 @@
     components: {Faq, Footer, NavOne, PageHeader},
     head(){
       return {
-        title: "Kipso | FAQ"
+        title: "CEDU | FAQ"
       }
     }
   }

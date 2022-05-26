@@ -145,7 +145,11 @@ export default {
             let response = await this.$axios.put('/api/blogs/'+this.$route.params.id, data);
             if (response.data.success === true) {
               this.success = true;
-              this.$router.push('/blogs')
+              if(this.sectionSelected === "uni"){
+                this.$router.push('/blogs')
+              } else {
+                this.$router.push('/blogs/indexTwo')
+              }
             } else {
               this.success = false;
               this.alertMassge = 'Somthing Went Wrong!';
@@ -153,16 +157,21 @@ export default {
             } else {
               this.success = false;
               this.alertMassge = 'banner file extension is not supported';
+            }
+        } else if (!this.image) {
+              let response = await this.$axios.put('/api/blogs/'+this.$route.params.id, data);
               if (response.data.success === true) {
               this.success = true;
-              this.$router.push('/blogs')
+              if(this.sectionSelected === "uni"){
+                this.$router.push('/blogs')
+              } else {
+                this.$router.push('/blogs/indexTwo')
+              }
             } else {
               this.success = false;
               this.alertMassge = 'Somthing Went Wrong!';
             }
-            }
-        } else if (!this.image) {
-                      let response = await this.$axios.put('/api/blogs/'+this.$route.params.id, data);
+            
         }
       } catch (err) {
         this.success = false;

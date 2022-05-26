@@ -39,7 +39,7 @@
     },
     head(){
       return{
-        title: "Kipso | Home 2"
+        title: "CEDU | Home 2"
       }
     }
   }

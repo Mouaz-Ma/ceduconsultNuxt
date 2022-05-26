@@ -18,7 +18,7 @@
     components: {Footer, CallToAction, PricingPage, NavOne, PageHeader},
     head(){
       return {
-        title: "Kipso | Pricing"
+        title: "CEDU | Pricing"
       }
     }
   }

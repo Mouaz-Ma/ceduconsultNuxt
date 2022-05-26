@@ -16,7 +16,7 @@
     components: {CourseDetails, Footer, NavOne, PageHeader},
     head(){
       return {
-        title: "Kipso | Course Details"
+        title: "CEDU | Course Details"
       }
     }
   }
