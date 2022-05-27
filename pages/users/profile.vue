@@ -195,6 +195,31 @@
                 </div>
               </div>
             </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6" v-if="$auth.$state.user.userType === 'Administrator'">
+              <div class="card w-100 h-100">
+                <div class="card-header">
+                  <h4 class="card-title">Admin Actions</h4>
+                </div>
+                <div class="card-body">
+                  <h3>Search Students</h3>
+                   <b-form-input size="sm" class="mb-2 mr-sm-2" placeholder="Search" v-model="searchQuery" @keyup="searchUser()"></b-form-input>
+
+<div class="dropdown" id="notRelative">
+                      <div id="search-results-number" class="dropdown-menu">
+                        <a href="#" v-for="user in foundUsers" :key="user.id"></a>
+                      </div>
+                      </div>
+  
+                  <b-button size="sm" class="my-2 my-sm-0" type="submit">
+                    <b-icon  icon="search"></b-icon>Search
+                  </b-button>
+                    <br>
+                    <div class="mt-3"></div>
+                    <a class="btn btn-secondary w-50" href="/users/register">Create a new User</a>
+                    <br>
+                </div>
+              </div>
+            </div>
             </div>
 
           </div>
@@ -209,9 +234,16 @@ export default {
             name:"",
             email:"",
             verifyAlertMessage: '',
+            searchQuery: '',
+            foundUsers: [],
         }
     },
     methods: {
+      async searchUser(){
+        const response = await this.$axios.get('/api/users/search/?q='+this.searchQuery)
+        this.foundUsers = response.data.usersFound;
+        console.log(this.foundUsers)
+      },
         async logout() {
           await this.$auth.logout()
         },

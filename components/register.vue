@@ -71,17 +71,7 @@ export default {
         if (response.data.success == true) {
           this.success =true
           this.alertMassge = response.data.message
-          this.$auth.loginWith('local', {
-            data: {
-              email: this.email,
-              password: this.password,
-            }
-          }).then(() => {
             setTimeout(() => { this.$router.go(-1) }, 4000);
-
-          }).catch((err) => {
-            console.log(err)
-          });
         } else if (response.data.success == false){
             this.success = false
             this.alertMassge = response.data.message
