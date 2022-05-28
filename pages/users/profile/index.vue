@@ -202,17 +202,10 @@
                 </div>
                 <div class="card-body">
                   <h3>Search Students</h3>
-                   <b-form-input size="sm" class="mb-2 mr-sm-2" placeholder="Search" v-model="searchQuery" @keyup="searchUser()"></b-form-input>
-
-<div class="dropdown" id="notRelative">
-                      <div id="search-results-number" class="dropdown-menu">
-                        <a href="#" v-for="user in foundUsers" :key="user.id"></a>
-                      </div>
-                      </div>
-  
-                  <b-button size="sm" class="my-2 my-sm-0" type="submit">
-                    <b-icon  icon="search"></b-icon>Search
-                  </b-button>
+                   <b-form-input list="my-list-id" size="sm" class="mb-2 mr-sm-2" placeholder="Search" v-model="searchQuery" @keyup="searchUser()"><b-icon  icon="search"></b-icon>Search</b-form-input>
+                      <ul v-if="this.searchQuery != ''">
+                        <li class="border-bottom-0" v-for="user in foundUsers.slice(0, 5)" :key="user.id"><a v-if="user.userType != 'Administrator'" :href="'/users/profile/'+user._id">{{user.username}}</a></li>
+                      </ul>
                     <br>
                     <div class="mt-3"></div>
                     <a class="btn btn-secondary w-50" href="/users/register">Create a new User</a>
@@ -240,9 +233,11 @@ export default {
     },
     methods: {
       async searchUser(){
-        const response = await this.$axios.get('/api/users/search/?q='+this.searchQuery)
-        this.foundUsers = response.data.usersFound;
-        console.log(this.foundUsers)
+        if (this.searchQuery != ''){
+          const response = await this.$axios.get('/api/users/search/?q='+this.searchQuery)
+          this.foundUsers = response.data.usersFound;
+          console.log(this.foundUsers)
+        }
       },
         async logout() {
           await this.$auth.logout()
@@ -269,5 +264,12 @@ export default {
 <style scoped>
 .content-body{
     margin-top: 200px;
+}
+ul {
+    list-style-type: none;
+}
+
+a{
+  text-decoration: none;
 }
 </style>
