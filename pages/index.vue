@@ -1,8 +1,13 @@
 <template>
   <div>
-    <CallToActionTwo :link1="'/index-3'" :link2="'/index-2'" :title1="$t('home.title-1')" :title2="$t('home.title-2')"
-    :intro1="$t('home.intro-1')"
-    :intro2="$t('home.intro-2')" />
+    <CallToActionTwo
+      link1="/find-university"
+      link2="/e-learning"
+      :title1="$t('home.title-1')"
+      :title2="$t('home.title-2')"
+      :intro1="$t('home.intro-1')"
+      :intro2="$t('home.intro-2')"
+    />
   </div>
 </template>
 
@@ -13,7 +18,20 @@
     name: 'index',
     auth: false,
     components: {
-    CallToActionTwo
+      CallToActionTwo
+    },
+    head() {
+      return {
+        title: 'Cedu Consult',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            // TODO: fill in content
+            content: ''
+          }
+        ]
+      }
     }
   }
 </script>
