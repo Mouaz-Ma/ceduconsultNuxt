@@ -9,16 +9,16 @@
           <div class="row no-gutters">
             <div class="col-xl-12">
               <p class="banner-two__tag-line">
-                High quality courses
+                {{ $t('elearning.banner.quality') }}
               </p><!-- /.banner-two__tag-line -->
               <h3 class="banner-two__title banner-two__light-color">
-                Read & learn <br>
-                in an easy way
+                {{ $t('elearning.banner.read-learn') }} <br>
+                {{ $t('elearning.banner.easy') }}
               </h3><!-- /.banner-two__title -->
               <a
                 href="#"
                 class="thm-btn banner-two__btn"
-              >Learn More</a>
+              >{{ $t('elearning.banner.learn-more') }}</a>
             </div><!-- /.col-xl-12 -->
           </div><!-- /.row -->
         </div><!-- /.container -->
@@ -31,16 +31,16 @@
           <div class="row no-gutters">
             <div class="col-xl-12">
               <p class="banner-two__tag-line">
-                High quality courses
+                {{ $t('elearning.banner.quality') }}
               </p><!-- /.banner-two__tag-line -->
               <h3 class="banner-two__title banner-two__light-color">
-                Read & learn <br>
-                in an easy way
+                {{ $t('elearning.banner.read-learn') }} <br>
+                {{ $t('elearning.banner.easy') }}
               </h3><!-- /.banner-two__title -->
               <a
                 href="#"
                 class="thm-btn banner-two__btn"
-              >Learn More</a>
+              >{{ $t('elearning.banner.learn-more') }}</a>
             </div><!-- /.col-xl-12 -->
           </div><!-- /.row -->
         </div><!-- /.container -->

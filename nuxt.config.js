@@ -70,7 +70,7 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  components: false,
+  components: true,
   buildModules: [
   ],
   /*

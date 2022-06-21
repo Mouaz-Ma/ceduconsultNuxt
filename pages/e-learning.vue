@@ -14,6 +14,7 @@
 <script>
 export default {
   auth: false,
+
   components: {
     BannerTwo: () => import("../components/BannerTwo"),
     CourseCatTwo: () => import("../components/CourseCatTwo"),

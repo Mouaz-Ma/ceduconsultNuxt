@@ -12,5 +12,13 @@
     "classes": "Available classes",
     "blogs": "blogs and news",
     "contact": "Contact"
+  },
+  "elearning": {
+    "banner": {
+      "quality": "High quality courses",
+      "read-learn": "Read & learn",
+      "easy": "in an easy way",
+      "learn-more": "Learn More"
+    }
   }
 }
