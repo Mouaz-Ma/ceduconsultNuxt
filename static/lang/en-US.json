@@ -7,7 +7,10 @@
     "btn-left": "Start Your Journey",
     "btn-right": "Start Learning"
   },
-  "index2": {
-
+  "nav": {
+    "home": "Home",
+    "classes": "Available classes",
+    "blogs": "blogs and news",
+    "contact": "Contact"
   }
 }
