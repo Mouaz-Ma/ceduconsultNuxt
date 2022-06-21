@@ -82,7 +82,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/auth',
     '@nuxtjs/moment',
-    "@nuxtjs/vuetify", 
+    "@nuxtjs/vuetify",
     'bootstrap-vue/nuxt',
   ],
   moment: {
@@ -99,16 +99,16 @@ export default {
         code: 'en',
         name: 'English',
         iso: 'en-US',
-        file: 'en.js',
+        file: 'en-US.json',
         dir: 'ltr'
       },
-      // {
-      //   code: 'ar',
-      //   name: 'العربية',
-      //   iso: 'ae-AE',
-      //   file: 'ar.js',
-      //   dir: 'rtl'
-      // },
+      {
+        code: 'fr',
+        name: 'French',
+        iso: 'fr-FR',
+        file: 'fr-FR.json',
+        dir: 'ltr'
+      },
     ],
     langDir: "static/lang",
     lazy: true,
@@ -124,7 +124,7 @@ export default {
     // credentials: false
   },
   proxy: {
-    "/api": process.env.API_URL 
+    "/api": process.env.API_URL
   },
   build: {
     transpile: ['vuetify/lib', "tiptap-vuetify"]
