@@ -7,13 +7,18 @@
     "btn-left": "Start Your Journey",
     "btn-right": "Start Learning"
   },
-  "nav": {
-    "home": "Home",
-    "classes": "Available classes",
-    "blogs": "blogs and news",
-    "contact": "Contact"
-  },
   "elearning": {
+    "topbar": {
+      "welcome": "Welcome",
+      "signout": "Sign Out",
+      "login": "Login"
+    },
+    "nav": {
+      "home": "Home",
+      "classes": "Available classes",
+      "blogs": "blogs and news",
+      "contact": "Contact"
+    },
     "banner": {
       "quality": "High quality courses",
       "read-learn": "Read & learn",

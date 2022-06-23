@@ -31,10 +31,10 @@
         >
           <ul class=" navigation-box">
             <li class="current">
-              <a href="/">{{ $t('nav.home') }}</a>
+              <a href="/">{{ $t('elearning.nav.home') }}</a>
             </li>
             <li>
-              <a href="/classRoom">{{ $t('nav.classes') }}</a>
+              <a href="/classRoom">{{ $t('elearning.nav.classes') }}</a>
               <!-- <ul class="sub-menu">
                       <li><a href="/about">About Page</a></li>
                         <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
@@ -52,13 +52,13 @@
                 </li> -->
             <li>
               <nuxt-link to="/blogs/indexTwo">
-                {{ $t('nav.blogs') }}
+                {{ $t('elearning.nav.blogs') }}
               </nuxt-link>
             </li>
 
             <li>
               <nuxt-link to="/contactTwo">
-                {{ $t('nav.contact') }}
+                {{ $t('elearning.nav.contact') }}
               </nuxt-link>
             </li>
           </ul>
