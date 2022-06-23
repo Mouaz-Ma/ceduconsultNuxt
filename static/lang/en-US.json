@@ -24,6 +24,12 @@
       "read-learn": "Read & learn",
       "easy": "in an easy way",
       "learn-more": "Learn More"
+    },
+    "carousel-two": {
+      "schedule": "Flexible schedule",
+      "lessons": "Customizable Lessons",
+      "progression": "Quicker Progression",
+      "levels": "All Levels"
     }
   }
 }

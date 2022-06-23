@@ -9,7 +9,7 @@
                 <i class="kipso-icon-desktop" /><!-- /.kipso-icon-camera -->
               </div><!-- /.course-category-two__icon -->
               <h3 class="course-category-two__title">
-                <a href="#">Flexibale schedule</a>
+                <a href="#">{{ $t('elearning.carousel-two.schedule') }}</a>
               </h3>
               <!-- /.course-category-two__title -->
             </div><!-- /.course-category-two__single -->
@@ -20,7 +20,7 @@
                 <i class="kipso-icon-training" /><!-- /.kipso-icon-camera -->
               </div><!-- /.course-category-two__icon -->
               <h3 class="course-category-two__title">
-                <a href="#">Customizable Lessons</a>
+                <a href="#">{{ $t('elearning.carousel-two.lessons') }}</a>
               </h3>
               <!-- /.course-category-two__title -->
             </div><!-- /.course-category-two__single -->
@@ -31,7 +31,7 @@
                 <i class="kipso-icon-strategy" /><!-- /.kipso-icon-camera -->
               </div><!-- /.course-category-two__icon -->
               <h3 class="course-category-two__title">
-                <a href="#">Quicker Progression</a>
+                <a href="#">{{ $t('elearning.carousel-two.progression') }}</a>
               </h3>
               <!-- /.course-category-two__title -->
             </div><!-- /.course-category-two__single -->
@@ -42,7 +42,7 @@
                 <i class="kipso-icon-knowledge" /><!-- /.kipso-icon-camera -->
               </div><!-- /.course-category-two__icon -->
               <h3 class="course-category-two__title">
-                <a href="#">All Levels</a>
+                <a href="#">{{ $t('elearning.carousel-two.levels') }}</a>
               </h3>
               <!-- /.course-category-two__title -->
             </div><!-- /.course-category-two__single -->
@@ -54,10 +54,17 @@
 </template>
 
 <script>
-    export default {
-      name: "CourseCatTwo",
-      auth: false
-    }
+export default {
+  name: "CourseCatTwo",
+
+  auth: false,
+
+  mounted() {
+    setTimeout(() => {
+      $(".owl-carousel").owlCarousel()
+    }, 0);
+  }
+}
 </script>
 
 <style scoped>
