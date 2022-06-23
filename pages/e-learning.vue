@@ -8,29 +8,45 @@
     <Pricing />
     <Meeting />
     <BlogHome />
+    <!-- NOTE: Plugin script cannot be found, no idea how to load the testimonials -->
+    <Testimonial />
   </div>
 </template>
 
 <script>
 export default {
+  name: 'ELearningView',
+
   auth: false,
 
   components: {
-    BannerTwo: () => import("../components/BannerTwo"),
-    CourseCatTwo: () => import("../components/CourseCatTwo"),
-    AboutOne: () => import("../components/AboutOne"),
-    CourseTwo: () => import("../components/CourseTwo"),
-    TeamOne: () => import("../components/TeamOne"),
-    Pricing: () => import("../components/Pricing"),
-    Meeting: () => import("../components/Meeting"),
-    BlogHome: () => import("../components/BlogHome"),
+    BannerTwo: () => import("../components/BannerTwo.vue"),
+    CourseCatTwo: () => import("../components/CourseCatTwo.vue"),
+    AboutOne: () => import("../components/AboutOne.vue"),
+    CourseTwo: () => import("../components/CourseTwo.vue"),
+    TeamOne: () => import("../components/TeamOne.vue"),
+    Pricing: () => import("../components/Pricing.vue"),
+    Meeting: () => import("../components/Meeting.vue"),
+    BlogHome: () => import("../components/BlogHome.vue"),
+    Testimonial: () => import("../components/Testimonial.vue")
   },
 
   layout: 'learning',
 
-  head(){
-    return{
-      title: "CEDU | Home 2"
+  head() {
+    return {
+      title: "CEDU | E-Learning",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `Charlene Education Consultancy (C.E.C) is an educational agency
+            and tutorial platform that provides services to
+            students that want to study abroad and to those that
+            would like to learn English online.
+          `
+        }
+      ]
     }
   }
 }
