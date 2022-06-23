@@ -30,6 +30,16 @@
       "lessons": "Customizable Lessons",
       "progression": "Quicker Progression",
       "levels": "All Levels"
+    },
+    "about-one": {
+      "who": "Who are we?",
+      "count": "88750",
+      "students": "students loved us",
+      "p1": "At C. Education Consultancy, we are experts in teaching and testing English as a second and foreign language.",
+      "p2": "We are dedicated to providing students with proactive learning solutions and techniques that will stay with them, not just through language exams but through their entire lives.",
+      "p3": "Students who have taken part in our courses have had proven success in all the English Language components. We believe in nurturing each student, providing not just academic support but moral support throughout the process.",
+      "p4": "Our lessons are personalized and our teaching services are affordable. As educators, we continuously aim to improve students' areas of difficulty and introduce students to conversational topics in real-time while, helping them advance to higher levels of understanding and speaking.",
+      "button": "Start Learning Now"
     }
   }
 }

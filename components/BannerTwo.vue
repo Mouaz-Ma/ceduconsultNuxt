@@ -62,7 +62,14 @@
 <script>
 export default {
   name: "BannerTwo",
-  auth: false
+
+  auth: false,
+
+  // mounted() {
+  //   setTimeout(() => {
+  //     $(".owl-carousel").owlCarousel()
+  //   }, 0);
+  // }
 }
 </script>
 

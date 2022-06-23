@@ -1,8 +1,45 @@
 {
   "home": {
-    "title-1": "",
-    "title-2": "",
-    "intro-1": "",
-    "intro-2": ""
+    "title-1": "Trouvez votre université",
+    "title-2": "Portail d'apprentissage en ligne",
+    "intro-1": "L'enseignement supérieur est considéré comme le tremplin\n vers toutes les carrières que nous voulons poursuivre. Ne luttez pas seul ! Laissez C.E.C vous guider dans ce voyage.",
+    "intro-2": "Les limites de ma langue signifient les limites de mon monde \nand-Ludwig Wittgenstein. \nApprenez l'anglais avec C.E.C aujourd'hui et travaillez au-delà de vos limites avec des professeurs qualifiés.",
+    "btn-left": "Commencez votre voyage",
+    "btn-right": "Commencer à apprendre"
+  },
+  "elearning": {
+    "topbar": {
+      "welcome": "Salut",
+      "signout": "Se déconnecter",
+      "login": "Connexion"
+    },
+    "nav": {
+      "home": "Home",
+      "classes": "Cours disponibles",
+      "blogs": "blogs et actualités",
+      "contact": "Contact"
+    },
+    "banner": {
+      "quality": "Cours de haute qualité",
+      "read-learn": "Lire & apprendre",
+      "easy": "d'une manière facile",
+      "learn-more": "Apprendre encore plus"
+    },
+    "carousel-two": {
+      "schedule": "horaire flexible",
+      "lessons": "Leçons personnalisables",
+      "progression": "Progression plus rapide",
+      "levels": "Tous les niveaux"
+    },
+    "about-one": {
+      "who": "Qui sommes-nous?",
+      "count": "88750",
+      "students": "les étudiants nous ont adoré",
+      "p1": "Chez C. Education Consultancy, nous sommes experts dans l'enseignement et l'évaluation de l'anglais comme langue seconde et étrangère.",
+      "p2": "Nous nous engageons à fournir aux étudiants des solutions et des techniques d'apprentissage proactives qui resteront avec eux, non seulement pendant les examens de langue, mais tout au long de leur vie.",
+      "p3": "Les étudiants qui ont participé à nos cours ont réussi dans toutes les composantes de la langue anglaise. Nous croyons qu'il faut nourrir chaque étudiant, en fournissant non seulement un soutien académique, mais un soutien moral tout au long du processus.",
+      "p4": "Nos leçons sont personnalisées et nos services d'enseignement sont abordables. En tant qu'éducateurs, nous cherchons continuellement à améliorer les domaines de difficulté des élèves et à leur présenter des sujets de conversation en temps réel tout en les aidant à progresser vers des niveaux supérieurs de compréhension et d'expression orale.",
+      "button": "commencer à apprendre maintenant"
+    }
   }
 }
