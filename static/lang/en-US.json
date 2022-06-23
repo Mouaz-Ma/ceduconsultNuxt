@@ -40,6 +40,35 @@
       "p3": "Students who have taken part in our courses have had proven success in all the English Language components. We believe in nurturing each student, providing not just academic support but moral support throughout the process.",
       "p4": "Our lessons are personalized and our teaching services are affordable. As educators, we continuously aim to improve students' areas of difficulty and introduce students to conversational topics in real-time while, helping them advance to higher levels of understanding and speaking.",
       "button": "Start Learning Now"
+    },
+    "testimonials": {
+      "title1": "What our students",
+      "title2": "have to say",
+      "quote1": {
+        "content": "The IELTS speaking lesson as a whole was very useful. I got a speaking test exactly similar to the real one, I think this is a very great and important step. My instructor notes my mistakes while speaking then she alerted me in a very kind and respectful way. At the end of the lesson, my instructor gave me great and useful tips to follow during the exam as well as during my preparation for the test. In the end, I want to thank you all for your efforts.",
+        "name": "Mel",
+        "headline": "Student"
+      },
+      "quote2": {
+        "content": "With (CEC) I had excellent teachers! They provide both a great mix of listening, speaking and practical learning activities and a very safe, supportive learning environment. Their teaching methods are great. They are very clear and concise. Speaking for IELTS is an excellent course that really improved my speaking skills. All the meetings and materials were really helpful and informative. CEC has the best instructors.",
+        "name": "Hayat",
+        "headline": "Student"
+      },
+      "quote3": {
+        "content": "The lessons were fantastic and up to date. The teachers listen and help. I have lots of fun during my lessons.",
+        "name": "Rob",
+        "headline": "Student"
+      },
+      "quote4": {
+        "content": "Storytelling was fun and I cannot wait for more. Thank you, Teacher.",
+        "name": "Emily",
+        "headline": "Student"
+      },
+      "quote5": {
+        "content": "Teacher Charlene motivated me to keep learning and not give up. I'm happy to be part of CEC!",
+        "name": "Lilly",
+        "headline": "Student"
+      }
     }
   }
 }

@@ -40,6 +40,35 @@
       "p3": "Les étudiants qui ont participé à nos cours ont réussi dans toutes les composantes de la langue anglaise. Nous croyons qu'il faut nourrir chaque étudiant, en fournissant non seulement un soutien académique, mais un soutien moral tout au long du processus.",
       "p4": "Nos leçons sont personnalisées et nos services d'enseignement sont abordables. En tant qu'éducateurs, nous cherchons continuellement à améliorer les domaines de difficulté des élèves et à leur présenter des sujets de conversation en temps réel tout en les aidant à progresser vers des niveaux supérieurs de compréhension et d'expression orale.",
       "button": "commencer à apprendre maintenant"
+    },
+    "testimonials": {
+      "title1": "Témoignages ",
+      "title2": "",
+      "quote1": {
+        "content": "La leçon d'expression orale IELTS dans son ensemble a été très utile pour moi. J'ai eu un test d'expression orale exactement similaire au vrai, je pense que c'est une très grande et importante étape. Mon instructrice a noté mes erreurs puis elle m'a alerté d'une manière très gentille et respectueuse. À la fin de la leçon, elle m'a donné de bons et utiles conseils à suivre pendant l'examen ainsi que pendant ma préparation au test. Je tiens à remercier mon institutrice tous pour son excellent travail.",
+        "name": "Mel",
+        "headline": "Étudiant"
+      },
+      "quote2": {
+        "content": "Avec (CEC) j'ai eu d'excellents professeurs ! Ils offrent à la fois un excellent mélange d'activités d'écoute, d'expression orale et d'apprentissage pratique et un environnement d'apprentissage très sûr et favorable. Leurs méthodes d'enseignement sont excellentes. Les enseignements sont très clairs et concis. Parler pour l'IELTS est un excellent cours qui a vraiment amélioré mes compétences en expression orale. Toutes les réunions et tous les documents ont été vraiment utiles et instructifs. CEC a les meilleurs instructeurs.",
+        "name": "Hayat",
+        "headline": "Étudiant"
+      },
+      "quote3": {
+        "content": "Les leçons étaient fantastiques et à jour. Les professeurs écoutent et aident. Je m'amuse beaucoup pendant mes cours.",
+        "name": "Rob",
+        "headline": "Étudiant"
+      },
+      "quote4": {
+        "content": "La narration était amusante et je ne peux pas attendre plus. Merci professeur.",
+        "name": "Emily",
+        "headline": "Étudiant"
+      },
+      "quote5": {
+        "content": "L'enseignante Charlène m'a motivée à continuer à apprendre et à ne pas abandonner. Je suis heureux de faire partie de CEC !",
+        "name": "Lilly",
+        "headline": "Étudiant"
+      }
     }
   }
 }
