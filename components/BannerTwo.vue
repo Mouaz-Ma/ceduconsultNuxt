@@ -23,6 +23,7 @@
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.banner-two__slide -->
+
       <div
         class="banner-two__slide banner-two__slide-two"
         :style="{backgroundImage: `url(/assets/images/slider-2-2.jpg)`}"
@@ -45,7 +46,31 @@
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.banner-two__slide -->
-    </section><!-- /.banner-two -->
+
+      <div
+        class="banner-two__slide banner-two__slide-three"
+        :style="{backgroundImage: `url(/assets/images/slider-3-1.jpg)`}"
+      >
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-xl-12">
+              <p class="banner-two__tag-line">
+                {{ $t('elearning.banner.quality') }}
+              </p><!-- /.banner-two__tag-line -->
+              <h3 class="banner-two__title banner-two__light-color">
+                {{ $t('elearning.banner.read-learn') }} <br>
+                {{ $t('elearning.banner.easy') }}
+              </h3><!-- /.banner-two__title -->
+              <a
+                href="#"
+                class="thm-btn banner-two__btn"
+              >{{ $t('elearning.banner.learn-more') }}</a>
+            </div><!-- /.col-xl-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.banner-two__slide -->
+    </section><!-- /.banner-three -->
+
     <div class="banner-carousel-btn">
       <a
         href="#"
