@@ -93,6 +93,49 @@
         "preview": "See Preview"
       }
     },
+    "partners": {
+      "title": "Meet Our Partners",
+      "ankara": {
+        "name": "Ankara Medipol",
+        "description": "Where science and tradition come together with a modern understanding of\neducation."
+      },
+      "canada": {
+        "name": "Canadian Imperial College",
+        "description": "The prerequisite for motivation and success in any endeavor is a BIG vision\nfor your future. If you’re stuck in the past, you’re really in trouble."
+      },
+      "cooking": {
+        "name": "Gastronomicom cooking school",
+        "description": "Our highly experienced chefs/teachers provide hands-on classes to a one\n                  Michelin Star level. All of our cooking and pastry courses are conducted in English."
+      },
+      "graduate": {
+        "name": "International Graduate Center",
+        "description": "one of Germany's first graduate schools offering MBA degrees, is aimed at\nfuture managers."
+      },
+      "solutions": {
+        "name": "International Student Solutions",
+        "description": "International Student Solutions has a commitment to the continued improvement\nof student services and the overall experience for international students."
+      },
+      "american": {
+        "name": "Girne American University",
+        "description": "Girne American University is dedicated to making American model learning\nopportunities accessible throughout life and to making them challenging and relevant to a diverse\npopulation of young adults."
+      },
+      "mesoyios": {
+        "name": "Mesoyios College",
+        "description": "an institution operating from 1998 as an educational center specialized in\nthe hospitality industry."
+      },
+      "poland": {
+        "name": "Education Poland",
+        "description": "Education Poland is the only official university partner & admissions office\nfor several polish universities."
+      },
+      "wittenborg": {
+        "name": "Wittenborg University of Applied Sciences",
+        "description": "The most international business and management school in the Netherlands."
+      },
+      "ge": {
+        "name": "GE Global",
+        "description": "GE Global Consultants are committed to providing an ultimate solution of\n                  services for International students in the categories of Foundation, Undergraduate, and postgraduate\nsectors."
+      }
+    },
     "testimonials": {
       "title1": "Témoignages ",
       "title2": "",
