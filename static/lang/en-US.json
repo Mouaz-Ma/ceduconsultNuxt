@@ -133,7 +133,58 @@
       },
       "ge": {
         "name": "GE Global",
-        "description": "GE Global Consultants are committed to providing an ultimate solution of\n                  services for International students in the categories of Foundation, Undergraduate, and postgraduate\nsectors."
+        "description": "GE Global Consultants are committed to providing an ultimate solution of\nservices for International students in the categories of Foundation, Undergraduate, and postgraduate\nsectors."
+      }
+    },
+    "programs": {
+      "title": "Our Programs and Curriculum",
+      "ted": {
+        "name": "TEDEd",
+        "description": "Our mission is to spark and celebrate the ideas of students and teachers throughout the world. Follow for program updates + new animated videos every week!"
+      },
+      "ng": {
+        "name": "National Geographic Learning",
+        "description": "National Geographic Learning’s mission is to bring the world to the classroom and the classroom to life."
+      },
+      "oxford": {
+        "name": "Oxford University Press",
+        "description": "Oxford University Press – one of the world’s oldest higher education institution divisions, founded in 1586, showed its new logo. The style update was carried out for the first time in the last 30 years."
+      },
+      "ielts": {
+        "name": "IELTS Prep",
+        "description": "Prepare with confidence for your upcoming IELTS Academic or General Training test. The IELTS Prep App gives you instant, unlimited access to all the right tools you need to prepare for your test – anytime, anywhere."
+      },
+      "cambridge": {
+        "name": "Cambridge University Press",
+        "description": "Our mission is to unlock people’s potential with the best learning and research solutions. Our vision is a world of learning and research inspired by Cambridge. Cambridge University Press is a world leader in the field of English Language Teaching (ELT) publishing, with titles for teachers and learners of English, covering all levels from kindergarten to university and adult language training."
+      },
+      "toefl": {
+        "name": "ETS TOEFL",
+        "description": "Students can achieve their dreams of university study, immigration and more with the TOEFL iBT® and TOEFL® Essentials™ tests. Each test is uniquely designed so they can choose the TOEFL test that's best for them."
+      },
+      "macmillan": {
+        "name": "MacMillan English",
+        "description": "Macmillan Education is a global publisher, specialising in English language teaching (ELT) and curriculum publishing. Their ELT publishing ranges from internationally recognised courses such as New Inside Out and In Company, through innovative titles like Aviation English, to their award-winning range of learners' dictionaries."
+      },
+      "ef": {
+        "name": "English File",
+        "description": "Learn more English here with interactive exercises, useful downloads, games, and weblinks. Practise your grammar, vocabulary, pronunciation, listening, and reading, and have some fun too."
+      },
+      "toeic": {
+        "name": "ETS TOEIC",
+        "description": "Whether you are an individual who wants to stand out against the competition or an organization seeking to build a more skilled team or prepare work-ready students, the TOEIC® program can help you achieve your goal."
+      },
+      "opic": {
+        "name": "OPIC",
+        "description": "OPIc Tips – Oral proficiency interview by a computer is a popular English speaking evaluation taken by many business professionals. Many corporate professionals need to attain a high score to get promotions or work overseas"
+      },
+      "duolingo": {
+        "name": "Duolingo English Test Preparation",
+        "description": "In 2014, Duolingo launched a web English proficiency exam so as to return out as an alternate for other English proficiency exams like IELTS/TOEFL. This blog covers all the Duolingo accepted universities across the United Kingdom, USA, Canada, Australia, Japan, Europe, and New Zealand."
+      },
+      "tefl": {
+        "name": "TEFL CERTIFIED",
+        "description": "This 120 hour TEFL certification is TEFL Educator's most popular course. It covers important English teaching fundamentals and includes a dedicated section on teaching English to young learners (TEYL). Trainees can expect live tutoring via Skype and personalized email support. Numerous podcasts and videos demonstrating real classroom environments are also provided."
       }
     },
     "testimonials": {

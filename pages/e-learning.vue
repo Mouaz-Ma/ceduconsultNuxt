@@ -5,6 +5,7 @@
     <AboutOne />
     <CourseTwo />
     <TeamOne />
+    <ProgramsComponent />
     <Pricing />
     <Meeting />
     <BlogHome />
@@ -20,6 +21,7 @@ export default {
   auth: false,
 
   components: {
+    ProgramsComponent: () => import("@/components/programs.vue"),
     BannerTwo: () => import("../components/BannerTwo.vue"),
     CourseCatTwo: () => import("../components/CourseCatTwo.vue"),
     AboutOne: () => import("../components/AboutOne.vue"),

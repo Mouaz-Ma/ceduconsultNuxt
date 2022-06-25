@@ -136,6 +136,57 @@
         "description": "GE Global Consultants are committed to providing an ultimate solution of\n                  services for International students in the categories of Foundation, Undergraduate, and postgraduate\nsectors."
       }
     },
+    "programmes": {
+      "title": "Nos programmes et cursus",
+      "ted": {
+        "nom": "TEDEd",
+        "description": "Notre mission est de susciter et de célébrer les idées des étudiants et des enseignants du monde entier. Suivez les mises à jour du programme et de nouvelles vidéos animées chaque semaine !"
+      },
+      "ng": {
+        "name": "Apprentissage géographique national",
+        "description": "La mission de National Geographic Learning est de donner vie au monde dans la salle de classe."
+      },
+      "Oxford": {
+        "nom": "Oxford University Press",
+        "description": "Oxford University Press - l'une des plus anciennes divisions d'établissements d'enseignement supérieur au monde, fondée en 1586, a présenté son nouveau logo. La mise à jour du style a été effectuée pour la première fois au cours des 30 dernières années."
+      },
+      "ielts": {
+        "nom": "Préparation IELTS",
+        "description": "Préparez-vous en toute confiance pour votre prochain test IELTS Academic ou General Training. L'application IELTS Prep vous donne un accès instantané et illimité à tous les bons outils dont vous avez besoin pour préparer votre test - à tout moment, n'importe où."
+      },
+      "cambridge": {
+        "nom": "Cambridge University Press",
+        "description": "Notre mission est de libérer le potentiel des personnes avec les meilleures solutions d'apprentissage et de recherche. Notre vision est un monde d'apprentissage et de recherche inspiré par Cambridge. Cambridge University Press est un leader mondial dans le domaine de l'enseignement de l'anglais (ELT) l'édition, avec des titres pour les enseignants et les apprenants d'anglais, couvrant tous les niveaux, de la maternelle à l'université et la formation linguistique des adultes."
+      },
+      "toefl": {
+        "nom": "ETS TOEFL",
+        "description": "Les étudiants peuvent réaliser leurs rêves d'études universitaires, d'immigration et plus encore avec les tests TOEFL iBT® et TOEFL® Essentials™. Chaque test est conçu de manière unique afin qu'ils puissent choisir le test TOEFL qui leur convient le mieux."
+      },
+      "macmillan": {
+        "name": "MacMillan anglais",
+        "description": "Macmillan Education est un éditeur mondial, spécialisé dans l'enseignement de l'anglais (ELT) et la publication de programmes d'études. Leurs publications ELT vont de cours internationalement reconnus tels que New Inside Out et In Company, en passant par des titres innovants comme Aviation English, à leurs gamme primée de dictionnaires pour apprenants."
+      },
+      "ef": {
+        "name": "Fichier anglais",
+        "description": "Apprenez plus d'anglais ici avec des exercices interactifs, des téléchargements utiles, des jeux et des liens Web. Pratiquez votre grammaire, votre vocabulaire, votre prononciation, votre écoute et votre lecture, et amusez-vous également."
+      },
+      "toeic": {
+        "nom": "ETS TOEIC",
+        "description": "Que vous soyez un individu qui souhaite se démarquer de la concurrence ou une organisation cherchant à constituer une équipe plus qualifiée ou à préparer des étudiants prêts à travailler, le programme TOEIC® peut vous aider à atteindre votre objectif."
+      },
+      "opic": {
+        "nom": "OPIC",
+        "description": "Conseils OPIc - L'entretien de compétence orale par ordinateur est une évaluation populaire en anglais prise par de nombreux professionnels. De nombreux professionnels d'entreprise doivent obtenir un score élevé pour obtenir des promotions ou travailler à l'étranger"
+      },
+      "duolingo": {
+        "name": "Préparation au test d'anglais Duolingo",
+        "description": "En 2014, Duolingo a lancé un examen de compétence en anglais sur le Web afin de remplacer d'autres examens de compétence en anglais comme l'IELTS/TOEFL. Ce blog couvre toutes les universités acceptées par Duolingo au Royaume-Uni, aux États-Unis, au Canada, Australie, Japon, Europe et Nouvelle-Zélande."
+      },
+      "tefl": {
+        "nom": "CERTIFIÉ TEFL",
+        "description": "Cette certification TEFL de 120 heures est le cours le plus populaire de TEFL Educator. Il couvre les fondamentaux importants de l'enseignement de l'anglais et comprend une section dédiée à l'enseignement de l'anglais aux jeunes apprenants (TEYL). Les stagiaires peuvent s'attendre à un tutorat en direct via Skype et à une assistance par e-mail personnalisée. De nombreux podcasts et vidéos illustrant des environnements de classe réels sont également fournis."
+      }
+    },
     "testimonials": {
       "title1": "Témoignages ",
       "title2": "",
