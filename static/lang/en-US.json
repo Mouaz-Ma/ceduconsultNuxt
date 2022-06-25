@@ -41,6 +41,58 @@
       "p4": "Our lessons are personalized and our teaching services are affordable. As educators, we continuously aim to improve students' areas of difficulty and introduce students to conversational topics in real-time while, helping them advance to higher levels of understanding and speaking.",
       "button": "Start Learning Now"
     },
+    "courses": {
+      "title1": "Explore our",
+      "title2": "popular courses",
+      "one": {
+        "category": "development",
+        "teacher": "Lou Guerrero",
+        "title": "New react bootcamp",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "two": {
+        "category": "It & Software",
+        "teacher": "Cora Diaz",
+        "title": "Improve editing skills",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "three": {
+        "category": "marketing",
+        "teacher": "Ruth Becker",
+        "title": "Marketing strategies",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "four": {
+        "category": "Photography",
+        "teacher": "Ernest Rodriquez",
+        "title": "Basics of photography",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "five": {
+        "category": "marketing",
+        "teacher": "Isabella Stanley",
+        "title": "Affiliate Bootcamp",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "six": {
+        "category": "Health & Fitness",
+        "teacher": "Katherine Collins",
+        "title": "Healthy workout tips",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      }
+    },
     "testimonials": {
       "title1": "What our students",
       "title2": "have to say",

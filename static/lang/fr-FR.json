@@ -41,6 +41,58 @@
       "p4": "Nos leçons sont personnalisées et nos services d'enseignement sont abordables. En tant qu'éducateurs, nous cherchons continuellement à améliorer les domaines de difficulté des élèves et à leur présenter des sujets de conversation en temps réel tout en les aidant à progresser vers des niveaux supérieurs de compréhension et d'expression orale.",
       "button": "commencer à apprendre maintenant"
     },
+    "courses": {
+      "title1": "Explore our",
+      "title2": "popular courses",
+      "one": {
+        "category": "development",
+        "teacher": "Lou Guerrero",
+        "title": "New react bootcamp",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "two": {
+        "category": "It & Software",
+        "teacher": "Cora Diaz",
+        "title": "Improve editing skills",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "three": {
+        "category": "marketing",
+        "teacher": "Ruth Becker",
+        "title": "Marketing strategies",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "four": {
+        "category": "Photography",
+        "teacher": "Ernest Rodriquez",
+        "title": "Basics of photography",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "five": {
+        "category": "marketing",
+        "teacher": "Isabella Stanley",
+        "title": "Affiliate Bootcamp",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "six": {
+        "category": "Health & Fitness",
+        "teacher": "Katherine Collins",
+        "title": "Healthy workout tips",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      }
+    },
     "testimonials": {
       "title1": "Témoignages ",
       "title2": "",
