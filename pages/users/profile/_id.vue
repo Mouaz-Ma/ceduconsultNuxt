@@ -44,6 +44,99 @@
             </ul>
           </div>
         </div>
+        <div class="col-md-2">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-light"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Edit Profile
+          </button>
+
+          <!-- Modal -->
+        </div>
+        <div
+          id="exampleModal"
+          class="modal fade"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="editProfile"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5
+                  id="editProfile"
+                  class="modal-title"
+                >
+                  Edit Profile
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                      id="username"
+                      v-model="profile.username"
+                      type="text"
+                      class="form-control"
+                      placeholder="username here"
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      id="email"
+                      v-model="profile.email"
+                      type="text"
+                      class="form-control"
+                      placeholder="something@domain.xx"
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">upload zipped file</label>
+                    <input
+                      id="exampleFormControlFile1"
+                      type="file"
+                      class="form-control-file"
+                      accept="application/zip"
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                >
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="row">
@@ -131,15 +224,15 @@ export default {
 
     data() {
       return{
-        name:"",
-        email:"",
-        verifyAlertMessage: '',
-        searchQuery: '',
-        userData: null,
+        profile: {}
       }
     },
 
-    methods: {},
+    mounted() {
+      if (this.userData) {
+        this.profile = this.userData
+      }
+    }
 }
 </script>
 
@@ -187,4 +280,14 @@ body{
     font-weight: 600;
     color: #0062cc;
 }
+.profile-edit-btn{
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+
 </style>
