@@ -2,20 +2,36 @@
   <section class="team-one team-one__become-teacher">
     <div class="container">
       <div class="block-title text-center">
-        <h2 class="block-title__title">{{ $t('elearning.programs.title') }}</h2><!-- /.block-title__title -->
+        <h2 class="block-title__title">
+          {{ $t('elearning.programs.title') }}
+        </h2><!-- /.block-title__title -->
       </div><!-- /.block-title -->
       <div class="row">
         <div class="partners-one__carousel owl-carousel owl-theme">
-          <div v-for="item in programs" :key="item.name" class="item">
+          <div
+            v-for="item in programs"
+            :key="item.name"
+            class="item"
+          >
             <div class="team-one__single">
               <div class="team-one__image">
-                <img class="temOneImage" width="200" height="200" :src="item.image" :alt="item.name">
+                <img
+                  class="temOneImage"
+                  width="200"
+                  height="200"
+                  :src="item.image"
+                  :alt="item.name"
+                >
               </div><!-- /.team-one__image -->
               <div class="team-one__content">
-                <h2 class="team-one__name"><a href="#">{{ item.name }} </a></h2>
+                <h2 class="team-one__name">
+                  <a href="#">{{ item.name }} </a>
+                </h2>
                 <!-- /.team-one__name -->
-                <br />
-                <p class="team-one__text">{{ item.description }}</p>
+                <br>
+                <p class="team-one__text">
+                  {{ item.description }}
+                </p>
                 <!-- /.team-one__text -->
               </div><!-- /.team-one__content -->
               <div class="team-one__social">

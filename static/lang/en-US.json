@@ -44,50 +44,48 @@
     "courses": {
       "title1": "Explore our",
       "title2": "popular courses",
+      "description": "Would you like to take an official English Proficiency Exam?\n            We offer the following classes to prepare you for the test of your choice",
       "one": {
-        "category": "development",
+        "category": "English",
         "teacher": "Lou Guerrero",
-        "title": "New react bootcamp",
+        "title": "IELTS",
+        "content": "(the International English Language Testing System) is the world’s most popular English language test for work, study, and migration. More than 10,000 organizations trust IELTS as a reliable indicator of true to life ability to communicate in English. IELTS assesses a test taker’s English language proficiency across four skills:  listening, reading, writing, and speaking.\n",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
         "preview": "See Preview"
       },
       "two": {
-        "category": "It & Software",
+        "category": "English",
         "teacher": "Cora Diaz",
-        "title": "Improve editing skills",
+        "title": "TOEFL",
+        "content": "the Test of English as a Foreign Language. It assesses your ability to both speak and understand English by analyzing your English ability in terms of reading, speaking, listening and writing. These are all skills which will be needed to carry out your academic studies and the test is used by institutions to ensure students are able to proceed and succeed on their chosen course in a country where the curriculum is taught in English.\n \nThe TOEFL test is usually conducted in the form of an online test.\n",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
         "preview": "See Preview"
       },
       "three": {
-        "category": "marketing",
+        "category": "English",
         "teacher": "Ruth Becker",
-        "title": "Marketing strategies",
+        "title": "TOEIC",
+        "content": "The Test of English for International Communication (TOEIC®) is a multiple-choice English language proficiency test for people whose native language is not English. It measures their English comprehension, speaking, writing and reading skills in an international environment. The scores indicate how well people can communicate in English with others in business, commerce and industry.\n",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
         "preview": "See Preview"
       },
       "four": {
-        "category": "Photography",
-        "teacher": "Ernest Rodriquez",
-        "title": "Basics of photography",
+        "category": "English",
+        "teacher": "Duolingo",
+        "content": "The Duolingo English Test is a modern language proficiency tool designed for today's international students and institutions. It offers an English proficiency score, video interview, and writing sample in an accessible, efficient, and secure testing experience.\n",
+        "title": "Duolingo",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
         "preview": "See Preview"
       },
       "five": {
-        "category": "marketing",
+        "category": "English",
         "teacher": "Isabella Stanley",
-        "title": "Affiliate Bootcamp",
-        "duration": "10 Hours",
-        "lectures": "6 Lectures",
-        "preview": "See Preview"
-      },
-      "six": {
-        "category": "Health & Fitness",
-        "teacher": "Katherine Collins",
-        "title": "Healthy workout tips",
+        "title": "OPIC",
+        "content": "an internet delivered test which provides valid and reliable oral proficiency testing on a large scale. It was developed in 2006 in response to the increased worldwide demand for the testing of oral language proficiency.\n",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
         "preview": "See Preview"
