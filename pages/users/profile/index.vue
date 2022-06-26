@@ -236,7 +236,7 @@ export default {
         if (this.searchQuery != ''){
           const response = await this.$axios.get('/api/users/search/?q='+this.searchQuery)
           this.foundUsers = response.data.usersFound;
-          console.log(this.foundUsers)
+          console.log(this.foundUsers[0].username)
         }
       },
         async logout() {

@@ -56,7 +56,7 @@
                 </div><!-- /.course-details__content -->
             </div><!-- /.col-lg-8 -->
             <div class="col-lg-4">
-                <div class="course-details__price">
+                <div class="course-details__price" v-if="courseData.starting">
                     <p class="course-details__price-text">Starting Date </p><!-- /.course-details__price-text -->
                     <p class="course-details__price-amount">{{ $moment(courseData.starting).format('MM/DD/YYYY')}}</p><!-- /.course-details__price-amount -->
                     <a href="/contact" class="thm-btn course-details__price-btn">Book a Consultation</a><!-- /.thm-btn -->
