@@ -66,6 +66,7 @@ export default {
   */
   plugins: [
     "~/plugins/TiptapVuetify",
+    { src: '~/plugins/vue-tel-input-vuetify', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -127,7 +128,7 @@ export default {
     "/api": process.env.API_URL
   },
   build: {
-    transpile: ['vuetify/lib', "tiptap-vuetify"]
+    transpile: ['vuetify/lib', "tiptap-vuetify" , 'vue-tel-input-vuetify']
   },
   router: {
     middleware: ['auth']

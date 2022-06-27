@@ -21,7 +21,8 @@
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.28.1",
     "redirect-ssl": "^3.0.0",
-    "tiptap-vuetify": "^2.24.0"
+    "tiptap-vuetify": "^2.24.0",
+    "vue-tel-input-vuetify": "^1.5.3"
   },
   "devDependencies": {
     "eslint": "^8.18.0",
