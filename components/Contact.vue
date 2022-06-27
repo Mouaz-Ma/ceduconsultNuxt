@@ -60,7 +60,8 @@
                         :input-options="{showDialCode: true, tabIndex: 0}"
                         :valid-characters-only='true'
                         mode="international"
-                        required
+                        :required='true'
+                        :background-color="transparent"
                       ></vue-tel-input-vuetify>
                       </div><!-- /.col-lg-6 -->
                       <div class="col-lg-12">
@@ -90,7 +91,7 @@ import alerts from '@/components/alerts.vue'
         success: false,
         name: '',
         email: '',
-        phone: '',
+        phone: null,
         message: '',
         isLoading: false,
         }
@@ -129,6 +130,9 @@ import alerts from '@/components/alerts.vue'
     
 </script>
 
-<style scoped>
-
+<style>
+.vti__flag{
+    margin: 5px 10px 13px 30px;
+    z-index: 7 !important;
+}
 </style>
