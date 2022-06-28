@@ -9,6 +9,10 @@
               alt=""
               width="70%"
             >
+            <div class="file btn btn-lg btn-primary">
+              Change Photo
+              <input type="file" name="file" accept="image/jpeg"/>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -88,6 +92,18 @@
               </div>
               <div class="modal-body">
                 <form>
+                  <div class="profile-img">
+                    <img
+                      src="https://www.w3schools.com/w3images/avatar5.png"
+                      alt=""
+                      width="70%"
+                    >
+                    <div class="file btn btn-lg btn-primary">
+                      Change Photo
+                      <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
+                    </div>
+                  </div>
+
                   <div class="form-group">
                     <label for="username">Username</label>
                     <input
@@ -98,6 +114,7 @@
                       placeholder="username here"
                     >
                   </div>
+
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input
@@ -109,12 +126,22 @@
                     >
                   </div>
                   <div class="form-group">
-                    <label for="exampleFormControlFile1">upload zipped file</label>
+                    <label for="zippedFile">upload zipped file</label>
                     <input
-                      id="exampleFormControlFile1"
+                      id="zippedFile"
                       type="file"
                       class="form-control-file"
                       accept="application/zip"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">phone</label>
+                    <input
+                      v-model="profile.phone"
+                      id="phone"
+                      type="text"
+                      class="form-control"
                     >
                   </div>
                 </form>
@@ -228,6 +255,17 @@ export default {
       }
     },
 
+    methods: {
+      async uploadImage(event) {
+        console.log(event.target.files)
+        const file = event.target.files[0]
+        const formData = new FormData()
+        formData.append('file', file, file.name)
+
+        await this.$axios.put('/updateUser', formData)
+      }
+    },
+
     mounted() {
       if (this.userData) {
         this.profile = this.userData
@@ -240,6 +278,7 @@ export default {
 body{
     background: -webkit-linear-gradient(left, #3931af, #00c6ff);
 }
+
 .emp-profile{
     padding: 3%;
     margin-top: 3%;
@@ -250,6 +289,23 @@ body{
 
 .profile-img{
   text-align: center;
+}
+
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
 }
 
 .profile-head h5{
