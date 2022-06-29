@@ -41,6 +41,19 @@
       "p4": "Nos leçons sont personnalisées et nos services d'enseignement sont abordables. En tant qu'éducateurs, nous cherchons continuellement à améliorer les domaines de difficulté des élèves et à leur présenter des sujets de conversation en temps réel tout en les aidant à progresser vers des niveaux supérieurs de compréhension et d'expression orale.",
       "button": "commencer à apprendre maintenant"
     },
+    "quiz": {
+      "title": "TEST DE PLACEMENT EN LIGNE",
+      "thank-you": "Merci de votre intérêt à passer le test de niveau en ligne. Le test est conçu pour aider à déterminer votre niveau de compétence en anglais. Il se compose de 10 questions à choix multiples et d'un test de lecture et d'écriture.",
+      "alert1": "N'UTILISEZ PAS DE DICTIONNAIRE",
+      "list1": "10 MINUTES POUR 10 QUESTIONS À CHOIX MULTIPLES",
+      "list2": "8 MINUTES POUR LE TEST DE LECTURE",
+      "list3": "10 MINUTES POUR LE TEST D'ÉCRITURE",
+      "list4": "SI VOUS NE COMPRENEZ PAS LA QUESTION OU NE CONNAISSEZ PAS LA RÉPONSE, VEUILLEZ SÉLECTIONNER « JE NE SAIS PAS » LA RÉPONSE DANS LA RÉPONSE À CHOIX MULTIPLE.",
+      "list5": "VOTRE NIVEAU FINAL SERA DÉTERMINÉ LORS DE VOTRE PREMIER JOUR DE COURS APRÈS LE TEST D'ORAL ET D'ÉCOUTE.",
+      "alert2": "Remarque : Le résultat de ce test ne peut pas être utilisé comme preuve officielle de votre maîtrise de l'anglais pour l'admission au CEC ou à toute autre institution. Pour plus de détails concernant le processus d'inscription, veuillez contacter…………",
+      "take-test": "Passer le concours",
+      "cancel": "Cancel"
+    },
     "courses": {
       "title1": "Explore our",
       "title2": "popular courses",
