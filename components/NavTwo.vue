@@ -61,6 +61,16 @@
                 {{ $t('elearning.nav.contact') }}
               </nuxt-link>
             </li>
+
+            <li>
+              <nuxt-link
+                v-for="locale in availableLocales"
+                :key="locale.code"
+                :to="switchLocalePath(locale.code)"
+              >
+                {{locale.name}}
+              </nuxt-link>
+            </li>
           </ul>
         </b-collapse><!-- /.navbar-collapse -->
         <div class="right-side-box">
@@ -99,6 +109,12 @@ export default {
   },
 
   auth: false,
+
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  },
 
   mounted() {
     if ($(".main-navigation .navigation-box").length) {

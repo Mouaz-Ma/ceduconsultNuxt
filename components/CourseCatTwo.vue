@@ -61,7 +61,9 @@ export default {
 
   mounted() {
     setTimeout(() => {
-      $(".owl-carousel").owlCarousel()
+      $(".owl-carousel").owlCarousel({
+        navText: ['<i class="kipso-icon-left-arrow"></i>','<i class="kipso-icon-right-arrow"></i>']
+      })
     }, 0);
   }
 }

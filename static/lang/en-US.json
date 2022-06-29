@@ -41,6 +41,19 @@
       "p4": "Our lessons are personalized and our teaching services are affordable. As educators, we continuously aim to improve students' areas of difficulty and introduce students to conversational topics in real-time while, helping them advance to higher levels of understanding and speaking.",
       "button": "Start Learning Now"
     },
+    "quiz": {
+      "title": "Level test",
+      "thank-you": "Thank you for your interest in taking the online level test. The test is designed to help determine your English proficiency level. It consists of 10 multiple choice questions, and 1 reading and writing test.",
+      "alert1": "DO NOT USE A DICTIONARY",
+      "list1": "10 MINUTES FOR 10 MULTIPLE CHOICE QUESTIONS",
+      "list2": "8 MINUTES FOR THE READING TEST",
+      "list3": "10 MINUTES FOR THE WRITING TEST",
+      "list4": "IF YOU DO NOT UNDERSTAND THE QUESTION OR DO NOT KNOW THE ANSWER, PLEASE SELECT “I DON’T KNOW” THE ANSWER IN THE MULTIPLE-CHOICE ANSWER.",
+      "list5": "YOUR FINAL LEVEL WILL BE DECIDED ON YOUR FIRST DAY OF CLASSES AFTER THE SPEAKING AND LISTENING TEST",
+      "alert2": "Note: The result from this test cannot be used as an official proof of your English proficiency for admission to C.E.C or any other institution. For further details regarding enrolment process, please contact…………",
+      "take-test": "Take the test",
+      "cancel": "Cancel"
+    },
     "courses": {
       "title1": "Explore our",
       "title2": "popular courses",

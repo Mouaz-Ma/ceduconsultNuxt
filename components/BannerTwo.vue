@@ -69,18 +69,39 @@
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.banner-two__slide -->
+
+      <div
+        class="banner-two__slide banner-two__slide-four"
+        :style="{backgroundImage: `url(/assets/images/slider-3-1.jpg)`}"
+      >
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-xl-12">
+              <p class="banner-two__tag-line">
+                {{ $t('elearning.banner.quality') }}
+              </p><!-- /.banner-two__tag-line -->
+              <h3 class="banner-two__title banner-two__light-color">
+                {{ $t('elearning.banner.read-learn') }} <br>
+                {{ $t('elearning.banner.easy') }}
+              </h3><!-- /.banner-two__title -->
+              <a
+                href="#"
+                class="thm-btn banner-two__btn"
+              >{{ $t('elearning.banner.learn-more') }}</a>
+            </div><!-- /.col-xl-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.banner-two__slide -->
     </section><!-- /.banner-three -->
 
-    <div class="banner-carousel-btn">
-      <a
-        href="#"
-        class="banner-carousel-btn__left-btn"
-      ><i class="kipso-icon-left-arrow" /></a>
-      <a
-        href="#"
-        class="banner-carousel-btn__right-btn"
-      ><i class="kipso-icon-right-arrow" /></a>
-    </div><!-- /.banner-carousel-btn -->
+<!--    <div class="banner-carousel-btn">-->
+<!--      <a-->
+<!--        class="banner-carousel-btn__left-btn"-->
+<!--      ><i class="kipso-icon-left-arrow" /></a>-->
+<!--      <a-->
+<!--        class="banner-carousel-btn__right-btn"-->
+<!--      ><i class="kipso-icon-right-arrow" /></a>-->
+<!--    </div>&lt;!&ndash; /.banner-carousel-btn &ndash;&gt;-->
   </div>
 </template>
 
@@ -90,11 +111,11 @@ export default {
 
   auth: false,
 
-  // mounted() {
-  //   setTimeout(() => {
-  //     $(".owl-carousel").owlCarousel()
-  //   }, 0);
-  // }
+  mounted() {
+    // setTimeout(() => {
+    //   $(".owl-carousel").owlCarousel({})
+    // }, 0);
+  }
 }
 </script>
 

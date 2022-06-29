@@ -3,6 +3,7 @@
     <BannerTwo />
     <CourseCatTwo />
     <AboutOne />
+    <Quiz v-if="$auth.$state.loggedIn" />
     <CourseTwo />
     <TeamOne />
     <ProgramsComponent />
@@ -30,7 +31,8 @@ export default {
     Pricing: () => import("../components/Pricing.vue"),
     Meeting: () => import("../components/Meeting.vue"),
     BlogHome: () => import("../components/BlogHome.vue"),
-    Testimonial: () => import("../components/Testimonial.vue")
+    Testimonial: () => import("../components/Testimonial.vue"),
+    Quiz: () => import("../components/Quiz.vue")
   },
 
   layout: 'learning',
