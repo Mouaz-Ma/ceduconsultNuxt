@@ -1,6 +1,6 @@
 <template>
   <header class="site-header site-header__header-two ">
-    <top-bar />
+    <top-bar/>
     <b-navbar-nav
       toggleable="lg"
       variant="dark"
@@ -20,7 +20,7 @@
             class="menu-toggler"
             target="main-navigation"
           >
-            <span class="kipso-icon-menu" />
+            <span class="kipso-icon-menu"/>
           </b-navbar-toggle>
         </div><!-- /.logo-box -->
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,33 +63,25 @@
             </li>
 
             <li>
-              <nuxt-link
-                v-for="locale in availableLocales"
-                :key="locale.code"
-                :to="switchLocalePath(locale.code)"
-              >
-                {{locale.name}}
-              </nuxt-link>
+              <b-dropdown :text="$i18n.locale" variant="outline-dark">
+                <b-dropdown-item
+                  v-for="lang in $i18n.locales"
+                  :key="lang.code"
+                  :value="lang.code"
+                  :active="lang.code === $i18n.locale"
+                  @click="changeLang(lang.code)"
+                >
+                  <span class="m-1 w-50">{{ lang.name }}</span></b-dropdown-item>
+              </b-dropdown>
             </li>
-                                <li class="nav-item dropdown d-flex justify-content-center" id="language">
-                      <a class="nav-link" href="#" v-b-toggle.languageCollapse>
-                       
-                        {{$t('lang')}}
-                      </a>
-                      <b-collapse class="dropdown-menu " id="languageCollapse">
-                        <a class="d-flex" href="#" v-for="lang in $i18n.locales" :key="lang.code"
-                          :value="lang.code" :active="lang.code === activeLang" @click="changeLang(lang.code)">
-                          
-                          <span class="m-1 w-50">{{ lang.name }}</span></a>
-                      </b-collapse>
-                    </li>
           </ul>
+
         </b-collapse><!-- /.navbar-collapse -->
         <div class="right-side-box">
           <div class="header__social">
-            <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square" /></a>
-            <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram" /></a>
-            <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp" /></a>
+            <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"/></a>
+            <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"/></a>
+            <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"/></a>
           </div><!-- /.header__social -->
         </div><!-- /.right-side-box -->
       </div>
@@ -98,13 +90,13 @@
     <div class="site-header__decor">
       <div class="site-header__decor-row">
         <div class="site-header__decor-single">
-          <div class="site-header__decor-inner-1" /><!-- /.site-header__decor-inner -->
+          <div class="site-header__decor-inner-1"/><!-- /.site-header__decor-inner -->
         </div><!-- /.site-header__decor-single -->
         <div class="site-header__decor-single">
-          <div class="site-header__decor-inner-2" /><!-- /.site-header__decor-inner -->
+          <div class="site-header__decor-inner-2"/><!-- /.site-header__decor-inner -->
         </div><!-- /.site-header__decor-single -->
         <div class="site-header__decor-single">
-          <div class="site-header__decor-inner-3" /><!-- /.site-header__decor-inner -->
+          <div class="site-header__decor-inner-3"/><!-- /.site-header__decor-inner -->
         </div><!-- /.site-header__decor-single -->
       </div><!-- /.site-header__decor-row -->
     </div><!-- /.site-header__decor -->
@@ -123,7 +115,7 @@ export default {
   auth: false,
 
   computed: {
-    availableLocales () {
+    availableLocales() {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
   },
@@ -154,35 +146,35 @@ export default {
       });
     }
   },
-  methods:{
-            changeLang: function (language) {
-          this.$i18n.setLocale(language);
-          this.restartServices();
-        },
-        restartServices: function() {
-          window.location.reload(true)
+  methods: {
+    changeLang: function (language) {
+      this.$i18n.setLocale(language);
+      this.restartServices();
+    },
+    restartServices: function () {
+      window.location.reload(true)
 
-        },
+    },
   }
 }
 </script>
 
 <style scoped>
-  .header-navigation {
-    font-family: "Poppins";
-    color: #81868a;
-    font-size: 16px;
-    line-height: 34px;
-    letter-spacing: -0.02em;
-    text-decoration: none;
-  }
+.header-navigation {
+  font-family: "Poppins";
+  color: #81868a;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
 
-  a:hover {
-    text-decoration: none;
-  }
+a:hover {
+  text-decoration: none;
+}
 
-  .stricky-fixed {
-    padding: 10px;
-  }
+.stricky-fixed {
+  padding: 10px;
+}
 
 </style>
