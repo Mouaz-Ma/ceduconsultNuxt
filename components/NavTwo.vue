@@ -71,6 +71,18 @@
                 {{locale.name}}
               </nuxt-link>
             </li>
+                                <li class="nav-item dropdown d-flex justify-content-center" id="language">
+                      <a class="nav-link" href="#" v-b-toggle.languageCollapse>
+                       
+                        {{$t('lang')}}
+                      </a>
+                      <b-collapse class="dropdown-menu " id="languageCollapse">
+                        <a class="d-flex" href="#" v-for="lang in $i18n.locales" :key="lang.code"
+                          :value="lang.code" :active="lang.code === activeLang" @click="changeLang(lang.code)">
+                          
+                          <span class="m-1 w-50">{{ lang.name }}</span></a>
+                      </b-collapse>
+                    </li>
           </ul>
         </b-collapse><!-- /.navbar-collapse -->
         <div class="right-side-box">
@@ -142,6 +154,16 @@ export default {
       });
     }
   },
+  methods:{
+            changeLang: function (language) {
+          this.$i18n.setLocale(language);
+          this.restartServices();
+        },
+        restartServices: function() {
+          window.location.reload(true)
+
+        },
+  }
 }
 </script>
 

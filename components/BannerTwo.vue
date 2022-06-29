@@ -112,9 +112,9 @@ export default {
   auth: false,
 
   mounted() {
-    // setTimeout(() => {
-    //   $(".owl-carousel").owlCarousel({})
-    // }, 0);
+    setTimeout(() => {
+      $(".owl-carousel").owlCarousel({})
+    }, 0);
   }
 }
 </script>

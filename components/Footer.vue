@@ -2,7 +2,7 @@
   <div>
     <footer class="site-footer">
       <!-- NOTE: there is a whatsApp link in the footer links already -->
-      <!-- <div id="whatsAppBtn">
+      <div id="whatsAppBtn">
         <a
           href="https://wa.me/443301335324?text=I%20just%20visited%20your%20website%2C%20and%20I%20will%20would%20like%20to%20get%20more%20information"
           class="btn whatsApp"
@@ -11,7 +11,7 @@
           src="https://global-uploads.webflow.com/601befbd3e6c39d9b373aa94/606aecfac9846644d0c6d979_whatsapp.svg"
           alt=""
         ></a>
-      </div> -->
+      </div>
       <div class="site-footer__upper">
         <div class="container">
           <div class="row">
