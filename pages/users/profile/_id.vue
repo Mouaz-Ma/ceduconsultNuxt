@@ -5,8 +5,8 @@
         <div class="col-md-4">
           <div class="profile-img">
             <img
-              src="https://www.w3schools.com/w3images/avatar5.png"
-              alt=""
+              :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
+              :alt="$auth.$state.user.avatar.filename"
               width="70%"
             >
             <div class="file btn btn-lg btn-primary">
@@ -50,120 +50,80 @@
         </div>
         <div class="col-md-2">
           <!-- Button trigger modal -->
-          <button
-            type="button"
-            class="btn btn-light"
-            data-toggle="modal"
-            data-target="#exampleModal"
-          >
+          <b-button @click="showModal = true">
             Edit Profile
-          </button>
-
-          <!-- Modal -->
+          </b-button>
         </div>
-        <div
-          id="exampleModal"
-          class="modal fade"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="editProfile"
-          aria-hidden="true"
-        >
-          <div
-            class="modal-dialog"
-            role="document"
-          >
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5
-                  id="editProfile"
-                  class="modal-title"
-                >
-                  Edit Profile
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="profile-img">
-                    <img
-                      src="https://www.w3schools.com/w3images/avatar5.png"
-                      alt=""
-                      width="70%"
-                    >
-                    <div class="file btn btn-lg btn-primary">
-                      Change Photo
-                      <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
-                    </div>
-                  </div>
 
-                  <div class="form-group">
-                    <label for="username">Username</label>
-                    <input
-                      id="username"
-                      v-model="profile.username"
-                      type="text"
-                      class="form-control"
-                      placeholder="username here"
-                    >
-                  </div>
-
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input
-                      id="email"
-                      v-model="profile.email"
-                      type="text"
-                      class="form-control"
-                      placeholder="something@domain.xx"
-                    >
-                  </div>
-                  <div class="form-group">
-                    <label for="zippedFile">upload zipped file</label>
-                    <input
-                      id="zippedFile"
-                      type="file"
-                      class="form-control-file"
-                      accept="application/zip"
-                    >
-                  </div>
-
-                  <div class="form-group">
-                    <label for="phone">phone</label>
-                    <input
-                      v-model="profile.phone"
-                      id="phone"
-                      type="text"
-                      class="form-control"
-                    >
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                >
-                  Save changes
-                </button>
+        <!-- Modal -->
+        <b-modal v-model="showModal" id="editProfile" title="Edit Profile">
+          <form>
+            <div class="profile-img">
+              <img
+                :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
+                alt=""
+                width="70%"
+              >
+              <div class="file btn btn-lg btn-primary">
+                Change Photo
+                <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
               </div>
             </div>
-          </div>
-        </div>
+
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                id="username"
+                v-model="profile.username"
+                type="text"
+                class="form-control"
+                placeholder="username here"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                v-model="profile.email"
+                type="text"
+                class="form-control"
+                placeholder="something@domain.xx"
+              >
+            </div>
+            <div class="form-group">
+              <label for="zippedFile">upload zipped file</label>
+              <input
+                id="zippedFile"
+                type="file"
+                multiple
+                class="form-control-file"
+                accept="application/zip"
+                @change="uploadZipFiles"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="phone">phone</label>
+              <input
+                v-model="profile.phone"
+                id="phone"
+                type="text"
+                class="form-control"
+              >
+            </div>
+          </form>
+
+          <template #modal-footer>
+            <b-button variant="primary" @click="updateForm">
+              Save changes
+            </b-button>
+
+            <b-button variant="danger" @click="showModal = false">
+              Cancel
+            </b-button>
+          </template>
+        </b-modal>
       </div>
 
       <div class="row">
@@ -251,7 +211,8 @@ export default {
 
     data() {
       return{
-        profile: {}
+        profile: {},
+        showModal: false
       }
     },
 
@@ -260,9 +221,30 @@ export default {
         console.log(event.target.files)
         const file = event.target.files[0]
         const formData = new FormData()
-        formData.append('file', file, file.name)
+        formData.append('file', file, this.$auth.$state.user.avatar.filename)
 
-        await this.$axios.put('/updateUser', formData)
+        await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], formData)
+      },
+
+      uploadZipFiles(event) {
+        const files = event.target.files
+        if (files.length < 7) {
+          files.forEach(async (file) => {
+            const formData = new FormData()
+            formData.append('file', file, file.name)
+
+            await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], formData)
+          })
+        }
+      },
+
+      async updateForm() {
+        await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], { ...this.profile })
+          .then(() => {
+            this.showModal = false
+          }).catch((e) => {
+            console.log(e)
+          })
       }
     },
 
