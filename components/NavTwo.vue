@@ -62,19 +62,23 @@
               </nuxt-link>
             </li>
 
-            <li>
-              <b-dropdown :text="$i18n.locale" variant="outline-dark">
-                <b-dropdown-item
-                  v-for="lang in $i18n.locales"
-                  :key="lang.code"
-                  :value="lang.code"
-                  :active="lang.code === $i18n.locale"
-                  @click="changeLang(lang.code)"
-                >
-                  <span class="m-1 w-50"><img :src="require(`@/assets/icons/`+ lang.code +`.svg`)" style="width: 24px; height: auto"
-                          alt="" class="mr-1 ml-1" />{{ lang.name }}</span></b-dropdown-item>
-              </b-dropdown>
-            </li>
+                                              <li class="text-center">
+                                                <b-dropdown class="m-3" :text="$i18n.locale" variant="outline-Secondary">
+                                                              <template #button-content>
+                                                        <img :src="require(`@/assets/icons/`+ $i18n.locale +`.svg`)" style="width: 24px; height: auto"
+                                                            alt="" class="mr-1 ml-1" />
+                                                    </template>
+                                                  <b-dropdown-item
+                                                    v-for="lang in $i18n.locales"
+                                                    :key="lang.code"
+                                                    :value="lang.code"
+                                                    :active="lang.code === $i18n.locale"
+                                                    @click="changeLang(lang.code)"
+                                                  >
+                                                    <span class="m-1 w-25"><img :src="require(`@/assets/icons/`+ lang.code +`.svg`)" style="width: 24px; height: auto"
+                                                            alt="" class="mr-1 ml-1" />{{ lang.name }}</span></b-dropdown-item>
+                                                </b-dropdown>
+                                              </li>
           </ul>
 
         </b-collapse><!-- /.navbar-collapse -->

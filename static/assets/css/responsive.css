@@ -329,9 +329,8 @@
 
   .site-header__home-three .header-navigation .container .menu-toggler {
     position: relative;
-    top: 10px;
     color: #ffffff;
-    margin-left: 25px;
+    margin-left: 2px;
   }
 
   .site-header__header-two .header-navigation .container .menu-toggler {
@@ -715,7 +714,7 @@
   }
 
   .site-header__home-three .header-navigation .container .right-side-box {
-    top: 30px;
+    top: 65px;
   }
 
   .about-one__img::before {
