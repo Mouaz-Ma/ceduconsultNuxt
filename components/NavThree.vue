@@ -16,10 +16,10 @@
         <b-collapse id="main-navigation" class="main-navigation" is-nav>
           <ul class=" navigation-box">
             <li class="current">
-              <a href="/">Home</a>
+              <a href="/">{{ $t('university.nav.home') }}</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/about">{{ $t('university.nav.about') }}</a>
               <!-- <ul class="sub-menu">
                 <li><a href="/about">About Page</a></li>
                   <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
@@ -28,14 +28,14 @@
               </ul> -->
             </li>
             <li>
-              <a href="/university">Universities</a>
+              <a href="/university">{{ $t('university.nav.universities') }}</a>
               <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/courses">Courses</nuxt-link></li>
                   <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>
               </ul> -->
             </li>
             <li>
-              <a href="/course">Courses</a>
+              <a href="/course">{{ $t('university.nav.courses') }}</a>
               <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/courses">Courses</nuxt-link></li>
                   <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>
@@ -50,14 +50,14 @@
                 </ul>
             </li> -->
             <li>
-              <nuxt-link to="/services">For Applicants</nuxt-link>
+              <nuxt-link to="/services">{{ $t('university.nav.applicants') }}</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/blogs">blogs and news</nuxt-link>
+              <nuxt-link to="/blogs">{{ $t('university.nav.blogs') }}</nuxt-link>
             </li>
 
             <li>
-              <nuxt-link to="/contact">Contact</nuxt-link>
+              <nuxt-link to="/contact">{{ $t('university.nav.contact') }}</nuxt-link>
             </li>
 
             <li class="mx-2">

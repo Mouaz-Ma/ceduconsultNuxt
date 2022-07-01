@@ -229,6 +229,15 @@
     }
   },
   "university": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "universities": "Universities",
+      "courses": "Courses",
+      "applicants": "For Applicants",
+      "blogs": "Blogs and News",
+      "contact": "Contact"
+    },
     "banner": {
       "line1": "your road to quality education",
       "line2": "Welcome to C. Education Consultancy",
