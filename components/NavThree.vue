@@ -60,31 +60,35 @@
               <nuxt-link to="/contact">{{ $t('university.nav.contact') }}</nuxt-link>
             </li>
 
-            <li class="mx-2">
-              <b-dropdown :text="$i18n.locale" variant="outline-light">
-                <b-dropdown-item
-                  v-for="lang in $i18n.locales"
-                  :key="lang.code"
-                  :value="lang.code"
-                  :active="lang.code === $i18n.locale"
-                  @click="changeLang(lang.code)"
-                >
-                  <span class="m-1 w-50">{{ lang.name }}</span></b-dropdown-item>
-              </b-dropdown>
-            </li>
-          </ul>
-        </b-collapse><!-- /.navbar-collapse -->
-
-        <div class="right-side-box">
-          <div class="header__social">
-            <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
-          </div><!-- /.header__social -->
-        </div><!-- /.right-side-box -->
-      </div>
-      <!-- /.container -->
-    </b-navbar-nav>
+                                              <li class="text-center">
+                                                <b-dropdown class="m-3" :text="$i18n.locale" variant="outline-info">
+                                                              <template #button-content>
+                                                        <img :src="require(`@/assets/icons/`+ $i18n.locale +`.svg`)" style="width: 24px; height: auto"
+                                                            alt="" class="mr-1 ml-1" />
+                                                    </template>
+                                                  <b-dropdown-item
+                                                    v-for="lang in $i18n.locales"
+                                                    :key="lang.code"
+                                                    :value="lang.code"
+                                                    :active="lang.code === $i18n.locale"
+                                                    @click="changeLang(lang.code)"
+                                                  >
+                                                    <span class="m-1 w-25"><img :src="require(`@/assets/icons/`+ lang.code +`.svg`)" style="width: 24px; height: auto"
+                                                            alt="" class="mr-1 ml-1" />{{ lang.name }}</span></b-dropdown-item>
+                                                </b-dropdown>
+                                              </li>
+                                          </ul>
+            </b-collapse><!-- /.navbar-collapse -->
+              <div class="right-side-box">
+                  <div class="header__social">
+                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
+                  </div><!-- /.header__social -->
+              </div><!-- /.right-side-box -->
+          </div>
+          <!-- /.container -->
+      </b-navbar-nav>
   </header>
 </template>
 
