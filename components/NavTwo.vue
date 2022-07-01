@@ -153,7 +153,6 @@ export default {
     },
     restartServices: function () {
       window.location.reload(true)
-
     },
   }
 }
