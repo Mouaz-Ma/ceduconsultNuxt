@@ -71,7 +71,8 @@
                   :active="lang.code === $i18n.locale"
                   @click="changeLang(lang.code)"
                 >
-                  <span class="m-1 w-50">{{ lang.name }}</span></b-dropdown-item>
+                  <span class="m-1 w-50"><img :src="require(`@/assets/icons/`+ lang.code +`.svg`)" style="width: 24px; height: auto"
+                          alt="" class="mr-1 ml-1" />{{ lang.name }}</span></b-dropdown-item>
               </b-dropdown>
             </li>
           </ul>
