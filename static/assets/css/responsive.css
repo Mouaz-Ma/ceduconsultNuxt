@@ -442,26 +442,6 @@
     max-width: 100%;
   }
 
-  .cta-six__content,
-  .cta-six__right,
-  .cta-six__left {
-    float: none;
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 70px 0;
-  }
-  .cta-six__content img,
-  .cta-six__right img,
-  .cta-six__left img {
-    width: 100%;
-  }
-
-  .cta-six__content {
-    padding: 0;
-  }
-
   .course-details__review-box {
     margin-top: 40px;
   }
