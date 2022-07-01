@@ -59,6 +59,19 @@
                                               <li>
                                                   <nuxt-link to="/contact">Contact</nuxt-link>
                                               </li>
+                                                          <li>
+              <b-dropdown :text="$i18n.locale" variant="outline-info">
+                <b-dropdown-item
+                  v-for="lang in $i18n.locales"
+                  :key="lang.code"
+                  :value="lang.code"
+                  :active="lang.code === $i18n.locale"
+                  @click="changeLang(lang.code)"
+                >
+                  <span class="m-1 w-25"><img :src="require(`@/assets/icons/`+ lang.code +`.svg`)" style="width: 24px; height: auto"
+                          alt="" class="mr-1 ml-1" />{{ lang.name }}</span></b-dropdown-item>
+              </b-dropdown>
+            </li>
                                           </ul>
             </b-collapse><!-- /.navbar-collapse -->
               <div class="right-side-box">

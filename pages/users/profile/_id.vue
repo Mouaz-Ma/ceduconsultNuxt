@@ -4,9 +4,13 @@
       <div class="row">
         <div class="col-md-4">
           <div class="profile-img">
-            <img
+            <img v-if="$auth.$state.user.avatar"
               :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
               :alt="$auth.$state.user.avatar.filename"
+              width="70%"
+            >
+                        <img v-else
+              src='https://www.w3schools.com/w3images/avatar5.png'
               width="70%"
             >
             <div class="file btn btn-lg btn-primary">
@@ -59,11 +63,15 @@
         <b-modal v-model="showModal" id="editProfile" title="Edit Profile">
           <form>
             <div class="profile-img">
-              <img
-                :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
-                alt=""
-                width="70%"
-              >
+            <img v-if="$auth.$state.user.avatar"
+              :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
+              :alt="$auth.$state.user.avatar.filename"
+              width="70%"
+            >
+                        <img v-else
+              src='https://www.w3schools.com/w3images/avatar5.png'
+              width="70%"
+            >
               <div class="file btn btn-lg btn-primary">
                 Change Photo
                 <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
