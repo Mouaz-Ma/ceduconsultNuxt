@@ -254,6 +254,10 @@
       "special": "specialist program",
       "certificate": "Certificate",
       "book": "Book a Consultation"
+    },
+    "call": {
+      "title": "If you desire to study at any university contact us and we will get your admission.",
+      "btn": "Book a consultation"
     }
   }
 }
