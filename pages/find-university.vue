@@ -1,6 +1,5 @@
 <template>
   <div style="margin-top: -20px">
-    <NavThree />
     <BannerThree />
     <CourseCatThree />
     <CallToActionOne />
@@ -11,40 +10,30 @@
     <VideoThree />
     <!-- <ClientsLogoOne /> -->
     <CallToActionFive />
-    <Footer />
   </div>
 </template>
 <script>
-  import NavThree from "../components/NavThree";
-  import Footer from "../components/Footer";
-  import BannerThree from "../components/BannerThree";
-  import CourseCatThree from "../components/CourseCatThree";
-  import CallToActionOne from "../components/CallToActionOne";
-  import TeamTab from "../components/TeamTab";
-  import CourseThree from "../components/CourseThree";
-  import CallToActionSix from "../components/CallToActionSix";
-  import Testimonial from "../components/Testimonial";
-  import VideoThree from "../components/VideoThree";
-  import ClientsLogoOne from "../components/ClientsLogoOne";
-  import CallToActionFive from "../components/CallToActionFive";
 
   export default {
-    auth: false,
-    components: {
-      Footer,
-      NavThree,
-      BannerThree,
-      CourseCatThree,
-      CallToActionOne,
-      TeamTab,
-      CourseThree,
-      CallToActionSix,
-      Testimonial,
-      VideoThree,
-      ClientsLogoOne,
-      CallToActionFive,
+    name: 'FindUniversityView',
 
+    auth: false,
+
+    layout: 'university',
+
+    components: {
+      BannerThree: () => import("../components/BannerThree"),
+      CourseCatThree: () => import("../components/CourseCatThree"),
+      CallToActionOne: () => import("../components/CallToActionOne"),
+      TeamTab: () => import("../components/TeamTab"),
+      CourseThree: () => import("../components/CourseThree"),
+      CallToActionSix: () => import("../components/CallToActionSix"),
+      Testimonial: () => import("../components/Testimonial"),
+      VideoThree: () => import("../components/VideoThree"),
+      ClientsLogoOne: () => import("../components/ClientsLogoOne"),
+      CallToActionFive: () => import("../components/CallToActionFive"),
     },
+
     head(){
       return{
         title: "Cedu | Home Uni"
