@@ -242,6 +242,18 @@
       "line1": "your road to quality education",
       "line2": "Welcome to C. Education Consultancy",
       "line3": "At C.E.C, your Education is our top priority"
+    },
+    "courses": {
+      "title1": "Browse online",
+      "title2": "course categories",
+      "prep": "Preparatory courses",
+      "bsc": "Bachelor programme",
+      "msc": "Master programme",
+      "phd": "PHD Programme",
+      "mba": "MBA",
+      "special": "specialist program",
+      "certificate": "Certificate",
+      "book": "Book a Consultation"
     }
   }
 }
