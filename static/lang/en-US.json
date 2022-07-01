@@ -227,5 +227,12 @@
         "headline": "Student"
       }
     }
+  },
+  "university": {
+    "banner": {
+      "line1": "your road to quality education",
+      "line2": "Welcome to C. Education Consultancy",
+      "line3": "At C.E.C, your Education is our top priority"
+    }
   }
 }
