@@ -1,24 +1,209 @@
 <template>
-<h1>{{$route.params.id}}</h1>
+  <div class="container emp-profile">
+    <form method="post">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile-img">
+            <img v-if="$auth.$state.user.avatar"
+              :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
+              :alt="$auth.$state.user.avatar.filename"
+              width="70%"
+            >
+                        <img v-else
+              src='https://www.w3schools.com/w3images/avatar5.png'
+              width="70%"
+            >
+            <div class="file btn btn-lg btn-primary">
+              Change Photo
+              <input type="file" name="file" accept="image/jpeg"/>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="profile-head">
+            <h5>
+              {{ userData.username }}
+            </h5>
+            <h6>
+              {{ userData.email }}
+            </h6>
+            <p class="proile-rating">
+              Email Status:
+              <span :class="userData.isVerified ? 'text-success' : 'text-danger'">
+                {{ userData.isVerified ? 'Verified' : 'Unverified' }}
+              </span>
+            </p>
+            <ul
+              id="myTab"
+              class="nav nav-tabs"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <a
+                  id="home-tab"
+                  class="nav-link active"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <!-- Button trigger modal -->
+          <b-button @click="showModal = true">
+            Edit Profile
+          </b-button>
+        </div>
+
+        <!-- Modal -->
+        <b-modal v-model="showModal" id="editProfile" title="Edit Profile">
+          <form>
+            <div class="profile-img">
+            <img v-if="$auth.$state.user.avatar"
+              :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
+              :alt="$auth.$state.user.avatar.filename"
+              width="70%"
+            >
+                        <img v-else
+              src='https://www.w3schools.com/w3images/avatar5.png'
+              width="70%"
+            >
+              <div class="file btn btn-lg btn-primary">
+                Change Photo
+                <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                id="username"
+                v-model="profile.username"
+                type="text"
+                class="form-control"
+                placeholder="username here"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                v-model="profile.email"
+                type="text"
+                class="form-control"
+                placeholder="something@domain.xx"
+              >
+            </div>
+            <div class="form-group">
+              <label for="zippedFile">upload zipped file</label>
+              <input
+                id="zippedFile"
+                type="file"
+                multiple
+                class="form-control-file"
+                accept="application/zip"
+                @change="uploadZipFiles"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="phone">phone</label>
+              <input
+                v-model="profile.phone"
+                id="phone"
+                type="text"
+                class="form-control"
+              >
+            </div>
+          </form>
+
+          <template #modal-footer>
+            <b-button variant="primary" @click="updateForm">
+              Save changes
+            </b-button>
+
+            <b-button variant="danger" @click="showModal = false">
+              Cancel
+            </b-button>
+          </template>
+        </b-modal>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <!-- <div class="profile-work">
+            <p>WORK LINK</p>
+            <a href="">Website Link</a><br>
+            <a href="">Bootsnipp Profile</a><br>
+            <a href="">Bootply Profile</a>
+            <p>SKILLS</p>
+            <a href="">Web Designer</a><br>
+            <a href="">Web Developer</a><br>
+            <a href="">WordPress</a><br>
+            <a href="">WooCommerce</a><br>
+            <a href="">PHP, .Net</a><br>
+          </div> -->
+        </div>
+        <div class="col-md-8">
+          <div
+            id="myTabContent"
+            class="tab-content profile-tab"
+          >
+            <div
+              id="home"
+              class="tab-pane fade show active"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <label>User Id</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userData._id }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userData.username }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Email</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userData.email }}</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Unique String</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userData.uniqueString }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </template>
 <script>
 
 export default {
-
-    data() {
-        return{
-            name:"",
-            email:"",
-            verifyAlertMessage: '',
-            searchQuery: '',
-            userData: null,
-        }
-    },
-    methods: {
-    },
-      async asyncData({
-      $axios, route
-    }) {
+    async asyncData({ $axios, route }) {
       try {
         const userCall = $axios.get('/api/users/userInfo/'+route.params.id)
         const userPromise = await Promise.resolve(userCall)
@@ -31,18 +216,124 @@ export default {
         console.log(err)
       }
     },
+
+    data() {
+      return{
+        profile: {},
+        showModal: false
+      }
+    },
+
+    methods: {
+      async uploadImage(event) {
+        console.log(event.target.files)
+        const file = event.target.files[0]
+        const formData = new FormData()
+        formData.append('file', file, this.$auth.$state.user.avatar.filename)
+
+        await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], formData)
+      },
+
+      uploadZipFiles(event) {
+        const files = event.target.files
+        if (files.length < 7) {
+          files.forEach(async (file) => {
+            const formData = new FormData()
+            formData.append('file', file, file.name)
+
+            await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], formData)
+          })
+        }
+      },
+
+      async updateForm() {
+        await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], { ...this.profile })
+          .then(() => {
+            this.showModal = false
+          }).catch((e) => {
+            console.log(e)
+          })
+      }
+    },
+
+    mounted() {
+      if (this.userData) {
+        this.profile = this.userData
+      }
+    }
 }
 </script>
 
 <style scoped>
-.content-body{
-    margin-top: 200px;
-}
-ul {
-    list-style-type: none;
+body{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
 }
 
-a{
-  text-decoration: none;
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
 }
+
+.profile-img{
+  text-align: center;
+}
+
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+.profile-edit-btn{
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+
 </style>

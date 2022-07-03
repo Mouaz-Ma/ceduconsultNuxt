@@ -1,29 +1,42 @@
 <template>
-          <div class="topbar-one">
-          <div class="container">
-              <div class="topbar-one__left">
-                  <!-- <a href="#">needhelp@kipso.com</a> -->
-                  <!-- <a href="#">444 888 0000</a> -->
-              </div><!-- /.topbar-one__left -->
-              <div class="topbar-one__right" v-if="$auth.$state.loggedIn">
-                   <nuxt-link to="/users/profile">Welcome {{$auth.$state.user.username}}!</nuxt-link>
-                   <a id="logout" @click="onLogout">Sign Out</a>
+  <div class="topbar-one">
+    <div class="container">
+      <div class="topbar-one__left">
+        <!-- <a href="#">needhelp@kipso.com</a> -->
+        <!-- <a href="#">444 888 0000</a> -->
+      </div><!-- /.topbar-one__left -->
+      <div
+        v-if="$auth.$state.loggedIn"
+        class="topbar-one__right"
+      >
+        <nuxt-link to="/users/profile">
+          {{ $t('elearning.topbar.welcome') }} {{ $auth.$state.user.username }}!
+        </nuxt-link>
+        <a
+          id="logout"
+          @click="onLogout"
+        >{{ $t('elearning.topbar.signout') }}</a>
+      </div>
 
-              </div>
-              <div class="topbar-one__right" v-else>
-                  <nuxt-link to="/users/logIn">Login</nuxt-link>
-                  <!-- <nuxt-link to="/users/register">Register</nuxt-link> -->
-              </div>
-              <!-- /.topbar-one__right -->
-          </div><!-- /.container -->
-      </div><!-- /.topbar-one -->
+      <div
+        v-else
+        class="topbar-one__right"
+      >
+        <nuxt-link to="/users/logIn">
+          {{ $t('elearning.topbar.login') }}
+        </nuxt-link>
+        <!-- <nuxt-link to="/users/register">Register</nuxt-link> -->
+      </div>
+      <!-- /.topbar-one__right -->
+    </div><!-- /.container -->
+  </div><!-- /.topbar-one -->
 </template>
 <script>
 export default {
     methods: {
         async onLogout() {
           await this.$auth.logout()
-        } 
+        }
     }
 }
 </script>

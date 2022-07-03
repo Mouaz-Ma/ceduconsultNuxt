@@ -1,0 +1,263 @@
+{
+  "home": {
+    "title-1": "Find Your University",
+    "title-2": "E-learning Portal",
+    "intro-1": "Tertiary education is considered to be the stepping\n stone to all the careers that we want to pursue. Don't struggle alone! Let C.E.C guide you on this journey.",
+    "intro-2": "The limits of my language mean the limits of my world \n-Ludwig Wittgenstein. \nLearn English with C.E.C today and work beyond your limits with qualified teachers.",
+    "btn-left": "Start Your Journey",
+    "btn-right": "Start Learning"
+  },
+  "elearning": {
+    "topbar": {
+      "welcome": "Welcome",
+      "signout": "Sign Out",
+      "login": "Login"
+    },
+    "nav": {
+      "home": "Home",
+      "classes": "Available classes",
+      "blogs": "blogs and news",
+      "contact": "Contact"
+    },
+    "banner": {
+      "quality": "High quality courses",
+      "read-learn": "Read & learn",
+      "easy": "in an easy way",
+      "learn-more": "Learn More"
+    },
+    "carousel-two": {
+      "schedule": "Flexible schedule",
+      "lessons": "Customizable Lessons",
+      "progression": "Quicker Progression",
+      "levels": "All Levels"
+    },
+    "about-one": {
+      "who": "Who are we?",
+      "count": "88750",
+      "students": "students loved us",
+      "p1": "At C. Education Consultancy, we are experts in teaching and testing English as a second and foreign language.",
+      "p2": "We are dedicated to providing students with proactive learning solutions and techniques that will stay with them, not just through language exams but through their entire lives.",
+      "p3": "Students who have taken part in our courses have had proven success in all the English Language components. We believe in nurturing each student, providing not just academic support but moral support throughout the process.",
+      "p4": "Our lessons are personalized and our teaching services are affordable. As educators, we continuously aim to improve students' areas of difficulty and introduce students to conversational topics in real-time while, helping them advance to higher levels of understanding and speaking.",
+      "button": "Start Learning Now"
+    },
+    "quiz": {
+      "title": "Level test",
+      "thank-you": "Thank you for your interest in taking the online level test. The test is designed to help determine your English proficiency level. It consists of 10 multiple choice questions, and 1 reading and writing test.",
+      "alert1": "DO NOT USE A DICTIONARY",
+      "list1": "10 MINUTES FOR 10 MULTIPLE CHOICE QUESTIONS",
+      "list2": "8 MINUTES FOR THE READING TEST",
+      "list3": "10 MINUTES FOR THE WRITING TEST",
+      "list4": "IF YOU DO NOT UNDERSTAND THE QUESTION OR DO NOT KNOW THE ANSWER, PLEASE SELECT “I DON’T KNOW” THE ANSWER IN THE MULTIPLE-CHOICE ANSWER.",
+      "list5": "YOUR FINAL LEVEL WILL BE DECIDED ON YOUR FIRST DAY OF CLASSES AFTER THE SPEAKING AND LISTENING TEST",
+      "alert2": "Note: The result from this test cannot be used as an official proof of your English proficiency for admission to C.E.C or any other institution. For further details regarding enrolment process, please contact…………",
+      "take-test": "Take the test",
+      "cancel": "Cancel"
+    },
+    "courses": {
+      "title1": "Explore our",
+      "title2": "popular courses",
+      "description": "Would you like to take an official English Proficiency Exam?\n            We offer the following classes to prepare you for the test of your choice",
+      "one": {
+        "category": "English",
+        "teacher": "Lou Guerrero",
+        "title": "IELTS",
+        "content": "(the International English Language Testing System) is the world’s most popular English language test for work, study, and migration. More than 10,000 organizations trust IELTS as a reliable indicator of true to life ability to communicate in English. IELTS assesses a test taker’s English language proficiency across four skills:  listening, reading, writing, and speaking.\n",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "two": {
+        "category": "English",
+        "teacher": "Cora Diaz",
+        "title": "TOEFL",
+        "content": "the Test of English as a Foreign Language. It assesses your ability to both speak and understand English by analyzing your English ability in terms of reading, speaking, listening and writing. These are all skills which will be needed to carry out your academic studies and the test is used by institutions to ensure students are able to proceed and succeed on their chosen course in a country where the curriculum is taught in English.\n \nThe TOEFL test is usually conducted in the form of an online test.\n",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "three": {
+        "category": "English",
+        "teacher": "Ruth Becker",
+        "title": "TOEIC",
+        "content": "The Test of English for International Communication (TOEIC®) is a multiple-choice English language proficiency test for people whose native language is not English. It measures their English comprehension, speaking, writing and reading skills in an international environment. The scores indicate how well people can communicate in English with others in business, commerce and industry.\n",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "four": {
+        "category": "English",
+        "teacher": "Duolingo",
+        "content": "The Duolingo English Test is a modern language proficiency tool designed for today's international students and institutions. It offers an English proficiency score, video interview, and writing sample in an accessible, efficient, and secure testing experience.\n",
+        "title": "Duolingo",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "five": {
+        "category": "English",
+        "teacher": "Isabella Stanley",
+        "title": "OPIC",
+        "content": "an internet delivered test which provides valid and reliable oral proficiency testing on a large scale. It was developed in 2006 in response to the increased worldwide demand for the testing of oral language proficiency.\n",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      }
+    },
+    "partners": {
+      "title": "Meet Our Partners",
+      "ankara": {
+        "name": "Ankara Medipol",
+        "description": "Where science and tradition come together with a modern understanding of\neducation."
+      },
+      "canada": {
+        "name": "Canadian Imperial College",
+        "description": "The prerequisite for motivation and success in any endeavor is a BIG vision\nfor your future. If you’re stuck in the past, you’re really in trouble."
+      },
+      "cooking": {
+        "name": "Gastronomicom cooking school",
+        "description": "Our highly experienced chefs/teachers provide hands-on classes to a one\n                  Michelin Star level. All of our cooking and pastry courses are conducted in English."
+      },
+      "graduate": {
+        "name": "International Graduate Center",
+        "description": "one of Germany's first graduate schools offering MBA degrees, is aimed at\nfuture managers."
+      },
+      "solutions": {
+        "name": "International Student Solutions",
+        "description": "International Student Solutions has a commitment to the continued improvement\nof student services and the overall experience for international students."
+      },
+      "american": {
+        "name": "Girne American University",
+        "description": "Girne American University is dedicated to making American model learning\nopportunities accessible throughout life and to making them challenging and relevant to a diverse\npopulation of young adults."
+      },
+      "mesoyios": {
+        "name": "Mesoyios College",
+        "description": "an institution operating from 1998 as an educational center specialized in\nthe hospitality industry."
+      },
+      "poland": {
+        "name": "Education Poland",
+        "description": "Education Poland is the only official university partner & admissions office\nfor several polish universities."
+      },
+      "wittenborg": {
+        "name": "Wittenborg University of Applied Sciences",
+        "description": "The most international business and management school in the Netherlands."
+      },
+      "ge": {
+        "name": "GE Global",
+        "description": "GE Global Consultants are committed to providing an ultimate solution of\nservices for International students in the categories of Foundation, Undergraduate, and postgraduate\nsectors."
+      }
+    },
+    "programs": {
+      "title": "Our Programs and Curriculum",
+      "ted": {
+        "name": "TEDEd",
+        "description": "Our mission is to spark and celebrate the ideas of students and teachers throughout the world. Follow for program updates + new animated videos every week!"
+      },
+      "ng": {
+        "name": "National Geographic Learning",
+        "description": "National Geographic Learning’s mission is to bring the world to the classroom and the classroom to life."
+      },
+      "oxford": {
+        "name": "Oxford University Press",
+        "description": "Oxford University Press – one of the world’s oldest higher education institution divisions, founded in 1586, showed its new logo. The style update was carried out for the first time in the last 30 years."
+      },
+      "ielts": {
+        "name": "IELTS Prep",
+        "description": "Prepare with confidence for your upcoming IELTS Academic or General Training test. The IELTS Prep App gives you instant, unlimited access to all the right tools you need to prepare for your test – anytime, anywhere."
+      },
+      "cambridge": {
+        "name": "Cambridge University Press",
+        "description": "Our mission is to unlock people’s potential with the best learning and research solutions. Our vision is a world of learning and research inspired by Cambridge. Cambridge University Press is a world leader in the field of English Language Teaching (ELT) publishing, with titles for teachers and learners of English, covering all levels from kindergarten to university and adult language training."
+      },
+      "toefl": {
+        "name": "ETS TOEFL",
+        "description": "Students can achieve their dreams of university study, immigration and more with the TOEFL iBT® and TOEFL® Essentials™ tests. Each test is uniquely designed so they can choose the TOEFL test that's best for them."
+      },
+      "macmillan": {
+        "name": "MacMillan English",
+        "description": "Macmillan Education is a global publisher, specialising in English language teaching (ELT) and curriculum publishing. Their ELT publishing ranges from internationally recognised courses such as New Inside Out and In Company, through innovative titles like Aviation English, to their award-winning range of learners' dictionaries."
+      },
+      "ef": {
+        "name": "English File",
+        "description": "Learn more English here with interactive exercises, useful downloads, games, and weblinks. Practise your grammar, vocabulary, pronunciation, listening, and reading, and have some fun too."
+      },
+      "toeic": {
+        "name": "ETS TOEIC",
+        "description": "Whether you are an individual who wants to stand out against the competition or an organization seeking to build a more skilled team or prepare work-ready students, the TOEIC® program can help you achieve your goal."
+      },
+      "opic": {
+        "name": "OPIC",
+        "description": "OPIc Tips – Oral proficiency interview by a computer is a popular English speaking evaluation taken by many business professionals. Many corporate professionals need to attain a high score to get promotions or work overseas"
+      },
+      "duolingo": {
+        "name": "Duolingo English Test Preparation",
+        "description": "In 2014, Duolingo launched a web English proficiency exam so as to return out as an alternate for other English proficiency exams like IELTS/TOEFL. This blog covers all the Duolingo accepted universities across the United Kingdom, USA, Canada, Australia, Japan, Europe, and New Zealand."
+      },
+      "tefl": {
+        "name": "TEFL CERTIFIED",
+        "description": "This 120 hour TEFL certification is TEFL Educator's most popular course. It covers important English teaching fundamentals and includes a dedicated section on teaching English to young learners (TEYL). Trainees can expect live tutoring via Skype and personalized email support. Numerous podcasts and videos demonstrating real classroom environments are also provided."
+      }
+    },
+    "testimonials": {
+      "title1": "What our students",
+      "title2": "have to say",
+      "quote1": {
+        "content": "The IELTS speaking lesson as a whole was very useful. I got a speaking test exactly similar to the real one, I think this is a very great and important step. My instructor notes my mistakes while speaking then she alerted me in a very kind and respectful way. At the end of the lesson, my instructor gave me great and useful tips to follow during the exam as well as during my preparation for the test. In the end, I want to thank you all for your efforts.",
+        "name": "Mel",
+        "headline": "Student"
+      },
+      "quote2": {
+        "content": "With (CEC) I had excellent teachers! They provide both a great mix of listening, speaking and practical learning activities and a very safe, supportive learning environment. Their teaching methods are great. They are very clear and concise. Speaking for IELTS is an excellent course that really improved my speaking skills. All the meetings and materials were really helpful and informative. CEC has the best instructors.",
+        "name": "Hayat",
+        "headline": "Student"
+      },
+      "quote3": {
+        "content": "The lessons were fantastic and up to date. The teachers listen and help. I have lots of fun during my lessons.",
+        "name": "Rob",
+        "headline": "Student"
+      },
+      "quote4": {
+        "content": "Storytelling was fun and I cannot wait for more. Thank you, Teacher.",
+        "name": "Emily",
+        "headline": "Student"
+      },
+      "quote5": {
+        "content": "Teacher Charlene motivated me to keep learning and not give up. I'm happy to be part of CEC!",
+        "name": "Lilly",
+        "headline": "Student"
+      }
+    }
+  },
+  "university": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "universities": "Universities",
+      "courses": "Courses",
+      "applicants": "For Applicants",
+      "blogs": "Blogs and News",
+      "contact": "Contact"
+    },
+    "banner": {
+      "line1": "your road to quality education",
+      "line2": "Welcome to C. Education Consultancy",
+      "line3": "At C.E.C, your Education is our top priority"
+    },
+    "courses": {
+      "title1": "Browse online",
+      "title2": "course categories",
+      "prep": "Preparatory courses",
+      "bsc": "Bachelor programme",
+      "msc": "Master programme",
+      "phd": "PHD Programme",
+      "mba": "MBA",
+      "special": "specialist program",
+      "certificate": "Certificate",
+      "book": "Book a Consultation"
+    },
+    "call": {
+      "title": "If you desire to study at any university contact us and we will get your admission.",
+      "btn": "Book a consultation"
+    }
+  }
+}

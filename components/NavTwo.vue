@@ -1,85 +1,131 @@
 <template>
   <header class="site-header site-header__header-two ">
-      <top-bar />
-      <b-navbar-nav toggleable="lg" variant="dark" class="header-navigation stricky navHeight">
-          <div class="container clearfix justify-content-bottom">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="logo-box clearfix">
-                  <b-navbar-brand href="/">
-                      <img src="/assets/images/logo-light.png"  width="90" alt="Awesome Image" />
-                  </b-navbar-brand>
-                  <b-navbar-toggle class="menu-toggler" target="main-navigation">
-                      <span class="kipso-icon-menu"></span>
-                  </b-navbar-toggle>
-              </div><!-- /.logo-box -->
-              <!-- Collect the nav links, forms, and other content for toggling -->
-            <b-collapse id="main-navigation" class="main-navigation" is-nav>
-                                          <ul class=" navigation-box">
-                                              <li class="current">
-                                                  <a href="/">Home</a>
-                                              </li>
-                                              <li>
-                                                  <a href="/classRoom">Available classes</a>
-                                                  <!-- <ul class="sub-menu">
-                                                    <li><a href="/about">About Page</a></li>
-                                                      <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
-                                                      <li><nuxt-link to="/pricing">Pricing Plans</nuxt-link></li>
-                                                      <li><nuxt-link to="/faq">FAQ'S</nuxt-link></li>
-                                                  </ul> -->
-                                              </li>
-                                              <!-- <li>
-                                                  <nuxt-link to="/teachers">Teachers</nuxt-link>
-                                                  <ul class="sub-menu">
-                                                      <li><nuxt-link to="/teachers">Teachers</nuxt-link></li>
-                                                      <li><nuxt-link to="/teacher-details">Teachers Details</nuxt-link></li>
-                                                      <li><nuxt-link to="/become-teacher">Become Teacher</nuxt-link></li>
-                                                  </ul>
-                                              </li> -->
-                                              <li>
-                                                  <nuxt-link to="/blogs/indexTwo">blogs and news</nuxt-link>
-                                              </li>
+    <top-bar/>
+    <b-navbar-nav
+      toggleable="lg"
+      variant="dark"
+      class="header-navigation stricky navHeight"
+    >
+      <div class="container clearfix justify-content-bottom">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="logo-box clearfix">
+          <b-navbar-brand href="/">
+            <img
+              src="/assets/images/logo-light.png"
+              width="90"
+              alt="Awesome Image"
+            >
+          </b-navbar-brand>
+          <b-navbar-toggle
+            class="menu-toggler"
+            target="main-navigation"
+          >
+            <span class="kipso-icon-menu"/>
+          </b-navbar-toggle>
+        </div><!-- /.logo-box -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <b-collapse
+          id="main-navigation"
+          class="main-navigation"
+          is-nav
+        >
+          <ul class=" navigation-box">
+            <li class="current">
+              <a href="/">{{ $t('elearning.nav.home') }}</a>
+            </li>
+            <li>
+              <a href="/classRoom">{{ $t('elearning.nav.classes') }}</a>
+              <!-- <ul class="sub-menu">
+                      <li><a href="/about">About Page</a></li>
+                        <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
+                        <li><nuxt-link to="/pricing">Pricing Plans</nuxt-link></li>
+                        <li><nuxt-link to="/faq">FAQ'S</nuxt-link></li>
+                    </ul> -->
+            </li>
+            <!-- <li>
+                    <nuxt-link to="/teachers">Teachers</nuxt-link>
+                    <ul class="sub-menu">
+                        <li><nuxt-link to="/teachers">Teachers</nuxt-link></li>
+                        <li><nuxt-link to="/teacher-details">Teachers Details</nuxt-link></li>
+                        <li><nuxt-link to="/become-teacher">Become Teacher</nuxt-link></li>
+                    </ul>
+                </li> -->
+            <li>
+              <nuxt-link to="/blogs/indexTwo">
+                {{ $t('elearning.nav.blogs') }}
+              </nuxt-link>
+            </li>
 
-                                              <li>
-                                                  <nuxt-link to="/contactTwo">Contact</nuxt-link>
+            <li>
+              <nuxt-link to="/contactTwo">
+                {{ $t('elearning.nav.contact') }}
+              </nuxt-link>
+            </li>
+
+                                              <li class="text-center">
+                                                <b-dropdown class="m-3" :text="$i18n.locale" variant="outline-Secondary">
+                                                              <template #button-content>
+                                                        <img :src="require(`@/assets/icons/`+ $i18n.locale +`.svg`)" style="width: 24px; height: auto"
+                                                            alt="" class="mr-1 ml-1" />
+                                                    </template>
+                                                  <b-dropdown-item
+                                                    v-for="lang in $i18n.locales"
+                                                    :key="lang.code"
+                                                    :value="lang.code"
+                                                    :active="lang.code === $i18n.locale"
+                                                    @click="changeLang(lang.code)"
+                                                  >
+                                                    <span class="m-1 w-25"><img :src="require(`@/assets/icons/`+ lang.code +`.svg`)" style="width: 24px; height: auto"
+                                                            alt="" class="mr-1 ml-1" />{{ lang.name }}</span></b-dropdown-item>
+                                                </b-dropdown>
                                               </li>
-                                          </ul>
-            </b-collapse><!-- /.navbar-collapse -->
-              <div class="right-side-box">
-                  <div class="header__social">
-                        <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a>
-                  </div><!-- /.header__social -->
-              </div><!-- /.right-side-box -->
-          </div>
-          <!-- /.container -->
-      </b-navbar-nav>
-      <div class="site-header__decor">
-          <div class="site-header__decor-row">
-              <div class="site-header__decor-single">
-                  <div class="site-header__decor-inner-1"></div><!-- /.site-header__decor-inner -->
-              </div><!-- /.site-header__decor-single -->
-              <div class="site-header__decor-single">
-                  <div class="site-header__decor-inner-2"></div><!-- /.site-header__decor-inner -->
-              </div><!-- /.site-header__decor-single -->
-              <div class="site-header__decor-single">
-                  <div class="site-header__decor-inner-3"></div><!-- /.site-header__decor-inner -->
-              </div><!-- /.site-header__decor-single -->
-          </div><!-- /.site-header__decor-row -->
-      </div><!-- /.site-header__decor -->
+          </ul>
+
+        </b-collapse><!-- /.navbar-collapse -->
+        <div class="right-side-box">
+          <div class="header__social">
+            <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"/></a>
+            <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"/></a>
+            <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"/></a>
+          </div><!-- /.header__social -->
+        </div><!-- /.right-side-box -->
+      </div>
+      <!-- /.container -->
+    </b-navbar-nav>
+    <div class="site-header__decor">
+      <div class="site-header__decor-row">
+        <div class="site-header__decor-single">
+          <div class="site-header__decor-inner-1"/><!-- /.site-header__decor-inner -->
+        </div><!-- /.site-header__decor-single -->
+        <div class="site-header__decor-single">
+          <div class="site-header__decor-inner-2"/><!-- /.site-header__decor-inner -->
+        </div><!-- /.site-header__decor-single -->
+        <div class="site-header__decor-single">
+          <div class="site-header__decor-inner-3"/><!-- /.site-header__decor-inner -->
+        </div><!-- /.site-header__decor-single -->
+      </div><!-- /.site-header__decor-row -->
+    </div><!-- /.site-header__decor -->
   </header>
 </template>
 
 
 <script>
-import topBar from "@/components/topBar.vue";
 export default {
-  components: {
-    topBar
-  },
-  auth: false,
   name: "NavTwo",
-    mounted() {
+
+  components: {
+    topBar: () => import("@/components/topBar.vue")
+  },
+
+  auth: false,
+
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  },
+
+  mounted() {
     if ($(".main-navigation .navigation-box").length) {
       var subMenu = $(".main-navigation .sub-menu");
       subMenu
@@ -105,24 +151,34 @@ export default {
       });
     }
   },
+  methods: {
+    changeLang: function (language) {
+      this.$i18n.setLocale(language);
+      this.restartServices();
+    },
+    restartServices: function () {
+      window.location.reload(true)
+    },
+  }
 }
 </script>
 
 <style scoped>
-.header-navigation{
-    font-family: "Poppins";
-    color: #81868a;
-    font-size: 16px;
-    line-height: 34px;
-    letter-spacing: -0.02em;
-    text-decoration: none;
+.header-navigation {
+  font-family: "Poppins";
+  color: #81868a;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
-a:hover{
-      text-decoration: none;
+a:hover {
+  text-decoration: none;
 }
 
-.stricky-fixed{
+.stricky-fixed {
   padding: 10px;
 }
+
 </style>

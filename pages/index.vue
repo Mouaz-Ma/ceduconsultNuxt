@@ -1,8 +1,13 @@
 <template>
   <div>
-     <CallToActionTwo :link1="'/index-3'" :link2="'/index-2'" :title1="'Find Your University'" :title2="'E-learning Portal'" 
-     :intro1="'Tertiary education is considered to be the stepping\n stone to all the careers that we want to pursue. Don\'t struggle alone! Let C.E.C guide you on this journey.'"
-     :intro2="'The limits of my language mean the limits of my world \n-Ludwig Wittgenstein. \nLearn English with C.E.C today and work beyond your limits with qualified teachers.'" />
+    <CallToActionTwo
+      link1="/find-university"
+      link2="/e-learning"
+      :title1="$t('home.title-1')"
+      :title2="$t('home.title-2')"
+      :intro1="$t('home.intro-1')"
+      :intro2="$t('home.intro-2')"
+    />
   </div>
 </template>
 
@@ -10,10 +15,23 @@
   import CallToActionTwo from "../components/CallToActionTwo";
 
   export default {
-    name: 'index',
+    name: 'IndexView',
     auth: false,
     components: {
-    CallToActionTwo
+      CallToActionTwo
+    },
+    head() {
+      return {
+        title: 'Cedu Consult',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            // TODO: fill in content
+            content: ''
+          }
+        ]
+      }
     }
   }
 </script>

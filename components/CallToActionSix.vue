@@ -1,31 +1,28 @@
 <template>
-  <section class="cta-six thm-gray-bg">
-              <img src="/assets/images/line-stripe-2.png" class="cta-six__line" alt="">
-              <div class="container-fluid clearfix">
-                  <div class="cta-six__left">
-                         <img src="/assets/images/fact-1-2.jpg" alt="">
-                      <!-- <h2 class="cta-six__title">More than <span class="counter">7840</span> students are registered</h2> -->
-                      <!-- /.cta-six__title -->
+  <section class="thm-gray-bg">
+    <img src="/assets/images/line-stripe-2.png" class="cta-six__line" alt="">
+    <b-row align-v="center" align-h="center">
+      <b-col>
+        <img src="/assets/images/fact-1-2.jpg" alt="">
+      </b-col><!-- /.cta-six__left -->
 
-                  </div><!-- /.cta-six__left -->
-                  
-                  <div class="cta-six__right">
-                                         <div class="cta-six__content">
-                          <div class="block-title text-left">
-                              <h2 class="block-title__title">Your Admission Roadmap</h2><!-- /.block-title__title -->
-                          </div><!-- /.block-title -->
-                          <img src="/assets/images/fact-1-1.jpg" alt="">
-                      </div><!-- /.cta-six__content -->
-                  </div><!-- /.cta-six__right -->
-              </div><!-- /.container-fluid -->
-          </section>
+      <b-col cols="4">
+        <b-row align-h="center" align-v="center" class="h-100">
+          <b-col>
+            <h2 class="block-title__title mb-4">Your Admission Roadmap</h2><!-- /.block-title__title -->
+            <img width="85%" src="/assets/images/fact-1-1.jpg" alt="">
+          </b-col>
+        </b-row>
+      </b-col><!-- /.cta-six__right -->
+    </b-row><!-- /.container-fluid -->
+  </section>
 </template>
 
 <script>
-    export default {
-    auth: false,
-        name: "CallToActionSix"
-    }
+export default {
+  auth: false,
+  name: "CallToActionSix"
+}
 </script>
 
 <style scoped>

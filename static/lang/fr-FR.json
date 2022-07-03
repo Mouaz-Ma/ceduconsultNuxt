@@ -1,0 +1,233 @@
+{
+  "home": {
+    "title-1": "Trouvez votre université",
+    "title-2": "Portail d'apprentissage en ligne",
+    "intro-1": "L'enseignement supérieur est considéré comme le tremplin\n vers toutes les carrières que nous voulons poursuivre. Ne luttez pas seul ! Laissez C.E.C vous guider dans ce voyage.",
+    "intro-2": "Les limites de ma langue signifient les limites de mon monde \nand-Ludwig Wittgenstein. \nApprenez l'anglais avec C.E.C aujourd'hui et travaillez au-delà de vos limites avec des professeurs qualifiés.",
+    "btn-left": "Commencez votre voyage",
+    "btn-right": "Commencer à apprendre"
+  },
+  "elearning": {
+    "topbar": {
+      "welcome": "Salut",
+      "signout": "Se déconnecter",
+      "login": "Connexion"
+    },
+    "nav": {
+      "home": "Home",
+      "classes": "Cours disponibles",
+      "blogs": "blogs et actualités",
+      "contact": "Contact"
+    },
+    "banner": {
+      "quality": "Cours de haute qualité",
+      "read-learn": "Lire & apprendre",
+      "easy": "d'une manière facile",
+      "learn-more": "Apprendre encore plus"
+    },
+    "carousel-two": {
+      "schedule": "horaire flexible",
+      "lessons": "Leçons personnalisables",
+      "progression": "Progression plus rapide",
+      "levels": "Tous les niveaux"
+    },
+    "about-one": {
+      "who": "Qui sommes-nous?",
+      "count": "88750",
+      "students": "les étudiants nous ont adoré",
+      "p1": "Chez C. Education Consultancy, nous sommes experts dans l'enseignement et l'évaluation de l'anglais comme langue seconde et étrangère.",
+      "p2": "Nous nous engageons à fournir aux étudiants des solutions et des techniques d'apprentissage proactives qui resteront avec eux, non seulement pendant les examens de langue, mais tout au long de leur vie.",
+      "p3": "Les étudiants qui ont participé à nos cours ont réussi dans toutes les composantes de la langue anglaise. Nous croyons qu'il faut nourrir chaque étudiant, en fournissant non seulement un soutien académique, mais un soutien moral tout au long du processus.",
+      "p4": "Nos leçons sont personnalisées et nos services d'enseignement sont abordables. En tant qu'éducateurs, nous cherchons continuellement à améliorer les domaines de difficulté des élèves et à leur présenter des sujets de conversation en temps réel tout en les aidant à progresser vers des niveaux supérieurs de compréhension et d'expression orale.",
+      "button": "commencer à apprendre maintenant"
+    },
+    "quiz": {
+      "title": "TEST DE PLACEMENT EN LIGNE",
+      "thank-you": "Merci de votre intérêt à passer le test de niveau en ligne. Le test est conçu pour aider à déterminer votre niveau de compétence en anglais. Il se compose de 10 questions à choix multiples et d'un test de lecture et d'écriture.",
+      "alert1": "N'UTILISEZ PAS DE DICTIONNAIRE",
+      "list1": "10 MINUTES POUR 10 QUESTIONS À CHOIX MULTIPLES",
+      "list2": "8 MINUTES POUR LE TEST DE LECTURE",
+      "list3": "10 MINUTES POUR LE TEST D'ÉCRITURE",
+      "list4": "SI VOUS NE COMPRENEZ PAS LA QUESTION OU NE CONNAISSEZ PAS LA RÉPONSE, VEUILLEZ SÉLECTIONNER « JE NE SAIS PAS » LA RÉPONSE DANS LA RÉPONSE À CHOIX MULTIPLE.",
+      "list5": "VOTRE NIVEAU FINAL SERA DÉTERMINÉ LORS DE VOTRE PREMIER JOUR DE COURS APRÈS LE TEST D'ORAL ET D'ÉCOUTE.",
+      "alert2": "Remarque : Le résultat de ce test ne peut pas être utilisé comme preuve officielle de votre maîtrise de l'anglais pour l'admission au CEC ou à toute autre institution. Pour plus de détails concernant le processus d'inscription, veuillez contacter…………",
+      "take-test": "Passer le concours",
+      "cancel": "Cancel"
+    },
+    "courses": {
+      "title1": "Explore our",
+      "title2": "popular courses",
+      "one": {
+        "category": "development",
+        "teacher": "Lou Guerrero",
+        "title": "New react bootcamp",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "two": {
+        "category": "It & Software",
+        "teacher": "Cora Diaz",
+        "title": "Improve editing skills",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "three": {
+        "category": "marketing",
+        "teacher": "Ruth Becker",
+        "title": "Marketing strategies",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "four": {
+        "category": "Photography",
+        "teacher": "Ernest Rodriquez",
+        "title": "Basics of photography",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "five": {
+        "category": "marketing",
+        "teacher": "Isabella Stanley",
+        "title": "Affiliate Bootcamp",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      },
+      "six": {
+        "category": "Health & Fitness",
+        "teacher": "Katherine Collins",
+        "title": "Healthy workout tips",
+        "duration": "10 Hours",
+        "lectures": "6 Lectures",
+        "preview": "See Preview"
+      }
+    },
+    "partners": {
+      "title": "Meet Our Partners",
+      "ankara": {
+        "name": "Ankara Medipol",
+        "description": "Where science and tradition come together with a modern understanding of\neducation."
+      },
+      "canada": {
+        "name": "Canadian Imperial College",
+        "description": "The prerequisite for motivation and success in any endeavor is a BIG vision\nfor your future. If you’re stuck in the past, you’re really in trouble."
+      },
+      "cooking": {
+        "name": "Gastronomicom cooking school",
+        "description": "Our highly experienced chefs/teachers provide hands-on classes to a one\n                  Michelin Star level. All of our cooking and pastry courses are conducted in English."
+      },
+      "graduate": {
+        "name": "International Graduate Center",
+        "description": "one of Germany's first graduate schools offering MBA degrees, is aimed at\nfuture managers."
+      },
+      "solutions": {
+        "name": "International Student Solutions",
+        "description": "International Student Solutions has a commitment to the continued improvement\nof student services and the overall experience for international students."
+      },
+      "american": {
+        "name": "Girne American University",
+        "description": "Girne American University is dedicated to making American model learning\nopportunities accessible throughout life and to making them challenging and relevant to a diverse\npopulation of young adults."
+      },
+      "mesoyios": {
+        "name": "Mesoyios College",
+        "description": "an institution operating from 1998 as an educational center specialized in\nthe hospitality industry."
+      },
+      "poland": {
+        "name": "Education Poland",
+        "description": "Education Poland is the only official university partner & admissions office\nfor several polish universities."
+      },
+      "wittenborg": {
+        "name": "Wittenborg University of Applied Sciences",
+        "description": "The most international business and management school in the Netherlands."
+      },
+      "ge": {
+        "name": "GE Global",
+        "description": "GE Global Consultants are committed to providing an ultimate solution of\n                  services for International students in the categories of Foundation, Undergraduate, and postgraduate\nsectors."
+      }
+    },
+    "programmes": {
+      "title": "Nos programmes et cursus",
+      "ted": {
+        "nom": "TEDEd",
+        "description": "Notre mission est de susciter et de célébrer les idées des étudiants et des enseignants du monde entier. Suivez les mises à jour du programme et de nouvelles vidéos animées chaque semaine !"
+      },
+      "ng": {
+        "name": "Apprentissage géographique national",
+        "description": "La mission de National Geographic Learning est de donner vie au monde dans la salle de classe."
+      },
+      "Oxford": {
+        "nom": "Oxford University Press",
+        "description": "Oxford University Press - l'une des plus anciennes divisions d'établissements d'enseignement supérieur au monde, fondée en 1586, a présenté son nouveau logo. La mise à jour du style a été effectuée pour la première fois au cours des 30 dernières années."
+      },
+      "ielts": {
+        "nom": "Préparation IELTS",
+        "description": "Préparez-vous en toute confiance pour votre prochain test IELTS Academic ou General Training. L'application IELTS Prep vous donne un accès instantané et illimité à tous les bons outils dont vous avez besoin pour préparer votre test - à tout moment, n'importe où."
+      },
+      "cambridge": {
+        "nom": "Cambridge University Press",
+        "description": "Notre mission est de libérer le potentiel des personnes avec les meilleures solutions d'apprentissage et de recherche. Notre vision est un monde d'apprentissage et de recherche inspiré par Cambridge. Cambridge University Press est un leader mondial dans le domaine de l'enseignement de l'anglais (ELT) l'édition, avec des titres pour les enseignants et les apprenants d'anglais, couvrant tous les niveaux, de la maternelle à l'université et la formation linguistique des adultes."
+      },
+      "toefl": {
+        "nom": "ETS TOEFL",
+        "description": "Les étudiants peuvent réaliser leurs rêves d'études universitaires, d'immigration et plus encore avec les tests TOEFL iBT® et TOEFL® Essentials™. Chaque test est conçu de manière unique afin qu'ils puissent choisir le test TOEFL qui leur convient le mieux."
+      },
+      "macmillan": {
+        "name": "MacMillan anglais",
+        "description": "Macmillan Education est un éditeur mondial, spécialisé dans l'enseignement de l'anglais (ELT) et la publication de programmes d'études. Leurs publications ELT vont de cours internationalement reconnus tels que New Inside Out et In Company, en passant par des titres innovants comme Aviation English, à leurs gamme primée de dictionnaires pour apprenants."
+      },
+      "ef": {
+        "name": "Fichier anglais",
+        "description": "Apprenez plus d'anglais ici avec des exercices interactifs, des téléchargements utiles, des jeux et des liens Web. Pratiquez votre grammaire, votre vocabulaire, votre prononciation, votre écoute et votre lecture, et amusez-vous également."
+      },
+      "toeic": {
+        "nom": "ETS TOEIC",
+        "description": "Que vous soyez un individu qui souhaite se démarquer de la concurrence ou une organisation cherchant à constituer une équipe plus qualifiée ou à préparer des étudiants prêts à travailler, le programme TOEIC® peut vous aider à atteindre votre objectif."
+      },
+      "opic": {
+        "nom": "OPIC",
+        "description": "Conseils OPIc - L'entretien de compétence orale par ordinateur est une évaluation populaire en anglais prise par de nombreux professionnels. De nombreux professionnels d'entreprise doivent obtenir un score élevé pour obtenir des promotions ou travailler à l'étranger"
+      },
+      "duolingo": {
+        "name": "Préparation au test d'anglais Duolingo",
+        "description": "En 2014, Duolingo a lancé un examen de compétence en anglais sur le Web afin de remplacer d'autres examens de compétence en anglais comme l'IELTS/TOEFL. Ce blog couvre toutes les universités acceptées par Duolingo au Royaume-Uni, aux États-Unis, au Canada, Australie, Japon, Europe et Nouvelle-Zélande."
+      },
+      "tefl": {
+        "nom": "CERTIFIÉ TEFL",
+        "description": "Cette certification TEFL de 120 heures est le cours le plus populaire de TEFL Educator. Il couvre les fondamentaux importants de l'enseignement de l'anglais et comprend une section dédiée à l'enseignement de l'anglais aux jeunes apprenants (TEYL). Les stagiaires peuvent s'attendre à un tutorat en direct via Skype et à une assistance par e-mail personnalisée. De nombreux podcasts et vidéos illustrant des environnements de classe réels sont également fournis."
+      }
+    },
+    "testimonials": {
+      "title1": "Témoignages ",
+      "title2": "",
+      "quote1": {
+        "content": "La leçon d'expression orale IELTS dans son ensemble a été très utile pour moi. J'ai eu un test d'expression orale exactement similaire au vrai, je pense que c'est une très grande et importante étape. Mon instructrice a noté mes erreurs puis elle m'a alerté d'une manière très gentille et respectueuse. À la fin de la leçon, elle m'a donné de bons et utiles conseils à suivre pendant l'examen ainsi que pendant ma préparation au test. Je tiens à remercier mon institutrice tous pour son excellent travail.",
+        "name": "Mel",
+        "headline": "Étudiant"
+      },
+      "quote2": {
+        "content": "Avec (CEC) j'ai eu d'excellents professeurs ! Ils offrent à la fois un excellent mélange d'activités d'écoute, d'expression orale et d'apprentissage pratique et un environnement d'apprentissage très sûr et favorable. Leurs méthodes d'enseignement sont excellentes. Les enseignements sont très clairs et concis. Parler pour l'IELTS est un excellent cours qui a vraiment amélioré mes compétences en expression orale. Toutes les réunions et tous les documents ont été vraiment utiles et instructifs. CEC a les meilleurs instructeurs.",
+        "name": "Hayat",
+        "headline": "Étudiant"
+      },
+      "quote3": {
+        "content": "Les leçons étaient fantastiques et à jour. Les professeurs écoutent et aident. Je m'amuse beaucoup pendant mes cours.",
+        "name": "Rob",
+        "headline": "Étudiant"
+      },
+      "quote4": {
+        "content": "La narration était amusante et je ne peux pas attendre plus. Merci professeur.",
+        "name": "Emily",
+        "headline": "Étudiant"
+      },
+      "quote5": {
+        "content": "L'enseignante Charlène m'a motivée à continuer à apprendre et à ne pas abandonner. Je suis heureux de faire partie de CEC !",
+        "name": "Lilly",
+        "headline": "Étudiant"
+      }
+    }
+  }
+}

@@ -1,34 +1,35 @@
 <template>
   <section class="slider-three">
-              <img src="/assets/images/slider-3-icon-1-1.png" class="slider-three__icon-1" alt="">
-              <img src="/assets/images/slider-3-icon-1-2.png" class="slider-three__icon-2" alt="">
-              <img src="/assets/images/slider-3-icon-1-3.png" class="slider-three__icon-3" alt="">
-              <img src="/assets/images/slider-3-icon-1-4.png" class="slider-three__icon-4" alt="">
-              <img src="/assets/images/slider-3-icon-1-5.png" class="slider-three__icon-5" alt="">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-6">
-                          <div class="slider-three__content">
-                              <p class="slider-three__tag-line">your road to quality education</p><!-- /.slider-three__tag-line -->
-                              <h2 class="slider-three__title">Welcome to C. Education Consultancy</h2><!-- /.slider-three__title -->
-                              <p class="slider-three__text">- At C.E.C, your Education is our top priority -</p><!-- /.slider-three__text -->
-                              <br><br>
-                              <!-- <form action="#" class="slider-three__search">
-                                  <input type="text" placeholder="Search courses">
-                                  <button type="submit"><i class="kipso-icon-magnifying-glass"></i></button>
-                              </form> -->
-                          </div><!-- /.slider-three__content -->
-                      </div><!-- /.col-lg-6 -->
-                  </div><!-- /.row -->
-              </div><!-- /.container -->
-          </section>
+    <img src="/assets/images/slider-3-icon-1-1.png" class="slider-three__icon-1" alt="slider-3-icon-1-1.png">
+    <img src="/assets/images/slider-3-icon-1-2.png" class="slider-three__icon-2" alt="slider-3-icon-1-2.png">
+    <img src="/assets/images/slider-3-icon-1-3.png" class="slider-three__icon-3" alt="slider-3-icon-1-3.png">
+    <img src="/assets/images/slider-3-icon-1-4.png" class="slider-three__icon-4" alt="slider-3-icon-1-4.png">
+    <img src="/assets/images/slider-3-icon-1-5.png" class="slider-three__icon-5" alt="slider-3-icon-1-5.png">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="slider-three__content">
+            <p class="slider-three__tag-line">{{ $t('university.banner.line1') }}</p><!-- /.slider-three__tag-line -->
+            <h2 class="slider-three__title">{{ $t('university.banner.line2') }}</h2><!-- /.slider-three__title -->
+            <p class="slider-three__text">- {{ $t('university.banner.line3') }} -</p>
+            <!-- /.slider-three__text -->
+            <br><br>
+            <!-- <form action="#" class="slider-three__search">
+                <input type="text" placeholder="Search courses">
+                <button type="submit"><i class="kipso-icon-magnifying-glass"></i></button>
+            </form> -->
+          </div><!-- /.slider-three__content -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
 </template>
 
 <script>
-    export default {
-    auth: false,
-        name: "BannerThree"
-    }
+export default {
+  name: "BannerThree",
+  auth: false
+}
 </script>
 
 <style scoped>
