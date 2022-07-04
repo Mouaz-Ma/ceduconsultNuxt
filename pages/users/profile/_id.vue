@@ -187,14 +187,22 @@
 
               <div class="row">
                 <div class="col-md-6">
-                  <label>Unique String</label>
+                  <label>Student status</label>
                 </div>
                 <div class="col-md-6">
-                  <p>{{ userData.uniqueString }}</p>
+                  <p>{{ userData.studentStatus }}</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+            <div class="row">
+        <div class="col-6">
+          {{userData.classes}}
+        </div>
+        <div class="col-6">
+          {{userData.classes}}
         </div>
       </div>
     </form>
