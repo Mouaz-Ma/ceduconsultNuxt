@@ -82,7 +82,7 @@
               <label for="username">Username</label>
               <input
                 id="username"
-                v-model="profile.username"
+                v-model="username"
                 type="text"
                 class="form-control"
                 placeholder="username here"
@@ -93,7 +93,7 @@
               <label for="email">Email</label>
               <input
                 id="email"
-                v-model="profile.email"
+                v-model="email"
                 type="text"
                 class="form-control"
                 placeholder="something@domain.xx"
@@ -114,8 +114,17 @@
             <div class="form-group">
               <label for="phone">phone</label>
               <input
-                v-model="profile.phone"
+                v-model="phone"
                 id="phone"
+                type="text"
+                class="form-control"
+              >
+            </div>
+            <div class="form-group">
+              <label for="studentStatus:">student Status</label>
+              <input
+                v-model="studentStatus"
+                id="studentStatus:"
                 type="text"
                 class="form-control"
               >
@@ -216,7 +225,6 @@ export default {
         const userCall = $axios.get('/api/users/userInfo/'+route.params.id)
         const userPromise = await Promise.resolve(userCall)
         const userData = userPromise.data.userFound
-        console.log(userData)
         return {
           userData
         }
@@ -227,9 +235,18 @@ export default {
 
     data() {
       return{
-        profile: {},
+        username: '',
+        email: '',
+        phone: '',
+        studentStatus: '',
         showModal: false
       }
+    },
+    created() {
+      this.username = this.userData.username
+      this.email = this.userData.email
+      this.userData.telephone ? this.phone = this.userData.telephone : this.phone = ''
+      this.userData.studentStatus ? this.studentStatus = this.userData.studentStatus : this.studentStatus = ''
     },
 
     methods: {
@@ -255,20 +272,20 @@ export default {
       },
 
       async updateForm() {
-        await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], { ...this.profile })
+        const data = new FormData();
+        data.append('username', this.username)
+        data.append('email', this.email)
+        data.append('phone', this.phone)
+        data.append('studentStatus', this.studentStatus)
+        await this.$axios.put('api/users/updateUser/' + this.$route.params.id, data)
           .then(() => {
             this.showModal = false
+            window.location.reload(true)
           }).catch((e) => {
             console.log(e)
           })
       }
     },
-
-    mounted() {
-      if (this.userData) {
-        this.profile = this.userData
-      }
-    }
 }
 </script>
 
