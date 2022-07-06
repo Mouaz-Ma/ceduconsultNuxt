@@ -5,7 +5,7 @@
       <div class="container">
           <div class="block-title mb-0">
               <h2 class="block-title__title">Explore our <br>
-                  Universities</h2><!-- /.block-title__title -->
+                  classRooms</h2><!-- /.block-title__title -->
           </div><!-- /.block-title -->
       </div><!-- /.container -->
       <div class="course-one__top-title__curve"></div><!-- /.course-one__top-title__curve -->
@@ -26,7 +26,7 @@
                                 <a v-for="tag in classRoom.tags" :key=tag href="#"><i class="fa fa-tags"></i>{{tag}}</a>
 
                             </div><!-- /.course-one__meta -->
-                            <a :href="'/university/'+classRoom._id" class="course-one__link">See Preview</a><!-- /.course-one__link -->
+                            <a href="#" class="course-one__link">See Preview</a><!-- /.course-one__link -->
                         </div><!-- /.course-one__content -->
                     </div><!-- /.course-one__single -->
             </div><!-- /.item -->

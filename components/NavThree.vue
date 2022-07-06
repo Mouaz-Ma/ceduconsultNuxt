@@ -1,7 +1,7 @@
 <template>
   <header class="site-header site-header__home-three ">
     <topBar/>
-    <b-navbar-nav toggleable="lg" variant="light" class="header-navigation stricky navHeight">
+    <b-navbar-nav  variant="light" class="header-navigation stricky navHeight">
       <div class="container clearfix justify-content-bottom">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="logo-box clearfix">

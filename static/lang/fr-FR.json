@@ -229,5 +229,37 @@
         "headline": "Étudiant"
       }
     }
+  },
+  "university": {
+    "nav": {
+      "home": "Home",
+      "about": "à propos de nous",
+      "universities": "Les universités",
+      "courses": "les cours",
+      "applicants": "Pour les candidats",
+      "blogs": "Blogues et actualités",
+      "contact": "Contact"
+    },
+    "banner": {
+      "line1": "votre chemin vers une éducation de qualité",
+      "line2": "Bienvenue chez C. Education Consultancy",
+      "line3": "Chez C.E.C, votre éducation est notre priorité absolue"
+    },
+    "courses": {
+      "title1": "Naviguez online",
+      "title2": "catégories de cours",
+      "prep": "Cours préparatoires",
+      "bsc": "Programme de licence",
+      "msc": "Master programme",
+      "phd": "PHD Programme",
+      "mba": "MBA",
+      "special": "specialist program",
+      "certificate": "Certificate",
+      "book": "Book a Consultation"
+    },
+    "call": {
+      "title": "Si vous souhaitez étudier dans une université, contactez-nous et nous obtiendrons votre admission.",
+      "btn": "Book a consultation"
+    }
   }
 }
