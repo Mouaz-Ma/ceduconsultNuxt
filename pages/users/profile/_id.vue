@@ -1,4 +1,5 @@
 <template>
+<v-app>
   <div class="container emp-profile">
     <form method="post">
       <div class="row">
@@ -207,15 +208,55 @@
         </div>
       </div>
             <div class="row">
-        <div class="col-6">
+              <div class="card-body">
+                <h3>Search Students</h3>
+                <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2"
+                  placeholder="Search" @keyup="searchClass()">
+                  <b-icon icon="search" />Search
+                </b-form-input>
+
+                <ul v-if="searchQuery !== ''">
+                  <li v-for="classRoomFound in foundClasses" :key="classRoomFound.id" class="border-bottom-0">
+                    <p>
+                      {{ classRoomFound.title }}
+                    </p>
+                    <v-btn class="ma-2" color="primary" dark small>
+                      Add class
+                      <v-icon dark right>
+                        mdi-checkbox-marked-circle
+                      </v-icon>
+                    </v-btn>
+                  </li>
+                </ul>
+
+                <div v-else class="alert alert-info">
+                  no results
+                </div>
+
+                <br>
+                <div class="mt-3" />
+
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li class="h-100 m-5" v-for="classRoom in userData.classes" :key='classRoom.id'>{{classRoom.title}}
+                    <v-btn class="ma-2 float-right" color="red" dark small>
+                      Delete
+                      <v-icon dark right>
+                        mdi-cancel
+                      </v-icon>
+                    </v-btn>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="col-6">
           {{userData.classes}}
-        </div>
-        <div class="col-6">
-          {{userData.classes}}
-        </div>
-      </div>
+        </div> -->
+
+            </div>
     </form>
   </div>
+  </v-app>
 </template>
 <script>
 
@@ -239,7 +280,9 @@ export default {
         email: '',
         phone: '',
         studentStatus: '',
-        showModal: false
+        showModal: false,
+        foundClasses: [],
+        searchQuery: '',
       }
     },
     created() {
@@ -250,6 +293,13 @@ export default {
     },
 
     methods: {
+            async searchClass() {
+        if (this.searchQuery != ''){
+          const response = await this.$axios.get('/api/classRoom/search/?q='+this.searchQuery)
+          this.foundClasses = response.data.classesFound;
+          console.log(this.foundClasses)
+        }
+      },
       async uploadImage(event) {
         console.log(event.target.files)
         const file = event.target.files[0]
