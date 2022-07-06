@@ -40,7 +40,7 @@
                       <!-- starting date -->
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                           <h3 class="float-left">Starting Date:</h3>
-                            <b-calendar block v-model="startingDate" value-as-date locale="en" required>
+                            <b-calendar block v-model="startingDate" value-as-date locale="en">
                                 <div class="d-flex" dir="ltr">
                                 <b-button
                                     size="md"
@@ -112,7 +112,7 @@ export default {
       tags: '',
       description: '',
       uniSelected: null,
-      startingDate: null,
+      startingDate: '',
       courseType: '',
       courseOptions: ['Preparatory Courses', 'Bachelor Programme', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate']
     }

@@ -17,7 +17,7 @@
   import NavThree from "../components/NavThree";
   import PageHeader from "../components/PageHeader";
   import Footer from "../components/Footer";
-  import AboutOne from "../components/AboutOne";
+  import AboutOne from "../components/AboutOneUni";
   import TeamOne from "../components/TeamOne";
   import VideoOne from "../components/VideoOne";
   import ClientsLogoOne from "../components/ClientsLogoOne";
