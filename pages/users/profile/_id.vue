@@ -207,9 +207,10 @@
           </div>
         </div>
       </div>
+      <!-- here you need to show the classrooms that only isnt in his list plus be able to add it to the student and delete it -->
             <div class="row">
               <div class="card-body">
-                <h3>Search Students</h3>
+                <h3>Search ClassRooms</h3>
                 <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2"
                   placeholder="Search" @keyup="searchClass()">
                   <b-icon icon="search" />Search
@@ -220,7 +221,7 @@
                     <p>
                       {{ classRoomFound.title }}
                     </p>
-                    <v-btn class="ma-2" color="primary" dark small>
+                    <v-btn class="ma-2" color="primary" dark small @click="addClassRoom(classRoomFound.id)">
                       Add class
                       <v-icon dark right>
                         mdi-checkbox-marked-circle
@@ -293,6 +294,9 @@ export default {
     },
 
     methods: {
+      async addClassRoom(classId) {
+        console.log(classId)
+      },
             async searchClass() {
         if (this.searchQuery != ''){
           const response = await this.$axios.get('/api/classRoom/search/?q='+this.searchQuery)
