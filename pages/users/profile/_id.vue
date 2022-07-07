@@ -1,262 +1,195 @@
 <template>
-<v-app>
-  <div class="container emp-profile">
-    <form method="post">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="profile-img">
-            <img v-if="$auth.$state.user.avatar"
-              :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
-              :alt="$auth.$state.user.avatar.filename"
-              width="70%"
-            >
-                        <img v-else
-              src='https://www.w3schools.com/w3images/avatar5.png'
-              width="70%"
-            >
-            <div class="file btn btn-lg btn-primary">
-              Change Photo
-              <input type="file" name="file" accept="image/jpeg"/>
+  <v-app>
+    <div class="container emp-profile">
+      <form method="post">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="profile-img">
+              <img v-if="$auth.$state.user.avatar"
+                :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
+                :alt="$auth.$state.user.avatar.filename" width="70%">
+              <img v-else src='https://www.w3schools.com/w3images/avatar5.png' width="70%">
+              <div class="file btn btn-lg btn-primary">
+                Change Photo
+                <input type="file" name="file" accept="image/jpeg" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="profile-head">
+              <h5>
+                {{ userData.username }}
+              </h5>
+              <h6>
+                {{ userData.email }}
+              </h6>
+              <p class="proile-rating">
+                Email Status:
+                <span :class="userData.isVerified ? 'text-success' : 'text-danger'">
+                  {{ userData.isVerified ? 'Verified' : 'Unverified' }}
+                </span>
+              </p>
+              <ul id="myTab" class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a id="home-tab" class="nav-link active" data-toggle="tab" href="#home" role="tab"
+                    aria-controls="home" aria-selected="true">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <!-- Button trigger modal -->
+            <b-button @click="showModal = true">
+              Edit Profile
+            </b-button>
+          </div>
+
+          <!-- Modal -->
+          <b-modal v-model="showModal" id="editProfile" title="Edit Profile">
+            <form>
+              <div class="profile-img">
+                <img v-if="$auth.$state.user.avatar"
+                  :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
+                  :alt="$auth.$state.user.avatar.filename" width="70%">
+                <img v-else src='https://www.w3schools.com/w3images/avatar5.png' width="70%">
+                <div class="file btn btn-lg btn-primary">
+                  Change Photo
+                  <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" v-model="username" type="text" class="form-control" placeholder="username here">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" v-model="email" type="text" class="form-control" placeholder="something@domain.xx">
+              </div>
+              <div class="form-group">
+                <label for="zippedFile">upload zipped file</label>
+                <input id="zippedFile" type="file" multiple class="form-control-file" accept="application/zip"
+                  @change="uploadZipFiles">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">phone</label>
+                <input v-model="phone" id="phone" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="studentStatus:">student Status</label>
+                <input v-model="studentStatus" id="studentStatus:" type="text" class="form-control">
+              </div>
+            </form>
+
+            <template #modal-footer>
+              <b-button variant="primary" @click="updateForm">
+                Save changes
+              </b-button>
+
+              <b-button variant="danger" @click="showModal = false">
+                Cancel
+              </b-button>
+            </template>
+          </b-modal>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-8">
+            <div id="myTabContent" class="tab-content profile-tab">
+              <div id="home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>User Id</label>
+                  </div>
+                  <div class="col-md-6">
+                    <p>{{ userData._id }}</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Name</label>
+                  </div>
+                  <div class="col-md-6">
+                    <p>{{ userData.username }}</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Email</label>
+                  </div>
+                  <div class="col-md-6">
+                    <p>{{ userData.email }}</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Student status</label>
+                  </div>
+                  <div class="col-md-6">
+                    <p>{{ userData.studentStatus }}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="profile-head">
-            <h5>
-              {{ userData.username }}
-            </h5>
-            <h6>
-              {{ userData.email }}
-            </h6>
-            <p class="proile-rating">
-              Email Status:
-              <span :class="userData.isVerified ? 'text-success' : 'text-danger'">
-                {{ userData.isVerified ? 'Verified' : 'Unverified' }}
-              </span>
-            </p>
-            <ul
-              id="myTab"
-              class="nav nav-tabs"
-              role="tablist"
-            >
-              <li class="nav-item">
-                <a
-                  id="home-tab"
-                  class="nav-link active"
-                  data-toggle="tab"
-                  href="#home"
-                  role="tab"
-                  aria-controls="home"
-                  aria-selected="true"
-                >About</a>
+        <!-- here you need to show the classrooms that only isnt in his list plus be able to add it to the student and delete it -->
+        <div class="row">
+          <div class="col-6">
+            <div class="card-body">
+              <h3>Search ClassRooms</h3>
+              <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2" placeholder="Search"
+                @keyup="searchClass()">
+                <b-icon icon="search" />Search
+              </b-form-input>
+
+              <ul v-if="searchQuery !== ''">
+                <li v-for="classRoomFound in differenceArray" :key="classRoomFound.id" class="border-bottom">
+                <div>
+                  <v-btn class="mt-1 float-right" color="primary" dark small :disabled="isLoading" @click="addClassRoom(classRoomFound._id)">
+                    Add class
+                    <v-icon dark right>
+                      mdi-checkbox-marked-circle
+                    </v-icon>
+                  </v-btn>
+                  <p class="mt-1">
+                    {{ classRoomFound.title }}
+                  </p>
+                  </div>
+                </li>
+              </ul>
+
+              <div v-else class="alert alert-info">
+                no results
+              </div>
+
+              <br>
+              <div class="mt-3" />
+
+            </div>
+            <ul>
+              <li class="h-100 m-5" v-for="classRoom in userData.classes" :key='classRoom.id'>{{classRoom.title}}
+                <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading" @click="removeClassRoom(classRoom._id)">
+                  Delete
+                  <v-icon dark right>
+                    mdi-cancel
+                  </v-icon>
+                </v-btn>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="col-md-2">
-          <!-- Button trigger modal -->
-          <b-button @click="showModal = true">
-            Edit Profile
-          </b-button>
-        </div>
-
-        <!-- Modal -->
-        <b-modal v-model="showModal" id="editProfile" title="Edit Profile">
-          <form>
-            <div class="profile-img">
-            <img v-if="$auth.$state.user.avatar"
-              :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
-              :alt="$auth.$state.user.avatar.filename"
-              width="70%"
-            >
-                        <img v-else
-              src='https://www.w3schools.com/w3images/avatar5.png'
-              width="70%"
-            >
-              <div class="file btn btn-lg btn-primary">
-                Change Photo
-                <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="username">Username</label>
-              <input
-                id="username"
-                v-model="username"
-                type="text"
-                class="form-control"
-                placeholder="username here"
-              >
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                v-model="email"
-                type="text"
-                class="form-control"
-                placeholder="something@domain.xx"
-              >
-            </div>
-            <div class="form-group">
-              <label for="zippedFile">upload zipped file</label>
-              <input
-                id="zippedFile"
-                type="file"
-                multiple
-                class="form-control-file"
-                accept="application/zip"
-                @change="uploadZipFiles"
-              >
-            </div>
-
-            <div class="form-group">
-              <label for="phone">phone</label>
-              <input
-                v-model="phone"
-                id="phone"
-                type="text"
-                class="form-control"
-              >
-            </div>
-            <div class="form-group">
-              <label for="studentStatus:">student Status</label>
-              <input
-                v-model="studentStatus"
-                id="studentStatus:"
-                type="text"
-                class="form-control"
-              >
-            </div>
-          </form>
-
-          <template #modal-footer>
-            <b-button variant="primary" @click="updateForm">
-              Save changes
-            </b-button>
-
-            <b-button variant="danger" @click="showModal = false">
-              Cancel
-            </b-button>
-          </template>
-        </b-modal>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <!-- <div class="profile-work">
-            <p>WORK LINK</p>
-            <a href="">Website Link</a><br>
-            <a href="">Bootsnipp Profile</a><br>
-            <a href="">Bootply Profile</a>
-            <p>SKILLS</p>
-            <a href="">Web Designer</a><br>
-            <a href="">Web Developer</a><br>
-            <a href="">WordPress</a><br>
-            <a href="">WooCommerce</a><br>
-            <a href="">PHP, .Net</a><br>
-          </div> -->
-        </div>
-        <div class="col-md-8">
-          <div
-            id="myTabContent"
-            class="tab-content profile-tab"
-          >
-            <div
-              id="home"
-              class="tab-pane fade show active"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-            >
-              <div class="row">
-                <div class="col-md-6">
-                  <label>User Id</label>
-                </div>
-                <div class="col-md-6">
-                  <p>{{ userData._id }}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <label>Name</label>
-                </div>
-                <div class="col-md-6">
-                  <p>{{ userData.username }}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <label>Email</label>
-                </div>
-                <div class="col-md-6">
-                  <p>{{ userData.email }}</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <label>Student status</label>
-                </div>
-                <div class="col-md-6">
-                  <p>{{ userData.studentStatus }}</p>
-                </div>
-              </div>
-            </div>
+          <div class="col-6">
+            {{userData.documents}}
           </div>
+
         </div>
-      </div>
-      <!-- here you need to show the classrooms that only isnt in his list plus be able to add it to the student and delete it -->
-            <div class="row">
-              <div class="card-body">
-                <h3>Search ClassRooms</h3>
-                <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2"
-                  placeholder="Search" @keyup="searchClass()">
-                  <b-icon icon="search" />Search
-                </b-form-input>
-
-                <ul v-if="searchQuery !== ''">
-                  <li v-for="classRoomFound in foundClasses" :key="classRoomFound.id" class="border-bottom-0">
-                    <p>
-                      {{ classRoomFound.title }}
-                    </p>
-                    <v-btn class="ma-2" color="primary" dark small @click="addClassRoom(classRoomFound.id)">
-                      Add class
-                      <v-icon dark right>
-                        mdi-checkbox-marked-circle
-                      </v-icon>
-                    </v-btn>
-                  </li>
-                </ul>
-
-                <div v-else class="alert alert-info">
-                  no results
-                </div>
-
-                <br>
-                <div class="mt-3" />
-
-              </div>
-              <div class="col-6">
-                <ul>
-                  <li class="h-100 m-5" v-for="classRoom in userData.classes" :key='classRoom.id'>{{classRoom.title}}
-                    <v-btn class="ma-2 float-right" color="red" dark small>
-                      Delete
-                      <v-icon dark right>
-                        mdi-cancel
-                      </v-icon>
-                    </v-btn>
-                  </li>
-                </ul>
-              </div>
-              <!-- <div class="col-6">
-          {{userData.classes}}
-        </div> -->
-
-            </div>
-    </form>
-  </div>
+      </form>
+    </div>
   </v-app>
 </template>
 <script>
@@ -282,8 +215,9 @@ export default {
         phone: '',
         studentStatus: '',
         showModal: false,
-        foundClasses: [],
         searchQuery: '',
+        differenceArray: [],
+        isLoading: false,
       }
     },
     created() {
@@ -295,13 +229,27 @@ export default {
 
     methods: {
       async addClassRoom(classId) {
-        console.log(classId)
+        this.isLoading= true;
+        await this.$axios.post('/api/users/addClassRoom/'+ classId +'/'+ this.userData._id).then(() => {
+            window.location.reload(true)
+          }).catch((e) => {
+            console.log(e)
+          })
+      },
+            async removeClassRoom(classId) {
+                this.isLoading= true;
+        await this.$axios.post('/api/users/removeClassRoom/'+ classId +'/'+ this.userData._id).then(() => {
+            window.location.reload(true)
+          }).catch((e) => {
+            console.log(e)
+          })
       },
             async searchClass() {
         if (this.searchQuery != ''){
           const response = await this.$axios.get('/api/classRoom/search/?q='+this.searchQuery)
-          this.foundClasses = response.data.classesFound;
-          console.log(this.foundClasses)
+          let foundClasses = response.data.classesFound;
+          this.differenceArray = foundClasses.filter(({ _id: id1 }) => !this.userData.classes.some(({ _id: id2 }) => id2 === id1));
+          console.log(this.differenceArray);
         }
       },
       async uploadImage(event) {
