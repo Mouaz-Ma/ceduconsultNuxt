@@ -5,7 +5,7 @@
     <AboutOne />
     <Quiz v-if="$auth.$state.loggedIn" />
     <CourseTwo />
-    <TeamOne />
+<!--    <TeamOne />-->
     <ProgramsComponent />
     <Pricing />
     <Meeting />
@@ -27,7 +27,7 @@ export default {
     CourseCatTwo: () => import("../components/CourseCatTwo.vue"),
     AboutOne: () => import("../components/AboutOne.vue"),
     CourseTwo: () => import("../components/CourseTwo.vue"),
-    TeamOne: () => import("../components/TeamOne.vue"),
+    // TeamOne: () => import("../components/TeamOne.vue"),
     Pricing: () => import("../components/Pricing.vue"),
     Meeting: () => import("../components/Meeting.vue"),
     BlogHome: () => import("../components/BlogHome.vue"),
