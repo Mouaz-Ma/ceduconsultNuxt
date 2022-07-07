@@ -5,9 +5,9 @@
         <div class="row">
           <div class="col-md-4">
             <div class="profile-img">
-              <img v-if="$auth.$state.user.avatar"
-                :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
-                :alt="$auth.$state.user.avatar.filename" width="70%">
+              <img v-if="userData.avatar"
+                :src="userData.avatar.url"
+                 width="70%">
               <img v-else src='https://www.w3schools.com/w3images/avatar5.png' width="70%">
               <div class="file btn btn-lg btn-primary">
                 Change Photo
@@ -48,9 +48,9 @@
           <b-modal v-model="showModal" id="editProfile" title="Edit Profile">
             <form>
               <div class="profile-img">
-                <img v-if="$auth.$state.user.avatar"
-                  :src="$auth.$state.user.avatar.url || 'https://www.w3schools.com/w3images/avatar5.png'"
-                  :alt="$auth.$state.user.avatar.filename" width="70%">
+                <img v-if="userData.avatar"
+                  :src="userData.avatar.url"
+                   width="70%">
                 <img v-else src='https://www.w3schools.com/w3images/avatar5.png' width="70%">
                 <div class="file btn btn-lg btn-primary">
                   Change Photo
@@ -140,7 +140,7 @@
         </div>
         <!-- here you need to show the classrooms that only isnt in his list plus be able to add it to the student and delete it -->
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 border-right">
             <div class="card-body">
               <h3>Search ClassRooms</h3>
               <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2" placeholder="Search"
@@ -184,7 +184,19 @@
             </ul>
           </div>
           <div class="col-6">
-            {{userData.documents}}
+                        <div class="card-body">
+              <h3>All uploaded Documents</h3>
+                        <ul>
+              <li class="h-100 m-5" v-for="doc in userData.documents" :key='doc.filename'>{{documents.filename}}
+                <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading" @click="removeClassRoom(documents.filename)">
+                  Delete
+                  <v-icon dark right>
+                    mdi-cancel
+                  </v-icon>
+                </v-btn>
+              </li>
+            </ul>
+            </div>
           </div>
 
         </div>
