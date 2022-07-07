@@ -11,26 +11,46 @@
               </p>
             </div><!-- /.block-title -->
 
-            <div class="row">
-                <div v-for="(pack, index) in packs" :key="index" class="col-lg-4">
-                    <div class="pricing-one__single">
-                        <div class="pricing-one__inner">
-                            <h2 class="pricing-one__price">{{ pack.price }}</h2><!-- /.pricing-one__price -->
-                            <p class="pricing-one__name">{{ pack.name }}</p><!-- /.pricing-one__name -->
-                            <ul class="pricing-one__list list-unstyled">
-                                <li v-for="(cat, i) in pack.details" :key="i">
-                                  <b-row>
-                                    <b-col>{{ cat.category }}</b-col>
-                                    <b-col class="text-right">{{ cat.price }}</b-col>
-                                  </b-row>
-                                </li>
-                            </ul><!-- /.pricing-one__list -->
-                            <a href="#" class="thm-btn pricing-one__btn">Choose Plan</a><!-- /.thm-btn -->
-                            <p class="pricing-one__tag-line">No hidden charges!</p><!-- /.pricing-one__tag-line -->
-                        </div><!-- /.pricing-one__inner -->
-                    </div><!-- /.pricing-one__single -->
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
+          <div class="row">
+            <div class="partners-one__carousel owl-carousel owl-theme">
+              <div
+                v-for="pack in packs"
+                :key="pack.name"
+                class="item"
+              >
+                <div class="team-one__single">
+                  <div class="team-one__image">
+<!--                    <img-->
+<!--                      class="temOneImage"-->
+<!--                      width="200"-->
+<!--                      height="200"-->
+<!--                      :src="item.image"-->
+<!--                      :alt="item.name"-->
+<!--                    >-->
+                  </div><!-- /.team-one__image -->
+                  <div class="team-one__content">
+                    <h2 class="team-one__name">
+                      <a href="#">{{ pack.name }}</a>
+                    </h2>
+                    <!-- /.team-one__name -->
+                    <br>
+                    <p class="team-one__text">
+                      {{ pack.price }}
+                    </p>
+
+                    <ul class="pricing-one__list list-unstyled">
+                      <li v-for="(cat, i) in pack.details" :key="i">
+                        <b-row>
+                          <b-col>{{ cat.category }}</b-col>
+                          <b-col class="text-right">{{ cat.price }}</b-col>
+                        </b-row>
+                      </li>
+                    </ul>
+                  </div><!-- /.team-one__content -->
+                </div><!-- /.team-one__single -->
+              </div><!-- /.col-lg-3 -->
+            </div>
+          </div>
         </div><!-- /.container -->
     </section>
 </template>
