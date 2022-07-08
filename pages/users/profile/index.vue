@@ -1,4 +1,5 @@
 <template>
+<v-app>
   <div id="main-wrapper show">
     <div class="headerprofile">
       <!-- nav bar -->
@@ -198,26 +199,38 @@
               </div>
             </div>
           </div>
-          <div
-            v-else
-            class="pb-3 col-xxl-6 col-xl-6 col-lg-6"
-          >
-            <div class="card w-100 h-100">
-              <div class="card-header">
-                <h4 class="card-title">
-                  Uploads
-                </h4>
-              </div>
-              <div class="card-body">
-                <div class="app-link">
-                  <h5>Documents you already uploaded</h5>
-                  <a
-                    class="btn btn-secondary w-50"
-                    a="/blogs/uploadBlog"
-                  >Blog</a>
-                </div>
-              </div>
+                  <div class="col-6" v-else>
+            <div v-if="alertMassge">
+              <alerts :message=alertMassge :success=success />
             </div>
+
+          <div class="card-body">
+            <h3>Upload Documents</h3>
+            <p>please upload only files with those types: .pdf, .png, .jpg or .zip</p>
+            <div class="uploadDocs">
+              <v-file-input chips counter multiple show-size truncate-length="21" v-model="filesNeedsToUpload">
+              </v-file-input>
+              <v-btn :disabled="filesNeedsToUpload.length === 0" @click="uploadZipFiles(filesNeedsToUpload)" class="mx-2" fab dark
+                color="indigo">
+                <v-icon dark>
+                  mdi-plus
+                </v-icon>
+              </v-btn>
+            </div>
+            <hr>
+            <h3>All uploaded documents Documents</h3>
+            <ul>
+              <li class="h-100 m-5" v-for="doc in userData.documents" :key='doc.filename'>{{doc.fileTitle}}
+                <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading"
+                  @click="removeDocument(doc.filename)">
+                  Delete
+                  <v-icon dark right>
+                    mdi-cancel
+                  </v-icon>
+                </v-btn>
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
         <!-- verified card -->
@@ -338,10 +351,25 @@
       </div>
     </div>
   </div>
+  </v-app>
 </template>
 <script>
-
+import alerts from '../../../components/alerts.vue'
 export default {
+    components: { alerts },
+      async asyncData({ $axios, route, $auth }) {
+      try {
+        const userCall = $axios.get('/api/users/userInfo/'+$auth.$state.user._id);
+        const userPromise = await Promise.resolve(userCall)
+        const userData = userPromise.data.userFound
+        console.log(userData)
+        return {
+          userData
+        }
+      } catch (err) {
+        console.log(err)
+      }
+    },
     data() {
         return{
             name:"",
@@ -349,6 +377,9 @@ export default {
             verifyAlertMessage: '',
             searchQuery: '',
             foundUsers: [],
+            filesNeedsToUpload: [],
+            alertMassge: '',
+            success: false,
         }
     },
     methods: {
@@ -358,6 +389,38 @@ export default {
           this.foundUsers = response.data.usersFound;
           console.log(this.foundUsers[0].username)
         }
+      },
+            async uploadZipFiles(event) {
+        this.alertMassge = 'Uploading...'
+        this.success = true;
+        this.isLoading= true;
+          let formData = new FormData()
+        if (event.length < 10) {
+          event.forEach(async (file) => {
+            if (file.type === 'image/png' || file.type === 'image/jpeg' || file.type === 'application/pdf' || file.type === 'application/zip'){
+              formData.append('docs', file)
+            } else {
+              this.alertMassge = 'Please upload only files with those types: .pdf, .png, .jpg or .zip'
+              this.success = false;
+            }
+          })
+          await this.$axios.post('/api/users/addDocuments/' + this.$auth.$state.user._id, formData).then(() => {
+            window.location.reload(true)
+          }).catch((e) => {
+            console.log(e)
+          })
+        }
+      },
+      async removeDocument(fileName) {
+        this.isLoading= true;
+        let fileData = {
+          fileName: fileName
+        }
+        await this.$axios.post('/api/users/removeDocument/'+ this.$auth.$state.user._id, fileData).then(() => {
+            window.location.reload(true)
+          }).catch((e) => {
+            console.log(e)
+          })
       },
         async logout() {
           await this.$auth.logout()
