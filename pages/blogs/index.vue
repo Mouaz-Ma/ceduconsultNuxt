@@ -13,7 +13,7 @@
         <div class="row">
             <div v-for="blog in onlyUniBlogs" :key="blog.id" class="col-lg-4">
                 <div class="item">
-                    <div class="course-one__single color-1">
+                    <div class="course-one__single color-1 m-2">
                         <div class="course-one__image">
                             <img class="uniImage" :src=blog.image.url alt="">
                         </div><!-- /.course-one__image -->

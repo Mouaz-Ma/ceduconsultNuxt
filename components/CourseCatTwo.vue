@@ -2,7 +2,7 @@
   <section class="course-category-two">
     <div class="container text-center">
       <div class="inner-container">
-        <div class="course-category-two__carousel owl-carousel owl-theme">
+        <div class="course-category-two__carousel no-dots owl-carousel owl-theme">
           <div class="item">
             <div class="course-category-two__single color-1">
               <div class="course-category-two__icon">
@@ -49,16 +49,14 @@
           </div><!-- /.item -->
         </div><!-- /.course-category-two__carousel owl-carousel owl-theme -->
       </div><!-- /.inner-container -->
-    </div><!-- /.container -->
+    </div>
   </section>
 </template>
 
 <script>
 export default {
   name: "CourseCatTwo",
-
   auth: false,
-
   mounted() {
     setTimeout(() => {
       $(".owl-carousel").owlCarousel({

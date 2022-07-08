@@ -14,7 +14,7 @@
         <div class="row">
             <div v-for="course in allCourseData" :key="course.id" class="col-lg-4">
                 <div class="item">
-                    <div class="course-one__single color-1">
+                    <div class="course-one__single color-1 m-2">
                         <div class="course-one__image">
                             <img class="uniImage" :src=course.image.url alt="">
                         </div><!-- /.course-one__image -->

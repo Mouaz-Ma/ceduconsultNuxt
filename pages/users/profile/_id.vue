@@ -1,157 +1,153 @@
 <template>
   <v-app>
     <div class="container emp-profile">
-      <form method="post">
-        <div class="row">
-          <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile-img">
+            <img v-if="userData.avatar" :src="userData.avatar.url" width="70%">
+            <img v-else src='https://www.w3schools.com/w3images/avatar5.png' width="70%">
+            <!-- <div class="file btn btn-lg btn-primary">
+                Change Photo
+                <input type="file" name="file" accept="image/jpeg" />
+              </div> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="profile-head">
+            <h5>
+              {{ userData.username }}
+            </h5>
+            <h6>
+              {{ userData.email }}
+            </h6>
+            <p class="proile-rating">
+              Email Status:
+              <span :class="userData.isVerified ? 'text-success' : 'text-danger'">
+                {{ userData.isVerified ? 'Verified' : 'Unverified' }}
+              </span>
+            </p>
+            <ul id="myTab" class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a id="home-tab" class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                  aria-selected="true">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <!-- Button trigger modal -->
+          <b-button @click="showModal = true">
+            Edit Profile
+          </b-button>
+        </div>
+
+        <!-- Modal -->
+        <b-modal v-model="showModal" id="editProfile" title="Edit Profile">
+          <form>
             <div class="profile-img">
-              <img v-if="userData.avatar"
-                :src="userData.avatar.url"
-                 width="70%">
+              <img v-if="userData.avatar" :src="userData.avatar.url" width="70%">
               <img v-else src='https://www.w3schools.com/w3images/avatar5.png' width="70%">
               <div class="file btn btn-lg btn-primary">
                 Change Photo
-                <input type="file" name="file" accept="image/jpeg" />
+                <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="profile-head">
-              <h5>
-                {{ userData.username }}
-              </h5>
-              <h6>
-                {{ userData.email }}
-              </h6>
-              <p class="proile-rating">
-                Email Status:
-                <span :class="userData.isVerified ? 'text-success' : 'text-danger'">
-                  {{ userData.isVerified ? 'Verified' : 'Unverified' }}
-                </span>
-              </p>
-              <ul id="myTab" class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                  <a id="home-tab" class="nav-link active" data-toggle="tab" href="#home" role="tab"
-                    aria-controls="home" aria-selected="true">About</a>
-                </li>
-              </ul>
+
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input id="username" v-model="username" type="text" class="form-control" placeholder="username here">
             </div>
-          </div>
-          <div class="col-md-2">
-            <!-- Button trigger modal -->
-            <b-button @click="showModal = true">
-              Edit Profile
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" v-model="email" type="text" class="form-control" placeholder="something@domain.xx">
+            </div>
+            <div class="form-group">
+              <label for="zippedFile">upload zipped file</label>
+              <input id="zippedFile" type="file" multiple class="form-control-file" accept="application/zip"
+                @change="uploadZipFiles">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">phone</label>
+              <input v-model="phone" id="phone" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="studentStatus:">student Status</label>
+              <input v-model="studentStatus" id="studentStatus:" type="text" class="form-control">
+            </div>
+          </form>
+
+          <template #modal-footer>
+            <b-button variant="primary" @click="updateForm">
+              Save changes
             </b-button>
-          </div>
 
-          <!-- Modal -->
-          <b-modal v-model="showModal" id="editProfile" title="Edit Profile">
-            <form>
-              <div class="profile-img">
-                <img v-if="userData.avatar"
-                  :src="userData.avatar.url"
-                   width="70%">
-                <img v-else src='https://www.w3schools.com/w3images/avatar5.png' width="70%">
-                <div class="file btn btn-lg btn-primary">
-                  Change Photo
-                  <input type="file" name="file" accept="image/jpeg" @change="uploadImage($event)" />
-                </div>
-              </div>
+            <b-button variant="danger" @click="showModal = false">
+              Cancel
+            </b-button>
+          </template>
+        </b-modal>
+      </div>
 
-              <div class="form-group">
-                <label for="username">Username</label>
-                <input id="username" v-model="username" type="text" class="form-control" placeholder="username here">
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" v-model="email" type="text" class="form-control" placeholder="something@domain.xx">
-              </div>
-              <div class="form-group">
-                <label for="zippedFile">upload zipped file</label>
-                <input id="zippedFile" type="file" multiple class="form-control-file" accept="application/zip"
-                  @change="uploadZipFiles">
-              </div>
-
-              <div class="form-group">
-                <label for="phone">phone</label>
-                <input v-model="phone" id="phone" type="text" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="studentStatus:">student Status</label>
-                <input v-model="studentStatus" id="studentStatus:" type="text" class="form-control">
-              </div>
-            </form>
-
-            <template #modal-footer>
-              <b-button variant="primary" @click="updateForm">
-                Save changes
-              </b-button>
-
-              <b-button variant="danger" @click="showModal = false">
-                Cancel
-              </b-button>
-            </template>
-          </b-modal>
+      <div class="row">
+        <div class="col-md-4">
         </div>
+        <div class="col-md-8">
+          <div id="myTabContent" class="tab-content profile-tab">
+            <div id="home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>User Id</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userData._id }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userData.username }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Email</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userData.email }}</p>
+                </div>
+              </div>
 
-        <div class="row">
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-8">
-            <div id="myTabContent" class="tab-content profile-tab">
-              <div id="home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>User Id</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ userData._id }}</p>
-                  </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Student status</label>
                 </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Name</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ userData.username }}</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Email</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ userData.email }}</p>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Student status</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ userData.studentStatus }}</p>
-                  </div>
+                <div class="col-md-6">
+                  <p>{{ userData.studentStatus }}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- here you need to show the classrooms that only isnt in his list plus be able to add it to the student and delete it -->
-        <div class="row">
-          <div class="col-6 border-right">
-            <div class="card-body">
-              <h3>Search ClassRooms</h3>
-              <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2" placeholder="Search"
-                @keyup="searchClass()">
-                <b-icon icon="search" />Search
-              </b-form-input>
+      </div>
+      <!-- here you need to show the classrooms that only isnt in his list plus be able to add it to the student and delete it -->
+      <div class="row">
+        <div class="col-6 border-right">
+          <div class="card-body">
+            <h3>Search ClassRooms</h3>
+            <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2" placeholder="Search"
+              @keyup="searchClass()">
+              <b-icon icon="search" />Search
+            </b-form-input>
 
-              <ul v-if="searchQuery !== ''">
-                <li v-for="classRoomFound in differenceArray" :key="classRoomFound.id" class="border-bottom">
+            <ul v-if="searchQuery !== ''">
+              <li v-for="classRoomFound in differenceArray" :key="classRoomFound.id" class="border-bottom">
                 <div>
-                  <v-btn class="mt-1 float-right" color="primary" dark small :disabled="isLoading" @click="addClassRoom(classRoomFound._id)">
+                  <v-btn class="mt-1 float-right" color="primary" dark small :disabled="isLoading"
+                    @click="addClassRoom(classRoomFound._id)">
                     Add class
                     <v-icon dark right>
                       mdi-checkbox-marked-circle
@@ -160,58 +156,79 @@
                   <p class="mt-1">
                     {{ classRoomFound.title }}
                   </p>
-                  </div>
-                </li>
-              </ul>
-
-              <div v-else class="alert alert-info">
-                no results
-              </div>
-
-              <br>
-              <div class="mt-3" />
-
-            </div>
-            <ul>
-              <li class="h-100 m-5" v-for="classRoom in userData.classes" :key='classRoom.id'>{{classRoom.title}}
-                <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading" @click="removeClassRoom(classRoom._id)">
-                  Delete
-                  <v-icon dark right>
-                    mdi-cancel
-                  </v-icon>
-                </v-btn>
+                </div>
               </li>
             </ul>
-          </div>
-          <div class="col-6">
-                        <div class="card-body">
-              <h3>All uploaded Documents</h3>
-                        <ul>
-              <li class="h-100 m-5" v-for="doc in userData.documents" :key='doc.filename'>{{documents.filename}}
-                <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading" @click="removeClassRoom(documents.filename)">
-                  Delete
-                  <v-icon dark right>
-                    mdi-cancel
-                  </v-icon>
-                </v-btn>
-              </li>
-            </ul>
-            </div>
-          </div>
 
+            <div v-else class="alert alert-info">
+              no results
+            </div>
+
+            <br>
+            <div class="mt-3" />
+
+          </div>
+          <ul>
+            <li class="h-100 m-5" v-for="classRoom in userData.classes" :key='classRoom.id'>{{classRoom.title}}
+              <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading"
+                @click="removeClassRoom(classRoom._id)">
+                Delete
+                <v-icon dark right>
+                  mdi-cancel
+                </v-icon>
+              </v-btn>
+            </li>
+          </ul>
         </div>
-      </form>
+        <div class="col-6">
+            <div v-if="alertMassge">
+              <alerts :message=alertMassge :success=success />
+            </div>
+
+          <div class="card-body">
+            <h3>Upload Documents</h3>
+            <p>please upload only files with those types: .pdf, .png, .jpg or .zip</p>
+            <div class="uploadDocs">
+              <v-file-input chips counter multiple show-size truncate-length="21" v-model="filesNeedsToUpload">
+              </v-file-input>
+              <v-btn :disabled="filesNeedsToUpload.length === 0" @click="uploadZipFiles(filesNeedsToUpload)" class="mx-2" fab dark
+                color="indigo">
+                <v-icon dark>
+                  mdi-plus
+                </v-icon>
+              </v-btn>
+            </div>
+            <hr>
+            <h3>All uploaded documents Documents</h3>
+            <ul>
+              <li class="h-100 m-5" v-for="doc in userData.documents" :key='doc.filename'>{{doc.fileTitle}}
+                <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading"
+                  @click="removeDocument(doc.filename)">
+                  Delete
+                  <v-icon dark right>
+                    mdi-cancel
+                  </v-icon>
+                </v-btn>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
   </v-app>
 </template>
 <script>
+import alerts from '../../../components/alerts.vue'
 
 export default {
+  components: { alerts },
     async asyncData({ $axios, route }) {
       try {
         const userCall = $axios.get('/api/users/userInfo/'+route.params.id)
         const userPromise = await Promise.resolve(userCall)
         const userData = userPromise.data.userFound
+        console.log(userData)
         return {
           userData
         }
@@ -230,6 +247,9 @@ export default {
         searchQuery: '',
         differenceArray: [],
         isLoading: false,
+        filesNeedsToUpload: [],
+        alertMassge: null,
+        success: false,
       }
     },
     created() {
@@ -240,6 +260,7 @@ export default {
     },
 
     methods: {
+      
       async addClassRoom(classId) {
         this.isLoading= true;
         await this.$axios.post('/api/users/addClassRoom/'+ classId +'/'+ this.userData._id).then(() => {
@@ -264,25 +285,46 @@ export default {
           console.log(this.differenceArray);
         }
       },
-      async uploadImage(event) {
-        console.log(event.target.files)
-        const file = event.target.files[0]
-        const formData = new FormData()
-        formData.append('file', file, this.$auth.$state.user.avatar.filename)
+      // async uploadImage(event) {
+      //   console.log(event.target.files)
+      //   const file = event.target.files[0]
+      //   const formData = new FormData()
+      //   formData.append('file', file, this.$auth.$state.user.avatar.filename)
 
-        await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], formData)
-      },
+      //   await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], formData)
+      // },
 
-      uploadZipFiles(event) {
-        const files = event.target.files
-        if (files.length < 7) {
-          files.forEach(async (file) => {
-            const formData = new FormData()
-            formData.append('file', file, file.name)
-
-            await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], formData)
+      async uploadZipFiles(event) {
+        this.alertMassge = 'Uploading...'
+        this.success = true;
+        this.isLoading= true;
+          let formData = new FormData()
+        if (event.length < 10) {
+          event.forEach(async (file) => {
+            if (file.type === 'image/png' || file.type === 'image/jpeg' || file.type === 'application/pdf' || file.type === 'application/zip'){
+              formData.append('docs', file)
+            } else {
+              this.alertMassge = 'Please upload only files with those types: .pdf, .png, .jpg or .zip'
+              this.success = false;
+            }
+          })
+          await this.$axios.post('/api/users/addDocuments/' + this.userData._id, formData).then(() => {
+            window.location.reload(true)
+          }).catch((e) => {
+            console.log(e)
           })
         }
+      },
+      async removeDocument(fileName) {
+        this.isLoading= true;
+        let fileData = {
+          fileName: fileName
+        }
+        await this.$axios.post('/api/users/removeDocument/'+ this.userData._id, fileData).then(() => {
+            window.location.reload(true)
+          }).catch((e) => {
+            console.log(e)
+          })
       },
 
       async updateForm() {
@@ -373,6 +415,11 @@ body{
   font-weight: 600;
   color: #6c757d;
   cursor: pointer;
+}
+
+.uploadDocs{
+  display: inline-flex;
+    width: 100%;
 }
 
 </style>

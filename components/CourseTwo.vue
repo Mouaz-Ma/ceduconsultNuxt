@@ -23,7 +23,7 @@
       <div class="container">
         <div class="course-one__carousel owl-carousel owl-theme">
           <div v-for="item in courses" :key="item.category" class="item">
-            <div class="course-one__single color-1">
+            <div class="course-one__single color-1 m-2">
               <div class="course-one__image">
                 <img
                   src="/assets/images/course-1-1.jpg"
