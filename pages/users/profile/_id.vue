@@ -250,6 +250,8 @@ export default {
         filesNeedsToUpload: [],
         alertMassge: null,
         success: false,
+        avatar: '',
+        oldAvatar: '',
       }
     },
     created() {
@@ -257,6 +259,7 @@ export default {
       this.email = this.userData.email
       this.userData.telephone ? this.phone = this.userData.telephone : this.phone = ''
       this.userData.studentStatus ? this.studentStatus = this.userData.studentStatus : this.studentStatus = ''
+      this.userData.avatar.filename ? this.oldAvatar = this.userData.avatar.filename : this.oldAvatar = ''
     },
 
     methods: {
@@ -285,14 +288,22 @@ export default {
           console.log(this.differenceArray);
         }
       },
-      // async uploadImage(event) {
-      //   console.log(event.target.files)
-      //   const file = event.target.files[0]
-      //   const formData = new FormData()
-      //   formData.append('file', file, this.$auth.$state.user.avatar.filename)
-
-      //   await this.$axios.put('api/users/updateUser/' + this.$auth.$state.user['_id'], formData)
-      // },
+      async uploadImage(event) {
+        console.log()
+        this.isLoading = true;
+        const file = event.target.files[0]
+        const formData = new FormData()
+        formData.append('avatar', file)
+        if(this.oldAvatar !== ''){
+          formData.append('oldAvatar', this.oldAvatar)
+        }
+        console.log(file, this.oldAvatar)
+        await this.$axios.put('api/users/updateUserAvatar/' + this.userData._id, formData).then(() => {
+            window.location.reload(true)
+          }).catch((e) => {
+            console.log(e)
+          })
+      },
 
       async uploadZipFiles(event) {
         this.alertMassge = 'Uploading...'
@@ -328,11 +339,15 @@ export default {
       },
 
       async updateForm() {
+        console.log(this.username, this.email)
         const data = new FormData();
         data.append('username', this.username)
         data.append('email', this.email)
         data.append('phone', this.phone)
         data.append('studentStatus', this.studentStatus)
+        for (var pair of data.entries()) {
+    console.log(pair[0]+ ', ' + pair[1]); 
+}
         await this.$axios.put('api/users/updateUser/' + this.$route.params.id, data)
           .then(() => {
             this.showModal = false
