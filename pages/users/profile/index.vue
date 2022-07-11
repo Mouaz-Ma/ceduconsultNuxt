@@ -387,7 +387,7 @@ export default {
         if (this.searchQuery != ''){
           const response = await this.$axios.get('/api/users/search/?q='+this.searchQuery)
           this.foundUsers = response.data.usersFound;
-          console.log(this.foundUsers[0].username)
+          // console.log(this.foundUsers[0].username)
         }
       },
             async uploadZipFiles(event) {

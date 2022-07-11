@@ -200,7 +200,7 @@
             </div>
             <hr>
             <h3>All uploaded documents Documents</h3>
-            <ul>
+            <ul v-if="userData.documents[0] != null">
               <li class="h-100 m-5" v-for="doc in userData.documents" :key='doc.filename'>{{doc.fileTitle}}
                 <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading"
                   @click="removeDocument(doc.filename)">
@@ -209,6 +209,13 @@
                     mdi-cancel
                   </v-icon>
                 </v-btn>
+                    <v-btn class="ma-2 float-right" color="green" dark small>
+                        <a :href='doc.url' download> download</a>
+                        <v-icon dark right>
+                          mdi-file-download
+
+                        </v-icon>
+                      </v-btn>
               </li>
             </ul>
           </div>
@@ -259,7 +266,7 @@ export default {
       this.email = this.userData.email
       this.userData.telephone ? this.phone = this.userData.telephone : this.phone = ''
       this.userData.studentStatus ? this.studentStatus = this.userData.studentStatus : this.studentStatus = ''
-      this.userData.avatar.filename ? this.oldAvatar = this.userData.avatar.filename : this.oldAvatar = ''
+      this.userData.avatar ? this.oldAvatar = this.userData.avatar.filename : this.oldAvatar = ''
     },
 
     methods: {
