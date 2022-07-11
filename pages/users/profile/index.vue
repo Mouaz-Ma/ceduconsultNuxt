@@ -83,12 +83,12 @@
                   alt=""
                 >
                 <h4>Welcome, {{ $auth.$state.user.username }}!</h4>
-                <a
+                <!-- <a
                   v-if="$auth.$state.user.userType === 'Administrator'"
                   id="black"
                   class="btn btn-secondary float-right"
                   a="/users/profileUpdate"
-                >Edit</a>
+                >Edit</a> -->
 
                 <div class="card-body">
                   <div class="row">

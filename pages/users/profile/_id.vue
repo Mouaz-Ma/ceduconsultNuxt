@@ -36,6 +36,17 @@
         </div>
         <div class="col-md-2">
           <!-- Button trigger modal -->
+                        <div class="my-2">
+                          <nuxt-link class="blackLinks" to="/users/profile">
+            <v-btn
+              x-large
+              color="success"
+              dark
+            >
+              Go back to Admin Dashboard
+            </v-btn>
+            </nuxt-link>
+          </div>
           <b-button @click="showModal = true">
             Edit Profile
           </b-button>
@@ -98,10 +109,10 @@
             <div id="home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-md-6">
-                  <label>User Id</label>
+                  <label>Telephone</label>
                 </div>
                 <div class="col-md-6">
-                  <p>{{ userData._id }}</p>
+                  <p>{{ userData.telephone }}</p>
                 </div>
               </div>
               <div class="row">
@@ -209,7 +220,7 @@
                     mdi-cancel
                   </v-icon>
                 </v-btn>
-                    <v-btn class="ma-2 float-right" color="green" dark small>
+                    <v-btn class="ma-2 float-right" color="green" dark small :disabled="isLoading">
                         <a :href='doc.url' download> download</a>
                         <v-icon dark right>
                           mdi-file-download
