@@ -55,98 +55,96 @@
       "cancel": "Cancel"
     },
     "courses": {
-      "title1": "Explore our",
-      "title2": "popular courses",
+      "title1": "Découvrez nos",
+      "title2": "cours populaires",
+      "description": "Souhaitez-vous passer un examen officiel de compétence en anglais?\n",
       "one": {
-        "category": "development",
+        "category": "Anglaise",
         "teacher": "Lou Guerrero",
-        "title": "New react bootcamp",
-        "duration": "10 Hours",
-        "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "title": "IELTS",
+        "content": "(système international de test de la langue anglaise) est le test de langue anglaise le plus populaire au monde pour le travail, les études et la migration. Plus de 10 000 organisations font confiance à l'IELTS en tant qu'indicateur fiable de la capacité réelle à communiquer en anglais. L'IELTS évalue les compétences linguistiques en anglais d'un candidat à travers quatre compétences: écouter, lire, écrire et parler.\n",
+        "duration": "10 heures",
+        "lectures": "6 cours",
+        "preview": "Voir l'aperçu"
       },
       "two": {
-        "category": "It & Software",
+        "category": "Anglaise",
         "teacher": "Cora Diaz",
-        "title": "Improve editing skills",
-        "duration": "10 Hours",
-        "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "title": "TOEFL",
+        "content": "le test d'anglais comme langue étrangère. Il évalue votre capacité à parler et à comprendre l'anglais en analysant votre niveau d'anglais en termes de lecture, d'expression orale, d'écoute et d'écriture. Ce sont toutes des compétences qui seront nécessaires pour mener à bien vos études universitaires et le test est utilisé par les établissements pour s'assurer que les étudiants sont en mesure de poursuivre et de réussir le cours qu'ils ont choisi dans un pays où le programme est enseigné en anglais.\n \nLe test TOEFL se déroule généralement sous la forme d'un test en ligne.\n",
+        "duration": "10 heures",
+        "lectures": "6 cours",
+        "preview": "Voir l'aperçu"
       },
       "three": {
-        "category": "marketing",
+        "category": "Anglaise",
         "teacher": "Ruth Becker",
-        "title": "Marketing strategies",
-        "duration": "10 Hours",
-        "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "title": "TOEIC",
+        "content": "The Test of English for International Communication (TOEIC®) is a multiple-choice English language proficiency test for people whose native language is not English. It measures their English comprehension, speaking, writing and reading skills in an international environment. The scores indicate how well people can communicate in English with others in business, commerce and industry.\n",
+        "duration": "10 heures",
+        "lectures": "6 cours",
+        "preview": "Voir l'aperçu"
       },
       "four": {
-        "category": "Photography",
-        "teacher": "Ernest Rodriquez",
-        "title": "Basics of photography",
-        "duration": "10 Hours",
-        "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "category": "Anglaise",
+        "teacher": "Duolingo",
+        "content": "The Duolingo English Test is a modern language proficiency tool designed for today's international students and institutions. It offers an English proficiency score, video interview, and writing sample in an accessible, efficient, and secure testing experience.\n",
+        "title": "Duolingo",
+        "duration": "10 heures",
+        "lectures": "6 cours",
+        "preview": "Voir l'aperçu"
       },
       "five": {
-        "category": "marketing",
+        "category": "Anglaise",
         "teacher": "Isabella Stanley",
-        "title": "Affiliate Bootcamp",
-        "duration": "10 Hours",
-        "lectures": "6 Lectures",
-        "preview": "See Preview"
-      },
-      "six": {
-        "category": "Health & Fitness",
-        "teacher": "Katherine Collins",
-        "title": "Healthy workout tips",
-        "duration": "10 Hours",
-        "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "title": "OPIC",
+        "content": "an internet delivered test which provides valid and reliable oral proficiency testing on a large scale. It was developed in 2006 in response to the increased worldwide demand for the testing of oral language proficiency.\n",
+        "duration": "10 heures",
+        "lectures": "6 cours",
+        "preview": "Voir l'aperçu"
       }
     },
     "partners": {
-      "title": "Meet Our Partners",
+      "title": "Rencontrez nos partenaires",
       "ankara": {
         "name": "Ankara Medipol",
-        "description": "Where science and tradition come together with a modern understanding of\neducation."
+        "description": "Là où la science et la tradition se rejoignent avec une compréhension moderne de\néducation."
       },
       "canada": {
-        "name": "Canadian Imperial College",
-        "description": "The prerequisite for motivation and success in any endeavor is a BIG vision\nfor your future. If you’re stuck in the past, you’re really in trouble."
+        "name": "Collège impérial canadien",
+        "description": "La condition préalable à la motivation et au succès dans toute entreprise est une GRANDE vision\npour votre avenir. Si vous êtes coincé dans le passé, vous avez vraiment des ennuis."
       },
       "cooking": {
-        "name": "Gastronomicom cooking school",
-        "description": "Our highly experienced chefs/teachers provide hands-on classes to a one\n                  Michelin Star level. All of our cooking and pastry courses are conducted in English."
+        "name": "Ecole de cuisine Gastronomicom",
+        "description": "Nos chefs/enseignants hautement expérimentés offrent des cours pratiques à un\n                   Niveau étoile Michelin. Tous nos cours de cuisine et de pâtisserie sont dispensés en anglais."
       },
       "graduate": {
-        "name": "International Graduate Center",
-        "description": "one of Germany's first graduate schools offering MBA degrees, is aimed at\nfuture managers."
+        "name": "Centre international d'études supérieures",
+        "description": "l'une des premières écoles supérieures d'Allemagne à proposer des MBA, vise à\nfuturs gérants."
       },
       "solutions": {
-        "name": "International Student Solutions",
-        "description": "International Student Solutions has a commitment to the continued improvement\nof student services and the overall experience for international students."
+        "name": "Solutions pour étudiants internationaux",
+        "description": "International Student Solutions s'engage à l'amélioration continue\ndes services aux étudiants et l'expérience globale des étudiants internationaux."
       },
       "american": {
-        "name": "Girne American University",
-        "description": "Girne American University is dedicated to making American model learning\nopportunities accessible throughout life and to making them challenging and relevant to a diverse\npopulation of young adults."
+        "name": "Université américaine de Girne",
+        "description": "La Girne American University se consacre à l'apprentissage du modèle américain\nopportunités accessibles tout au long de la vie et de les rendre stimulantes et pertinentes pour une\npopulation de jeunes adultes."
       },
       "mesoyios": {
-        "name": "Mesoyios College",
-        "description": "an institution operating from 1998 as an educational center specialized in\nthe hospitality industry."
+        "name": "Collège Mesoyios",
+        "description": "une institution fonctionnant à partir de 1998 en tant que centre éducatif spécialisé dans\nl'industrie hôtelière."
       },
       "poland": {
-        "name": "Education Poland",
-        "description": "Education Poland is the only official university partner & admissions office\nfor several polish universities."
+        "name": "Éducation Pologne",
+        "description": "Education Poland est le seul partenaire universitaire officiel et le bureau des admissions\npour plusieurs universités polonaises."
       },
       "wittenborg": {
-        "name": "Wittenborg University of Applied Sciences",
-        "description": "The most international business and management school in the Netherlands."
+        "name": "Université des sciences appliquées de Wittenborg",
+        "description": "L'école de commerce et de gestion la plus internationale des Pays-Bas."
       },
       "ge": {
-        "name": "GE Global",
-        "description": "GE Global Consultants are committed to providing an ultimate solution of\n                  services for International students in the categories of Foundation, Undergraduate, and postgraduate\nsectors."
+        "name": "GE mondial",
+        "description": "Les consultants mondiaux de GE s'engagent à fournir une solution ultime de\n                   services pour les étudiants internationaux dans les catégories de la Fondation, du premier cycle et du troisième cycle\nsecteurs."
       }
     },
     "programmes": {
