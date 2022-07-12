@@ -275,39 +275,39 @@
                   }
               });
           }
-          if ($('.course-one__carousel').length) {
-              $('.course-one__carousel').owlCarousel({
-                  loop: true,
-                  margin: 30,
-                  nav: false,
-                  dots: true,
-                  autoWidth: false,
-                  autoplay: true,
-                  smartSpeed: 700,
-                  autoplayTimeout: 5000,
-                  autoplayHoverPause: true,
-                  responsive: {
-                      0: {
-                          items: 1
-                      },
-                      480: {
-                          items: 1
-                      },
-                      767: {
-                          items: 1
-                      },
-                      991: {
-                          items: 2
-                      },
-                      1000: {
-                          items: 3
-                      },
-                      1200: {
-                          items: 3
-                      }
-                  }
-              });
-          }
+          // if ($('.course-one__carousel').length) {
+          //     $('.course-one__carousel').owlCarousel({
+          //         loop: true,
+          //         margin: 30,
+          //         nav: false,
+          //         dots: true,
+          //         autoWidth: false,
+          //         autoplay: true,
+          //         smartSpeed: 700,
+          //         autoplayTimeout: 5000,
+          //         autoplayHoverPause: true,
+          //         responsive: {
+          //             0: {
+          //                 items: 1
+          //             },
+          //             480: {
+          //                 items: 1
+          //             },
+          //             767: {
+          //                 items: 1
+          //             },
+          //             991: {
+          //                 items: 2
+          //             },
+          //             1000: {
+          //                 items: 3
+          //             },
+          //             1200: {
+          //                 items: 3
+          //             }
+          //         }
+          //     });
+          // }
           if ($('.testimonials-one__carousel').length) {
               $('.testimonials-one__carousel').owlCarousel({
                   loop: true,
