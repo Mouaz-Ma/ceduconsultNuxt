@@ -83,12 +83,12 @@
                   alt=""
                 >
                 <h4>Welcome, {{ $auth.$state.user.username }}!</h4>
-                <a
+                <!-- <a
                   v-if="$auth.$state.user.userType === 'Administrator'"
                   id="black"
                   class="btn btn-secondary float-right"
                   a="/users/profileUpdate"
-                >Edit</a>
+                >Edit</a> -->
 
                 <div class="card-body">
                   <div class="row">
@@ -362,6 +362,7 @@ export default {
         const userCall = $axios.get('/api/users/userInfo/'+$auth.$state.user._id);
         const userPromise = await Promise.resolve(userCall)
         const userData = userPromise.data.userFound
+        console.log(userData)
         return {
           userData
         }
@@ -386,6 +387,7 @@ export default {
         if (this.searchQuery != ''){
           const response = await this.$axios.get('/api/users/search/?q='+this.searchQuery)
           this.foundUsers = response.data.usersFound;
+          // console.log(this.foundUsers[0].username)
         }
       },
             async uploadZipFiles(event) {
