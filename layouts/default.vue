@@ -8,6 +8,7 @@
 <script>
 
   export default {
+    name: 'DefaultLayout',
     auth: false,
     components: {
     },
@@ -478,28 +479,53 @@
               });
           }
 
-          if ($('.banner-carousel__one').length) {
-              $('.banner-carousel__one').owlCarousel({
-                  loop: true,
-                  items: 1,
-                  margin: 0,
-                  dots: true,
-                  nav: false,
-                  animateOut: 'slideOutDown',
-                  animateIn: 'fadeIn',
-                  active: true,
-                  smartSpeed: 1000,
-                  autoplay: 7000
-              });
-              $('.banner-carousel-btn__left-btn').on('click', function () {
-                  $('.banner-carousel__one').trigger('next.owl.carousel');
-                  return false;
-              });
-              $('.banner-carousel-btn__right-btn').on('click', function () {
-                  $('.banner-carousel__one').trigger('prev.owl.carousel');
-                  return false;
-              });
-          }
+          // NOTE: This block has been moved to BannerTwo component
+          // if ($('.banner-carousel__one').length) {
+          //     $('.banner-carousel__one').owlCarousel({
+          //         loop: true,
+          //         items: 1,
+          //         margin: 0,
+          //         dots: true,
+          //         nav: false,
+          //         animateOut: 'slideOutDown',
+          //         animateIn: 'fadeIn',
+          //         active: true,
+          //         smartSpeed: 1000,
+          //         autoplay: 7000,
+          //       responsive: {
+          //         0: {
+          //           items: 1
+          //           // margin: 30
+          //         },
+          //         480: {
+          //           items: 1
+          //           // margin: 30
+          //         },
+          //         600: {
+          //           items: 2,
+          //           margin: 30
+          //         },
+          //         991: {
+          //           items: 2,
+          //           margin: 30
+          //         },
+          //         1000: {
+          //           items: 3
+          //         },
+          //         1200: {
+          //           items: 3
+          //         }
+          //       }
+          //     });
+          //     $('.banner-carousel-btn__left-btn').on('click', function () {
+          //         $('.banner-carousel__one').trigger('next.owl.carousel');
+          //         return false;
+          //     });
+          //     $('.banner-carousel-btn__right-btn').on('click', function () {
+          //         $('.banner-carousel__one').trigger('prev.owl.carousel');
+          //         return false;
+          //     });
+          // }
           if ($('.custom-cursor__overlay').length) {
 
               // / cursor /
@@ -604,7 +630,31 @@
                   animateIn: carouselInAnim,
                   smartSpeed: 1000,
                   autoplay: 5000,
-                  autoplayHoverPause: true
+                  autoplayHoverPause: true,
+                responsive: {
+                  0: {
+                    items: 2,
+                    margin: 30
+                  },
+                  480: {
+                    items: 3,
+                    margin: 30
+                  },
+                  600: {
+                    items: 3,
+                    margin: 30
+                  },
+                  991: {
+                    items: 5,
+                    margin: 30
+                  },
+                  1000: {
+                    items: 5
+                  },
+                  1200: {
+                    items: 5
+                  }
+                }
               });
 
 
