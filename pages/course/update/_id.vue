@@ -25,7 +25,7 @@ import EditCourseForm from '../../../components/editCourseForm.vue';
         const allUniversities = await $axios.get('/api/university')
         const allUniPromise = await Promise.resolve(allUniversities)
         const uniData = allUniPromise.data.universities
-        console.log(courseData)
+
         return {
           courseData, uniData
         }

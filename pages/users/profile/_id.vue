@@ -228,7 +228,6 @@ export default {
         const userCall = $axios.get('/api/users/userInfo/'+route.params.id)
         const userPromise = await Promise.resolve(userCall)
         const userData = userPromise.data.userFound
-        console.log(userData)
         return {
           userData
         }
@@ -285,7 +284,6 @@ export default {
           const response = await this.$axios.get('/api/classRoom/search/?q='+this.searchQuery)
           let foundClasses = response.data.classesFound;
           this.differenceArray = foundClasses.filter(({ _id: id1 }) => !this.userData.classes.some(({ _id: id2 }) => id2 === id1));
-          console.log(this.differenceArray);
         }
       },
       async uploadImage(event) {
@@ -297,7 +295,6 @@ export default {
         if(this.oldAvatar !== ''){
           formData.append('oldAvatar', this.oldAvatar)
         }
-        console.log(file, this.oldAvatar)
         await this.$axios.put('api/users/updateUserAvatar/' + this.userData._id, formData).then(() => {
             window.location.reload(true)
           }).catch((e) => {
@@ -339,7 +336,6 @@ export default {
       },
 
       async updateForm() {
-        console.log(this.username, this.email)
         const data = new FormData();
         data.append('username', this.username)
         data.append('email', this.email)

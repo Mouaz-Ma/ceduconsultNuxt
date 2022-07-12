@@ -374,7 +374,7 @@
               });
           }
           if ($('.course-category-two__carousel').length) {
-            console.log($('.course-category-two__carousel') + 'nani');
+            
               $('.course-category-two__carousel').owlCarousel({
                   loop: true,
                   margin: 15,
