@@ -59,9 +59,38 @@ export default {
   auth: false,
   mounted() {
     setTimeout(() => {
-      $(".owl-carousel").owlCarousel({
-        navText: ['<i class="kipso-icon-left-arrow"></i>','<i class="kipso-icon-right-arrow"></i>']
-      })
+      $('.course-category-two__carousel').owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        navText: ['<i class="kipso-icon-left-arrow"></i>','<i class="kipso-icon-right-arrow"></i>'],
+        dots: false,
+        autoWidth: false,
+        autoplay: true,
+        smartSpeed: 700,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 1
+          },
+          767: {
+            items: 3
+          },
+          991: {
+            items: 3
+          },
+          1000: {
+            items: 4
+          },
+          1200: {
+            items: 4
+          }
+        }
+      });
     }, 0);
   }
 }
