@@ -453,6 +453,13 @@ ul {
 }
 
 a{
+  color: whitesmoke;
   text-decoration: none;
+}
+
+a:hover{
+      color:whitesmoke; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
 </style>
