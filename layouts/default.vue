@@ -275,39 +275,6 @@
                   }
               });
           }
-          // if ($('.course-one__carousel').length) {
-          //     $('.course-one__carousel').owlCarousel({
-          //         loop: true,
-          //         margin: 30,
-          //         nav: false,
-          //         dots: true,
-          //         autoWidth: false,
-          //         autoplay: true,
-          //         smartSpeed: 700,
-          //         autoplayTimeout: 5000,
-          //         autoplayHoverPause: true,
-          //         responsive: {
-          //             0: {
-          //                 items: 1
-          //             },
-          //             480: {
-          //                 items: 1
-          //             },
-          //             767: {
-          //                 items: 1
-          //             },
-          //             991: {
-          //                 items: 2
-          //             },
-          //             1000: {
-          //                 items: 3
-          //             },
-          //             1200: {
-          //                 items: 3
-          //             }
-          //         }
-          //     });
-          // }
           if ($('.testimonials-one__carousel').length) {
               $('.testimonials-one__carousel').owlCarousel({
                   loop: true,
@@ -374,41 +341,6 @@
                   }
               });
           }
-          // NOTE: This section has been moved to CourseCatTwo
-          // if ($('.course-category-two__carousel').length) {
-          //   console.log($('.course-category-two__carousel') + 'nani');
-          //     $('.course-category-two__carousel').owlCarousel({
-          //         loop: true,
-          //         margin: 15,
-          //         nav: false,
-          //         dots: false,
-          //         autoWidth: false,
-          //         autoplay: true,
-          //         smartSpeed: 700,
-          //         autoplayTimeout: 5000,
-          //         autoplayHoverPause: true,
-          //         responsive: {
-          //             0: {
-          //                 items: 1
-          //             },
-          //             480: {
-          //                 items: 1
-          //             },
-          //             767: {
-          //                 items: 3
-          //             },
-          //             991: {
-          //                 items: 3
-          //             },
-          //             1000: {
-          //                 items: 4
-          //             },
-          //             1200: {
-          //                 items: 4
-          //             }
-          //         }
-          //     });
-          // }
           if ($('.course-category-one__carousel').length) {
               $('.course-category-one__carousel').owlCarousel({
                   loop: true,
@@ -480,55 +412,7 @@
               });
           }
 
-          // NOTE: This block has been moved to BannerTwo component
-          // if ($('.banner-carousel__one').length) {
-          //     $('.banner-carousel__one').owlCarousel({
-          //         loop: true,
-          //         items: 1,
-          //         margin: 0,
-          //         dots: true,
-          //         nav: false,
-          //         animateOut: 'slideOutDown',
-          //         animateIn: 'fadeIn',
-          //         active: true,
-          //         smartSpeed: 1000,
-          //         autoplay: 7000,
-          //       responsive: {
-          //         0: {
-          //           items: 1
-          //           // margin: 30
-          //         },
-          //         480: {
-          //           items: 1
-          //           // margin: 30
-          //         },
-          //         600: {
-          //           items: 2,
-          //           margin: 30
-          //         },
-          //         991: {
-          //           items: 2,
-          //           margin: 30
-          //         },
-          //         1000: {
-          //           items: 3
-          //         },
-          //         1200: {
-          //           items: 3
-          //         }
-          //       }
-          //     });
-          //     $('.banner-carousel-btn__left-btn').on('click', function () {
-          //         $('.banner-carousel__one').trigger('next.owl.carousel');
-          //         return false;
-          //     });
-          //     $('.banner-carousel-btn__right-btn').on('click', function () {
-          //         $('.banner-carousel__one').trigger('prev.owl.carousel');
-          //         return false;
-          //     });
-          // }
           if ($('.custom-cursor__overlay').length) {
-
               // / cursor /
               var cursor = $(".custom-cursor__overlay .cursor"),
                   follower = $(".custom-cursor__overlay .cursor-follower");
