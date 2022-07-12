@@ -374,40 +374,41 @@
                   }
               });
           }
-          if ($('.course-category-two__carousel').length) {
-            console.log($('.course-category-two__carousel') + 'nani');
-              $('.course-category-two__carousel').owlCarousel({
-                  loop: true,
-                  margin: 15,
-                  nav: false,
-                  dots: false,
-                  autoWidth: false,
-                  autoplay: true,
-                  smartSpeed: 700,
-                  autoplayTimeout: 5000,
-                  autoplayHoverPause: true,
-                  responsive: {
-                      0: {
-                          items: 1
-                      },
-                      480: {
-                          items: 1
-                      },
-                      767: {
-                          items: 3
-                      },
-                      991: {
-                          items: 3
-                      },
-                      1000: {
-                          items: 4
-                      },
-                      1200: {
-                          items: 4
-                      }
-                  }
-              });
-          }
+          // NOTE: This section has been moved to CourseCatTwo
+          // if ($('.course-category-two__carousel').length) {
+          //   console.log($('.course-category-two__carousel') + 'nani');
+          //     $('.course-category-two__carousel').owlCarousel({
+          //         loop: true,
+          //         margin: 15,
+          //         nav: false,
+          //         dots: false,
+          //         autoWidth: false,
+          //         autoplay: true,
+          //         smartSpeed: 700,
+          //         autoplayTimeout: 5000,
+          //         autoplayHoverPause: true,
+          //         responsive: {
+          //             0: {
+          //                 items: 1
+          //             },
+          //             480: {
+          //                 items: 1
+          //             },
+          //             767: {
+          //                 items: 3
+          //             },
+          //             991: {
+          //                 items: 3
+          //             },
+          //             1000: {
+          //                 items: 4
+          //             },
+          //             1200: {
+          //                 items: 4
+          //             }
+          //         }
+          //     });
+          // }
           if ($('.course-category-one__carousel').length) {
               $('.course-category-one__carousel').owlCarousel({
                   loop: true,
