@@ -36,17 +36,6 @@
         </div>
         <div class="col-md-2">
           <!-- Button trigger modal -->
-                        <div class="my-2">
-                          <nuxt-link class="blackLinks" to="/users/profile">
-            <v-btn
-              x-large
-              color="success"
-              dark
-            >
-              Go back to Admin Dashboard
-            </v-btn>
-            </nuxt-link>
-          </div>
           <b-button @click="showModal = true">
             Edit Profile
           </b-button>
@@ -109,10 +98,10 @@
             <div id="home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-md-6">
-                  <label>Telephone</label>
+                  <label>User Id</label>
                 </div>
                 <div class="col-md-6">
-                  <p>{{ userData.telephone }}</p>
+                  <p>{{ userData._id }}</p>
                 </div>
               </div>
               <div class="row">
@@ -211,7 +200,7 @@
             </div>
             <hr>
             <h3>All uploaded documents Documents</h3>
-            <ul v-if="userData.documents[0] != null">
+            <ul>
               <li class="h-100 m-5" v-for="doc in userData.documents" :key='doc.filename'>{{doc.fileTitle}}
                 <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading"
                   @click="removeDocument(doc.filename)">
@@ -220,13 +209,6 @@
                     mdi-cancel
                   </v-icon>
                 </v-btn>
-                    <v-btn class="ma-2 float-right" color="green" dark small :disabled="isLoading">
-                        <a :href='doc.url' download> download</a>
-                        <v-icon dark right>
-                          mdi-file-download
-
-                        </v-icon>
-                      </v-btn>
               </li>
             </ul>
           </div>
@@ -246,7 +228,6 @@ export default {
         const userCall = $axios.get('/api/users/userInfo/'+route.params.id)
         const userPromise = await Promise.resolve(userCall)
         const userData = userPromise.data.userFound
-        console.log(userData)
         return {
           userData
         }
@@ -277,7 +258,7 @@ export default {
       this.email = this.userData.email
       this.userData.telephone ? this.phone = this.userData.telephone : this.phone = ''
       this.userData.studentStatus ? this.studentStatus = this.userData.studentStatus : this.studentStatus = ''
-      this.userData.avatar ? this.oldAvatar = this.userData.avatar.filename : this.oldAvatar = ''
+      this.userData.avatar.filename ? this.oldAvatar = this.userData.avatar.filename : this.oldAvatar = ''
     },
 
     methods: {
@@ -303,7 +284,6 @@ export default {
           const response = await this.$axios.get('/api/classRoom/search/?q='+this.searchQuery)
           let foundClasses = response.data.classesFound;
           this.differenceArray = foundClasses.filter(({ _id: id1 }) => !this.userData.classes.some(({ _id: id2 }) => id2 === id1));
-          console.log(this.differenceArray);
         }
       },
       async uploadImage(event) {
@@ -315,7 +295,6 @@ export default {
         if(this.oldAvatar !== ''){
           formData.append('oldAvatar', this.oldAvatar)
         }
-        console.log(file, this.oldAvatar)
         await this.$axios.put('api/users/updateUserAvatar/' + this.userData._id, formData).then(() => {
             window.location.reload(true)
           }).catch((e) => {
@@ -357,7 +336,6 @@ export default {
       },
 
       async updateForm() {
-        console.log(this.username, this.email)
         const data = new FormData();
         data.append('username', this.username)
         data.append('email', this.email)

@@ -110,7 +110,6 @@ import alerts from '@/components/alerts.vue'
             message: this.message
         }
         let response = await this.$axios.post('/api/users/contact', data);
-        console.log(response.data)
         if (response.data.success) {
             this.success = true
             this.isLoading = false;

@@ -59,7 +59,6 @@
         const allClassRooms = $axios.get('/api/classRoom')
         const allClassPromis = await Promise.resolve(allClassRooms)
         const allClassData = allClassPromis.data.classRooms
-        console.log(allClassData)
         return {
           allClassData
         }

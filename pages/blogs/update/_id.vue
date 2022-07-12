@@ -25,7 +25,6 @@ import UpdateBlogForm from '@/components/updateBlogForm.vue';
         const blogCall = $axios.get('/api/blogs/'+route.params.id)
         const blogPromise = await Promise.resolve(blogCall)
         const blogData = blogPromise.data.blog
-        console.log(blogData)
         return {
           blogData
         }
