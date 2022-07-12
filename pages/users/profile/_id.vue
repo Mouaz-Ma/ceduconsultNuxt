@@ -39,7 +39,7 @@
                         <div class="my-2">
                           <nuxt-link class="blackLinks" to="/users/profile">
             <v-btn
-              x-large
+              
               color="success"
               dark
             >
@@ -453,6 +453,17 @@ body{
 .uploadDocs{
   display: inline-flex;
     width: 100%;
+}
+
+a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover{
+      color:whitesmoke; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
 
 </style>
