@@ -159,7 +159,7 @@
 <style scoped>
 #whatsAppBtn {
   position: fixed;
-  bottom: 60px;
+  bottom: 140px;
   right: 20px;
   z-index: 1000;
 }
