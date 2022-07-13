@@ -12,7 +12,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              
+
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote1.content') }}
@@ -34,7 +34,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              
+
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote2.content') }}
@@ -55,7 +55,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              
+
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote3.content') }}
@@ -77,7 +77,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              
+
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote4.content') }}
@@ -98,7 +98,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              
+
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote5.content') }}
@@ -124,7 +124,40 @@
 <script>
     export default {
       name: "TestimonialsComponent",
-      auth: false
+      auth: false,
+      mounted() {
+        $('.testimonials-one__carousel').owlCarousel({
+          loop: true,
+          margin: 2,
+          nav: false,
+          dots: true,
+          autoWidth: false,
+          autoplay: true,
+          smartSpeed: 700,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            480: {
+              items: 1
+            },
+            767: {
+              items: 1
+            },
+            991: {
+              items: 1
+            },
+            1000: {
+              items: 2
+            },
+            1200: {
+              items: 3
+            }
+          }
+        })
+      }
     }
 </script>
 
