@@ -397,7 +397,7 @@ a:visited {
   /* Thrid Level Menu */
 }
 .header-navigation ul.navigation-box > li + li {
-  margin-left: 48px;
+  margin-left: 28px;
 }
 .header-navigation ul.navigation-box > li:first-child {
   padding-left: 0;
