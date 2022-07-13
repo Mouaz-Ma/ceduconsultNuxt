@@ -1,10 +1,10 @@
 <template>
   <section class="slider-three">
-    <img src="/assets/images/slider-3-icon-1-1.png" class="slider-three__icon-1" alt="slider-3-icon-1-1.png">
+    <!-- <img src="/assets/images/slider-3-icon-1-1.png" class="slider-three__icon-1" alt="slider-3-icon-1-1.png">
     <img src="/assets/images/slider-3-icon-1-2.png" class="slider-three__icon-2" alt="slider-3-icon-1-2.png">
     <img src="/assets/images/slider-3-icon-1-3.png" class="slider-three__icon-3" alt="slider-3-icon-1-3.png">
     <img src="/assets/images/slider-3-icon-1-4.png" class="slider-three__icon-4" alt="slider-3-icon-1-4.png">
-    <img src="/assets/images/slider-3-icon-1-5.png" class="slider-three__icon-5" alt="slider-3-icon-1-5.png">
+    <img src="/assets/images/slider-3-icon-1-5.png" class="slider-three__icon-5" alt="slider-3-icon-1-5.png"> -->
     <div class="container">
       <div class="row">
         <div class="col-lg-6">

@@ -8,9 +8,8 @@
                           <div class="contact-info-one__icon"><i class="kipso-icon-manager"></i><!-- /.kipso-icon-manager -->
                           </div><!-- /.contact-info-one__icon -->
                           <h2 class="contact-info-one__title">About Us </h2><!-- /.contact-info-one__title -->
-                          <p class="contact-info-one__text">Lorem ipsum is simply free text <br> available in the market to
-                              use <br>
-                              deliver satisfaction.</p><!-- /.contact-info-one__text -->
+                          <p class="contact-info-one__text">CEC is an Education Consultancy and online<br> language centre that caters to <br>the needs of students around the world.
+                              </p><!-- /.contact-info-one__text -->
                       </div><!-- /.contact-info-one__single -->
                   </div><!-- /.col-lg-4 -->
                   <div class="col-lg-4">
@@ -19,8 +18,8 @@
                               <!-- /.kipso-icon-manager -->
                           </div><!-- /.contact-info-one__icon -->
                           <h2 class="contact-info-one__title">Our Address</h2><!-- /.contact-info-one__title -->
-                          <p class="contact-info-one__text">855 Road Broklyn Street, <br>
-                              600 New York, United States of <br> America</p><!-- /.contact-info-one__text -->
+                          <p class="contact-info-one__text"> 987 Koigab street, <br>
+                              Cimbebasia Windhoek <br> Namibia</p><!-- /.contact-info-one__text -->
                       </div><!-- /.contact-info-one__single -->
                   </div><!-- /.col-lg-4 -->
                   <div class="col-lg-4">
@@ -29,7 +28,7 @@
                           </div><!-- /.contact-info-one__icon -->
                           <h2 class="contact-info-one__title">Contact Info</h2><!-- /.contact-info-one__title -->
                           <p class="contact-info-one__text">needhelp@kipso.com <br>
-                              444 888 0000 <br> &nbsp; </p><!-- /.contact-info-one__text -->
+                             +264 61211683 / +44 330 133 5324 <br> &nbsp; </p><!-- /.contact-info-one__text -->
                       </div><!-- /.contact-info-one__single -->
                   </div><!-- /.col-lg-4 -->
               </div><!-- /.row -->

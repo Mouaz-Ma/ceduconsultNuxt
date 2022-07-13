@@ -12,10 +12,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              <img
-                src="/assets/images/qoute-1-1.png"
-                alt=""
-              >
+              
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote1.content') }}
@@ -37,10 +34,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              <img
-                src="/assets/images/qoute-1-1.png"
-                alt=""
-              >
+              
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote2.content') }}
@@ -61,10 +55,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              <img
-                src="/assets/images/qoute-1-1.png"
-                alt=""
-              >
+              
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote3.content') }}
@@ -86,10 +77,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              <img
-                src="/assets/images/qoute-1-1.png"
-                alt=""
-              >
+              
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote4.content') }}
@@ -110,10 +98,7 @@
         <div class="item">
           <div class="testimonials-one__single">
             <div class="testimonials-one__qoute">
-              <img
-                src="/assets/images/qoute-1-1.png"
-                alt=""
-              >
+              
             </div><!-- /.testimonials-one__qoute -->
             <p class="testimonials-one__text">
               {{ $t('elearning.testimonials.quote5.content') }}

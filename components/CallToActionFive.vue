@@ -11,8 +11,8 @@
               <div class="cta-five__bubble-2"><i class="fas fa-bolt"></i></div><!-- /.cta-five__bubble-2 -->
               <div class="container text-center">
                   <h2 class="cta-five__title">Start growing with <br>
-                      the community</h2><!-- /.cta-five__title -->
-                  <p class="cta-five__text">Duis aute irure dolor in reprehenderit in velit esse</p><!-- /.cta-five__text -->
+                      the CEC community</h2><!-- /.cta-five__title -->
+                  <p class="cta-five__text">Where our moto is to be your number 1 choice for higher education</p><!-- /.cta-five__text -->
                   <a href="#" class="thm-btn cta-five__btn">Learn More</a><!-- /.thm-btn cta-five__btn -->
               </div><!-- /.container text-center -->
           </section>

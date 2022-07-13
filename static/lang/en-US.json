@@ -56,7 +56,7 @@
     },
     "courses": {
       "title1": "Explore our",
-      "title2": "popular courses",
+      "title2": "Language Proficiency Courses",
       "description": "Would you like to take an official English Proficiency Exam?\n            We offer the following classes to prepare you for the test of your choice",
       "one": {
         "category": "English",
@@ -151,23 +151,23 @@
       "title": "Our Programs and Curriculum",
       "ted": {
         "name": "TEDEd",
-        "description": "Our mission is to spark and celebrate the ideas of students and teachers throughout the world. Follow for program updates + new animated videos every week!"
+        "description": "Teded’s mission is to spark and celebrate the ideas of students and teachers throughout the world. At C.E.C we make use of TEDEd to personalise speaking, listening and vocabulary lessons for our students. "
       },
       "ng": {
         "name": "National Geographic Learning",
-        "description": "National Geographic Learning’s mission is to bring the world to the classroom and the classroom to life."
+        "description": "National Geographic learning: NGL aims to bring the world to the classroom and the classroom to life. We make use of NGL to expose our students to the world and build upon their various interests."
       },
       "oxford": {
         "name": "Oxford University Press",
-        "description": "Oxford University Press – one of the world’s oldest higher education institution divisions, founded in 1586, showed its new logo. The style update was carried out for the first time in the last 30 years."
+        "description": "Oxford university press: Oxford University Press - one of the world’s oldest higher education institution curriculum is ideal  for students that follow the British English Curriculum. "
       },
       "ielts": {
         "name": "IELTS Prep",
-        "description": "Prepare with confidence for your upcoming IELTS Academic or General Training test. The IELTS Prep App gives you instant, unlimited access to all the right tools you need to prepare for your test – anytime, anywhere."
+        "description": "Prepare with confidence for your upcoming IELTS - Academic or General Traning test. C.E.C’s online IELTS prep lessons will give you the confidence and flexibility you need to prepare for your IELTS exams."
       },
       "cambridge": {
         "name": "Cambridge University Press",
-        "description": "Our mission is to unlock people’s potential with the best learning and research solutions. Our vision is a world of learning and research inspired by Cambridge. Cambridge University Press is a world leader in the field of English Language Teaching (ELT) publishing, with titles for teachers and learners of English, covering all levels from kindergarten to university and adult language training."
+        "description": "Ideal for all levels with fun and interactive lessons that are designed and prepared according to students’ interests and needs."
       },
       "toefl": {
         "name": "ETS TOEFL",
@@ -256,7 +256,7 @@
       "book": "Book a Consultation"
     },
     "call": {
-      "title": "If you desire to study at any university contact us and we will get your admission.",
+      "title": "Contact us to start your admission procedures at a university of your choosing.",
       "btn": "Book a consultation"
     }
   }

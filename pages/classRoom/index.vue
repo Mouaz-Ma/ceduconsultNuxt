@@ -26,7 +26,8 @@
                                 <a v-for="tag in classRoom.tags" :key=tag href="#"><i class="fa fa-tags"></i>{{tag}}</a>
 
                             </div><!-- /.course-one__meta -->
-                            <a href="#" class="course-one__link">See Preview</a><!-- /.course-one__link -->
+                            <!-- <a href="#" class="course-one__link">See Preview</a> -->
+                            <!-- /.course-one__link -->
                         </div><!-- /.course-one__content -->
                     </div><!-- /.course-one__single -->
             </div><!-- /.item -->

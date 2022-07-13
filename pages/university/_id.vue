@@ -15,17 +15,7 @@
                         <div class="course-details__top-left">
                             <h2 class="course-details__title">{{uniData.title}}</h2>
                             <!-- /.course-details__title -->
-                            <div class="course-one__stars">
-                                <span class="course-one__stars-wrap">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </span><!-- /.course-one__stars-wrap -->
-                                <span class="course-one__count">4.8</span><!-- /.course-one__count -->
-                                <span class="course-one__stars-count">250</span><!-- /.course-one__stars-count -->
-                            </div><!-- /.course-one__stars -->
+                          
                         </div><!-- /.course-details__top-left -->
                         <div v-if="$auth.$state.user">
                         <div class="course-details__top-right" v-if="$auth.$state.user.userType === 'Administrator'">
@@ -80,36 +70,8 @@
                 </div><!-- /.course-details__price -->
 
                 <div class="course-details__meta">
-                    <a href="#" class="course-details__meta-link">
-                        <span class="course-details__meta-icon">
-                            <i class="far fa-clock"></i><!-- /.far fa-clock -->
-                        </span><!-- /.course-details__icon -->
-                        Durations: <span>10 hours</span>
-                    </a><!-- /.course-details__meta-link -->
-                    <a href="#" class="course-details__meta-link">
-                        <span class="course-details__meta-icon">
-                            <i class="far fa-folder-open"></i><!-- /.far fa-folder-open -->
-                        </span><!-- /.course-details__icon -->
-                        Lectures: <span>6</span>
-                    </a><!-- /.course-details__meta-link -->
-                    <a href="#" class="course-details__meta-link">
-                        <span class="course-details__meta-icon">
-                            <i class="far fa-user-circle"></i><!-- /.far fa-user-circle -->
-                        </span><!-- /.course-details__icon -->
-                        Students: <span>Max 4</span>
-                    </a><!-- /.course-details__meta-link -->
-                    <a href="#" class="course-details__meta-link">
-                        <span class="course-details__meta-icon">
-                            <i class="fas fa-play"></i><!-- /.fas fa-play -->
-                        </span><!-- /.course-details__icon -->
-                        Video: <span>8 hours</span>
-                    </a><!-- /.course-details__meta-link -->
-                    <a href="#" class="course-details__meta-link">
-                        <span class="course-details__meta-icon">
-                            <i class="far fa-flag"></i><!-- /.far fa-flag -->
-                        </span><!-- /.course-details__icon -->
-                        Skill Level: <span>Advanced</span>
-                    </a><!-- /.course-details__meta-link -->
+
+
                     <a href="#" class="course-details__meta-link">
                         <span class="course-details__meta-icon">
                             <i class="far fa-bell"></i><!-- /.far fa-bell -->
@@ -118,7 +80,7 @@
                     </a><!-- /.course-details__meta-link -->
                 </div><!-- /.course-details__meta -->
                 <div class="course-details__list">
-                    <h2 class="course-details__list-title">New Courses</h2><!-- /.course-details__list-title -->
+                    <h2 class="course-details__list-title">Courses</h2><!-- /.course-details__list-title -->
                     <div class="course-details__list-item">
                         <div class="course-details__list-img">
                             <img src="/assets/images/lc-1-1.jpg" alt="">
@@ -194,6 +156,7 @@
         const uniCall = $axios.get('/api/university/'+route.params.id)
         const uniPromise = await Promise.resolve(uniCall)
         const uniData = uniPromise.data.university
+        console.log(uniData)
         return {
           uniData
         }

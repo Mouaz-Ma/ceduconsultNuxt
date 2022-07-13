@@ -33,7 +33,6 @@
               <p class="cta-two__text">
                 {{ intro2 }}
               </p><!-- /.cta-two__text -->
-
               <a
                 :href="link2"
                 class="thm-btn cta-two__btn"

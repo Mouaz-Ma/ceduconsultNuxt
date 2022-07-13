@@ -20,6 +20,7 @@ export default {
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/images/favicons/favicon-16x16.png' },
 
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800%7CSatisfy&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" },
 
       { rel: "stylesheet", href: "/assets/css/animate.min.css" },
       { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
