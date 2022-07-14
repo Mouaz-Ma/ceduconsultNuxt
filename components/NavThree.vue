@@ -11,7 +11,7 @@
           <b-navbar-brand href="/">
             <img
               src="/assets/images/logo-light.png"
-              width="90"
+              width="50"
               alt="Awesome Image"
             >
           </b-navbar-brand>
