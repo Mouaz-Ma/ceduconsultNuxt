@@ -78,16 +78,16 @@ export default {
             items: 1
           },
           767: {
-            items: 3
+            items: 1
           },
           991: {
-            items: 3
+            items: 1
           },
           1000: {
-            items: 4
+            items: 1
           },
           1200: {
-            items: 4
+            items: 1
           }
         }
       });
