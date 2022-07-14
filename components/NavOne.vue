@@ -5,7 +5,7 @@
           <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky navHeight">
               <div class="container clearfix">
                   <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="logo-box clearfix">
+                  <div class="logo-box clearfix justify-content-between">
                       <a class="navbar-brand" href="/">
                           <img src="/assets/images/logo-dark.png" class="main-logo" width="95" alt="Awesome Image" />
                       </a>

@@ -3,11 +3,11 @@
     <topBar />
     <b-navbar-nav
       variant="light"
-      class="header-navigation stricky navHeight"
+      class="header-navigation  navHeight"
     >
-      <div class="container clearfix justify-content-bottom">
+      <div class="container clearfix">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="logo-box clearfix">
+        <div class="logo-box clearfix justify-content-between">
           <b-navbar-brand href="/">
             <img
               src="/assets/images/logo-light.png"
@@ -16,7 +16,7 @@
             >
           </b-navbar-brand>
           <b-navbar-toggle
-            class="menu-toggler"
+            class="menu-toggler ml-auto"
             target="main-navigation"
           >
             <span class="kipso-icon-menu" />
