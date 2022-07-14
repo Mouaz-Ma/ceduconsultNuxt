@@ -20,7 +20,7 @@
                         <div v-if="$auth.$state.user">
                         <div class="course-details__top-right" v-if="$auth.$state.user.userType === 'Administrator'">
                             <a href="#" @click="deleteUni()" class="course-two__category">Delete</a><!-- /.course-one__category -->
-                            <a :href="'/university/update/'+$route.params.id" class="course-three__category">Update</a><!-- /.course-one__category -->
+                            <nuxt-link :to="'/university/update/'+$route.params.id" class="course-three__category">Update</nuxt-link><!-- /.course-one__category -->
                         </div><!-- /.course-details__top-right -->
                         </div>
                     </div><!-- /.course-details__top -->

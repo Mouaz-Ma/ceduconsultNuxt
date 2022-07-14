@@ -30,10 +30,10 @@
         >
           <ul class=" navigation-box">
             <li class="current">
-              <a href="/">{{ $t('university.nav.home') }}</a>
+              <nuxt-link to="/">{{ $t('university.nav.home') }}</nuxt-link>
             </li>
             <li>
-              <a href="/about">{{ $t('university.nav.about') }}</a>
+              <nuxt-link to="/about">{{ $t('university.nav.about') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                 <li><a href="/about">About Page</a></li>
                   <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
@@ -42,14 +42,14 @@
               </ul> -->
             </li>
             <li>
-              <a href="/university">{{ $t('university.nav.universities') }}</a>
+              <nuxt-link to="/university">{{ $t('university.nav.universities') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/courses">Courses</nuxt-link></li>
                   <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>
               </ul> -->
             </li>
             <li>
-              <a href="/course">{{ $t('university.nav.courses') }}</a>
+              <nuxt-link to="/course">{{ $t('university.nav.courses') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/courses">Courses</nuxt-link></li>
                   <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>

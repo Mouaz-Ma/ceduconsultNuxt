@@ -25,8 +25,32 @@
                             <div class="course-one__meta">
                                 <a v-for="tag in classRoom.tags" :key=tag href="#"><i class="fa fa-tags"></i>{{tag}}</a>
 
-                            </div><!-- /.course-one__meta -->
-                            <!-- <a href="#" class="course-one__link">See Preview</a> -->
+                            </div>
+                              <div class="text-center mt-5">
+                              <v-btn
+                                dark
+                                @click="snackbar = true"
+                              >
+                                Press To Copy Zoomlink 
+                              </v-btn>
+                              <v-snackbar
+                                v-model="snackbar"
+                              >
+                              {{ classRoom.zoomLink }}
+                               
+
+                                <template v-slot:action="{ attrs }">
+                                  <v-btn
+                                    color="pink"
+                                    text
+                                    v-bind="attrs"
+                                    @click="snackbar = false"
+                                  >
+                                    Close
+                                  </v-btn>
+                                </template>
+                              </v-snackbar>
+                            </div>
                             <!-- /.course-one__link -->
                         </div><!-- /.course-one__content -->
                     </div><!-- /.course-one__single -->
@@ -60,6 +84,7 @@
         const allClassRooms = $axios.get('/api/classRoom')
         const allClassPromis = await Promise.resolve(allClassRooms)
         const allClassData = allClassPromis.data.classRooms
+        console.log(allClassData)
         return {
           allClassData
         }
@@ -70,6 +95,7 @@
     data() {
       return {
         allClassData: [],
+        snackbar: false,
       }
     },
   }

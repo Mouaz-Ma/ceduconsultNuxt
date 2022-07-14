@@ -20,13 +20,13 @@
                         </div><!-- /.course-one__image -->
                         <div class="course-one__content">
                             <a href="#" class="course-one__category">development</a><!-- /.course-one__category -->
-                            <h2 class="course-one__title"><a href="/course-details">{{uni.title}}</a></h2>
+                            <h2 class="course-one__title"><nuxt-link to="/course-details">{{uni.title}}</nuxt-link></h2>
                             <!-- /.course-one__title -->
                             <div class="course-one__meta">
                                 <a v-for="tag in uni.tags" :key=tag href="#"><i class="fa fa-tags"></i>{{tag}}</a>
 
                             </div><!-- /.course-one__meta -->
-                            <a :href="'/university/'+uni._id" class="course-one__link">See Preview</a><!-- /.course-one__link -->
+                            <nuxt-link :to="'/university/'+uni._id" class="course-one__link">See Preview</nuxt-link><!-- /.course-one__link -->
                         </div><!-- /.course-one__content -->
                     </div><!-- /.course-one__single -->
             </div><!-- /.item -->

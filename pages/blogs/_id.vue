@@ -30,7 +30,7 @@
                         <div v-if="$auth.$state.user">
                         <div class="course-details__top-right" v-if="$auth.$state.user.userType === 'Administrator'">
                             <a href="#" @click="deleteBlog()" class="course-two__category">Delete</a><!-- /.course-one__category -->
-                            <a :href="'/blogs/update/'+$route.params.id" class="course-three__category">Update</a><!-- /.course-one__category -->
+                            <nuxt-link :to="'/blogs/update/'+$route.params.id" class="course-three__category">Update</nuxt-link><!-- /.course-one__category -->
                         </div><!-- /.course-details__top-right -->
                         </div>
                     </div><!-- /.course-details__top -->
@@ -59,7 +59,7 @@
                 <div class="course-details__price">
                     <p class="course-details__price-text">Updated At: </p><!-- /.course-details__price-text -->
                     <p class="course-details__price-amount">{{ $moment(blogData.updatedAt).format('MM/DD/YYYY')}}</p><!-- /.course-details__price-amount -->
-                    <a href="/contact" class="thm-btn course-details__price-btn">Book a Consultation</a><!-- /.thm-btn -->
+                    <nuxt-link to="/contact" class="thm-btn course-details__price-btn">Book a Consultation</nuxt-link><!-- /.thm-btn -->
                 </div><!-- /.course-details__price -->
 
                 <div class="course-details__meta">

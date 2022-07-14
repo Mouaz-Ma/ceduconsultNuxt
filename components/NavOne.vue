@@ -6,9 +6,9 @@
               <div class="container clearfix">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="logo-box clearfix justify-content-between">
-                      <a class="navbar-brand" href="/">
+                      <nuxt-link class="navbar-brand" to="/">
                           <img src="/assets/images/logo-dark.png" class="main-logo" width="95" alt="Awesome Image" />
-                      </a>
+                      </nuxt-link>
                       <div class="header__social">
                             <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
                             <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>

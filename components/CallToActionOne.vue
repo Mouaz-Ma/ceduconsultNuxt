@@ -5,7 +5,7 @@
         {{ $t('university.call.title') }}
       </h2><!-- /.cta-one__title -->
       <div class="cta-one__btn-block">
-        <a href="/contact" class="thm-btn cta-one__btn">{{ $t('university.call.btn') }}</a><!-- /.thm-btn -->
+        <nuxt-link to="/contact" class="thm-btn cta-one__btn">{{ $t('university.call.btn') }}</nuxt-link>
       </div><!-- /.cta-one__btn-block -->
     </div><!-- /.container -->
   </section>

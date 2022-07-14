@@ -18,10 +18,7 @@
               </p><!-- /.cta-two__text -->
                             <p class="cta-two__text">
                             </p><!-- /.cta-two__text -->
-              <a
-                :href="link1"
-                class="thm-btn cta-two__btn"
-              >{{ $t('home.btn-left') }}</a><!-- /.thm-btn cta-two__btn -->
+                            <nuxt-link class="thm-btn cta-two__btn" :to="link1">{{ $t('home.btn-left') }}</nuxt-link>
             </div><!-- /.cta-two__content -->
           </b-col>
         </b-row><!-- /.cta-two__single -->
@@ -42,10 +39,7 @@
               <p class="cta-two__text">
                 {{ intro2 }}
               </p><!-- /.cta-two__text -->
-              <a
-                :href="link2"
-                class="thm-btn cta-two__btn"
-              >{{ $t('home.btn-right') }}</a><!-- /.thm-btn cta-two__btn -->
+              <nuxt-link class="thm-btn cta-two__btn" :to="link2">{{ $t('home.btn-right') }}</nuxt-link>
             </div><!-- /.cta-two__content -->
           </b-col>
         </b-row><!-- /.cta-two__single -->

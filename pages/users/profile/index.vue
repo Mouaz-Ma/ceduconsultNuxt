@@ -174,28 +174,26 @@
               <div class="card-body">
                 <div class="app-link">
                   <h5>What would you like to upload</h5>
-                  <a
+                  <nuxt-link to="/blogs/upload"
                     class="btn btn-secondary w-50"
-                    href="/blogs/upload"
-                  >Blog or news</a>
+                  >Blog or news</nuxt-link>
                   <br>
                   <div class="mt-3" />
-                  <a
+                  <nuxt-link to="/university/upload"
                     class="btn btn-secondary w-50"
                     href="/university/upload"
-                  >University</a>
+                  >University</nuxt-link>
                   <br>
                   <div class="mt-3" />
-                  <a
+                  <nuxt-link to="/course/upload"
                     class="btn btn-secondary w-50"
-                    href="/course/upload"
-                  >Course</a>
+                    
+                  >Course</nuxt-link>
                 </div>
                 <div class="mt-3" />
-                <a
+                <nuxt-link to="/classRoom/upload"
                   class="btn btn-secondary w-50"
-                  href="/classRoom/upload"
-                >Class</a>
+                >Class</nuxt-link>
               </div>
             </div>
           </div>
@@ -321,12 +319,12 @@
                     :key="user.id"
                     class="border-bottom-0"
                   >
-                    <a
+                    <nuxt-link
                       v-if="user.userType.toLowerCase() !== 'administrator'"
-                      :href="'/users/profile/'+user._id"
+                      :to="'/users/profile/'+user._id"
                     >
                       {{ user.username }}
-                    </a>
+                    </nuxt-link>
                   </li>
                 </ul>
 

@@ -221,7 +221,7 @@
                   </v-icon>
                 </v-btn>
                     <v-btn class="ma-2 float-right" color="green" dark small :disabled="isLoading">
-                        <a :href='doc.url' download> download</a>
+                        <nuxt-link to='doc.url' download> download</nuxt-link>
                         <v-icon dark right>
                           mdi-file-download
 
