@@ -210,6 +210,6 @@
 <style scoped>
 .sliderImage{
     object-fit: cover;
-        height: 420px;
+        height: 380px;
 }
 </style>

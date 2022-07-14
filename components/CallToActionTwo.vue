@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-row align-h="center">
-      <b-col sm="12" md="6" lg="6" class="thm-base-bg text-center pt-5">
+      <b-col sm="12" md="6" lg="6" class="thm-base-bg text-center pt-5 ">
         <b-row align-h="center" align-v="center" class="fullHeight">
           <b-col>
             <b-row align-h="center">
@@ -16,6 +16,8 @@
               <p class="cta-two__text">
                 {{ intro1 }}
               </p><!-- /.cta-two__text -->
+                            <p class="cta-two__text">
+                            </p><!-- /.cta-two__text -->
               <a
                 :href="link1"
                 class="thm-btn cta-two__btn"
@@ -97,5 +99,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-
+.kipso-icon-knowledge{
+  color: #2da397;
+}
 </style>
