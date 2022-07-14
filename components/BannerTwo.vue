@@ -134,18 +134,16 @@ export default {
             // margin: 30
           },
           600: {
-            items: 2,
-            margin: 30
+            items: 1
           },
           991: {
-            items: 2,
-            margin: 30
+            items: 1
           },
           1000: {
-            items: 3
+            items: 1
           },
           1200: {
-            items: 3
+            items: 1
           }
         }
       })
