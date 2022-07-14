@@ -453,13 +453,14 @@ ul {
 }
 
 a{
-  color: whitesmoke;
+  color: black;
   text-decoration: none;
 }
 
 a:hover{
-      color:whitesmoke; 
+      color:black; 
     text-decoration:none; 
     cursor:pointer;  
+    border-bottom: 1px solid gray;
 }
 </style>

@@ -146,7 +146,7 @@
       </div>
       <!-- here you need to show the classrooms that only isnt in his list plus be able to add it to the student and delete it -->
       <div class="row">
-        <div class="col-6 border-right">
+        <div class="col-md-6 border-right border-dark">
           <div class="card-body">
             <h3>Search ClassRooms</h3>
             <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2" placeholder="Search"
@@ -191,7 +191,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
             <div v-if="alertMassge">
               <alerts :message=alertMassge :success=success />
             </div>

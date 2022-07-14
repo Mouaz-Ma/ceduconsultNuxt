@@ -1,39 +1,6 @@
 <template>
 <v-app>
-      <section class="contact-info-one">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-4">
-                      <div class="contact-info-one__single wow fadeInDown animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInDown;">
-                          <div class="contact-info-one__icon"><i class="kipso-icon-manager"></i><!-- /.kipso-icon-manager -->
-                          </div><!-- /.contact-info-one__icon -->
-                          <h2 class="contact-info-one__title">About Us </h2><!-- /.contact-info-one__title -->
-                          <p class="contact-info-one__text">CEC is an Education Consultancy and online<br> language centre that caters to <br>the needs of students around the world.
-                              </p><!-- /.contact-info-one__text -->
-                      </div><!-- /.contact-info-one__single -->
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-lg-4">
-                      <div class="contact-info-one__single wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
-                          <div class="contact-info-one__icon"><i class="kipso-icon-placeholder"></i>
-                              <!-- /.kipso-icon-manager -->
-                          </div><!-- /.contact-info-one__icon -->
-                          <h2 class="contact-info-one__title">Our Address</h2><!-- /.contact-info-one__title -->
-                          <p class="contact-info-one__text"> 987 Koigab street, <br>
-                              Cimbebasia Windhoek <br> Namibia</p><!-- /.contact-info-one__text -->
-                      </div><!-- /.contact-info-one__single -->
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-lg-4">
-                      <div class="contact-info-one__single wow fadeInDown animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInDown;">
-                          <div class="contact-info-one__icon"><i class="kipso-icon-contact"></i><!-- /.kipso-icon-manager -->
-                          </div><!-- /.contact-info-one__icon -->
-                          <h2 class="contact-info-one__title">Contact Info</h2><!-- /.contact-info-one__title -->
-                          <p class="contact-info-one__text">needhelp@kipso.com <br>
-                             +264 61211683 / +44 330 133 5324 <br> &nbsp; </p><!-- /.contact-info-one__text -->
-                      </div><!-- /.contact-info-one__single -->
-                  </div><!-- /.col-lg-4 -->
-              </div><!-- /.row -->
-          </div><!-- /.container -->
-      </section>
+
 <section class="contact-one">
           <div class="container">
               <h2 class="contact-one__title text-center">Get in touch <br>
@@ -72,6 +39,40 @@
                   </div><!-- /.row -->
               </form><!-- /.contact-one__form -->
               <div class="result text-center"></div><!-- /.result -->
+          </div><!-- /.container -->
+      </section>
+            <section class="contact-info-one">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <div class="contact-info-one__single wow fadeInDown animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInDown;">
+                          <div class="contact-info-one__icon"><i class="kipso-icon-manager"></i><!-- /.kipso-icon-manager -->
+                          </div><!-- /.contact-info-one__icon -->
+                          <h2 class="contact-info-one__title">About Us </h2><!-- /.contact-info-one__title -->
+                          <p class="contact-info-one__text">CEC is an Education Consultancy and online<br> language centre that caters to <br>the needs of students around the world.
+                              </p><!-- /.contact-info-one__text -->
+                      </div><!-- /.contact-info-one__single -->
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                      <div class="contact-info-one__single wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                          <div class="contact-info-one__icon"><i class="kipso-icon-placeholder"></i>
+                              <!-- /.kipso-icon-manager -->
+                          </div><!-- /.contact-info-one__icon -->
+                          <h2 class="contact-info-one__title">Our Address</h2><!-- /.contact-info-one__title -->
+                          <p class="contact-info-one__text"> 987 Koigab street, <br>
+                              Cimbebasia Windhoek <br> Namibia</p><!-- /.contact-info-one__text -->
+                      </div><!-- /.contact-info-one__single -->
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                      <div class="contact-info-one__single wow fadeInDown animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInDown;">
+                          <div class="contact-info-one__icon"><i class="kipso-icon-contact"></i><!-- /.kipso-icon-manager -->
+                          </div><!-- /.contact-info-one__icon -->
+                          <h2 class="contact-info-one__title">Contact Info</h2><!-- /.contact-info-one__title -->
+                          <p class="contact-info-one__text">needhelp@kipso.com <br>
+                             +264 61211683 / +44 330 133 5324 <br> &nbsp; </p><!-- /.contact-info-one__text -->
+                      </div><!-- /.contact-info-one__single -->
+                  </div><!-- /.col-lg-4 -->
+              </div><!-- /.row -->
           </div><!-- /.container -->
       </section>
 
