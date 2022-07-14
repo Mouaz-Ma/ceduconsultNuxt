@@ -12,7 +12,7 @@
           <b-navbar-brand href="/">
             <img
               src="/assets/images/logo-light.png"
-              width="50"
+              class="mainLogo"
               alt="Awesome Image"
             >
           </b-navbar-brand>
@@ -179,6 +179,17 @@ a:hover {
 
 .stricky-fixed {
   padding: 10px;
+}
+
+.mainLogo {
+  width: 95px;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 450px) {
+  .mainLogo {
+    width: 75px;
+  }
 }
 
 </style>

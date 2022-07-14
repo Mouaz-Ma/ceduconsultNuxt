@@ -81,13 +81,13 @@ export default {
             items: 1
           },
           991: {
-            items: 1
+            items: 3
           },
           1000: {
-            items: 1
+            items: 4
           },
           1200: {
-            items: 1
+            items: 4
           }
         }
       });

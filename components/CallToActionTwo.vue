@@ -5,7 +5,7 @@
         <b-row align-h="center" align-v="center" class="fullHeight">
           <b-col>
             <b-row align-h="center">
-              <div class="cta-two__icon">
+              <div class="cta-two__icon mb-5">
                 <span><i class="kipso-icon-professor" /><!-- /.kipso-icon-professor --></span>
               </div><!-- /.cta-two__icon -->
             </b-row>
@@ -25,11 +25,11 @@
         </b-row><!-- /.cta-two__single -->
       </b-col><!-- /.col-lg-6 -->
 
-      <b-col sm="12" md="6" lg="6" class="thm-base-bg-2 text-center pt-5 fullHeight">
+      <b-col sm="12" md="6" lg="6" class="thm-base-bg-2 text-center pt-5 ">
         <b-row align-h="center" align-v="center" class="fullHeight">
           <b-col>
             <b-row align-h="center">
-              <div class="cta-two__icon">
+              <div class="cta-two__icon mb-5">
                 <span><i class="kipso-icon-knowledge" /><!-- /.kipso-icon-knowledge --></span>
               </div><!-- /.cta-two__icon -->
             </b-row>
