@@ -9,9 +9,10 @@
   .cta-two__single {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 70px;
+    padding-bottom: 170px;
   }
 
   .cta-two__icon {
