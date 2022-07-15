@@ -32,9 +32,8 @@ export default {
   mounted() {
     $('.slider-three').vegas({
       slides: [
-        { src: "/assets/images/slider-3-1.png" },
-        { src: "/assets/images/slider-3-2.png" },
-        { src: "/assets/images/slider-3-3.png" },
+        { src: "/assets/images/slider-3-1.jpg" },
+        { src: "/assets/images/slider-3-2.jpg" },
       ],
       transition: 'slideDown2',
       timer: false
