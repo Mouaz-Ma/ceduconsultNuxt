@@ -1,5 +1,5 @@
 <template>
-  <div>
+<div>
           <NavTwo />
   <section class="course-one__top-title home-one">
       <div class="container">
@@ -19,24 +19,30 @@
                             <img class="uniImage" :src=classRoom.image.url alt="">
                         </div><!-- /.course-one__image -->
                         <div class="course-one__content">
-                            <a href="#" class="course-one__category">development</a><!-- /.course-one__category -->
+                            <a href="#" class="course-one__category">Class Room</a>
                             <h2 class="course-one__title"><a href="/course-details">{{classRoom.title}}</a></h2>
-                            <!-- /.course-one__title -->
+                        <div v-if="$auth.$state.user.userType === 'Administrator'">
+                            <a href="#" @click="deleteClassRoom(classRoom._id)" class="course-two__category marginDelete">Delete</a>
+                            <nuxt-link :to="'/classRoom/update/'+classRoom._id" class="course-three__category marginUpdate">Update</nuxt-link>
+                        </div>
                             <div class="course-one__meta">
                                 <a v-for="tag in classRoom.tags" :key=tag href="#"><i class="fa fa-tags"></i>{{tag}}</a>
-
                             </div>
-                              <div class="text-center mt-5">
+                            <div class="mt-3 text-center">
+                                <h3 class="course-one__title">{{ $moment(classRoom.classDate).format('MM/DD/YYYY')}}</h3>
+                                <h3 class="course-one__title">{{ classRoom.classTime}}</h3>
+                            </div>
+                              <div v-if="classRoom.zoomLink" class="text-center mt-5">
                               <v-btn
                                 dark
-                                @click="snackbar = true"
+                                @click="copyToClipboard(classRoom.zoomLink)"
                               >
                                 Press To Copy Zoomlink 
                               </v-btn>
                               <v-snackbar
                                 v-model="snackbar"
                               >
-                              {{ classRoom.zoomLink }}
+                              Copied to clipboard
                                
 
                                 <template v-slot:action="{ attrs }">
@@ -78,13 +84,13 @@
       }
     },
     async asyncData({
-      $axios
+      $axios, $auth
     }) {
       try {
         const allClassRooms = $axios.get('/api/classRoom')
         const allClassPromis = await Promise.resolve(allClassRooms)
-        const allClassData = allClassPromis.data.classRooms
-        console.log(allClassData)
+        const allClassDataComper = allClassPromis.data.classRooms
+        let allClassData = allClassDataComper.filter(({ _id: id1 }) => $auth.state.user.classes.some(({ _id: id2 }) => id2 === id1));
         return {
           allClassData
         }
@@ -96,8 +102,29 @@
       return {
         allClassData: [],
         snackbar: false,
+        copiedToClipBoard: '',
+        differenceArray: [],
       }
     },
+    methods: {
+      async copyToClipboard(text) {
+        this.snackbar = true
+        await navigator.clipboard.writeText(text);
+        this.copiedToClipBoard =("Copied to clipboard");
+      },
+      async deleteClassRoom(id) {
+      try {
+        console.log(id)
+            let deleteResponse = await this.$axios.delete('/api/classRoom/' + id);
+            if (deleteResponse.data.success) {
+                 window.location.reload(true)
+            }
+          } catch (err) {
+            console.log(err)
+          }
+        }
+    },
+    
   }
 </script>
 
@@ -107,4 +134,17 @@
     height: 350px;
     object-fit: cover;
 }
+
+a{
+  text-decoration: none;
+  color: #012237;
+}
+
+.marginDelete{
+  margin-left: 8rem;
+}
+.marginUpdate{
+  margin-left: 13.5rem;
+}
+
 </style>

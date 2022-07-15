@@ -303,7 +303,6 @@ export default {
           const response = await this.$axios.get('/api/classRoom/search/?q='+this.searchQuery)
           let foundClasses = response.data.classesFound;
           this.differenceArray = foundClasses.filter(({ _id: id1 }) => !this.userData.classes.some(({ _id: id2 }) => id2 === id1));
-          console.log(this.differenceArray);
         }
       },
       async uploadImage(event) {

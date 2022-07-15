@@ -77,11 +77,16 @@
           <div class="col-xxl-6 col-xl-6 col-lg-6">
             <div class="card welcome-profile w-100 mb-3">
               <div class="card-body">
-                <img
-                  class="profileImage"
-                  src="/assets/images/2.png"
-                  alt=""
-                >
+                            <img v-if="$auth.state.user.avatar"
+              class="profileImage"
+              :src=$auth.state.user.avatar.url
+              alt=""
+            >
+            <img v-else
+              class="profileImage"
+              src="/assets/images/logoProfileLight.png"
+              alt=""
+            >
                 <h4>Welcome, {{ $auth.$state.user.username }}!</h4>
                 <!-- <a
                   v-if="$auth.$state.user.userType === 'Administrator'"
@@ -147,7 +152,7 @@
                       <div class="user-info">
                         <span>Status</span>
                         <div>
-                          <h4>{{ $auth.$state.user.status }}</h4>
+                          <h4>{{ $auth.$state.user.studentStatus }}</h4>
                         </div>
                       </div>
                     </div>
@@ -197,7 +202,7 @@
               </div>
             </div>
           </div>
-                  <div class="col-6" v-else>
+                  <div class="col-lg-6" v-else>
             <div v-if="alertMassge">
               <alerts :message=alertMassge :success=success />
             </div>
@@ -219,7 +224,7 @@
             <h3>All uploaded documents Documents</h3>
             <ul>
               <li class="h-100 m-5" v-for="doc in userData.documents" :key='doc.filename'>{{doc.fileTitle}}
-                <v-btn class="ma-2 float-right" color="red" dark small :disabled="isLoading"
+                <v-btn class="ma-2 ml-auto float-right" color="red" dark small :disabled="isLoading"
                   @click="removeDocument(doc.filename)">
                   Delete
                   <v-icon dark right>
@@ -231,8 +236,9 @@
           </div>
           </div>
         </div>
-        <!-- verified card -->
+        
         <div class="row mb-5">
+          <!-- verified card -->
           <div
             v-if="$auth.$state.user.isVerified === true"
             class="col-xxl-6 col-xl-6 col-lg-6"
@@ -262,6 +268,7 @@
               </div>
             </div>
           </div>
+
           <div
             v-else
             class="col-xxl-6 col-xl-6 col-lg-6"
@@ -290,6 +297,7 @@
               </div>
             </div>
           </div>
+
           <div
             v-if="$auth.$state.user.userType === 'Administrator'"
             class="col-xxl-6 col-xl-6 col-lg-6"
@@ -345,6 +353,7 @@
               </div>
             </div>
           </div>
+        
         </div>
       </div>
     </div>
