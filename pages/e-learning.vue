@@ -3,7 +3,7 @@
     <BannerTwo />
     <CourseCatTwo />
     <AboutOne />
-    <Quiz v-if="$auth.$state.loggedIn" />
+    <Quiz />
     <CourseTwo />
 <!--    <TeamOne />-->
     <ProgramsComponent />
