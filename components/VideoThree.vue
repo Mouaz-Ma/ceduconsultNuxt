@@ -11,7 +11,7 @@
                   24820
                 </p><!-- /.video-three__fact-count -->
                 <p class="video-three__fact-text">
-                  Courses & Video
+                  {{ $t('university.video-three.courses') }}
                 </p><!-- /.video-three__fact-text -->
               </div><!-- /.video-three__fact -->
             </div><!-- /.col-md-6 -->
@@ -22,7 +22,7 @@
                   4280
                 </p><!-- /.video-three__fact-count -->
                 <p class="video-three__fact-text">
-                  Expert Teachers
+                  {{ $t('university.video-three.expert') }}
                 </p><!-- /.video-three__fact-text -->
               </div><!-- /.video-three__fact -->
             </div><!-- /.col-md-6 -->
@@ -43,9 +43,9 @@
           <div class="video-three__box">
             <img src="@/static/assets/images/video-1-2.jpg" alt="video-1-2" width="100%" height="100%" />
             <h2 class="video-three__title">
-              Find out how <br>
-              we help our <br>
-              students
+              {{ $t('university.video-three.sub-1') }} <br>
+              {{ $t('university.video-three.sub-2') }} <br>
+              {{ $t('university.video-three.sub-3') }}
             </h2><!-- /.video-three__title -->
             <div class="video-three__btn-box">
               <a

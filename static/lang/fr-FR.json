@@ -296,9 +296,23 @@
       "certificate": "Certificate",
       "book": "Book a Consultation"
     },
+    "video-three": {
+      "courses": "Cours & Vidéo",
+      "expert": "Enseignants experts",
+      "sub-1": "Trouver comment",
+      "sub-2": "nous aidons nos",
+      "sub-3": "étudiantes"
+    },
+    "call-six": "Votre feuille de route d'admission",
     "call": {
       "title": "Si vous souhaitez étudier dans une université, contactez-nous et nous obtiendrons votre admission.",
       "btn": "Book a consultation"
+    },
+    "call-5": {
+      "title1": "Commencez à grandir avec",
+      "title2": "la communauté CCE",
+      "p": "Où notre devise est d'être votre choix numéro 1 pour l'enseignement supérieur",
+      "btn": "Apprendre encore plus"
     }
   }
 }

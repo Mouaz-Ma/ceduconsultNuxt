@@ -296,9 +296,23 @@
       "certificate": "Certificate",
       "book": "Book a Consultation"
     },
+    "video-three": {
+      "courses": "Courses & Video",
+      "expert": "Expert Teachers",
+      "sub-1": "Find out how",
+      "sub-2": "we help our",
+      "sub-3": "students"
+    },
+    "call-six": "Your Admission Roadmap",
     "call": {
       "title": "Contact us to start your admission procedures at a university of your choosing.",
       "btn": "Book a consultation"
+    },
+    "call-5": {
+      "title1": "Start growing with",
+      "title2": "the CEC community",
+      "p": "Where our moto is to be your number 1 choice for higher education",
+      "btn": "Learn More"
     }
   }
 }

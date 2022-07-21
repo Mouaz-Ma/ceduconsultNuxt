@@ -9,7 +9,7 @@
       <b-col>
         <b-row align-h="center" align-v="center" class="text-center">
           <b-col>
-            <h2 class="block-title__title mb-4">Your Admission Roadmap</h2><!-- /.block-title__title -->
+            <h2 class="block-title__title mb-4">{{ $t('university.call-six') }}</h2><!-- /.block-title__title -->
             <img width="85%" src="/assets/images/fact-1-1.jpg" alt="">
           </b-col>
         </b-row>
