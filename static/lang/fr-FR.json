@@ -226,6 +226,40 @@
         "name": "Lilly",
         "headline": "Étudiant"
       }
+    },
+    "classrooms": {
+      "title1": "Découvrez notre",
+      "title2": "salles de classe"
+    },
+    "blogs": {
+      "title": "Blogues et actualités"
+    },
+    "contact": {
+      "subheader1": "Entrer en contact",
+      "subheader2": "avec nous",
+      "form": {
+        "name": "avec nous",
+        "email": "Adresse e-mail",
+        "phone": "Numéro de téléphone",
+        "message": "Écrire un message",
+        "button": "Envoyer un commentaire"
+      },
+      "about": {
+        "title": "À propos de nous",
+        "p1": "CEC est un cabinet de conseil en éducation et en ligne",
+        "p2": "centre de langues qui répond \n    aux <be>besoins des étudiants du monde entier."
+      },
+      "address": {
+        "title": "Notre adresse",
+        "add1": "987 rue Koigab,",
+        "add2": "Cimbébasie Windhoek",
+        "add3": "Namibie"
+      },
+      "info": {
+        "title": "Informations de contact",
+        "mail": "needhelp@kipso.com",
+        "phone": "+264 61211683 / +44 330 133 5324"
+      }
     }
   },
   "university": {
