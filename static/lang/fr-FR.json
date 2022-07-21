@@ -318,6 +318,15 @@
       "title1": "Découvrez notre",
       "title2": "Les universités",
       "btn": "Voir l'aperçu"
+    },
+    "course": {
+      "title1": "Découvrez notre",
+      "title2": "Les cours",
+      "btn": "Voir l'aperçu"
+    },
+    "blogs": {
+      "title": "Blogues et actualités",
+      "btn": "Voir l'aperçu"
     }
   }
 }

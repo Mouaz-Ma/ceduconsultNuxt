@@ -318,6 +318,15 @@
       "title1": "Explore our",
       "title2": "Universities",
       "btn": "See Preview"
+    },
+    "course": {
+      "title1": "Explore our",
+      "title2": "Courses",
+      "btn": "See Preview"
+    },
+    "blogs": {
+      "title": "Blogs and News",
+      "btn": "See Preview"
     }
   }
 }
