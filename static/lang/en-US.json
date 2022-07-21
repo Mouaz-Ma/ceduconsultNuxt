@@ -313,6 +313,11 @@
       "title2": "the CEC community",
       "p": "Where our moto is to be your number 1 choice for higher education",
       "btn": "Learn More"
+    },
+    "uni": {
+      "title1": "Explore our",
+      "title2": "Universities",
+      "btn": "See Preview"
     }
   }
 }
