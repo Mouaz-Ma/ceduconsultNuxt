@@ -42,6 +42,13 @@
       "button": "commencer à apprendre maintenant"
     },
     "quiz": {
+      "main-title1": "Bienvenue en ligne",
+      "main-title2": "centre d'apprentissage",
+      "content": "Il existe de nombreuses variantes de passages de lorem ipsum disponibles, mais le\n                           la majorité ont subi une altération sous une forme ou une autre par de l'humour injecté ou des mots aléatoires qui\n                           ne regarde pas.",
+      "feature1": "Commencez à apprendre de nos experts",
+      "feature2": "Améliorez vos compétences avec nous maintenant",
+      "trusted": "approuvé par",
+      "prof": "Professionnelles",
       "title": "TEST DE PLACEMENT EN LIGNE",
       "thank-you": "Merci de votre intérêt à passer le test de niveau en ligne. Le test est conçu pour aider à déterminer votre niveau de compétence en anglais. Il se compose de 10 questions à choix multiples et d'un test de lecture et d'écriture.",
       "alert1": "N'UTILISEZ PAS DE DICTIONNAIRE",

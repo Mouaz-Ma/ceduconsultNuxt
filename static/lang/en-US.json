@@ -42,6 +42,13 @@
       "button": "Start Learning Now"
     },
     "quiz": {
+      "main-title1": "Welcome to online",
+      "main-title2": "learning center",
+      "content": "There are many variations of passages of lorem ipsum available but the\n                          majority have suffered alteration in some form by injected humour or randomised words which\n                          don't look.",
+      "feature1": "Start learning from our experts",
+      "feature2": "Enhance your skills with us now",
+      "trusted": "Trusted by",
+      "prof": "Professionals",
       "title": "Level test",
       "thank-you": "Thank you for your interest in taking the online level test. The test is designed to help determine your English proficiency level. It consists of 10 multiple choice questions, and 1 reading and writing test.",
       "alert1": "DO NOT USE A DICTIONARY",
