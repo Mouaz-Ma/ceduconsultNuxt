@@ -112,5 +112,7 @@ export default {
 </script>
 
 <style scoped>
-
+.about-two__text{
+  white-space: pre-line;
+}
 </style>
