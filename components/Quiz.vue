@@ -9,7 +9,7 @@
                 <h2 class="block-title__title">{{ $t('elearning.quiz.main-title1') }} <br>
                   {{ $t('elearning.quiz.main-title2') }}</h2><!-- /.block-title__title -->
               </div><!-- /.block-title -->
-              <p class="about-two__text">{{ $t('elearning.quiz.main-content') }}</p><!-- /.about-two__text -->
+              <p class="about-two__text">{{ $t('elearning.quiz.content') }}</p><!-- /.about-two__text -->
               <div class="about-two__single-wrap">
                 <div class="about-two__single">
                   <div class="about-two__single-icon">
@@ -73,6 +73,9 @@
                 </li>
                 <li>
                   {{ $t('elearning.quiz.list5') }}
+                </li>
+                <li>
+                  {{ $t('elearning.quiz.list6') }}
                 </li>
               </ul>
 

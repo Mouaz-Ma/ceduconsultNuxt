@@ -7,7 +7,7 @@
              {{ $t('elearning.courses.title1') }}<br>
             {{ $t('elearning.courses.title2') }}
           </h2><!-- /.block-title__title -->
-          <p class="mt-5">
+          <p class="mt-5" style="font-size: 15pt">
             {{ $t('elearning.courses.description') }}
           </p>
         </div><!-- /.block-title -->
@@ -22,7 +22,7 @@
       >
       <div class="container">
         <div class="course-one__carousel owl-carousel owl-theme">
-          <div v-for="item in courses" :key="item.id" class="item">
+          <div v-for="item in courses" :key="item.id" class="item" style="height: 800px; max-height: 800px">
             <div class="course-one__single color-1 m-2">
               <div class="course-one__image">
                 <img
