@@ -2300,6 +2300,7 @@ a:visited {
   padding-top: 120px;
 }
 .team-one__single {
+  height: 500px;
   margin-bottom: 30px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -2901,6 +2902,7 @@ a:visited {
   background-color: #33a9bb;
 }
 .course-one__single {
+  height: 800px;
   margin-bottom: 30px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -2980,6 +2982,7 @@ a:visited {
   background-color: #012237;
 }
 .course-one__content {
+  height: 100%;
   padding-left: 45px;
   padding-right: 45px;
   position: relative;
@@ -4151,6 +4154,7 @@ a:visited {
 .course-one.home-two .course-one__carousel {
   bottom: 243px;
   margin-bottom: -245px;
+  height: 800px;
 }
 .course-one.home-two .course-one__carousel .owl-dots .owl-dot span {
   background-color: #fff;
@@ -4519,7 +4523,7 @@ a:visited {
 .footer-widget__gallery-list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;

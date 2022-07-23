@@ -104,15 +104,15 @@ export default {
           description: this.$t('elearning.programs.opic.description'),
         },
         {
-          image: 'https://edumirchi.com/wp-content/uploads/2021/11/Duolingo-English-Test.jpg',
+          image: 'https://www.kindpng.com/picc/m/17-170807_transparent-duolingo-logo-png-duolingo-english-test-transparent.png',
           name: this.$t('elearning.programs.duolingo.name'),
           description: this.$t('elearning.programs.duolingo.description'),
         },
-        {
-          image: 'https://koreanhorizons.teflsource.com/assets/frontend/images/tefl-cetified.png',
-          name: this.$t('elearning.programs.tefl.name'),
-          description: this.$t('elearning.programs.tefl.description'),
-        },
+        // {
+        //   image: 'https://koreanhorizons.teflsource.com/assets/frontend/images/tefl-cetified.png',
+        //   name: this.$t('elearning.programs.tefl.name'),
+        //   description: this.$t('elearning.programs.tefl.description'),
+        // },
       ]
     }
   },

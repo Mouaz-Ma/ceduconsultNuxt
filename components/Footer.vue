@@ -59,18 +59,26 @@
                   Certified by
                 </h2><!-- /.footer-widget__title -->
                 <ul class="list-unstyled footer-widget__gallery-list">
-                  <li>
+                  <li class="ml-1 pierImg">
                     <a
                       data-pm-no-track
                       href="https://connect.pierapps.com/agencies/48167"
                     ><img src="https://dtbhzdanf36fd.cloudfront.net/postmark_templates/pier-admin-payments-verified_agency_pier_network/verified-agency-s.png"></a>
                   </li>
-                  <li>
+                  <li class="ml-1">
                     <a href="https://connect.pierapps.com/qualification_types/icef-trained-agent-counsellor/00296529/1816"><img
                       src="/assets/images/20354_badge20220314-28454-yegzwq.png"
                       alt=""
                     ></a>
                   </li>
+                                    <li class="ml-1 teflImg">
+                    <img
+                      src="/assets/images/tefl-cetified.png"
+                      alt=""
+                      class="teflImg"
+                    >
+                  </li>
+                  
                   <!-- <li><a href="#"><img src="/assets/images/footer-1-3.png" alt=""></a></li>
                       <li><a href="#"><img src="/assets/images/footer-1-4.png" alt=""></a></li>
                       <li><a href="#"><img src="/assets/images/footer-1-5.png" alt=""></a></li>
@@ -171,5 +179,12 @@
 
 .notVisible{
     visibility: hidden;
+}
+.pierImg{
+  width: 100px;
+}
+
+.teflImg{
+  width: 100px;
 }
 </style>

@@ -52,7 +52,7 @@
                   <span class="course-one__count">4.8</span><!-- /.course-one__count -->
                   <span class="course-one__stars-count">250</span><!-- /.course-one__stars-count -->
                 </div><!-- /.course-one__stars -->
-                <p>{{ item.content }}</p>
+                <p class="heightProgram">{{ item.content }}</p>
                 <div class="course-one__meta">
                   <a href="/course-details"><i class="far fa-clock" /> {{ item.duration }}</a>
                   <a href="/course-details"><i class="far fa-folder-open" /> {{ item.lectures }}</a>
@@ -159,5 +159,7 @@
 </script>
 
 <style scoped>
-
+.heightProgram{
+  height:10rem;
+}
 </style>
