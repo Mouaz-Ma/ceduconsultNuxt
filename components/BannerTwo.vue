@@ -49,7 +49,7 @@
 
       <div
         class="banner-two__slide banner-two__slide-three"
-        :style="{backgroundImage: `url(/assets/images/slider-3-1.jpg)`}"
+        :style="{backgroundImage: `url(/assets/images/slider-2-3.jpg)`}"
       >
         <div class="container">
           <div class="row no-gutters">
