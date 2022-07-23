@@ -44,11 +44,11 @@
     "quiz": {
       "main-title1": "Welcome to online",
       "main-title2": "learning center",
-      "content": "There are many variations of passages of lorem ipsum available but the\n                          majority have suffered alteration in some form by injected humour or randomised words which\n                          don't look.",
+      "content": "Our bright and knowledgeable teachers coupled with our small and private class sizes make for the perfect and safe learning virtual environment.\n                          We take pride in assisting our students every step of the way with personalised and updated curriculums.\n                          Take a chance to learn with us and see proven results.\n",
       "feature1": "Start learning from our experts",
       "feature2": "Enhance your skills with us now",
       "trusted": "Trusted by",
-      "prof": "Professionals",
+      "prof": "Students",
       "title": "Level test",
       "thank-you": "Thank you for your interest in taking the online level test. The test is designed to help determine your English proficiency level. It consists of 10 multiple choice questions, and 1 reading and writing test.",
       "alert1": "DO NOT USE A DICTIONARY",
@@ -57,6 +57,7 @@
       "list3": "10 MINUTES FOR THE WRITING TEST",
       "list4": "IF YOU DO NOT UNDERSTAND THE QUESTION OR DO NOT KNOW THE ANSWER, PLEASE SELECT “I DON’T KNOW” THE ANSWER IN THE MULTIPLE-CHOICE ANSWER.",
       "list5": "YOUR FINAL LEVEL WILL BE DECIDED ON YOUR FIRST DAY OF CLASSES AFTER THE SPEAKING AND LISTENING TEST",
+      "list6": "For further details regarding the enrolment process, please contact us",
       "alert2": "Note: The result from this test cannot be used as an official proof of your English proficiency for admission to C.E.C or any other institution. For further details regarding enrolment process, please contact…………",
       "take-test": "Take the test",
       "cancel": "Cancel"
@@ -95,7 +96,7 @@
       "four": {
         "category": "English",
         "teacher": "Duolingo",
-        "content": "The Duolingo English Test is a modern language proficiency tool designed for today's international students and institutions. It offers an English proficiency score, video interview, and writing sample in an accessible, efficient, and secure testing experience.\n",
+        "content": "The Duolingo English Test is an online web English proficiency exam that is an alternative for other English proficiency exams like IELTS/TOEFL. It is ideal for students that require flexibility while preparing for their university placements.\n",
         "title": "Duolingo",
         "duration": "10 Hours",
         "lectures": "6 Lectures",

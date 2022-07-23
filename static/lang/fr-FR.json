@@ -57,6 +57,7 @@
       "list3": "10 MINUTES POUR LE TEST D'ÉCRITURE",
       "list4": "SI VOUS NE COMPRENEZ PAS LA QUESTION OU NE CONNAISSEZ PAS LA RÉPONSE, VEUILLEZ SÉLECTIONNER « JE NE SAIS PAS » LA RÉPONSE DANS LA RÉPONSE À CHOIX MULTIPLE.",
       "list5": "VOTRE NIVEAU FINAL SERA DÉTERMINÉ LORS DE VOTRE PREMIER JOUR DE COURS APRÈS LE TEST D'ORAL ET D'ÉCOUTE.",
+      "list6": "Pour plus de détails concernant le processus d'inscription, veuillez nous contacter",
       "alert2": "Remarque : Le résultat de ce test ne peut pas être utilisé comme preuve officielle de votre maîtrise de l'anglais pour l'admission au CEC ou à toute autre institution. Pour plus de détails concernant le processus d'inscription, veuillez contacter…………",
       "take-test": "Passer le concours",
       "cancel": "Cancel"
@@ -95,7 +96,7 @@
       "four": {
         "category": "Anglaise",
         "teacher": "Duolingo",
-        "content": "The Duolingo English Test is a modern language proficiency tool designed for today's international students and institutions. It offers an English proficiency score, video interview, and writing sample in an accessible, efficient, and secure testing experience.\n",
+        "content": "Le test d'anglais Duolingo est un examen de compétence en anglais en ligne qui est une alternative aux autres examens de compétence en anglais comme l'IELTS/TOEFL. Il est idéal pour les étudiants qui ont besoin de flexibilité lors de la préparation de leurs stages universitaires.\n",
         "title": "Duolingo",
         "duration": "10 heures",
         "lectures": "6 cours",
