@@ -1,7 +1,7 @@
 <template>
 <div>
     <NavThree />
-    <PageHeader title="Course Details" />
+    <PageHeader title="Blogs" />
   <section class="course-details">
     <div class="container">
         <div class="row">
@@ -167,6 +167,7 @@
   import NavThree from "@/components/NavThree";
   import Footer from "@/components/Footer";
     export default {
+          auth: false,
         components: {Footer, NavThree, PageHeader},
         name: "BlogDetails",
             async asyncData({

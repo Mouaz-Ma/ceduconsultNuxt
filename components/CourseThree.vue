@@ -5,7 +5,7 @@
         <div class="block-title">
           <h2 class="block-title__title">
             Explore our <br>
-            popular courses
+            offered courses
           </h2><!-- /.block-title__title -->
         </div><!-- /.block-title -->
       </div><!-- /.container -->

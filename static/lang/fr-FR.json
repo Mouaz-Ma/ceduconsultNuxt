@@ -120,7 +120,7 @@
       },
       "canada": {
         "name": "Collège impérial canadien",
-        "description": "La condition préalable à la motivation et au succès dans toute entreprise est une GRANDE vision\npour votre avenir. Si vous êtes coincé dans le passé, vous avez vraiment des ennuis."
+        "description": "Canadian Imperial College’s goal is to change the paradigm of education. Currently, classroom knowledge is valued above applicable skills, progress, personality, and creativity. Students will gain the knowledge and skills that will prepare them for the real working world."
       },
       "cooking": {
         "name": "Ecole de cuisine Gastronomicom",
@@ -151,8 +151,24 @@
         "description": "L'école de commerce et de gestion la plus internationale des Pays-Bas."
       },
       "ge": {
-        "name": "GE mondial",
-        "description": "Les consultants mondiaux de GE s'engagent à fournir une solution ultime de\n                   services pour les étudiants internationaux dans les catégories de la Fondation, du premier cycle et du troisième cycle\nsecteurs."
+        "name": "Warsaw University of Business",
+        "description": "The University implements a modern curriculum, focused on practical preparation of graduates to work in their chosen professions, both in Poland and abroad."
+      },
+      "Aivancity": {
+        "name": "Aivancity: Paris-Cachan ",
+        "description": "A TOTAL HYBRIDIZATION BETWEEN ARTIFICIAL INTELLIGENCE, BUSINESS MANAGEMENT AND ETHICS. Aivancity: a school at the service of an AI built on trust & Responsibility!"
+      },
+      "csu": {
+        "name": "Cyprus Science University",
+        "description": "Be at the frontier of knowledge in a completely international environment and discover Turkish Republic of Northern Cyprus with Cyprus Science University."
+      },
+      "Cardiff": {
+        "name": "Cardiff University",
+        "description": "An ambitious and innovative university with a bold and strategic vision located in a beautiful and thriving capital city."
+      },
+      "neu": {
+        "name": "Near East University",
+        "description": "Near East University is a higher education institution with an international identity, established in Nicosia in 1988 with the approval of the Council of Ministers in accordance with the National Education Law No. 17/1986 of the TRNC Ministry of National Education."
       }
     },
     "programmes": {

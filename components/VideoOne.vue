@@ -5,9 +5,8 @@
           <div class="row">
               <div class="col-lg-6 d-flex align-items-end">
                   <div class="video-one__content">
-                      <h2 class="video-one__title">Take a tour dolor <br>
-                          sit amet, consect <br>
-                          etur elit</h2><!-- /.video-one__title -->
+                      <h2 class="video-one__title">Take a tour and learn <br>
+                          how we operate<br></h2><!-- /.video-one__title -->
                       <a href="#" class="thm-btn video-one__btn">Learn More</a><!-- /.thm-btn -->
                   </div><!-- /.video-one__content -->
               </div><!-- /.col-lg-6 -->

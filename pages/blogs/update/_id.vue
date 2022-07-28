@@ -9,6 +9,7 @@ import PageHeader from "@/components/PageHeader";
 import UpdateBlogForm from '@/components/updateBlogForm.vue';
 
   export default {
+      auth: false,
     components: {
     PageHeader,
     UpdateBlogForm,

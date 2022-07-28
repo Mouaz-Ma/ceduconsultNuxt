@@ -9,10 +9,10 @@
           <div class="about-one__img">
               <div class="row">
                   <div class="col-lg-6">
-                      <img src="/assets/images/about-2-1.jpg" class="w-100 h-100" alt="">
+                      <img src="/assets/images/aboutUni-1.jpg" class="w-100 h-100" alt="">
                   </div><!-- /.col-lg-6 -->
                   <div class="col-lg-6">
-                      <img src="/assets/images/about-2-2.jpg" class="w-100 h-100" alt="">
+                      <img src="/assets/images/aboutUni-2.jpg" class="w-100 h-100" alt="">
                   </div><!-- /.col-lg-6 -->
               </div><!-- /.row -->
               <div class="about-one__review">

@@ -39,16 +39,15 @@
                 </h2><!-- /.footer-widget__title -->
                 <div class="footer-widget__link-wrap">
                   <ul class="list-unstyled footer-widget__link-list">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Teachers</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#">Our News</a></li>
+                    <li><nuxt-link to="/about">About</nuxt-link></li>
+                    <li><nuxt-link to="/university">Universities</nuxt-link></li>
+                    <li><nuxt-link to="/course">Courses</nuxt-link></li>
+                    <li><nuxt-link to="/services">For Applicants</nuxt-link></li>
                   </ul><!-- /.footer-widget__link-list -->
                   <ul class="list-unstyled footer-widget__link-list">
-                    <li><a href="#">Help </a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Register Now</a></li>
+
+                    <li><nuxt-link to="/blogs">Blogs and News</nuxt-link></li>
+                    <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
                   </ul><!-- /.footer-widget__link-list -->
                 </div><!-- /.footer-widget__link-wrap -->
               </div><!-- /.footer-widget -->
@@ -92,18 +91,13 @@
                   About
                 </h2><!-- /.footer-widget__title -->
                 <p class="footer-widget__text">
-                  Lorem ipsum dolor sit ametcon, sectetur adipiscing elit.
-                  Phasellus vehic sagittis euismod.
+                  CEC is an Education Consultancy and online
+                  language centre that caters to
+                  the needs of students around the world.
+
                 </p><!-- /.footer-widget__text -->
                 <div class="footer-widget__btn-block">
-                  <a
-                    href="#"
-                    class="thm-btn"
-                  >Contact</a><!-- /.thm-btn -->
-                  <a
-                    href="#"
-                    class="thm-btn"
-                  >Purchase</a><!-- /.thm-btn -->
+                  <nuxt-link  class="thm-btn" to="/contact">Contact</nuxt-link>
                 </div><!-- /.footer-widget__btn-block -->
               </div><!-- /.footer-widget -->
             </div><!-- /.col-lg-3 -->

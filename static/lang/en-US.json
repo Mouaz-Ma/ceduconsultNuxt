@@ -120,7 +120,7 @@
       },
       "canada": {
         "name": "Canadian Imperial College",
-        "description": "The prerequisite for motivation and success in any endeavor is a BIG vision\nfor your future. If you’re stuck in the past, you’re really in trouble."
+        "description": "Canadian Imperial College’s goal is to change the paradigm of education. Currently, classroom knowledge is valued above applicable skills, progress, personality, and creativity. Students will gain the knowledge and skills that will prepare them for the real working world."
       },
       "cooking": {
         "name": "Gastronomicom cooking school",
@@ -140,7 +140,7 @@
       },
       "mesoyios": {
         "name": "Mesoyios College",
-        "description": "an institution operating from 1998 as an educational center specialized in\nthe hospitality industry."
+        "description": "An institution operating from 1998 as an educational center specialized in\nthe hospitality industry."
       },
       "poland": {
         "name": "Education Poland",
@@ -151,8 +151,24 @@
         "description": "The most international business and management school in the Netherlands."
       },
       "ge": {
-        "name": "GE Global",
-        "description": "GE Global Consultants are committed to providing an ultimate solution of\nservices for International students in the categories of Foundation, Undergraduate, and postgraduate\nsectors."
+        "name": "Warsaw University of Business",
+        "description": "The University implements a modern curriculum, focused on practical preparation of graduates to work in their chosen professions, both in Poland and abroad."
+      },
+      "Aivancity": {
+        "name": "Aivancity: Paris-Cachan ",
+        "description": "A TOTAL HYBRIDIZATION BETWEEN ARTIFICIAL INTELLIGENCE, BUSINESS MANAGEMENT AND ETHICS. Aivancity: a school at the service of an AI built on trust & Responsibility!"
+      },
+      "csu": {
+        "name": "Cyprus Science University",
+        "description": "Be at the frontier of knowledge in a completely international environment and discover Turkish Republic of Northern Cyprus with Cyprus Science University."
+      },
+      "Cardiff": {
+        "name": "Cardiff University",
+        "description": "An ambitious and innovative university with a bold and strategic vision located in a beautiful and thriving capital city."
+      },
+      "neu": {
+        "name": "Near East University",
+        "description": "Near East University is a higher education institution with an international identity, established in Nicosia in 1988 with the approval of the Council of Ministers in accordance with the National Education Law No. 17/1986 of the TRNC Ministry of National Education."
       }
     },
     "programs": {
