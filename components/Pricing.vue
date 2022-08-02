@@ -51,6 +51,9 @@
               </div><!-- /.col-lg-3 -->
             </div>
           </div>
+            <div class="text-center mt-5 col-12">
+              <img class="img-fluid" src="/assets/images/CEC COURSE LEVEL CHART_011148.png" alt="">
+            </div>
         </div><!-- /.container -->
     </section>
 </template>
@@ -134,7 +137,40 @@
             ]
           }
         ]
-      })
+      }),
+        mounted() {
+    $('.partners-one__carousel').owlCarousel({
+      loop: true,
+      margin: 2,
+      nav: false,
+      dots: true,
+      autoWidth: false,
+      autoplay: true,
+      smartSpeed: 700,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        480: {
+          items: 1
+        },
+        767: {
+          items: 1
+        },
+        991: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        1200: {
+          items: 3
+        }
+      }
+    })
+  }
     }
 </script>
 
