@@ -18,8 +18,8 @@
                           
                         </div><!-- /.course-details__top-left -->
                         <div v-if="$auth.$state.user">
-                        <div class="course-details__top-right" v-if="$auth.$state.user.userType === 'Administrator'">
-                            <a href="#" @click="deleteUni()" class="course-two__category">Delete</a><!-- /.course-one__category -->
+                        <div class="course-details__top-right d-flex" v-if="$auth.$state.user.userType === 'Administrator'">
+                            <a href="#" @click="deleteUni()" class="course-two__category mr-1">Delete</a><!-- /.course-one__category -->
                             <nuxt-link :to="'/university/update/'+$route.params.id" class="course-three__category">Update</nuxt-link><!-- /.course-one__category -->
                         </div><!-- /.course-details__top-right -->
                         </div>
@@ -63,12 +63,11 @@
                 </div><!-- /.course-details__content -->
             </div><!-- /.col-lg-8 -->
             <div class="col-lg-4">
-                <div class="course-details__price">
-                    <p class="course-details__price-text">Course price </p><!-- /.course-details__price-text -->
-                    <p class="course-details__price-amount">$18.00</p><!-- /.course-details__price-amount -->
-                    <a href="#" class="thm-btn course-details__price-btn">Buy This Course</a><!-- /.thm-btn -->
-                </div><!-- /.course-details__price -->
-
+                <!-- <div class="course-details__price">
+                    <p class="course-details__price-text">Course price </p>
+                    <p class="course-details__price-amount">$18.00</p>
+                    <a href="#" class="thm-btn course-details__price-btn">Buy This Course</a>
+                </div> -->
                 <div class="course-details__meta">
 
 

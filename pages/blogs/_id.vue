@@ -28,8 +28,8 @@
                             </div><!-- /.course-one__stars -->
                         </div><!-- /.course-details__top-left -->
                         <div v-if="$auth.$state.user">
-                        <div class="course-details__top-right" v-if="$auth.$state.user.userType === 'Administrator'">
-                            <a href="#" @click="deleteBlog()" class="course-two__category">Delete</a><!-- /.course-one__category -->
+                        <div class="course-details__top-right d-flex" v-if="$auth.$state.user.userType === 'Administrator'">
+                            <a href="#" @click="deleteBlog()" class="course-two__category mr-1">Delete</a><!-- /.course-one__category -->
                             <nuxt-link :to="'/blogs/update/'+$route.params.id" class="course-three__category">Update</nuxt-link><!-- /.course-one__category -->
                         </div><!-- /.course-details__top-right -->
                         </div>

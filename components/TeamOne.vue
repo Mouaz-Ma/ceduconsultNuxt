@@ -169,7 +169,7 @@
               <div class="team-one__content">
                 <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.wittenborg.name') }}</a></h2>
                 <!-- /.team-one__name -->
-                <p class="team-one__designation">Germany</p><!-- /.team-one__designation -->
+                <p class="team-one__designation">Netherlands</p><!-- /.team-one__designation -->
                 <p class="team-one__text">{{ $t('elearning.partners.wittenborg.description') }}</p>
                 <!-- /.team-one__text -->
               </div><!-- /.team-one__content -->
@@ -188,7 +188,7 @@
               <div class="team-one__content">
                 <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.ge.name') }}</a></h2>
                 <!-- /.team-one__name -->
-                <p class="team-one__designation">United Kingdom</p><!-- /.team-one__designation -->
+                <p class="team-one__designation">Poland</p><!-- /.team-one__designation -->
                 <p class="team-one__text">{{ $t('elearning.partners.ge.description') }}</p>
                 <!-- /.team-one__text -->
               </div><!-- /.team-one__content -->
@@ -208,7 +208,7 @@
               <div class="team-one__content">
                 <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.Aivancity.name') }}</a></h2>
                 <!-- /.team-one__name -->
-                <p class="team-one__designation">United Kingdom</p><!-- /.team-one__designation -->
+                <p class="team-one__designation">France</p><!-- /.team-one__designation -->
                 <p class="team-one__text">{{ $t('elearning.partners.Aivancity.description') }}</p>
                 <!-- /.team-one__text -->
               </div><!-- /.team-one__content -->
@@ -227,7 +227,7 @@
               <div class="team-one__content">
                 <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.csu.name') }}</a></h2>
                 <!-- /.team-one__name -->
-                <p class="team-one__designation">United Kingdom</p><!-- /.team-one__designation -->
+                <p class="team-one__designation">Cyprus</p><!-- /.team-one__designation -->
                 <p class="team-one__text">{{ $t('elearning.partners.csu.description') }}</p>
                 <!-- /.team-one__text -->
               </div><!-- /.team-one__content -->
@@ -266,8 +266,84 @@
               <div class="team-one__content">
                 <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.neu.name') }}</a></h2>
                 <!-- /.team-one__name -->
-                <p class="team-one__designation">United Kingdom</p><!-- /.team-one__designation -->
+                <p class="team-one__designation">Cyprus</p><!-- /.team-one__designation -->
                 <p class="team-one__text">{{ $t('elearning.partners.neu.description') }}</p>
+                <!-- /.team-one__text -->
+              </div><!-- /.team-one__content -->
+              <div class="team-one__social">
+                <!-- <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a> -->
+              </div><!-- /.team-one__social -->
+            </div><!-- /.team-one__single -->
+          </div><!-- /.col-lg-3 -->
+          <div class="item">
+            <div class="team-one__single">
+              <div class="team-one__image">
+                <img class="temOneImage" src="/assets/images/Academy Logo (black).png" alt="neu">
+              </div><!-- /.team-one__image -->
+              <div class="team-one__content">
+                <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.eveCharles.name') }}</a></h2>
+                <!-- /.team-one__name -->
+                <p class="team-one__designation">Canada</p><!-- /.team-one__designation -->
+                <p class="team-one__text">{{ $t('elearning.partners.eveCharles.description') }}</p>
+                <!-- /.team-one__text -->
+              </div><!-- /.team-one__content -->
+              <div class="team-one__social">
+                <!-- <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a> -->
+              </div><!-- /.team-one__social -->
+            </div><!-- /.team-one__single -->
+          </div><!-- /.col-lg-3 -->
+          <div class="item">
+            <div class="team-one__single">
+              <div class="team-one__image">
+                <img class="temOneImage" src="/assets/images/DMU CMYK master logo-min.jpg" alt="neu">
+              </div><!-- /.team-one__image -->
+              <div class="team-one__content">
+                <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.deMonftfort.name') }}</a></h2>
+                <!-- /.team-one__name -->
+                <p class="team-one__designation">United Kingdom</p><!-- /.team-one__designation -->
+                <p class="team-one__text">{{ $t('elearning.partners.deMonftfort.description') }}</p>
+                <!-- /.team-one__text -->
+              </div><!-- /.team-one__content -->
+              <div class="team-one__social">
+                <!-- <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a> -->
+              </div><!-- /.team-one__social -->
+            </div><!-- /.team-one__single -->
+          </div><!-- /.col-lg-3 -->
+          <div class="item">
+            <div class="team-one__single">
+              <div class="team-one__image">
+                <img class="temOneImage" src="/assets/images/logo-toronto-business.png" alt="neu">
+              </div><!-- /.team-one__image -->
+              <div class="team-one__content">
+                <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.torontoBusiness.name') }}</a></h2>
+                <!-- /.team-one__name -->
+                <p class="team-one__designation">Canada</p><!-- /.team-one__designation -->
+                <p class="team-one__text">{{ $t('elearning.partners.torontoBusiness.description') }}</p>
+                <!-- /.team-one__text -->
+              </div><!-- /.team-one__content -->
+              <div class="team-one__social">
+                <!-- <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a> -->
+              </div><!-- /.team-one__social -->
+            </div><!-- /.team-one__single -->
+          </div><!-- /.col-lg-3 -->
+          <div class="item">
+            <div class="team-one__single">
+              <div class="team-one__image">
+                <img class="temOneImage" src="/assets/images/iu_Logo_EN.svg" alt="neu">
+              </div><!-- /.team-one__image -->
+              <div class="team-one__content">
+                <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.iuInternational.name') }}</a></h2>
+                <!-- /.team-one__name -->
+                <p class="team-one__designation">Germany</p><!-- /.team-one__designation -->
+                <p class="team-one__text">{{ $t('elearning.partners.iuInternational.description') }}</p>
                 <!-- /.team-one__text -->
               </div><!-- /.team-one__content -->
               <div class="team-one__social">

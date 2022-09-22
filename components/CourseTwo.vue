@@ -26,7 +26,8 @@
             <div class="course-one__single color-1 m-2">
               <div class="course-one__image">
                 <img
-                  src="/assets/images/course-1-1.jpg"
+                class="courseOneImages"
+                  :src=item.img
                   alt=""
                 >
                 <i class="far fa-heart" /><!-- /.far fa-heart -->
@@ -84,7 +85,8 @@
               content: this.$t('elearning.courses.one.content'),
               duration: this.$t('elearning.courses.one.duration'),
               lectures: this.$t('elearning.courses.one.lectures'),
-              preview: this.$t('elearning.courses.one.preview')
+              preview: this.$t('elearning.courses.one.preview'),
+              img: this.$t('elearning.courses.one.img')
             },
             {
               category: this.$t('elearning.courses.two.category'),
@@ -92,7 +94,8 @@
               content: this.$t('elearning.courses.two.content'),
               duration: this.$t('elearning.courses.two.duration'),
               lectures: this.$t('elearning.courses.two.lectures'),
-              preview: this.$t('elearning.courses.two.preview')
+              preview: this.$t('elearning.courses.two.preview'),
+              img: this.$t('elearning.courses.two.img')
             },
             {
               category: this.$t('elearning.courses.three.category'),
@@ -100,7 +103,8 @@
               content: this.$t('elearning.courses.three.content'),
               duration: this.$t('elearning.courses.three.duration'),
               lectures: this.$t('elearning.courses.three.lectures'),
-              preview: this.$t('elearning.courses.three.preview')
+              preview: this.$t('elearning.courses.three.preview'),
+              img: this.$t('elearning.courses.three.img')
             },
             {
               category: this.$t('elearning.courses.four.category'),
@@ -108,7 +112,8 @@
               content: this.$t('elearning.courses.four.content'),
               duration: this.$t('elearning.courses.four.duration'),
               lectures: this.$t('elearning.courses.four.lectures'),
-              preview: this.$t('elearning.courses.four.preview')
+              preview: this.$t('elearning.courses.four.preview'),
+              img: this.$t('elearning.courses.four.img')
             },
             {
               category: this.$t('elearning.courses.five.category'),
@@ -116,7 +121,8 @@
               content: this.$t('elearning.courses.five.content'),
               duration: this.$t('elearning.courses.five.duration'),
               lectures: this.$t('elearning.courses.five.lectures'),
-              preview: this.$t('elearning.courses.five.preview')
+              preview: this.$t('elearning.courses.five.preview'),
+              img: this.$t('elearning.courses.five.img')
             }
           ]
         }
@@ -159,7 +165,12 @@
 </script>
 
 <style scoped>
-.heightProgram{
+/* .heightProgram{
   height:10rem;
+} */
+
+.courseOneImages{
+  object-fit: cover;
+  height: 150px;
 }
 </style>

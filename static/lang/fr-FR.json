@@ -73,7 +73,8 @@
         "content": "(système international de test de la langue anglaise) est le test de langue anglaise le plus populaire au monde pour le travail, les études et la migration. Plus de 10 000 organisations font confiance à l'IELTS en tant qu'indicateur fiable de la capacité réelle à communiquer en anglais. L'IELTS évalue les compétences linguistiques en anglais d'un candidat à travers quatre compétences: écouter, lire, écrire et parler.\n",
         "duration": "10 heures",
         "lectures": "6 cours",
-        "preview": "Voir l'aperçu"
+        "preview": "Voir l'aperçu",
+        "img" : "https://tracktest.eu/wp-content/uploads/2016/04/ielts.jpg"
       },
       "two": {
         "category": "Anglaise",
@@ -82,7 +83,8 @@
         "content": "le test d'anglais comme langue étrangère. Il évalue votre capacité à parler et à comprendre l'anglais en analysant votre niveau d'anglais en termes de lecture, d'expression orale, d'écoute et d'écriture. Ce sont toutes des compétences qui seront nécessaires pour mener à bien vos études universitaires et le test est utilisé par les établissements pour s'assurer que les étudiants sont en mesure de poursuivre et de réussir le cours qu'ils ont choisi dans un pays où le programme est enseigné en anglais.\n \nLe test TOEFL se déroule généralement sous la forme d'un test en ligne.\n",
         "duration": "10 heures",
         "lectures": "6 cours",
-        "preview": "Voir l'aperçu"
+        "preview": "Voir l'aperçu",
+        "img" : "https://getvectorlogo.com/wp-content/uploads/2020/01/ets-toefl-vector-logo.png"
       },
       "three": {
         "category": "Anglaise",
@@ -91,7 +93,8 @@
         "content": "The Test of English for International Communication (TOEIC®) is a multiple-choice English language proficiency test for people whose native language is not English. It measures their English comprehension, speaking, writing and reading skills in an international environment. The scores indicate how well people can communicate in English with others in business, commerce and industry.\n",
         "duration": "10 heures",
         "lectures": "6 cours",
-        "preview": "Voir l'aperçu"
+        "preview": "Voir l'aperçu",
+        "img" : "https://www.amideast.org/sites/default/files//images/hq/advising%20testing/toeic%20resized.png"
       },
       "four": {
         "category": "Anglaise",
@@ -100,7 +103,8 @@
         "title": "Duolingo",
         "duration": "10 heures",
         "lectures": "6 cours",
-        "preview": "Voir l'aperçu"
+        "preview": "Voir l'aperçu",
+        "img" : "https://venturebeat.com/wp-content/uploads/2020/04/158828256233485964.png?w=1200&strip=all"
       },
       "five": {
         "category": "Anglaise",
@@ -109,7 +113,8 @@
         "content": "an internet delivered test which provides valid and reliable oral proficiency testing on a large scale. It was developed in 2006 in response to the increased worldwide demand for the testing of oral language proficiency.\n",
         "duration": "10 heures",
         "lectures": "6 cours",
-        "preview": "Voir l'aperçu"
+        "preview": "Voir l'aperçu",
+        "img" : "https://www.shsu.edu/centers/testing-center/images/OPIc%20logo.png"
       }
     },
     "partners": {
@@ -169,6 +174,22 @@
       "neu": {
         "name": "Near East University",
         "description": "Near East University is a higher education institution with an international identity, established in Nicosia in 1988 with the approval of the Council of Ministers in accordance with the National Education Law No. 17/1986 of the TRNC Ministry of National Education."
+      },
+      "eveCharles": {
+        "name": "EvelineCharles Academy",
+        "description": "EvelineCharles International Academy est dédiée à la formation en coiffure, barbier et esthétique. Le campus d'Edmonton est situé dans le West Edmonton Mall. L'Académie propose une gamme variée de cours à temps plein et à temps partiel sur le campus et une gamme de cours à temps partiel disponibles en ligne via l'Académie virtuelle EvelineCharles."
+      },
+      "deMonftfort": {
+        "name": "De Montfort University",
+        "description": "De Montfort University Leicester est une université publique de la ville de Leicester, en Angleterre. Il a été créé conformément à la loi sur l'enseignement supérieur et supérieur en 1992 en tant qu'organisme délivrant des diplômes."
+      },
+      "torontoBusiness": {
+        "name": "Toronto Business College",
+        "description": "Le Toronto Business College est un collège privé d'enseignement professionnel enregistré en vertu de la Loi de 2005 sur les collèges privés d'enseignement professionnel. Le Toronto Business College offre des programmes et des services spécialisés qui répondent aux besoins des particuliers et des employeurs afin qu'ils puissent réussir sur le marché du travail d'aujourd'hui."
+      },
+      "iuInternational": {
+        "name": "IU International University of Applied Sciences",
+        "description": "Fondée sur l'idée de donner aux gens les moyens de réussir dans un monde numérique, l'Université internationale des sciences appliquées IU a vu le jour en 1998. Et depuis qu'elle a reçu l'accréditation du Conseil allemand des sciences et des sciences humaines, IU est devenue la plus grande université d'Allemagne."
       }
     },
     "programmes": {

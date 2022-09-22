@@ -73,7 +73,8 @@
         "content": "(the International English Language Testing System) is the world’s most popular English language test for work, study, and migration. More than 10,000 organizations trust IELTS as a reliable indicator of true to life ability to communicate in English. IELTS assesses a test taker’s English language proficiency across four skills:  listening, reading, writing, and speaking.\n",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "preview": "See Preview",
+        "img" : "https://tracktest.eu/wp-content/uploads/2016/04/ielts.jpg"
       },
       "two": {
         "category": "English",
@@ -82,7 +83,8 @@
         "content": "the Test of English as a Foreign Language. It assesses your ability to both speak and understand English by analyzing your English ability in terms of reading, speaking, listening and writing. These are all skills which will be needed to carry out your academic studies and the test is used by institutions to ensure students are able to proceed and succeed on their chosen course in a country where the curriculum is taught in English.\n \nThe TOEFL test is usually conducted in the form of an online test.\n",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "preview": "See Preview",
+        "img" : "https://getvectorlogo.com/wp-content/uploads/2020/01/ets-toefl-vector-logo.png"
       },
       "three": {
         "category": "English",
@@ -91,7 +93,8 @@
         "content": "The Test of English for International Communication (TOEIC®) is a multiple-choice English language proficiency test for people whose native language is not English. It measures their English comprehension, speaking, writing and reading skills in an international environment. The scores indicate how well people can communicate in English with others in business, commerce and industry.\n",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "preview": "See Preview",
+        "img" : "https://www.amideast.org/sites/default/files//images/hq/advising%20testing/toeic%20resized.png"
       },
       "four": {
         "category": "English",
@@ -100,7 +103,8 @@
         "title": "Duolingo",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "preview": "See Preview",
+        "img" : "https://venturebeat.com/wp-content/uploads/2020/04/158828256233485964.png?w=1200&strip=all"
       },
       "five": {
         "category": "English",
@@ -109,7 +113,8 @@
         "content": "an internet delivered test which provides valid and reliable oral proficiency testing on a large scale. It was developed in 2006 in response to the increased worldwide demand for the testing of oral language proficiency.\n",
         "duration": "10 Hours",
         "lectures": "6 Lectures",
-        "preview": "See Preview"
+        "preview": "See Preview",
+        "img" : "https://www.shsu.edu/centers/testing-center/images/OPIc%20logo.png"
       }
     },
     "partners": {
@@ -169,6 +174,22 @@
       "neu": {
         "name": "Near East University",
         "description": "Near East University is a higher education institution with an international identity, established in Nicosia in 1988 with the approval of the Council of Ministers in accordance with the National Education Law No. 17/1986 of the TRNC Ministry of National Education."
+      },
+      "eveCharles": {
+        "name": "EvelineCharles Academy",
+        "description": "EvelineCharles International Academy is dedicated to hairstyling, barbering, and esthetics training. The Edmonton campus is located in West Edmonton Mall. The Academy boasts a diverse range of full-time and part-time courses on-campus and a range of part-time courses available online through the EvelineCharles Virtual Academy."
+      },
+      "deMonftfort": {
+        "name": "De Montfort University",
+        "description": "De Montfort University Leicester is a public university in the city of Leicester, England. It was established in accordance with the Further and Higher Education Act in 1992 as a degree awarding body."
+      },
+      "torontoBusiness": {
+        "name": "Toronto Business College",
+        "description": "Toronto Business College is a Private Career College registered under the Private Career Colleges Act, 2005. Toronto Business College offers specialized programs and services which fit the needs of individuals and employers so that they are able to succeed in today’s job market."
+      },
+      "iuInternational": {
+        "name": "IU International University of Applied Sciences",
+        "description": "Founded on the idea of empowering people to succeed in a digital world, IU International University of Applied Sciences first came into existence in 1998. And since receiving accreditation from the German Council of Science and Humanities, IU’s grown into Germany’s biggest university. "
       }
     },
     "programs": {
@@ -253,7 +274,7 @@
     },
     "classrooms": {
       "title1": "Explore our",
-      "title2": "classRooms"
+      "title2": "Classrooms"
     },
     "blogs": {
       "title": "Blogs and News"
@@ -271,7 +292,7 @@
       "about": {
         "title": "About Us",
         "p1": "CEC is an Education Consultancy and online",
-        "p2": "language centre that\n                    caters to <br>the needs of students around the world."
+        "p2": "language centre that \n caters to \n the needs of students around the world."
       },
       "address": {
         "title": "Our Address",

@@ -148,7 +148,7 @@
       <div class="row">
         <div class="col-md-6 border-right border-dark">
           <div class="card-body">
-            <h3>Search ClassRooms</h3>
+            <h3>Search Classrooms</h3>
             <b-form-input v-model="searchQuery" list="my-list-id" size="sm" class="mb-2 mr-sm-2" placeholder="Search"
               @keyup="searchClass()">
               <b-icon icon="search" />Search

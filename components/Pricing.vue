@@ -72,7 +72,7 @@
               { category: 'Listening', price: '150' },
               { category: 'Reading', price: '200' },
               { category: 'Writing', price: '260' }
-            ]
+            ],
           },
           {
             name: 'TOEFL',
@@ -82,7 +82,7 @@
               { category: 'Listening', price: '150' },
               { category: 'Reading', price: '200' },
               { category: 'Writing', price: '260' }
-            ]
+            ],
           },
           {
             name: 'TOEIC',
@@ -92,7 +92,7 @@
               { category: 'Listening', price: '150' },
               { category: 'Reading', price: '200' },
               { category: 'Writing', price: '260' }
-            ]
+            ],
           },
           {
             name: 'Duolingo',
@@ -102,9 +102,9 @@
               { category: 'Listening', price: '120' },
               { category: 'Reading', price: '180' },
               { category: 'Writing', price: '200' }
-            ]
+            ],
           },
-          { name: 'OPIC', price: '$250', details: [] },
+          { name: 'OPIC', price: '$250', details: [], },
           {
             name: 'Online 1-1 lessons Price/ 10 hours',
             price: '$350',
