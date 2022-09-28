@@ -203,7 +203,7 @@
                     <div class="item">
             <div class="team-one__single">
               <div class="team-one__image">
-                <img class="temOneImage" src="/assets/images/Aivancity:_Paris-Cachan_.jpeg" alt="Aivancity">
+                <img class="temOneImage" src="/assets/images/Aivancity_Paris-Cachan_.jpeg" alt="Aivancity">
               </div><!-- /.team-one__image -->
               <div class="team-one__content">
                 <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.Aivancity.name') }}</a></h2>
