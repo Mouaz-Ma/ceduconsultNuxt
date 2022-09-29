@@ -32,11 +32,11 @@
           is-nav
         >
           <ul class=" navigation-box">
-            <li class="current">
-              <nuxt-link to="/e-learning">{{ $t('elearning.nav.home') }}</nuxt-link>
+            <li>
+              <nuxt-link to="/e-learning" exact>{{ $t('elearning.nav.home') }}</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/classRoom">{{ $t('elearning.nav.classes') }}</nuxt-link>
+              <nuxt-link to="/classRoom" exact>{{ $t('elearning.nav.classes') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                       <li><a href="/about">About Page</a></li>
                         <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
@@ -53,13 +53,13 @@
                     </ul>
                 </li> -->
             <li>
-              <nuxt-link to="/blogs/indexTwo">
+              <nuxt-link to="/blogs/indexTwo" exact>
                 {{ $t('elearning.nav.blogs') }}
               </nuxt-link>
             </li>
 
             <li>
-              <nuxt-link to="/contactTwo">
+              <nuxt-link to="/contactTwo" exact>
                 {{ $t('elearning.nav.contact') }}
               </nuxt-link>
             </li>
