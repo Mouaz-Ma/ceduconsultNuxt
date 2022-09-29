@@ -35,3 +35,13 @@
     }
   }
 </script>
+
+<style>
+.nuxt-link-active {
+  color: rgb(241, 97, 1) !important;
+}
+
+.nuxt-link-exact-active {
+  color: rgb(241, 97, 1) !important;
+}
+</style>

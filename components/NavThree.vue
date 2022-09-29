@@ -36,11 +36,11 @@
           is-nav
         >
           <ul class=" navigation-box">
-            <li class="current">
-              <nuxt-link to="/">{{ $t('university.nav.home') }}</nuxt-link>
+            <li>
+              <nuxt-link to="/" exact>{{ $t('university.nav.home') }}</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/about">{{ $t('university.nav.about') }}</nuxt-link>
+              <nuxt-link to="/about" exact>{{ $t('university.nav.about') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                 <li><a href="/about">About Page</a></li>
                   <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
@@ -49,14 +49,14 @@
               </ul> -->
             </li>
             <li>
-              <nuxt-link to="/university">{{ $t('university.nav.universities') }}</nuxt-link>
+              <nuxt-link to="/university" exact>{{ $t('university.nav.universities') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/courses">Courses</nuxt-link></li>
                   <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>
               </ul> -->
             </li>
             <li>
-              <nuxt-link to="/course">{{ $t('university.nav.courses') }}</nuxt-link>
+              <nuxt-link to="/course" exact>{{ $t('university.nav.courses') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/courses">Courses</nuxt-link></li>
                   <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>
@@ -71,18 +71,18 @@
                 </ul>
             </li> -->
             <li>
-              <nuxt-link to="/services">
+              <nuxt-link to="/services" exact>
                 {{ $t('university.nav.applicants') }}
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/blogs">
+              <nuxt-link to="/blogs" exact>
                 {{ $t('university.nav.blogs') }}
               </nuxt-link>
             </li>
 
             <li>
-              <nuxt-link to="/contact">
+              <nuxt-link to="/contact" exact>
                 {{ $t('university.nav.contact') }}
               </nuxt-link>
             </li>
