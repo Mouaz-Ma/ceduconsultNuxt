@@ -3106,10 +3106,10 @@ a:visited {
 .course-one__meta a:hover i {
   color: #012237;
 }
-.course-one__meta a:last-child {
+/* .course-one__meta a:last-child {
   color: #012237;
   font-weight: 600;
-}
+} */
 .course-one__meta i {
   font-size: 14px;
   color: #f16101;

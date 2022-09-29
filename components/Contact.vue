@@ -27,7 +27,7 @@
                 :valid-characters-only="true"
                 mode="international"
                 :required="true"
-                :background-color="transparent"
+                background-color="transparent"
               ></vue-tel-input-vuetify>
             </div><!-- /.col-lg-6 -->
 

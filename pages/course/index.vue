@@ -18,18 +18,24 @@
               <div class="course-one__image">
                 <img class="uniImage" :src=course.image.url alt="">
               </div><!-- /.course-one__image -->
-              <div class="course-one__content">
-                <nuxt-link to="#" class="course-one__category">{{ course.university.title }}</nuxt-link>
+              <div class="course-one__content" style=" padding-top: 0;">
                 <!-- /.course-one__category -->
+                <div class="course-one__meta"  style="justify-content: start; padding: 1rem 0; border-top: none;">
+                  <a v-for="(tag, index) in course.tags.slice(0, 3)" :key=tag href="#" style="padding-right: 0.5rem;">{{ index < course.tags.slice(0, 3).length - index && course.tags.slice(0, 3).length != 1 ? tag + ',' : tag }}</a>
+
+                </div><!-- /.course-one__meta -->
                 <h2 class="course-one__title">
                   <nuxt-link to="/course-details">{{ course.title }}</nuxt-link>
                 </h2>
+                <div>Years of study: {{ course.yearsOfStuday }}</div>
+                <div>Language of instruction: {{ course.languageOfInstruction }}</div>
+                <div>ETCS: {{ course.ects }}</div>
+                <div>Availability: {{ course.availability }}</div>
+                <div>Degree awarded: {{ course.degreeAwarded }}</div>
                 <!-- /.course-one__title -->
-                <div class="course-one__meta"  style="justify-content: start; padding: 1rem 0;">
-                  <a v-for="tag in course.tags.slice(0, 3)" :key=tag href="#" style="padding: 0 0.5rem;"><i class="fa fa-tags"></i>{{ tag }}</a>
-
-                </div><!-- /.course-one__meta -->
-                <nuxt-link :to="'/course/'+course._id" class="course-one__link">{{ $t('university.course.btn') }}</nuxt-link>
+                <div class="mt-5">
+                  <nuxt-link to="/contact" class="apply-btn"><span>{{ $t('university.course.btn') }}</span> <i class="fa fa-angle-right"></i></nuxt-link>
+                </div>
                 <!-- /.course-one__link -->
               </div><!-- /.course-one__content -->
             </div><!-- /.course-one__single -->
@@ -84,5 +90,21 @@ export default {
   width: 100%;
   height: 350px;
   object-fit: cover;
+}
+
+.apply-btn {
+  text-decoration: none;
+  background-color: #da3833;
+  color: white;
+  font-size: 16px;
+  padding: 0.75rem 1.5rem;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border-radius: 0.25rem;
+}
+
+.apply-btn:hover {
+  background-color: #e04c46;
+  color: #fff;
 }
 </style>
