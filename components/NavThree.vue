@@ -5,7 +5,7 @@
       variant="light"
       class="header-navigation  navHeight"
     >
-      <div class="container clearfix">
+      <div class="container d-flex flex-column flex-xl-row justify-content-center align-items-baseline">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="logo-box clearfix justify-content-between">
           <b-navbar-brand href="/">
@@ -15,11 +15,18 @@
               alt="Awesome Image"
             >
           </b-navbar-brand>
+          <div class="mx-auto d-block d-xl-none">
+            <div class="header__social">
+              <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square" /></a>
+              <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram" /></a>
+              <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp" /></a>
+            </div><!-- /.header__social -->
+          </div><!-- /.right-side-box -->
           <b-navbar-toggle
-            class="menu-toggler ml-auto"
+            class="menu-toggler"
             target="main-navigation"
           >
-            <span class="kipso-icon-menu" />
+            <span class="kipso-icon-menu d-xl-none" />
           </b-navbar-toggle>
         </div><!-- /.logo-box -->
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -112,7 +119,7 @@
             </li>
           </ul>
         </b-collapse><!-- /.navbar-collapse -->
-        <div class="right-side-box">
+        <div class="d-none d-xl-block right-side-box mr-3">
           <div class="header__social">
             <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square" /></a>
             <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram" /></a>

@@ -710,9 +710,9 @@
   }
 }
 @media (max-width: 375px) {
-  .header__social {
+  /* .header__social {
     display: none;
-  }
+  } */
 
   .header-navigation .container .logo-box:after {
     display: none;

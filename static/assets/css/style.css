@@ -338,7 +338,7 @@ a:visited {
 }
 .header-navigation .container {
   background: transparent;
-  position: relative;
+  /* position: relative; */
   display: block;
 }
 .header-navigation .container .logo-box {
