@@ -25,8 +25,8 @@
                   <nuxt-link to="/course-details">{{ course.title }}</nuxt-link>
                 </h2>
                 <!-- /.course-one__title -->
-                <div class="course-one__meta"  style="justify-content: start; overflow-x: scroll; padding: 1rem 0;">
-                  <a v-for="tag in course.tags" :key=tag href="#" style="padding: 0 0.5rem;"><i class="fa fa-tags"></i>{{ tag }}</a>
+                <div class="course-one__meta"  style="justify-content: start; padding: 1rem 0;">
+                  <a v-for="tag in course.tags.slice(0, 3)" :key=tag href="#" style="padding: 0 0.5rem;"><i class="fa fa-tags"></i>{{ tag }}</a>
 
                 </div><!-- /.course-one__meta -->
                 <nuxt-link :to="'/course/'+course._id" class="course-one__link">{{ $t('university.course.btn') }}</nuxt-link>
