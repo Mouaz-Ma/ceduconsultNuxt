@@ -11,21 +11,21 @@
       <div class="course-one__top-title__curve"></div><!-- /.course-one__top-title__curve -->
     </section>
     <div class="container">
-      <div class="row">
-        <div v-for="uni in allUniData" :key="uni.id" class="col-lg-4">
-          <div class="item">
-            <div class="course-one__single color-1 m-2">
+      <div class="course-grid">
+        <div v-for="uni in allUniData" :key="uni.id" style="height: 90%; margin: 0.5rem;">
+          <div class="item" style="height: 100%">
+            <div class="course-one__single color-1 m-2" style="height: 50%">
               <div class="course-one__image">
                 <img class="uniImage" :src=uni.logo.url alt="">
               </div><!-- /.course-one__image -->
-              <div class="course-one__content">
+              <div class="course-one__content" style="height: 100%">
                 <a href="#" class="course-one__category">development</a><!-- /.course-one__category -->
                 <h2 class="course-one__title">
                   <nuxt-link to="/course-details">{{ uni.title }}</nuxt-link>
                 </h2>
                 <!-- /.course-one__title -->
-                <div class="course-one__meta">
-                  <a v-for="tag in uni.tags" :key=tag href="#"><i class="fa fa-tags"></i>{{ tag }}</a>
+                <div class="course-one__meta" style="justify-content: start; overflow-x: scroll; padding: 1rem 0;">
+                  <a v-for="tag in uni.tags" :key=tag href="#" style="padding: 0 0.5rem;"><i class="fa fa-tags"></i>{{ tag }}</a>
 
                 </div><!-- /.course-one__meta -->
                 <nuxt-link :to="'/university/'+uni._id" class="course-one__link">{{ $t('university.uni.btn') }}</nuxt-link>
@@ -84,4 +84,15 @@ export default {
   height: 350px;
   object-fit: cover;
 }
+
+.course-grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  row-gap: 1rem;
+}
+
+@media (max-width: 992px) {
+    .course-grid {  grid-template-columns: auto;}
+} 
 </style>

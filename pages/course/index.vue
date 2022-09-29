@@ -14,7 +14,7 @@
       <div class="row">
         <div v-for="course in allCourseData" :key="course.id" class="col-lg-4">
           <div class="item">
-            <div class="course-one__single color-1 m-2">
+            <div class="course-one__single color-1 m-2" style="height: auto;">
               <div class="course-one__image">
                 <img class="uniImage" :src=course.image.url alt="">
               </div><!-- /.course-one__image -->
@@ -25,11 +25,11 @@
                   <nuxt-link to="/course-details">{{ course.title }}</nuxt-link>
                 </h2>
                 <!-- /.course-one__title -->
-                <div class="course-one__meta">
-                  <a v-for="tag in course.tags" :key=tag href="#"><i class="fa fa-tags"></i>{{ tag }}</a>
+                <div class="course-one__meta"  style="justify-content: start; overflow-x: scroll; padding: 1rem 0;">
+                  <a v-for="tag in course.tags" :key=tag href="#" style="padding: 0 0.5rem;"><i class="fa fa-tags"></i>{{ tag }}</a>
 
                 </div><!-- /.course-one__meta -->
-                <nuxt-link to="'/course/'+course._id" class="course-one__link">{{ $t('university.course.btn') }}</nuxt-link>
+                <nuxt-link :to="'/course/'+course._id" class="course-one__link">{{ $t('university.course.btn') }}</nuxt-link>
                 <!-- /.course-one__link -->
               </div><!-- /.course-one__content -->
             </div><!-- /.course-one__single -->
