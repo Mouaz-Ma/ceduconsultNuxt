@@ -25,7 +25,7 @@
 
                 </div><!-- /.course-one__meta -->
                 <h2 class="course-one__title">
-                  <nuxt-link to="/course-details">{{ course.title }}</nuxt-link>
+                  {{ course.title }}
                 </h2>
                 <div>Years of study: {{ course.yearsOfStuday }}</div>
                 <div>Language of instruction: {{ course.languageOfInstruction }}</div>
