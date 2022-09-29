@@ -9,12 +9,14 @@
       <div class="container clearfix ">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="logo-box clearfix justify-content-between">
-          <b-navbar-brand href="/">
-            <img
-              src="/assets/images/logo-light.png"
-              class="mainLogo"
-              alt="Awesome Image"
-            >
+          <b-navbar-brand>
+            <nuxt-link to="/">
+              <img
+                src="/assets/images/logo-light.png"
+                class="mainLogo"
+                alt="Awesome Image"
+              >
+            </nuxt-link>
           </b-navbar-brand>
           <b-navbar-toggle
             class="menu-toggler ml-auto"
@@ -31,7 +33,7 @@
         >
           <ul class=" navigation-box">
             <li class="current">
-              <nuxt-link to="/">{{ $t('elearning.nav.home') }}</nuxt-link>
+              <nuxt-link to="/e-learning">{{ $t('elearning.nav.home') }}</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/classRoom">{{ $t('elearning.nav.classes') }}</nuxt-link>

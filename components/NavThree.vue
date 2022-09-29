@@ -8,12 +8,14 @@
       <div class="container d-flex flex-column flex-xl-row justify-content-center align-items-baseline">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="logo-box clearfix justify-content-between">
-          <b-navbar-brand href="/">
-            <img
-              src="/assets/images/logo-light.png"
-              class="mainLogo"
-              alt="Awesome Image"
-            >
+          <b-navbar-brand>
+            <nuxt-link to="/">
+              <img
+                src="/assets/images/logo-light.png"
+                class="mainLogo"
+                alt="Awesome Image"
+              >
+            </nuxt-link>
           </b-navbar-brand>
           <div class="mx-auto d-block d-xl-none">
             <div class="header__social">
@@ -37,7 +39,7 @@
         >
           <ul class=" navigation-box">
             <li>
-              <nuxt-link to="/" exact>{{ $t('university.nav.home') }}</nuxt-link>
+              <nuxt-link to="/find-university" exact>{{ $t('university.nav.home') }}</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/about" exact>{{ $t('university.nav.about') }}</nuxt-link>
