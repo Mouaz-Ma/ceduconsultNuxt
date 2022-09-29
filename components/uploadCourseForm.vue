@@ -54,9 +54,9 @@
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <input
-                v-model="etcs"
+                v-model="ects"
                 type="text"
-                placeholder="ETCS"
+                placeholder="ECTS"
                 required
               >
             </div><!-- /.col-lg-6 -->
@@ -209,7 +209,7 @@ export default {
       courseOptions: ['Preparatory Courses', 'Bachelor Programme', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate'],
       yearsOfStuday: '',
       languageOfInstruction: '',
-      etcs: '',
+      ects: '',
       availability: '',
       degreeAwarded: '',
     }
@@ -236,7 +236,7 @@ export default {
         data.append("image", this.image);
         data.append("yearsOfStuday", this.yearsOfStuday);
         data.append("languageOfInstruction", this.languageOfInstruction);
-        data.append("etcs", this.etcs);
+        data.append("ects", this.ects);
         data.append("availability", this.availability);
         data.append("degreeAwarded", this.degreeAwarded);
         let response = await this.$axios.post('/api/course/new', data);
