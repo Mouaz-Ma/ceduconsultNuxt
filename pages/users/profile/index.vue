@@ -258,8 +258,7 @@
                   /></span>
                 </h5>
                 <p>
-                  Your account is verified. Contact our call center to help you enable funding, trading, and
-                  withdrawal.
+                  Your account is verified.
                 </p>
                 <a
                   class="btn btn-secondary"
@@ -288,7 +287,7 @@
                   /></span>
                 </h5>
                 <p>
-                  Your account is unverified. Get verified to enable funding, trading, and withdrawal.
+                  Your account is unverified. Please verify your account by clicking on the link we've sent to your email.
                 </p>
                 <a
                   class="btn btn-secondary"
