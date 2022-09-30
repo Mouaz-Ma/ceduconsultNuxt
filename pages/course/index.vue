@@ -1,28 +1,51 @@
 <template>
   <div>
-    <NavThree/>
+    <NavThree />
     <section class="course-one__top-title home-one">
       <div class="container">
         <div class="block-title mb-0">
-          <h2 class="block-title__title">{{ $t('university.course.title1') }}<br>
-            {{ $t('university.course.title2') }}</h2><!-- /.block-title__title -->
+          <h2 class="block-title__title">
+            {{ $t('university.course.title1') }}<br>
+            {{ $t('university.course.title2') }}
+          </h2><!-- /.block-title__title -->
         </div><!-- /.block-title -->
       </div><!-- /.container -->
-      <div class="course-one__top-title__curve"></div><!-- /.course-one__top-title__curve -->
+      <div class="course-one__top-title__curve" /><!-- /.course-one__top-title__curve -->
     </section>
     <div class="container">
       <div class="row">
-        <div v-for="course in allCourseData" :key="course.id" class="col-lg-4">
+        <div
+          v-for="course in allCourseData"
+          :key="course.id"
+          class="col-lg-4"
+        >
           <div class="item">
-            <div class="course-one__single color-1 m-2" style="height: auto;">
+            <div
+              class="course-one__single color-1 m-2"
+              style="height: auto;"
+            >
               <div class="course-one__image">
-                <img class="uniImage" :src=course.image.url alt="">
+                <img
+                  class="uniImage"
+                  :src="course.image.url"
+                  alt=""
+                >
               </div><!-- /.course-one__image -->
-              <div class="course-one__content" style=" padding-top: 0;">
+              <div
+                class="course-one__content"
+                style=" padding-top: 0;"
+              >
                 <!-- /.course-one__category -->
-                <div class="course-one__meta"  style="justify-content: start; padding: 1rem 0; border-top: none;">
-                  <a v-for="(tag, index) in course.tags.slice(0, 3)" :key=tag href="#" style="padding-right: 0.5rem;">{{ index < course.tags.slice(0, 3).length - index && course.tags.slice(0, 3).length != 1 ? tag + ',' : tag }}</a>
-
+                <div
+                  class="course-one__meta"
+                  style="justify-content: start; padding: 1rem 0; border-top: none;"
+                >
+                  <a
+                    v-for="(tag, index) in course.tags.slice(0, 3)"
+                    :key="tag"
+                    href="#"
+                    style="padding-right: 0.5rem;"
+                  >{{ index < course.tags.slice(0, 3).length - index && course.tags.slice(0, 3).length != 1 ? tag + ',' : tag }}</a>
                 </div><!-- /.course-one__meta -->
                 <h2 class="course-one__title">
                   {{ course.title }}
@@ -34,7 +57,29 @@
                 <div>Degree awarded: {{ course.degreeAwarded }}</div>
                 <!-- /.course-one__title -->
                 <div class="mt-5">
-                  <nuxt-link to="/contact" class="apply-btn"><span>{{ $t('university.course.btn') }}</span> <i class="fa fa-angle-right"></i></nuxt-link>
+                  <nuxt-link
+                    to="/contact"
+                    class="apply-btn"
+                  >
+                    <span>{{ $t('university.course.btn') }}</span> <i class="fa fa-angle-right" />
+                  </nuxt-link>
+                </div>
+                <div
+                  v-if="$auth.$state.user && $auth.$state.user.userType == 'Administrator'"
+                  class="my-3"
+                >
+                  <hr>
+                  <nuxt-link
+                    :to="'/course/update/'+course._id"
+                    class="btn btn-secondary p-2"
+                  >
+                    <i class="fa fa-pen" />
+                    <span>Edit</span>
+                  </nuxt-link>
+                  <button @click="deleteCourse(course._id)" class="btn btn-secondary p-2">
+                    <i class="fa fa-trash" />
+                    <span>Delete</span>
+                  </button>
                 </div>
                 <!-- /.course-one__link -->
               </div><!-- /.course-one__content -->
@@ -44,9 +89,8 @@
       </div>
     </div><!-- /.container -->
 
-    <Footer/>
+    <Footer />
   </div>
-
 </template>
 <script>
 import NavThree from "@/components/NavThree";
@@ -57,11 +101,6 @@ export default {
   components: {
     Footer,
     NavThree
-  },
-  head() {
-    return {
-      title: "CEDU | Courses"
-    }
   },
   async asyncData({
                     $axios
@@ -81,6 +120,23 @@ export default {
     return {
       allCourseData: [],
     }
+  },
+  head() {
+    return {
+      title: "CEDU | Courses"
+    }
+  },
+  methods: {
+    deleteCourse(courseId) {
+      if (confirm("Are you sure that you want to delete this coures?") == true) {
+        this.$axios.delete('api/course/' + courseId, {credentials: true}).then((res) => {
+        console.log(res);
+        this.$nuxt.refresh();
+        }).catch((err) => {
+          console.log(err);
+        })
+      }
+    },
   },
 }
 </script>

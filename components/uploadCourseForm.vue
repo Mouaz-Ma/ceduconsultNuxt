@@ -68,14 +68,6 @@
                 required
               >
             </div><!-- /.col-lg-6 -->
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <input
-                v-model="degreeAwarded"
-                type="text"
-                placeholder="Degree awarded"
-                required
-              >
-            </div><!-- /.col-lg-6 -->
             <!-- choose uni -->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <b-form-select
@@ -104,12 +96,12 @@
               </b-form-select>
             </div>
                       
-            <!-- course type -->
+            <!-- degree awarded -->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h3>Course Type</h3>
+              <h3>Degree Awarded</h3>
               <b-form-select
-                v-model="courseType"
-                :options="courseOptions"
+                v-model="degreeAwarded"
+                :options="degreeAwardedOptions"
                 required
               />
             </div>
@@ -205,13 +197,12 @@ export default {
       description: '',
       uniSelected: null,
       startingDate: '',
-      courseType: '',
-      courseOptions: ['Preparatory Courses', 'Bachelor Programme', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate'],
+      degreeAwarded: '',
+      degreeAwardedOptions: ['Preparatory Courses', 'Bachelor Programme', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate'],
       yearsOfStuday: '',
       languageOfInstruction: '',
       ects: '',
       availability: '',
-      degreeAwarded: '',
     }
   },
   methods: {
@@ -232,13 +223,12 @@ export default {
         data.append("userID", this.$auth.$state.user._id);
         data.append("uniSelected", this.uniSelected);
         data.append("startingDate", this.startingDate);
-        data.append("courseType", this.courseType);
+        data.append("degreeAwarded", this.degreeAwarded);
         data.append("image", this.image);
         data.append("yearsOfStuday", this.yearsOfStuday);
         data.append("languageOfInstruction", this.languageOfInstruction);
         data.append("ects", this.ects);
         data.append("availability", this.availability);
-        data.append("degreeAwarded", this.degreeAwarded);
         let response = await this.$axios.post('/api/course/new', data);
         if (response.data.success === true) {
             this.success = true;

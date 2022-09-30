@@ -66,127 +66,119 @@
                 required
               >
             </div><!-- /.col-lg-6 -->
+            <!-- choose uni -->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <input
+              <b-form-select
+                v-model="uniSelected"
+                class="mb-3"
+              >
+                <template #first>
+                  <b-form-select-option
+                    :value="null"
+                    disabled
+                  >
+                    -- {{ uniSelected.title }} --
+                  </b-form-select-option>
+                </template>
+                <b-form-select-option
+                  v-for="uni in uniData"
+                  :key="uni._id"
+                  :value="uni._id"
+                  required
+                >
+                  {{ uni.title }}
+                </b-form-select-option>
+              </b-form-select>
+            </div>
+                      
+            <!-- degree awarded -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h3>Degree Awarded</h3>
+              <b-form-select
                 v-model="degreeAwarded"
-                type="text"
-                placeholder="Degree awarded"
+                :options="degreeAwardedOptions"
+                required
+              />
+            </div>
+            <!-- starting date -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <h3 class="float-left">
+                Starting Date:
+              </h3>
+              <b-calendar
+                v-model="startingDate"
+                block
+                value-as-date
+                locale="en"
                 required
               >
-              <!-- choose uni -->
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <b-form-select
-                  v-model="uniSelected"
-                  class="mb-3"
-                >
-                  <template #first>
-                    <b-form-select-option
-                      :value="null"
-                      disabled
-                    >
-                      -- {{ uniSelected.title }} --
-                    </b-form-select-option>
-                  </template>
-                  <b-form-select-option
-                    v-for="uni in uniData"
-                    :key="uni._id"
-                    :value="uni._id"
-                    required
-                  >
-                    {{ uni.title }}
-                  </b-form-select-option>
-                </b-form-select>
-              </div>
-                      
-              <!-- course type -->
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3>Course Type</h3>
-                <b-form-select
-                  v-model="courseType"
-                  :options="courseOptions"
-                  required
-                />
-              </div>
-              <!-- starting date -->
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <h3 class="float-left">
-                  Starting Date:
-                </h3>
-                <b-calendar
-                  v-model="startingDate"
-                  block
-                  value-as-date
-                  locale="en"
-                  required
-                >
-                  <div
-                    class="d-flex"
-                    dir="ltr"
-                  >
-                    <b-button
-                      v-if="startingDate"
-                      size="md"
-                      variant="outline-danger"
-                      @click="clearDate"
-                    >
-                      Clear date
-                    </b-button>
-                    <b-button
-                      size="md"
-                      variant="outline-primary"
-                      class="ml-auto"
-                      @click="setToday"
-                    >
-                      Set Today
-                    </b-button>
-                  </div>
-                </b-calendar>
-              </div>
-              <!-- image upload -->
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <b-form-file
-                  v-model="image"
-                  placeholder="image Upload"
-                  drop-placeholder="Drop file here..."
-                  :state="Boolean(image)"
-                  accept="image/jpeg"
-                />
-                <div v-if="image">
-                  <div class="mt-3">
-                    Selected image: {{ image.name }}
-                  </div>
-                </div>
                 <div
-                  v-else
-                  class="mt-3"
+                  class="d-flex"
+                  dir="ltr"
                 >
-                  Selected image: <img
-                    class="h-25 w-25"
-                    :src="imageUrl"
+                  <b-button
+                    v-if="startingDate"
+                    size="md"
+                    variant="outline-danger"
+                    @click="clearDate"
                   >
+                    Clear date
+                  </b-button>
+                  <b-button
+                    size="md"
+                    variant="outline-primary"
+                    class="ml-auto"
+                    @click="setToday"
+                  >
+                    Set Today
+                  </b-button>
+                </div>
+              </b-calendar>
+            </div>
+            <!-- image upload -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <b-form-file
+                v-model="image"
+                placeholder="image Upload"
+                drop-placeholder="Drop file here..."
+                :state="Boolean(image)"
+                accept="image/jpeg"
+              />
+              <div v-if="image">
+                <div class="mt-3">
+                  Selected image: {{ image.name }}
                 </div>
               </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border">
-                <tiptap-vuetify
-                  v-model="description"
-                  :extensions="extensions"
-                  @input="$emit('input', arguments[0])"
-                />
+              <div
+                v-else
+                class="mt-3"
+              >
+                Selected image: <img
+                  class="h-25 w-25"
+                  :src="imageUrl"
+                >
               </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="text-center">
-                  <button
-                    type="submit"
-                    class="contact-one__btn thm-btn"
-                  >
-                    Save
-                  </button>
-                </div><!-- /.text-center -->
-              </div><!-- /.col-lg-12 -->
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border">
+              <tiptap-vuetify
+                v-model="description"
+                :extensions="extensions"
+                @input="$emit('input', arguments[0])"
+              />
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="contact-one__btn thm-btn"
+                >
+                  Save
+                </button>
+              </div><!-- /.text-center -->
+            </div><!-- /.col-lg-12 -->
                       
             <!-- <nuxt-link class="blackLinks " to="/users/register">New Account?</nuxt-link> -->
-            </div><!-- /.row -->
-          </div>
+          </div><!-- /.row -->
         </form><!-- /.contact-one__form -->
         <div class="result text-center" /><!-- /.result -->
       </div><!-- /.container -->
@@ -259,13 +251,12 @@ export default {
       uniSelected: null,
       oldUni: null,
       startingDate: null,
-      courseType: '',
-      courseOptions: ['Preparatory Courses', 'Bachelor Programme', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate'],
+      degreeAwarded: '',
+      degreeAwardedOptions: ['Preparatory Courses', 'Bachelor Programme', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate'],
       yearsOfStuday: '',
       languageOfInstruction: '',
       ects: '',
       availability: '',
-      degreeAwarded: '',
     }
   },
         created() {
@@ -275,14 +266,13 @@ export default {
         this.deletetedImage = this.courseData.image.filename
         this.description = this.courseData.description
         this.startingDate = this.courseData.starting
-        this.courseType = this.courseData.courseType
+        this.degreeAwarded = this.courseData.degreeAwarded
         this.uniSelected = this.courseData.university._id
         this.oldUniversity = this.courseData.university._id
         this.yearsOfStuday = this.courseData.yearsOfStuday
         this.languageOfInstruction = this.courseData.languageOfInstruction
         this.ects = this.courseData.ects
         this.availability = this.courseData.availability
-        this.degreeAwarded = this.courseData.degreeAwarded
       },
   methods: {
     setToday() {
@@ -303,14 +293,13 @@ export default {
         data.append("uniSelected", this.uniSelected);
         data.append("oldUniversity", this.oldUniversity);
         data.append("startingDate", this.startingDate);
-        data.append("courseType", this.courseType);
+        data.append("degreeAwarded", this.degreeAwarded);
         data.append("image", this.image);
         data.append("deletetedImage", this.deletetedImage);
         data.append("yearsOfStuday", this.yearsOfStuday);
         data.append("languageOfInstruction", this.languageOfInstruction);
         data.append("ects", this.ects);
         data.append("availability", this.availability);
-        data.append("degreeAwarded", this.degreeAwarded);
         let response = await this.$axios.put('/api/course/'+this.$route.params.id, data);
         if (response.data.success === true) {
             this.success = true;
