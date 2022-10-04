@@ -76,7 +76,10 @@
                     <i class="fa fa-pen" />
                     <span>Edit</span>
                   </nuxt-link>
-                  <button @click="deleteCourse(course._id)" class="btn btn-secondary p-2">
+                  <button
+                    class="btn btn-secondary p-2"
+                    @click="invokeDeleteDialog(course._id, course.title)"
+                  >
                     <i class="fa fa-trash" />
                     <span>Delete</span>
                   </button>
@@ -87,6 +90,12 @@
           </div><!-- /.item -->
         </div>
       </div>
+      <CourseDeleteDialog
+        v-if="isDialogOpen"
+        :course-id="currentCourseId"
+        :course-title="currentCourseTitle"
+        @close="isDialogOpen=false"
+      />
     </div><!-- /.container -->
 
     <Footer />
@@ -95,16 +104,16 @@
 <script>
 import NavThree from "@/components/NavThree";
 import Footer from "@/components/Footer";
+import CourseDeleteDialog from "../../components/CourseDeleteDialog.vue";
 
 export default {
   auth: false,
   components: {
     Footer,
-    NavThree
-  },
-  async asyncData({
-                    $axios
-                  }) {
+    NavThree,
+    CourseDeleteDialog
+},
+  async asyncData({ $axios }) {
     try {
       const allCourses = $axios.get('/api/course')
       const allCoursePromise = await Promise.resolve(allCourses)
@@ -119,6 +128,9 @@ export default {
   data() {
     return {
       allCourseData: [],
+      isDialogOpen: false,
+      courseId: '',
+      courseTitle: '',
     }
   },
   head() {
@@ -126,17 +138,30 @@ export default {
       title: "CEDU | Courses"
     }
   },
-  methods: {
-    deleteCourse(courseId) {
-      if (confirm("Are you sure that you want to delete this coures?") == true) {
-        this.$axios.delete('api/course/' + courseId, {credentials: true}).then((res) => {
-        console.log(res);
-        this.$nuxt.refresh();
-        }).catch((err) => {
-          console.log(err);
-        })
-      }
+  computed: {
+    currentCourseId: {
+      get() {
+        return this.courseId;
+      },
+      set(courseId) {
+        this.courseId = courseId;
+      },
     },
+    currentCourseTitle: {
+      get() {
+        return this.courseTitle;
+      },
+      set(courseTitle) {
+        this.courseTitle = courseTitle;
+      },
+    }
+  },
+  methods: {
+    invokeDeleteDialog(courseId, courseTitle) {
+      this.currentCourseId = courseId;
+      this.currentCourseTitle = courseTitle;
+      this.isDialogOpen = true;
+    }
   },
 }
 </script>
