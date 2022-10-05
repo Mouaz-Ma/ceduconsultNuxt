@@ -52,7 +52,7 @@
                 </h2>
                 <div>Years of study: {{ course.yearsOfStuday }}</div>
                 <div>Language of instruction: {{ course.languageOfInstruction }}</div>
-                <div>ETCS: {{ course.ects }}</div>
+                <div>ECTS: {{ course.ects }}</div>
                 <div>Availability: {{ course.availability }}</div>
                 <div>Degree awarded: {{ course.degreeAwarded }}</div>
                 <!-- /.course-one__title -->
