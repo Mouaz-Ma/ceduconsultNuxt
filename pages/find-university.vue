@@ -5,7 +5,7 @@
     <TeamOne />
     <CallToActionOne />
     <!-- <TeamTab /> -->
-    <CourseThree />
+    <CourseThree :all-course-data="allCourseData" />
     <CallToActionSix />
     <!-- <Testimonial /> -->
     <VideoThree />
@@ -21,8 +21,6 @@ import TeamOne from '../components/TeamOne.vue'
 
     auth: false,
 
-    layout: 'university',
-
     components: {
     BannerThree: () => import("../components/BannerThree"),
     CourseCatThree: () => import("../components/CourseCatThree"),
@@ -36,6 +34,25 @@ import TeamOne from '../components/TeamOne.vue'
     CallToActionFive: () => import("../components/CallToActionFive"),
     TeamOne
 },
+
+    layout: 'university',
+    async asyncData({ $axios }) {
+    try {
+      const allCourses = $axios.get('/api/course')
+      const allCoursePromise = await Promise.resolve(allCourses)
+      const allCourseData = allCoursePromise.data.courses
+      return {
+        allCourseData
+      }
+    } catch (err) {
+      console.log(err)
+    }
+  },
+  data() {
+    return {
+      allCourseData: [],
+    }
+  },
 
     head(){
       return{

@@ -84,21 +84,7 @@
 export default {
   name: "CourseThree",
   auth: false,
-  async fetch() {
-    try {
-      const allCourses = this.$axios.get('/api/course')
-      const allCoursePromise = await Promise.resolve(allCourses)
-      const allCourseData = allCoursePromise.data.courses
-      this.allCourseData = allCourseData;
-    } catch (err) {
-      console.log(err)
-    }
-  },
-  data() {
-    return {
-      allCourseData: [],
-    }
-  },
+  props: ['allCourseData'],
   mounted() {
     setTimeout(() => {
       $('.course-one__carousel').owlCarousel({
