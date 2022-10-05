@@ -198,7 +198,7 @@ export default {
       uniSelected: null,
       startingDate: '',
       degreeAwarded: '',
-      degreeAwardedOptions: ['Preparatory Courses', 'Bachelor Programme', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate'],
+      degreeAwardedOptions: ['Preparatory Courses', 'Bachelor Programme', 'Diploma', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate'],
       yearsOfStuday: '',
       languageOfInstruction: '',
       ects: '',
