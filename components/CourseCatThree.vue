@@ -86,6 +86,30 @@
             </div><!-- /.course-category-three__content -->
           </div><!-- /.course-category-three__single -->
         </div><!-- /.col-lg-3 col-md-6 col-sm-12 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="course-category-three__single">
+            <img src="/assets/images/internship.jpg" class="coursesImage" alt="">
+            <div class="course-category-three__content">
+              <h3 class="course-category-three__title"><a href="/courses">{{ $t('university.courses.internship') }}</a></h3>
+              <!-- /.course-category-three__title -->
+              <!-- <p class="course-category-three__text">Over 752 Courses</p> -->
+              <!-- /.course-category-three__text -->
+            </div><!-- /.course-category-three__content -->
+          </div><!-- /.course-category-three__single -->
+        </div><!-- /.col-lg-3 col-md-6 col-sm-12 -->
+      </div><!-- /.row -->
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="course-category-three__single">
+            <img src="/assets/images/work.jpg" class="coursesImage" alt="">
+            <div class="course-category-three__content">
+              <h3 class="course-category-three__title"><a href="/courses">{{ $t('university.courses.work') }}</a></h3>
+              <!-- /.course-category-three__title -->
+              <!-- <p class="course-category-three__text">Over 752 Courses</p> -->
+              <!-- /.course-category-three__text -->
+            </div><!-- /.course-category-three__content -->
+          </div><!-- /.course-category-three__single -->
+        </div><!-- /.col-lg-3 col-md-6 col-sm-12 -->
       </div><!-- /.row -->
       <div class="text-center">
         <a href="/contact" class="thm-btn course-category-three__more-link">{{ $t('university.courses.book') }}</a><!-- /.thm-btn -->
