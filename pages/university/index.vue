@@ -21,7 +21,7 @@
               <div class="course-one__content" style="height: 100%">
                 <a href="#" class="course-one__category">development</a><!-- /.course-one__category -->
                 <h2 class="course-one__title">
-                  <nuxt-link to="/course-details">{{ uni.title }}</nuxt-link>
+                  <nuxt-link :to="'/university/'+uni._id">{{ uni.title }}</nuxt-link>
                 </h2>
                 <!-- /.course-one__title -->
                 <div class="course-one__meta" style="justify-content: start;padding: 1rem 0;">
