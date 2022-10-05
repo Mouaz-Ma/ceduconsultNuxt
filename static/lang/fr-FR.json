@@ -190,6 +190,10 @@
       "iuInternational": {
         "name": "IU International University of Applied Sciences",
         "description": "Fondée sur l'idée de donner aux gens les moyens de réussir dans un monde numérique, l'Université internationale des sciences appliquées IU a vu le jour en 1998. Et depuis qu'elle a reçu l'accréditation du Conseil allemand des sciences et des sciences humaines, IU est devenue la plus grande université d'Allemagne."
+      },
+      "netherlandsEducationGroup": {
+        "name": "Le groupe d'éducation des Pays-Bas",
+        "description": "The Netherlands Education GroupThe Netherlands Education Group - un projet conjoint de Stichting Libertas International et Utrecht Consulting Group ! Nous avons commencé en 2009 et depuis lors, nous avons proposé des programmes éducatifs à des milliers de participants du monde entier."
       }
     },
     "programmes": {
