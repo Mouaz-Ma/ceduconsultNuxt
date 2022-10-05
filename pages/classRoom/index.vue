@@ -122,7 +122,6 @@ export default {
       const allClassDataComper = allClassPromis.data.classRooms
       // This line of code has unclear purpose
       let allClassData = allClassDataComper.filter(({_id: id1}) => $auth.$state.user.classes.some(({_id: id2}) => id2 === id1));
-      allClassData = allClassDataComper;
       // console.log(allClassDataComper);
       // console.log(allClassData);
       return {

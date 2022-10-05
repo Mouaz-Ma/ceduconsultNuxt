@@ -337,6 +337,25 @@
           <div class="item">
             <div class="team-one__single">
               <div class="team-one__image">
+                <img class="temOneImage" src="/assets/images/Logo -1.png" alt="The Netherlands Education Group Logo">
+              </div><!-- /.team-one__image -->
+              <div class="team-one__content">
+                <h2 class="team-one__name"><a href="#">{{ $t('elearning.partners.netherlandsEducationGroup.name') }}</a></h2>
+                <!-- /.team-one__name -->
+                <p class="team-one__designation">Netherlands</p><!-- /.team-one__designation -->
+                <p class="team-one__text">{{ $t('elearning.partners.netherlandsEducationGroup.description') }}</p>
+                <!-- /.team-one__text -->
+              </div><!-- /.team-one__content -->
+              <div class="team-one__social">
+                <!-- <a href="https://www.facebook.com/ceduconsultancy"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/cedu_consultancy/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/443301335324"><i class="fab fa-whatsapp"></i></a> -->
+              </div><!-- /.team-one__social -->
+            </div><!-- /.team-one__single -->
+          </div><!-- /.col-lg-3 -->
+          <div class="item">
+            <div class="team-one__single">
+              <div class="team-one__image">
                 <img class="temOneImage" src="/assets/images/iu_Logo_EN.svg" alt="neu">
               </div><!-- /.team-one__image -->
               <div class="team-one__content">
