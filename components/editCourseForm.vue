@@ -252,7 +252,7 @@ export default {
       oldUni: null,
       startingDate: null,
       degreeAwarded: '',
-      degreeAwardedOptions: ['Preparatory Courses', 'Bachelor Programme', 'Diploma', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate'],
+      degreeAwardedOptions: ['Preparatory Courses', 'Bachelor Programme', 'Diploma', 'Master Programme', 'PHD Programme', 'MBA', 'Specialist Program', 'Certificate', 'Internship', 'Work'],
       yearsOfStuday: '',
       languageOfInstruction: '',
       ects: '',
