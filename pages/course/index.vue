@@ -17,7 +17,7 @@
         <div
           v-for="course in allCourseData"
           :key="course.id"
-          class="col-lg-4"
+          class="col-lg-6 col-xl-4"
         >
           <div class="item">
             <div

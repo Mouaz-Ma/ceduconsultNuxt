@@ -88,11 +88,17 @@ export default {
 .course-grid {
   display: grid;
   grid-auto-rows: 1fr;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: auto;
   row-gap: 1rem;
 }
 
-@media (max-width: 992px) {
-    .course-grid {  grid-template-columns: auto;}
+@media (min-width: 768px) {
+  .course-grid { 
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+    .course-grid {  grid-template-columns: 33.3% 33.3% 33.3%;}
 } 
 </style>
