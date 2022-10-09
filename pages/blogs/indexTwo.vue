@@ -20,7 +20,7 @@
               <div class="course-one__content">
                 <a href="#" class="course-one__category">{{ blog.author.username }}</a><!-- /.course-one__category -->
                 <h2 class="course-one__title">
-                  <nuxt-link to="/course-details">{{ blog.title }}</nuxt-link>
+                  <nuxt-link to="#">{{ blog.title }}</nuxt-link>
                 </h2>
                 <!-- /.course-one__title -->
                 <div class="course-one__meta">

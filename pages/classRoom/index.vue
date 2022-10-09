@@ -34,7 +34,7 @@
                   class="course-one__category"
                 >Class Room</a>
                 <h2 class="course-one__title">
-                  <a href="/course-details">{{ classRoom.title }}</a>
+                  <a href="#">{{ classRoom.title }}</a>
                 </h2>
                 <div v-if="$auth.$state.user.userType === 'Administrator'">
                   <a

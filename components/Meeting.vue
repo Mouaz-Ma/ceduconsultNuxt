@@ -19,14 +19,14 @@
                       <!-- /.meeting-one__block-text -->
                       <div class="meeting-one__box-wrap">
                           <div class="meeting-one__box">
-                              <div class="meeting-one__bubble">Hello. I’m here to learn chemistry</div>
+                              <div class="meeting-one__bubble">Hello, I’m here to learn English.</div>
                               <!-- /.meeting-one__bubble -->
                               <img src="/assets/images/chat-1-1.jpg" alt="Awesome Image" />
                               <h3 class="meeting-one__title">Rhonda Mcdermond</h3><!-- /.meeting-one__title -->
                               <p class="meeting-one__text">Student</p><!-- /.meeting-one__text -->
                           </div><!-- /.meeting-one__box -->
                           <div class="meeting-one__box">
-                              <div class="meeting-one__bubble">Hello. Rhonda</div><!-- /.meeting-one__bubble -->
+                              <div class="meeting-one__bubble">Hello, Rhonda!</div><!-- /.meeting-one__bubble -->
                               <img src="/assets/images/chat-1-2.jpg" alt="Awesome Image" />
                               <h3 class="meeting-one__title">Karleen Pedigo</h3><!-- /.meeting-one__title -->
                               <p class="meeting-one__text">Teacher</p><!-- /.meeting-one__text -->

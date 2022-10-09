@@ -39,7 +39,7 @@
                 >{{ item.category }}</a><!-- /.course-one__category -->
 
                 <h2 class="course-one__title">
-                  <a href="/course-details">{{ item.title }}</a>
+                  <a href="#">{{ item.title }}</a>
                 </h2>
                 <!-- /.course-one__title -->
                 <div class="course-one__stars">
@@ -55,14 +55,15 @@
                 </div><!-- /.course-one__stars -->
                 <p class="heightProgram">{{ item.content }}</p>
                 <div class="course-one__meta">
-                  <a href="/course-details"><i class="far fa-clock" /> {{ item.duration }}</a>
-                  <a href="/course-details"><i class="far fa-folder-open" /> {{ item.lectures }}</a>
-                  <a href="/course-details">$18</a>
+                  <a href="#"><i class="far fa-clock" /> {{ item.duration }}</a>
+                  <a href="#"><i class="far fa-folder-open" /> {{ item.lectures }}</a>
+                  <a href="#">$18</a>
                 </div><!-- /.course-one__meta -->
-                <a
+                <!-- <a
                   href="#"
                   class="course-one__link"
-                >{{ item.preview }}</a><!-- /.course-one__link -->
+                >{{ item.preview }}</a> -->
+                <!-- /.course-one__link -->
               </div><!-- /.course-one__content -->
             </div><!-- /.course-one__single -->
           </div><!-- /.item -->

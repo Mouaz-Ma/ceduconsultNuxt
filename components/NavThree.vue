@@ -54,14 +54,14 @@
               <nuxt-link to="/university" exact>{{ $t('university.nav.universities') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/courses">Courses</nuxt-link></li>
-                  <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>
+                  <li><nuxt-link to="#">Course Details</nuxt-link></li>
               </ul> -->
             </li>
             <li>
               <nuxt-link to="/course" exact>{{ $t('university.nav.courses') }}</nuxt-link>
               <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/courses">Courses</nuxt-link></li>
-                  <li><nuxt-link to="/course-details">Course Details</nuxt-link></li>
+                  <li><nuxt-link to="#">Course Details</nuxt-link></li>
               </ul> -->
             </li>
             <!-- <li>

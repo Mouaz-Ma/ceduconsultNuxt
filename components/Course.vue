@@ -14,7 +14,7 @@
                             <img src="/assets/images/team-1-1.jpg" alt="">
                             by <nuxt-link to="/teacher-details">Lou Guerrero</nuxt-link>
                         </div><!-- /.course-one__admin -->
-                        <h2 class="course-one__title"><nuxt-link to="/course-details">New react bootcamp</nuxt-link></h2>
+                        <h2 class="course-one__title"><nuxt-link to="#">New react bootcamp</nuxt-link></h2>
                         <!-- /.course-one__title -->
                         <div class="course-one__stars">
                             <span class="course-one__stars-wrap">
@@ -28,9 +28,9 @@
                             <span class="course-one__stars-count">250</span><!-- /.course-one__stars-count -->
                         </div><!-- /.course-one__stars -->
                         <div class="course-one__meta">
-                            <nuxt-link to="/course-details"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
-                            <nuxt-link to="/course-details"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
-                            <nuxt-link to="/course-details">$18</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
+                            <nuxt-link to="#">$18</nuxt-link>
                         </div><!-- /.course-one__meta -->
                         <a href="#" class="course-one__link">See Preview</a><!-- /.course-one__link -->
                     </div><!-- /.course-one__content -->
@@ -48,7 +48,7 @@
                             <img src="/assets/images/team-1-2.jpg" alt="">
                             by <nuxt-link to="/teacher-details">Cora Diaz</nuxt-link>
                         </div><!-- /.course-one__admin -->
-                        <h2 class="course-one__title"><nuxt-link to="/course-details">Improve editing skills</nuxt-link></h2>
+                        <h2 class="course-one__title"><nuxt-link to="#">Improve editing skills</nuxt-link></h2>
                         <!-- /.course-one__title -->
                         <div class="course-one__stars">
                             <span class="course-one__stars-wrap">
@@ -62,9 +62,9 @@
                             <span class="course-one__stars-count">250</span><!-- /.course-one__stars-count -->
                         </div><!-- /.course-one__stars -->
                         <div class="course-one__meta">
-                            <nuxt-link to="/course-details"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
-                            <nuxt-link to="/course-details"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
-                            <nuxt-link to="/course-details">$18</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
+                            <nuxt-link to="#">$18</nuxt-link>
                         </div><!-- /.course-one__meta -->
                         <a href="#" class="course-one__link">See Preview</a><!-- /.course-one__link -->
                     </div><!-- /.course-one__content -->
@@ -82,7 +82,7 @@
                             <img src="/assets/images/team-1-3.jpg" alt="">
                             by <nuxt-link to="/teacher-details">Ruth Becker</nuxt-link>
                         </div><!-- /.course-one__admin -->
-                        <h2 class="course-one__title"><nuxt-link to="/course-details">Marketing strategies</nuxt-link></h2>
+                        <h2 class="course-one__title"><nuxt-link to="#">Marketing strategies</nuxt-link></h2>
                         <!-- /.course-one__title -->
                         <div class="course-one__stars">
                             <span class="course-one__stars-wrap">
@@ -96,9 +96,9 @@
                             <span class="course-one__stars-count">250</span><!-- /.course-one__stars-count -->
                         </div><!-- /.course-one__stars -->
                         <div class="course-one__meta">
-                            <nuxt-link to="/course-details"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
-                            <nuxt-link to="/course-details"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
-                            <nuxt-link to="/course-details">$18</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
+                            <nuxt-link to="#">$18</nuxt-link>
                         </div><!-- /.course-one__meta -->
                         <a href="#" class="course-one__link">See Preview</a><!-- /.course-one__link -->
                     </div><!-- /.course-one__content -->
@@ -116,7 +116,7 @@
                             <img src="/assets/images/team-1-4.jpg" alt="">
                             by <nuxt-link to="/teacher-details">Ernest Rodriquez</nuxt-link>
                         </div><!-- /.course-one__admin -->
-                        <h2 class="course-one__title"><nuxt-link to="/course-details">Basics of photography</nuxt-link></h2>
+                        <h2 class="course-one__title"><nuxt-link to="#">Basics of photography</nuxt-link></h2>
                         <!-- /.course-one__title -->
                         <div class="course-one__stars">
                             <span class="course-one__stars-wrap">
@@ -130,9 +130,9 @@
                             <span class="course-one__stars-count">250</span><!-- /.course-one__stars-count -->
                         </div><!-- /.course-one__stars -->
                         <div class="course-one__meta">
-                            <nuxt-link to="/course-details"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
-                            <nuxt-link to="/course-details"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
-                            <nuxt-link to="/course-details">$18</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
+                            <nuxt-link to="#">$18</nuxt-link>
                         </div><!-- /.course-one__meta -->
                         <a href="#" class="course-one__link">See Preview</a><!-- /.course-one__link -->
                     </div><!-- /.course-one__content -->
@@ -150,7 +150,7 @@
                             <img src="/assets/images/team-1-5.jpg" alt="">
                             by <nuxt-link to="/teacher-details">Isabella Stanley</nuxt-link>
                         </div><!-- /.course-one__admin -->
-                        <h2 class="course-one__title"><nuxt-link to="/course-details">Affiliate bootcamp</nuxt-link>
+                        <h2 class="course-one__title"><nuxt-link to="#">Affiliate bootcamp</nuxt-link>
                         </h2>
                         <!-- /.course-one__title -->
                         <div class="course-one__stars">
@@ -165,9 +165,9 @@
                             <span class="course-one__stars-count">250</span><!-- /.course-one__stars-count -->
                         </div><!-- /.course-one__stars -->
                         <div class="course-one__meta">
-                            <nuxt-link to="/course-details"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
-                            <nuxt-link to="/course-details"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
-                            <nuxt-link to="/course-details">$18</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
+                            <nuxt-link to="#">$18</nuxt-link>
                         </div><!-- /.course-one__meta -->
                         <a href="#" class="course-one__link">See Preview</a><!-- /.course-one__link -->
                     </div><!-- /.course-one__content -->
@@ -185,7 +185,7 @@
                             <img src="/assets/images/team-1-6.jpg" alt="">
                             by <nuxt-link to="/teacher-details">Katherine Collins</nuxt-link>
                         </div><!-- /.course-one__admin -->
-                        <h2 class="course-one__title"><nuxt-link to="/course-details">Healthy workout tips </nuxt-link></h2>
+                        <h2 class="course-one__title"><nuxt-link to="#">Healthy workout tips </nuxt-link></h2>
                         <!-- /.course-one__title -->
                         <div class="course-one__stars">
                             <span class="course-one__stars-wrap">
@@ -199,9 +199,9 @@
                             <span class="course-one__stars-count">250</span><!-- /.course-one__stars-count -->
                         </div><!-- /.course-one__stars -->
                         <div class="course-one__meta">
-                            <nuxt-link to="/course-details"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
-                            <nuxt-link to="/course-details"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
-                            <nuxt-link to="/course-details">$18</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-clock"></i> 10 Hours</nuxt-link>
+                            <nuxt-link to="#"><i class="far fa-folder-open"></i> 6 Lectures</nuxt-link>
+                            <nuxt-link to="#">$18</nuxt-link>
                         </div><!-- /.course-one__meta -->
                         <a href="#" class="course-one__link">See Preview</a><!-- /.course-one__link -->
                     </div><!-- /.course-one__content -->
