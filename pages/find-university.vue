@@ -38,9 +38,9 @@ import TeamOne from '../components/TeamOne.vue'
     layout: 'university',
     async asyncData({ $axios }) {
     try {
-      const allCourses = $axios.get('/api/course')
-      const allCoursePromise = await Promise.resolve(allCourses)
-      const allCourseData = allCoursePromise.data.courses
+      const allCourses = $axios.get('/api/course');
+      const allCoursePromise = await Promise.resolve(allCourses);
+      const allCourseData = allCoursePromise.data.courses.reverse();
       return {
         allCourseData
       }
