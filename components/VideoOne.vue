@@ -15,7 +15,8 @@
                       <img src="/assets/images/video-1-1.jpg" alt="">
                       <a href="#" class="video-one__popup"><i class="fas fa-play"></i><!-- /.fas fa-play --></a>
                   </div><!-- /.video-one__img -->
-              </div><!-- /.col-lg-6 -->
+              </div>
+              <!-- /.col-lg-6 -->
           </div><!-- /.row -->
       </div><!-- /.container -->
   </section>
