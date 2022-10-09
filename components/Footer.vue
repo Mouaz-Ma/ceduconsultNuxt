@@ -107,7 +107,7 @@
       <div class="site-footer__bottom">
         <div class="container">
           <p class="site-footer__copy">
-            &copy; Copyright 2020 by <a href="#">Layerdrops.com</a>
+            &copy; Copyright 2022 by <a href="/">C.E.C</a>.
           </p>
           <div class="site-footer__social">
             <a
