@@ -3,7 +3,7 @@
     <NavThree />
     <PageHeader title="About" />
     <AboutOne />
-    <!-- <VideoOne /> -->
+    <VideoOne />
     <TeamOne />
     <!-- <ClientsLogoOne /> -->
     <div class="border-bottom"></div>
