@@ -53,7 +53,7 @@
                     </ul>
                 </li> -->
             <li>
-              <nuxt-link to="/blogs/indexTwo" exact>
+              <nuxt-link to="/blogs_elearning" exact>
                 {{ $t('elearning.nav.blogs') }}
               </nuxt-link>
             </li>
